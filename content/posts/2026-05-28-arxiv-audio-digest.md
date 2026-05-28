@@ -1,0 +1,157 @@
+<div align="center">
+
+# 📰 Paper Claw
+
+**2026-05-28**
+
+</div>
+
+---
+
+## 📊 今日速览
+
+| 指标 | 数值 |
+|:---|:---|
+| ⏰ 时间窗口 | 2026-05-27 13:05:43 CST → 2026-05-28 13:01:12 CST |
+| 📄 论文总数 | **6** 篇 |
+
+### 分类统计
+
+- **Speech LLM**: 1 篇
+- **ASR**: 0 篇
+- **TTS**: 0 篇
+- **Enhancement**: 0 篇
+- **SLU**: 0 篇
+- **Paralinguistics**: 0 篇
+- **Audio**: 5 篇
+
+> 💡 今日共收录 6 篇新论文，主要分布在 Speech LLM 1, Audio 5。
+> 📈 整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。
+
+---
+
+## 🏷️ Speech LLM
+
+### 1. Audio-Mind: An Auditable Agentic Framework for Audio Understanding
+
+👤 **作者**: Yucheng Wang, Jing Peng, Hanqi Li, Chenghao Wang, Wenming Tu, Yu Xi, Zhaokai Sun, Kai Yu, Shuai Wang
+🔗 **来源**: [https://arxiv.org/abs/2605.28480v1](https://arxiv.org/abs/2605.28480v1)
+
+**摘要**
+> Audio agents extend large audio-language models (LALMs) by decomposing audio questions into tool calls, intermediate evidence, and iterative reasoning steps. However, as LALMs become stronger, the key challenge shifts from enabling tool use to determining when agentic evidence acquisition genuinely benefits audio understanding. We propose Audio-Mind, an auditable and pluggable framework for conditional evidence acquisition in audio understanding. Audio-Mind dynamically combines a strong frontend with planner-guided tool use, preserving frontend judgment when initial evidence is sufficient while acquiring bounded external evidence for questions with unresolved evidence gaps. Experiments on MMAR and MSU-Bench show that Audio-Mind outperforms prior audio-agent baselines, reaching 80.4% accuracy on MMAR and 82.8% accuracy on MSU-Bench. A matched-backbone comparison highlights why this design matters: under strong audio frontends, agentic decomposition can become an orchestration bottleneck when the workflow does not preserve the frontend's holistic audio-grounded judgment. Beyond accuracy, Audio-Mind produces higher-quality, auditable reasoning traces that expose uncertainty, tool evidence, and answer rationales, offering a potential basis for more reliable audio-QA annotation and error analysis.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音大模型」方向，核心任务由题目《Audio-Mind: An Auditable Agentic Framework for Audio Understanding》所界定。 从摘要看，作者主要围绕 audio-language model 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Experiments on MMAR and MSU-Bench show that Audio-Mind outperforms prior audio-agent baselines, reaching 80.4% accuracy on MMAR and 82.8% accuracy on MSU-Bench. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：audio-language model。 |
+
+---
+## 🏷️ ASR
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ TTS
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Enhancement
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ SLU
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Paralinguistics
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Audio
+
+### 1. Diffusion Large Language Models for Visual Speech Recognition
+
+👤 **作者**: Jeong Hun Yeo, Chae Won Kim, Hyeongseop Rha, Yong Man Ro
+🔗 **来源**: [https://arxiv.org/abs/2605.28456v1](https://arxiv.org/abs/2605.28456v1)
+
+**摘要**
+> Existing Visual Speech Recognition (VSR) systems commonly rely on left-to-right autoregressive decoding, which can force premature decisions on visually ambiguous tokens before sufficient context is available. We propose DLLM-VSR, to the best of our knowledge, the first Diffusion Large Language Model (DLLM)-based VSR framework, formulating transcription as iterative masked denoising with flexible-order decoding. With confidence-based unmasking, DLLM-VSR commits high-confidence positions early and uses the committed tokens as bidirectional context to refine ambiguous ones. To adapt DLLMs to VSR, we introduce a two-stage masked-denoising training strategy that separates visual-to-text content alignment from length modeling. We further observe a performance gap with oracle-length decoding, which assumes access to the true transcript length, indicating that reducing target-length uncertainty can improve DLLM-based VSR. To reduce this gap, we develop length-guided candidate decoding, which uses video duration to construct plausible transcript-length hypotheses, decodes under multiple hypotheses, and reranks candidates using length plausibility and decoding confidence. The proposed method achieves a state-of-the-art WER of 19.5\% on LRS3 using only its labeled training data.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Diffusion Large Language Models for Visual Speech Recognition》所界定。 从摘要看，作者主要围绕 diffusion、large、language 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We further observe a performance gap with oracle-length decoding, which assumes access to the true transcript length, indicating that reducing target-length uncertainty can improve DLLM-based VSR. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：diffusion, large, language。 |
+
+---
+### 2. Comprehensive Benchmarking of Long-Form Speech Generation in Diverse Scenarios
+
+👤 **作者**: Changhao Pan, Rui Yang, Han Wang, Zhuan Zhou, Xuming He, Wenxiang Guo, Ziyue Jiang, Ruiqi Li, Yu Zhang, Chenyuhao Wen, Ke Lei, Xiang Yin, Jingyu Lu, Zhiyuan Zhu, Zhou Zhao
+🔗 **来源**: [https://arxiv.org/abs/2605.28618v1](https://arxiv.org/abs/2605.28618v1)
+
+**摘要**
+> Recent advances in speech generation have enabled high-fidelity synthesis, yet systematic evaluation of models under long-context conditions remains largely underexplored. A comprehensive evaluation benchmark for long-form speech is indispensable for two reasons: 1) existing test scenarios are often confined to limited domains, creating a significant gap with the diverse downstream applications; 2) existing metrics overlook critical long-text factors such as consistency and coherence, failing to generalize reliably. To this end, we propose Swanbench-Speech, a comprehensive benchmark that decomposes long-form speech quality into specific, disentangled dimensions. SwanBench-Speech has three key properties. 1) Rich speech scenarios: Focusing on long-form speech generation and dialog generation, SwanBench-Speech covers acoustics, semantics, and expressiveness challenges, and consists of 1,101 samples spanning 17 common speech scenarios; 2) Comprehensive evaluation dimensions: Along the acoustics, semantics, and expressiveness axes, SwanBench-Speech defines an automated evaluation protocol with seven metrics to provide a comprehensive, accurate, and standardized assessment; 3) Valuable Insights: Through extensive experiments, we reveal that current models still struggle in highly expressive scenarios and exhibit a notable gap in consistency and hierarchy compared to real recordings.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Comprehensive Benchmarking of Long-Form Speech Generation in Diverse Scenarios》所界定。 从摘要看，作者主要围绕 comprehensive、benchmarking、long-form 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：A comprehensive evaluation benchmark for long-form speech is indispensable for two reasons: 1) existing test scenarios are often confined to limited domains, creating a significant gap with the diverse downstream applications; 2) existing metrics overlook critical long-text factors such as consistency and coherence, failing to generalize reliably. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：comprehensive, benchmarking, long-form。 |
+
+---
+### 3. DEMON: Diffusion Engine for Musical Orchestrated Noise
+
+👤 **作者**: Ryan Fosdick
+🔗 **来源**: [https://arxiv.org/abs/2605.28657v1](https://arxiv.org/abs/2605.28657v1)
+
+**摘要**
+> We present DEMON, a real-time diffusion engine that makes the denoising process playable as a live musical instrument: a control surface both broad (many parameters shaped per-frame across the output) and responsive (each control taking effect as fast as its place in the denoising loop allows). Built on ACE-Step 1.5 and StreamDiffusion's ring-buffer architecture with TensorRT acceleration, it sustains up to 12.3 decoder completions per second for 60-second music on a single consumer GPU (RTX 5090), or 11.3 generations per second at our production ring-depth of 4. At these rates denoising parameters become viable as live performance controls, but the ring buffer propagates per-request changes only at its drain rate, a floor of S denoising steps. We contribute four mechanisms. (1) Per-slot heterogeneous denoise scheduling: each ring-buffer slot owns its timestep schedule, so a moving denoise slider is tracked without wiping the in-flight queue, where the upstream global-schedule design must rebuild and discard it. (2) Shared mutable per-step state, giving any parameter consulted at every solver step next-tick effect, bypassing ring-buffer drain. (3) Per-frame source blending: a sampling-time control on the standard SDE re-noise step, giving a framewise transformation-strength axis that complements scalar denoise scheduling. (4) Windowed VAE decode exploiting receptive-field analysis for an 8.0x decode speedup. Together these separate streaming-diffusion parameters into four propagation classes, by onset and convergence latency.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《DEMON: Diffusion Engine for Musical Orchestrated Noise》所界定。 从摘要看，作者主要围绕 demon、diffusion、engine 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Built on ACE-Step 1.5 and StreamDiffusion's ring-buffer architecture with TensorRT acceleration, it sustains up to 12.3 decoder completions per second for 60-second music on a single consumer GPU (RTX 5090), or 11.3 generations per second at our production ring-depth of 4. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：demon, diffusion, engine。 |
+
+---
+### 4. Cross-modal characterization of infant cry: validation of a chest-surface accelerometer in extracting acoustic vocal function measures
+
+👤 **作者**: Winko W. An, Saketh Sundar, Lisa Yankowitz, Daryush D. Mehta, Carol L. Wilkinson
+🔗 **来源**: [https://arxiv.org/abs/2605.28687v1](https://arxiv.org/abs/2605.28687v1)
+
+**摘要**
+> Background: Infant cry acoustics provide a promising window into early neurodevelopment and may serve as scalable biomarkers for neurodevelopmental disorders. However, conventional microphone-based recordings are highly susceptible to environmental noise and raise privacy concerns in real-world clinical settings. Chest-surface accelerometers may offer a robust alternative by capturing vibrations directly from the larynx. Methods: We evaluated the validity of a chest-mounted accelerometer (ACC) for infant cry analysis by comparing acoustic features derived from ACC and simultaneously recorded microphone (MIC) signals during routine vaccination visits. The final sample included 85 infants (41 at 4 months; 44 at 12 months) from a diverse pediatric population. Seven vocal measures were extracted from both modalities, including fundamental frequency (F0), jitter, shimmer, cepstral peak prominence (CPP), and harmonics-to-noise ratio (HNR). Agreement and consistency between modalities was assessed using intraclass correlation coefficients (ICCs). Results: F0 demonstrated excellent agreement between ACC and MIC recordings (ICC > 0.94). Jitter measures also showed good-to-excellent agreement, while CPP demonstrated moderate agreement. Shimmer and HNR showed lower absolute agreement and systematic bias between modalities, reflecting possible differences in signal transmission and noise sensitivity. Conclusion: In summary, chest-surface accelerometers can reliably capture several clinically relevant acoustic features of infant cry, particularly temporal measures of F0 and jitter. This approach offers a noise-robust and privacy-preserving alternative to microphone-based recordings, supporting its potential use in scalable clinical and developmental research applications.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Cross-modal characterization of infant cry: validation of a chest-surface accelerometer in extracting acoustic vocal function measures》所界定。 从摘要看，作者主要围绕 cross-modal、characterization、infant 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Results: F0 demonstrated excellent agreement between ACC and MIC recordings (ICC > 0.94). 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：cross-modal, characterization, infant。 |
+
+---
+### 5. Affective Music Recommendation: A Rollout-Based World Model for Offline Preference Optimization
+
+👤 **作者**: Audrey Chan, Aaron Labbé, Jacob Lavoie, Jordan Bannister, Arsène Fansi Tchango, Guillaume Lajoie, Laurent Charlin
+🔗 **来源**: [https://arxiv.org/abs/2605.28810v1](https://arxiv.org/abs/2605.28810v1)
+
+**摘要**
+> Functional music applications, from consumer focus and sleep aids to clinical interventions, share a distinctive recommendation problem: success is defined by the listener's affective state, but online experimentation on emotion is ethically constrained, particularly for clinical populations who cannot reliably skip a song or report distress. We describe AMRS, the Affective Music Recommendation System deployed on LUCID's health-and-wellness platforms, which serve clinical users (primarily older adults with neurocognitive conditions) and consumer-wellness users across energize, focus, calm, and sleep modes. AMRS is built around a rollout-based world model: a causal transformer trained on logged listening data to jointly predict engagement, binary rating, and self-reported valence and arousal. The world model serves both as an in-silico simulator for offline policy training and as a stress-testing tool before deployment. A recommender policy initialized by behaviour cloning is fine-tuned offline with Direct Preference Optimization (DPO) against a configurable multi-objective utility function. Under a strict cold-start protocol, the world model predicts both behavioural and affective signals with usable fidelity; DPO improves predicted valence and arousal over the cloned baseline while maintaining a similar diversity profile and avoiding the distributional collapse produced by greedy optimization. We position the work as an early deployed validation of a methodology for affective recommendation when online experimentation is ethically untenable.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Affective Music Recommendation: A Rollout-Based World Model for Offline Preference Optimization》所界定。 从摘要看，作者主要围绕 affective、music、recommendation 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Under a strict cold-start protocol, the world model predicts both behavioural and affective signals with usable fidelity; DPO improves predicted valence and arousal over the cloned baseline while maintaining a similar diversity profile and avoiding the distributional collapse produced by greedy optimization. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：affective, music, recommendation。 |
+
+---
+
+<div align="center">
+
+*Generated by [Paper Claw](https://github.com/yourusername/paper_claw)*
+
+</div>
