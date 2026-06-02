@@ -1,0 +1,321 @@
+{
+  "generated_at": "2026-06-02T13:18:58.540025+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-06-01T13:51:19.490169+08:00",
+    "end": "2026-06-02T13:18:51.927159+08:00",
+    "start_display": "2026-06-01 13:51:19 CST",
+    "end_display": "2026-06-02 13:18:51 CST"
+  },
+  "summary": {
+    "total": 4,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 1,
+      "TTS": 0,
+      "Enhancement": 1,
+      "SLU": 0,
+      "Paralinguistics": 0,
+      "Audio": 2
+    },
+    "headline": "今日共收录 4 篇新论文，主要分布在 ASR 1, Enhancement 1, Audio 2。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-06-02-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2606.02327v1",
+      "title_en": "Exploiting Noise Inseparability for Weakly-Supervised Discriminative Speech Denoising Using Noisy Targets",
+      "abstract_en": "Speech denoising is an often necessary step not only for human listening, but also for downstream processing by systems lacking robustness to noisy, real-world acoustic conditions. Unfortunately, denoising is a problem where conventional in-domain supervised training is not trivial, as the training targets cannot be annotated by humans: producing a clean version of a naturally-noisy speech recording is itself the task to solve. Supervised training is typically performed through the artificial addition of noise to clean speech recordings, which can only be sourced from controlled domains, a significant limitation due to the poor out-of-domain generalization of neural networks. An alternative is noisy target training (NyTT), which simply replaces the clean speech with in-domain noisy recordings, with the hope that learning to remove the artificial noise will extend to the natural. Though having shown promising results, NyTT's training objective is not minimized by clean speech estimates. We show that by estimating the artificial noise in addition to the naturally-noisy speech, the undesirable optimum can actually be exploited: the residual noise in the speech estimate can be canceled by the noise estimate via simple subtraction. Crucially, the optimum is fully compatible with conventional artificial mixtures, enabling joint training using both types of data with consistent optimization targets, opening the door to improved domain adaptability. The effectiveness of our approach is demonstrated through WHAM! and CHiME-3-based benchmarks.",
+      "authors": [
+        "Matthew Maciejewski",
+        "Samuele Cornell"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.02327v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-01T14:38:54Z",
+      "updated": "2026-06-01T14:38:54Z",
+      "keywords_en": [
+        "speech denoising"
+      ],
+      "digest_category": "Enhancement",
+      "category_label": "语音增强",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音增强」方向，核心任务由题目《Exploiting Noise Inseparability for Weakly-Supervised Discriminative Speech Denoising Using Noisy Targets》所界定。 从摘要看，作者主要围绕 speech denoising 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Though having shown promising results, NyTT's training objective is not minimized by clean speech estimates. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech denoising。"
+      }
+    },
+    {
+      "arxiv_id": "2606.02341v1",
+      "title_en": "Parameter-efficient Dual-encoder Architecture with Differentiable Choquet Integral Fusion for Underwater Acoustic Classification",
+      "abstract_en": "Underwater acoustic classification has a wide array of oceanic applications, but faces challenges due to an increasingly complex acoustic environment. Waveform and spectrogram representations have been primarily used as acoustic data features for classification tasks in this domain. Spectrograms model harmonic dependencies, but these reduced representations can filter out acoustic features relevant for discrimination. While phase information from the waveform allows full characterization of the signal, the original waveform can be noisy and complex, rendering this representation difficult for models to process directly. This paper proposes a dual-encoder neural architecture to simultaneously process acoustic waveforms and spectrograms, leveraging pre-trained backbones and parameter-efficient fine-tuning modules, enabling a domain adaptation. To combine these adapted branches, a novel differentiable fuzzy aggregation mechanism based on the Choquet integral is introduced to balance the temporal and spectral representations. This fusion strategy not only yields higher classification accuracy but also provides interpretability. Specifically, by analyzing the learned fuzzy measures, insights are revealed about class-specific shifts in the network's representation reliance. By dynamically shifting attention to the representation least corrupted by potential asymmetric channel distortions, the proposed gating mechanism mitigates the non-stationary challenges of the underwater environment. Evaluations on the DeepShip and ShipsEar datasets demonstrate that the proposed architecture achieves classification improvements over independent single-encoder baselines, while simultaneously restricting the trainable parameter space. This mitigates the risk of overfitting on limited acoustic datasets while alleviating the computational costs associated with fully fine-tuning foundation models.",
+      "authors": [
+        "Amirmohammad Mohammadi",
+        "Joshua Peeples",
+        "Alexandra Van Dine"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.02341v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-06-01T14:49:38Z",
+      "updated": "2026-06-01T14:49:38Z",
+      "keywords_en": [
+        "parameter-efficient",
+        "dual-encoder",
+        "architecture",
+        "with",
+        "differentiable",
+        "choquet"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Parameter-efficient Dual-encoder Architecture with Differentiable Choquet Integral Fusion for Underwater Acoustic Classification》所界定。 从摘要看，作者主要围绕 parameter-efficient、dual-encoder、architecture 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Evaluations on the DeepShip and ShipsEar datasets demonstrate that the proposed architecture achieves classification improvements over independent single-encoder baselines, while simultaneously restricting the trainable parameter space. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：parameter-efficient, dual-encoder, architecture。"
+      }
+    },
+    {
+      "arxiv_id": "2606.02400v1",
+      "title_en": "SoulX-Transcriber: A Robust End-to-End Framework for Multi-Speaker Speech Transcription",
+      "abstract_en": "Recent advances in Automatic Speech Recognition (ASR) and Large Language Models (LLMs) have significantly improved speech understanding capabilities. However, multi-speaker speech transcription remains challenging task, constrained by highly similar speaker voices, rapid turn-taking transitions, overlapping utterances and inaccurate speaker boundary segmentation. These challenges become particularly pronounced in real-world conversational audio, where speaker dynamics and acoustic conditions are highly variable. This technical report presents SoulX-Transcriber, a unified multi-speaker transcription system that jointly models speaker diarization (SD) and ASR within an LLM-based framework. SoulX-Transcriber adopts a two-stage training strategy to improve both speaker discrimination and transcription robustness. In the first stage, speaker-aware multi-task continuous pre-training enhances speaker representation learning and boundary perception. In the second stage, supervised fine-tuning further optimizes the model for accurate end-to-end speaker-attributed transcription under complex multi-speaker conditions. SoulX-Transcriber delivers strong performance and robustness across multiple public benchmarks, including AliMeeting, AISHELL-4, and AMI, while maintaining high adaptability to multi-domain scenarios.",
+      "authors": [
+        "Yuhang Dai",
+        "Haopeng Lin",
+        "Zhennan Lin",
+        "Jiale Qian",
+        "Jun Wu",
+        "Hanke Xie",
+        "Hao Meng",
+        "Hanlin Wen",
+        "Chuang Ding",
+        "Shunshun Yin",
+        "Ming Tao",
+        "Lei Xie",
+        "Xinsheng Wang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.02400v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-01T15:47:01Z",
+      "updated": "2026-06-01T15:47:01Z",
+      "keywords_en": [
+        "speech understanding",
+        "automatic speech recognition",
+        "speech transcription"
+      ],
+      "digest_category": "ASR",
+      "category_label": "语音识别",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音识别」方向，核心任务由题目《SoulX-Transcriber: A Robust End-to-End Framework for Multi-Speaker Speech Transcription》所界定。 从摘要看，作者主要围绕 speech understanding、automatic speech recognition、speech transcription 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Recent advances in Automatic Speech Recognition (ASR) and Large Language Models (LLMs) have significantly improved speech understanding capabilities. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech understanding, automatic speech recognition, speech transcription。"
+      }
+    },
+    {
+      "arxiv_id": "2606.02448v1",
+      "title_en": "Diffusion-Based Heart Sound Generation: Evaluation with Physiological Signal Metrics, Classifiers, and Expert Listening",
+      "abstract_en": "Publicly available phonocardiogram (PCG) datasets remain limited in size and pathological diversity, constraining both auscultation training and the generalisation of automated heart-sound classifiers. A class-conditional diffusion model for PCG generation is developed in the log-mel domain and synthetic fidelity is assessed using complementary (i) physiology-inspired plausibility metrics, (ii) downstream label-consistency evaluation, and (iii) expert listening. Experiments use the Phy-sioNet/Computing in Cardiology Challenge 2016 dataset (3240 recordings) with recording-level splits. After preprocessing and quality control, 16,749 non-overlapping 4 s clips are mapped to a normalised 1 x 128 x 128 log-mel representation to train a conditional 2D U-Net denoiser with classifier-free guidance. Signal-level plausibility is quantified on reconstructed waveforms using three lightweight metrics: an envelope-autocorrelation rhythm score, an amplitude-based explosion score, and the dominant cycle lag. Synthetic clips preserve similar dominant cycle durations but exhibit reduced envelope periodicity and increased transient burstiness relative to real clips. For downstream evaluation, a ResNet-50 classifier achieves 92.24% accuracy on the held-out real test set and 82.8% accuracy on class-balanced synthetic batches, indicating that generated signals retain discriminative structure relevant to normal/abnormal classification. In a pilot expert listening study (60 clips, two clinicians), most synthetic clips are judged as heart-sound-like, while abnormality sensitivity is low for both real and synthetic 4 s excerpts. Overall, the results provide a practical baseline for diffusion-based PCG generation while highlighting remaining challenges in retaining abnormal acoustic cues and reducing reconstruction-induced artefacts.",
+      "authors": [
+        "Xinqi Bao",
+        "Jia Bi",
+        "Xin Chen",
+        "Ernest Nlandu Kamavuako",
+        "Saikat Chatterjee"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.02448v1",
+      "primary_category": "eess.SP",
+      "source_categories": [
+        "cs.SD",
+        "eess.SP"
+      ],
+      "published": "2026-06-01T16:19:22Z",
+      "updated": "2026-06-01T16:19:22Z",
+      "keywords_en": [
+        "diffusion-based",
+        "heart",
+        "sound",
+        "generation",
+        "evaluation",
+        "with"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Diffusion-Based Heart Sound Generation: Evaluation with Physiological Signal Metrics, Classifiers, and Expert Listening》所界定。 从摘要看，作者主要围绕 diffusion-based、heart、sound 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：For downstream evaluation, a ResNet-50 classifier achieves 92.24% accuracy on the held-out real test set and 82.8% accuracy on class-balanced synthetic batches, indicating that generated signals retain discriminative structure relevant to normal/abnormal classification. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：diffusion-based, heart, sound。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [
+      {
+        "arxiv_id": "2606.02400v1",
+        "title_en": "SoulX-Transcriber: A Robust End-to-End Framework for Multi-Speaker Speech Transcription",
+        "abstract_en": "Recent advances in Automatic Speech Recognition (ASR) and Large Language Models (LLMs) have significantly improved speech understanding capabilities. However, multi-speaker speech transcription remains challenging task, constrained by highly similar speaker voices, rapid turn-taking transitions, overlapping utterances and inaccurate speaker boundary segmentation. These challenges become particularly pronounced in real-world conversational audio, where speaker dynamics and acoustic conditions are highly variable. This technical report presents SoulX-Transcriber, a unified multi-speaker transcription system that jointly models speaker diarization (SD) and ASR within an LLM-based framework. SoulX-Transcriber adopts a two-stage training strategy to improve both speaker discrimination and transcription robustness. In the first stage, speaker-aware multi-task continuous pre-training enhances speaker representation learning and boundary perception. In the second stage, supervised fine-tuning further optimizes the model for accurate end-to-end speaker-attributed transcription under complex multi-speaker conditions. SoulX-Transcriber delivers strong performance and robustness across multiple public benchmarks, including AliMeeting, AISHELL-4, and AMI, while maintaining high adaptability to multi-domain scenarios.",
+        "authors": [
+          "Yuhang Dai",
+          "Haopeng Lin",
+          "Zhennan Lin",
+          "Jiale Qian",
+          "Jun Wu",
+          "Hanke Xie",
+          "Hao Meng",
+          "Hanlin Wen",
+          "Chuang Ding",
+          "Shunshun Yin",
+          "Ming Tao",
+          "Lei Xie",
+          "Xinsheng Wang"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.02400v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-06-01T15:47:01Z",
+        "updated": "2026-06-01T15:47:01Z",
+        "keywords_en": [
+          "speech understanding",
+          "automatic speech recognition",
+          "speech transcription"
+        ],
+        "digest_category": "ASR",
+        "category_label": "语音识别",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音识别」方向，核心任务由题目《SoulX-Transcriber: A Robust End-to-End Framework for Multi-Speaker Speech Transcription》所界定。 从摘要看，作者主要围绕 speech understanding、automatic speech recognition、speech transcription 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Recent advances in Automatic Speech Recognition (ASR) and Large Language Models (LLMs) have significantly improved speech understanding capabilities. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech understanding, automatic speech recognition, speech transcription。"
+        }
+      }
+    ],
+    "TTS": [],
+    "Enhancement": [
+      {
+        "arxiv_id": "2606.02327v1",
+        "title_en": "Exploiting Noise Inseparability for Weakly-Supervised Discriminative Speech Denoising Using Noisy Targets",
+        "abstract_en": "Speech denoising is an often necessary step not only for human listening, but also for downstream processing by systems lacking robustness to noisy, real-world acoustic conditions. Unfortunately, denoising is a problem where conventional in-domain supervised training is not trivial, as the training targets cannot be annotated by humans: producing a clean version of a naturally-noisy speech recording is itself the task to solve. Supervised training is typically performed through the artificial addition of noise to clean speech recordings, which can only be sourced from controlled domains, a significant limitation due to the poor out-of-domain generalization of neural networks. An alternative is noisy target training (NyTT), which simply replaces the clean speech with in-domain noisy recordings, with the hope that learning to remove the artificial noise will extend to the natural. Though having shown promising results, NyTT's training objective is not minimized by clean speech estimates. We show that by estimating the artificial noise in addition to the naturally-noisy speech, the undesirable optimum can actually be exploited: the residual noise in the speech estimate can be canceled by the noise estimate via simple subtraction. Crucially, the optimum is fully compatible with conventional artificial mixtures, enabling joint training using both types of data with consistent optimization targets, opening the door to improved domain adaptability. The effectiveness of our approach is demonstrated through WHAM! and CHiME-3-based benchmarks.",
+        "authors": [
+          "Matthew Maciejewski",
+          "Samuele Cornell"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.02327v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-06-01T14:38:54Z",
+        "updated": "2026-06-01T14:38:54Z",
+        "keywords_en": [
+          "speech denoising"
+        ],
+        "digest_category": "Enhancement",
+        "category_label": "语音增强",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音增强」方向，核心任务由题目《Exploiting Noise Inseparability for Weakly-Supervised Discriminative Speech Denoising Using Noisy Targets》所界定。 从摘要看，作者主要围绕 speech denoising 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Though having shown promising results, NyTT's training objective is not minimized by clean speech estimates. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech denoising。"
+        }
+      }
+    ],
+    "SLU": [],
+    "Paralinguistics": [],
+    "Audio": [
+      {
+        "arxiv_id": "2606.02341v1",
+        "title_en": "Parameter-efficient Dual-encoder Architecture with Differentiable Choquet Integral Fusion for Underwater Acoustic Classification",
+        "abstract_en": "Underwater acoustic classification has a wide array of oceanic applications, but faces challenges due to an increasingly complex acoustic environment. Waveform and spectrogram representations have been primarily used as acoustic data features for classification tasks in this domain. Spectrograms model harmonic dependencies, but these reduced representations can filter out acoustic features relevant for discrimination. While phase information from the waveform allows full characterization of the signal, the original waveform can be noisy and complex, rendering this representation difficult for models to process directly. This paper proposes a dual-encoder neural architecture to simultaneously process acoustic waveforms and spectrograms, leveraging pre-trained backbones and parameter-efficient fine-tuning modules, enabling a domain adaptation. To combine these adapted branches, a novel differentiable fuzzy aggregation mechanism based on the Choquet integral is introduced to balance the temporal and spectral representations. This fusion strategy not only yields higher classification accuracy but also provides interpretability. Specifically, by analyzing the learned fuzzy measures, insights are revealed about class-specific shifts in the network's representation reliance. By dynamically shifting attention to the representation least corrupted by potential asymmetric channel distortions, the proposed gating mechanism mitigates the non-stationary challenges of the underwater environment. Evaluations on the DeepShip and ShipsEar datasets demonstrate that the proposed architecture achieves classification improvements over independent single-encoder baselines, while simultaneously restricting the trainable parameter space. This mitigates the risk of overfitting on limited acoustic datasets while alleviating the computational costs associated with fully fine-tuning foundation models.",
+        "authors": [
+          "Amirmohammad Mohammadi",
+          "Joshua Peeples",
+          "Alexandra Van Dine"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.02341v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.LG",
+          "cs.SD"
+        ],
+        "published": "2026-06-01T14:49:38Z",
+        "updated": "2026-06-01T14:49:38Z",
+        "keywords_en": [
+          "parameter-efficient",
+          "dual-encoder",
+          "architecture",
+          "with",
+          "differentiable",
+          "choquet"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Parameter-efficient Dual-encoder Architecture with Differentiable Choquet Integral Fusion for Underwater Acoustic Classification》所界定。 从摘要看，作者主要围绕 parameter-efficient、dual-encoder、architecture 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Evaluations on the DeepShip and ShipsEar datasets demonstrate that the proposed architecture achieves classification improvements over independent single-encoder baselines, while simultaneously restricting the trainable parameter space. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：parameter-efficient, dual-encoder, architecture。"
+        }
+      },
+      {
+        "arxiv_id": "2606.02448v1",
+        "title_en": "Diffusion-Based Heart Sound Generation: Evaluation with Physiological Signal Metrics, Classifiers, and Expert Listening",
+        "abstract_en": "Publicly available phonocardiogram (PCG) datasets remain limited in size and pathological diversity, constraining both auscultation training and the generalisation of automated heart-sound classifiers. A class-conditional diffusion model for PCG generation is developed in the log-mel domain and synthetic fidelity is assessed using complementary (i) physiology-inspired plausibility metrics, (ii) downstream label-consistency evaluation, and (iii) expert listening. Experiments use the Phy-sioNet/Computing in Cardiology Challenge 2016 dataset (3240 recordings) with recording-level splits. After preprocessing and quality control, 16,749 non-overlapping 4 s clips are mapped to a normalised 1 x 128 x 128 log-mel representation to train a conditional 2D U-Net denoiser with classifier-free guidance. Signal-level plausibility is quantified on reconstructed waveforms using three lightweight metrics: an envelope-autocorrelation rhythm score, an amplitude-based explosion score, and the dominant cycle lag. Synthetic clips preserve similar dominant cycle durations but exhibit reduced envelope periodicity and increased transient burstiness relative to real clips. For downstream evaluation, a ResNet-50 classifier achieves 92.24% accuracy on the held-out real test set and 82.8% accuracy on class-balanced synthetic batches, indicating that generated signals retain discriminative structure relevant to normal/abnormal classification. In a pilot expert listening study (60 clips, two clinicians), most synthetic clips are judged as heart-sound-like, while abnormality sensitivity is low for both real and synthetic 4 s excerpts. Overall, the results provide a practical baseline for diffusion-based PCG generation while highlighting remaining challenges in retaining abnormal acoustic cues and reducing reconstruction-induced artefacts.",
+        "authors": [
+          "Xinqi Bao",
+          "Jia Bi",
+          "Xin Chen",
+          "Ernest Nlandu Kamavuako",
+          "Saikat Chatterjee"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.02448v1",
+        "primary_category": "eess.SP",
+        "source_categories": [
+          "cs.SD",
+          "eess.SP"
+        ],
+        "published": "2026-06-01T16:19:22Z",
+        "updated": "2026-06-01T16:19:22Z",
+        "keywords_en": [
+          "diffusion-based",
+          "heart",
+          "sound",
+          "generation",
+          "evaluation",
+          "with"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Diffusion-Based Heart Sound Generation: Evaluation with Physiological Signal Metrics, Classifiers, and Expert Listening》所界定。 从摘要看，作者主要围绕 diffusion-based、heart、sound 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：For downstream evaluation, a ResNet-50 classifier achieves 92.24% accuracy on the held-out real test set and 82.8% accuracy on class-balanced synthetic batches, indicating that generated signals retain discriminative structure relevant to normal/abnormal classification. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：diffusion-based, heart, sound。"
+        }
+      }
+    ]
+  },
+  "model_name": "deepseek-v3"
+}
