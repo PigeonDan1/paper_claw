@@ -1,0 +1,114 @@
+{
+  "window": {
+    "start": "2026-06-02T13:18:51.927159+08:00",
+    "end": "2026-06-03T13:52:15.662065+08:00"
+  },
+  "fetched_count": 7,
+  "deduplicated_count": 5,
+  "new_count": 5,
+  "papers": [
+    {
+      "arxiv_id": "2606.03672v1",
+      "title_en": "Foley-Omni: A Unified Multimodal Generation Model from Task-Level Audio Synthesis to Complete Video Soundtrack Generation",
+      "abstract_en": "Recent unified audio generation models can support diverse tasks across speech, sound effects, and music, but most of them still focus on isolated task-level synthesis. However, real video production often requires multiple components of a complete audio track to be generated jointly and consistently for the same video. We present Foley-Omni, a unified multimodal audio generation model that extends isolated task-level synthesis to complete video soundtrack generation by jointly modeling speech, sound effects, and music within a shared latent generation process. To support training and reproducible evaluation, we develop an audiovisual data curation pipeline and introduce V2ST-Bench, a benchmark for holistic video soundtrack generation evaluation. Experiments show that Foley-Omni achieves competitive performance with expert systems on individual synthesis tasks, while improving speech intelligibility, audiovisual consistency and perceptual quality for mixed soundtrack generation.",
+      "authors": [
+        "Ye Tao",
+        "Lupeng Liu",
+        "Xuenan Xu",
+        "Jiasun Feng",
+        "Jiarui Wang",
+        "Ying Qin",
+        "Shuiyang Mao",
+        "Wei Liu",
+        "Shuai Wang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.03672v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.MM",
+        "cs.SD"
+      ],
+      "published": "2026-06-02T13:56:31Z",
+      "updated": "2026-06-02T13:56:31Z"
+    },
+    {
+      "arxiv_id": "2606.03747v1",
+      "title_en": "Stable Hybrid Cross-Attention Fusion for Audio-Visual Event Recognition",
+      "abstract_en": "Audio-Visual Event Recognition (AVER) is essential for intelligent urban monitoring systems, where robust multimodal understanding of complex environments is required. This paper proposes a stable hybrid cross-attention fusion framework for audio-visual event recognition in smart urban environments. The proposed architecture combines pretrained Video Masked Autoencoder (VideoMAE) and Audio Spectrogram Transformer (AST) representations with FiLM-based audio conditioning, bidirectional cross-attention fusion, multimodal Transformer encoding, and modality-temporal attention. To improve computational efficiency and training stability, frozen pretrained backbones and cached feature extraction are employed. Extensive experiments on the AVE dataset show that the proposed framework achieves the highest average performance among the evaluated unimodal and multimodal baselines across multiple evaluation metrics, obtaining a best validation accuracy of 91.74% and a test accuracy of 83.85 plus/minus 1.40% over five independent runs. The results indicate that the proposed hybrid fusion strategy effectively captures complementary audio-visual information and provides robust multimodal representation learning for challenging realworld urban monitoring scenarios.",
+      "authors": [
+        "Parinaz Binandeh Dehaghani",
+        "Danilo Pena",
+        "A. Pedro Aguiar"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.03747v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS",
+        "eess.SP"
+      ],
+      "published": "2026-06-02T15:01:06Z",
+      "updated": "2026-06-02T15:01:06Z"
+    },
+    {
+      "arxiv_id": "2606.03803v1",
+      "title_en": "LiveBand: Live Accompaniment Generation in the Audio Domain",
+      "abstract_en": "We present LiveBand, a real-time system that generates high-fidelity music accompaniments to live audio input, respecting strict causal constraints. Our method trains a causal transformer generator in the continuous latent space of a pre-trained causal audio autoencoder, using adversarial sequence-level supervision from a discriminator. At each timestep, the generator receives only the causally available mix context and Gaussian noise, and predicts accompaniment latents without access to future mix frames or ground-truth target latents. Training is performed in a single parallel forward pass under causal masking, while streaming inference proceeds autoregressively with a rolling attention state. The model's training and inference computations are matched by design, eliminating teacher forcing and the associated exposure bias. On a multi-instrument music accompaniment benchmark, LiveBand improves over prior work on objective measures of audio quality, beat alignment, and mix adherence, while enabling real-time streaming generation without lookahead into the future on consumer hardware.",
+      "authors": [
+        "Marco Pasini",
+        "Javier Nistal",
+        "Mathias Rose Bjare",
+        "Stefan Lattner",
+        "George Fazekas"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.03803v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-02T15:50:13Z",
+      "updated": "2026-06-02T15:50:13Z"
+    },
+    {
+      "arxiv_id": "2606.03832v1",
+      "title_en": "In-the-Loop Training of Deep Feedback Cancellation for Hearing Aids",
+      "abstract_en": "Acoustic feedback limits the maximum gain in hearing aids. In addition to several approaches based on adaptive filtering, recently a deep-neural-network-based feedback cancellation (DFC) approach has been proposed, which is trained via an open-loop framework. Since open-loop-trained DFC (DFC-OL) can become unstable during inference at high gains, in this paper we propose an in-the-loop-trained DFC (DFC-IL) that integrates the DFC directly into the optimisation loop. This allows the model to be exposed to unstable conditions during training. A two-stage training strategy involving pre-training on stable systems and fine-tuning on a wider gain range enables DFC-IL to learn robust howling reduction. Experimental results on measured feedback paths demonstrate that in scenarios with small gains, the proposed DFC-IL performs similarly to DFC-OL, and both exceed the performance of adaptive filters. In scenarios with high amplification gains, DFC-IL clearly outperforms DFC-OL by maintaining system stability.",
+      "authors": [
+        "Svantje Voit",
+        "Simon Doclo"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.03832v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-02T16:17:09Z",
+      "updated": "2026-06-02T16:17:09Z"
+    },
+    {
+      "arxiv_id": "2606.03957v1",
+      "title_en": "Efficient ASR Training with Conversations that Never Happened",
+      "abstract_en": "Conversational ASR for lower-resource languages and niche domains is limited by the scarcity of domain-matched multi-speaker training data. We propose an augmentation pipeline that generates scenario-level dialogues with participant metadata, maps speaker attributes to TTS voice profiles, and assembles synthesized utterances into speaker-aware simulated conversations. We evaluated five LLM families under single-generator, fixed-budget mixture, and scale-up settings using the same FastConformer-Large training recipe for each one. We ran comprehensive evaluations on the Hungarian BEA-Dialogue benchmark corpus, with the method itself being applicable to any language given the resources for each component. The results show that synthetic conversations consistently improve speech recognition performance, but generator choice and data composition strongly affect the gains. Our largest training configuration, using only 67 hours of real conversations and 636 hours of simulated data, achieves better performance on the evaluation benchmark than a zero-shot model trained on 2700 hours of Hungarian speech. These findings indicate that LLM-generated conversational data synthesized with TTS is a practical complement to real conversational corpora for speech model training.",
+      "authors": [
+        "Máté Gedeon",
+        "Péter Mihajlik"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.03957v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-02T17:46:12Z",
+      "updated": "2026-06-02T17:46:12Z"
+    }
+  ]
+}
