@@ -1,0 +1,142 @@
+{
+  "window": {
+    "start": "2026-06-04T13:29:34.328404+08:00",
+    "end": "2026-06-06T12:43:36.745901+08:00"
+  },
+  "fetched_count": 10,
+  "deduplicated_count": 6,
+  "new_count": 6,
+  "papers": [
+    {
+      "arxiv_id": "2606.06170v1",
+      "title_en": "CoSTA: Cognitive-State-Conditioned TTS Data Augmentation Using ASR Transcripts for Alzheimer's Disease Detection",
+      "abstract_en": "Speech-based Alzheimer's Disease (AD) detection is constrained by scarce pathological speech data. To address this, we propose CoSTA, a Text-to-Speech (TTS)-based data augmentation framework. Specifically, we first develop two Cognitive-State-Conditioned (CS-Cond) TTS models by adapting CosyVoice2 and F5-TTS to synthesize speech with distinct AD and Healthy Control characteristics. Furthermore, by constructing a transcript pool comprising Manual Transcripts (MT) and 36 Automatic Speech Recognition (ASR) transcripts, we investigate the impact of text sources on TTS-based augmentation. We also perform augmentation-factor analysis and test-time augmentation. Experiments on the ADReSS dataset show that CS-Cond TTS significantly improves synthetic speech utility, and ASR-driven augmentation frequently outperforms MT-driven augmentation. Finally, CoSTA yields a 4.16% gain over the baseline, achieving an audio-only accuracy of 85.83% on the ADReSS test set and outperforming prior methods.",
+      "authors": [
+        "Yin-Long Liu",
+        "Yuanchao Li",
+        "Yiming Wang",
+        "Yue Li",
+        "Rui Feng",
+        "Jiaxin Chen",
+        "Shaobo Liu",
+        "Liu He",
+        "Yuang Chen",
+        "Jiahong Yuan",
+        "Zhen-Hua Ling"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.06170v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-04T13:41:19Z",
+      "updated": "2026-06-04T13:41:19Z"
+    },
+    {
+      "arxiv_id": "2606.06183v1",
+      "title_en": "Revisiting Lexicon Evaluation in Unsupervised Word Discovery",
+      "abstract_en": "Building a lexicon from discovered word-like units is a central goal in zero-resource speech processing. But do our evaluations provide a trustworthy indication of lexicon quality? A common metric, normalized edit distance, averages the phoneme edit distances between discovered units in each cluster. We show that this metric has an inherent bias toward the quality of large clusters, inhibiting fair evaluation. Moreover, it ignores how well true classes are distributed across clusters. Based on established theory in clustering literature, we propose two metrics that address these shortcomings: a modified metric that weighs cluster size when assessing within-cluster consistency, and an inverse metric that assesses how true words are spread across clusters. Through experiments on synthetic and real-world lexicons, we demonstrate that combined, these metrics are: (1) more closely correlated with how similar a lexicon is to the ground-truth distribution, and (2) more robust to biases that skew lexicon evaluations.",
+      "authors": [
+        "Simon Malan",
+        "Danel Slabbert",
+        "Herman Kamper"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.06183v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-06-04T13:55:09Z",
+      "updated": "2026-06-04T13:55:09Z"
+    },
+    {
+      "arxiv_id": "2606.06200v1",
+      "title_en": "Learning Emotion-discriminative Representations for Zero-Shot Cross-lingual Speech Emotion Recognition",
+      "abstract_en": "Zero-shot cross-lingual speech emotion recognition (SER) remains challenging due to distribution mismatches across languages and the lack of emotion annotations in target language. Under such conditions, models trained solely on source-language data frequently suffer from degraded generalization when evaluated on unseen target languages. To address this limitation, we propose an emotion-discriminative representation learning method that integrates supervised contrastive learning and speaker adversarial learning. The contrastive learning promotes cross-lingual emotion alignment, while speaker adversarial learning suppresses speaker-related cues to encourage speaker-invariant representations. Experimental results under a zero-shot cross-lingual SER setting demonstrate that the proposed method significantly improves SER performance over conventional training strategies.",
+      "authors": [
+        "Jinyi Mi",
+        "Ding Ma",
+        "Tomoki Toda"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.06200v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-04T14:05:38Z",
+      "updated": "2026-06-04T14:05:38Z"
+    },
+    {
+      "arxiv_id": "2606.06211v1",
+      "title_en": "FiLM-Based Speaker Conditioning of a SpeechLLM for Pathological Speech Recognition",
+      "abstract_en": "Automatic speech recognition (ASR) has advanced remarkably for standard speech; however, pathological speech from neurological conditions remains a significant challenge. We investigate speaker conditioning via Feature-wise Linear Modulation (FiLM), injecting x-vector-derived information into each transformer layer of a frozen ASR encoder to adapt internal representations to individual pathological speakers without modifying base model weights. We benchmark this for the ASR task against standard and parameter-efficient fine-tuning baselines, complemented by post-processing, on Spanish and English pathological speech. Additionally, we evaluate if the adapted model preserves the ability to answer speech-related questions. Results show that speaker-conditioned ASR is competitive with established adaptation strategies while retaining performance on non-conditioned speech.",
+      "authors": [
+        "Fernando López",
+        "Santosh Kesiraju",
+        "Jordi Luque"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.06211v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-04T14:20:11Z",
+      "updated": "2026-06-04T14:20:11Z"
+    },
+    {
+      "arxiv_id": "2606.06357v1",
+      "title_en": "F3-Tokenizer: Taming Audio Autoencoder Latents for Understanding and Generation",
+      "abstract_en": "Continuous audio autoencoders reconstruct waveforms well but often produce latents with weak structure for understanding, while self-supervised audio encoders capture semantics but are not directly decodable. This mismatch complicates a single audio tokenizer that must support both understanding and generation. We adapt continuous autoencoder latents to this setting with two components: a noise-regularized autoencoder bottleneck and a latent-side representation encoder. The bottleneck uses channel normalization and stochastic perturbation instead of KL-based variational training, yielding scale-controlled continuous latents for reconstruction and autoregressive generation. The representation encoder is trained on frozen autoencoder latents with RQ-MTP and frozen-LLM supervision. The resulting tokenizer provides high-dimensional representations for understanding while preserving normalized continuous latents as generation targets",
+      "authors": [
+        "Dinghao Zhou",
+        "Xingchen Song",
+        "Di Wu",
+        "Pengyu Cheng",
+        "Shengfan Shen",
+        "Sixiang Lv"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.06357v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-04T16:25:07Z",
+      "updated": "2026-06-04T16:25:07Z"
+    },
+    {
+      "arxiv_id": "2606.06444v1",
+      "title_en": "USAD 2.0: Scaling Representation Distillation for Universal Audio Understanding",
+      "abstract_en": "Audio encoders are critical to modern audio applications as large language models (LLMs) increasingly rely on a single encoder for diverse inputs. While self-supervised learning (SSL) has yielded strong domain-specific encoders like speech or music experts, multi-domain approaches like USAD and SPEAR remain limited in coverage and evaluation. Recent studies also suggest supervised encoders align better with audio LLMs. We present USAD 2.0, a universal encoder integrating knowledge from both SSL and supervised foundation models. USAD 2.0 introduces domain-aware distillation to address teacher mismatch, extends coverage to the music domain, and adds second-stage supervised distillation for downstream use. We further scale the model to one billion parameters via depth scaling. Experiments show USAD 2.0 achieves strong or state-of-the-art performance across probing and LLM-based evaluations.",
+      "authors": [
+        "Heng-Jui Chang",
+        "Alexander H. Liu",
+        "Saurabhchand Bhati",
+        "Mrudula Athi",
+        "Anton Ratnarajah",
+        "Amit Chhetri",
+        "James Glass"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.06444v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-04T17:42:05Z",
+      "updated": "2026-06-04T17:42:05Z"
+    }
+  ]
+}
