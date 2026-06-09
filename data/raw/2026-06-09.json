@@ -1,0 +1,126 @@
+{
+  "window": {
+    "start": "2026-06-08T13:20:40.763280+08:00",
+    "end": "2026-06-09T12:56:38.799291+08:00"
+  },
+  "fetched_count": 8,
+  "deduplicated_count": 6,
+  "new_count": 6,
+  "papers": [
+    {
+      "arxiv_id": "2606.09535v1",
+      "title_en": "Overcoming Decoder Inconsistencies in Whisper for Dravidian and Low-Resource Languages",
+      "abstract_en": "Multilingual ASR models such as Whisper perform well on high-resource languages but exhibit substantially higher Word Error Rates (WER) for Dravidian languages compared to Indo-Aryan ones. Through linguistic and dataset analysis, we show that Dravidian languages have longer words, higher vocabulary diversity, and lower repetition, resulting in sparse token distributions and frequent character-level substitution errors. Baseline fine-tuning further reveals decoder imbalance between self-attention (linguistic context) and cross-attention (acoustic cues). Although synthetic token-repetition experiments indicate potential gains, they are impractical. Motivated by these observations, we introduce two decoder-level enhancements: Weighted-Attention, which adaptively balances attention sources, and Self-Conditioning, which reinjects intermediate predictions to improve token consistency. Experiments demonstrate consistent WER reductions for low-resource and agglutinative languages.",
+      "authors": [
+        "Chowdam Venkata Kumar",
+        "Kumud Tripathi",
+        "Pankaj Wasnik"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.09535v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-06-08T14:18:51Z",
+      "updated": "2026-06-08T14:18:51Z"
+    },
+    {
+      "arxiv_id": "2606.09557v1",
+      "title_en": "Your U-Net Dereverberation Model is Secretly an RIR Encoder",
+      "abstract_en": "In this work, we analyze the ability of NCSN++ U-Net based audio dereverberation models to capture global room characteristics in their intermediate representations. Through an empirical study of both a state-of-the-art diffusion-based model and a discriminative counterpart, we show that deeper layers encode structured room impulse response (RIR)-dependent embeddings. Moreover, the discriminative ability of this implicit room representation correlates with dereverberation performance across objective metrics. Motivated by this observation, we propose a training strategy that explicitly conditions the network on pre-trained RIR embeddings, obtained via self-supervised contrastive learning. Incorporating RIR conditioning improves representation quality, accelerates convergence, and enhances dereverberation performance, while significantly reducing the number of reverse diffusion steps required by the diffusion-based model during inference.",
+      "authors": [
+        "Sina Khanagha",
+        "Timo Gerkmann"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.09557v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-08T14:31:56Z",
+      "updated": "2026-06-08T14:31:56Z"
+    },
+    {
+      "arxiv_id": "2606.09667v1",
+      "title_en": "Cross-Modal Masking for Robust Silent Speech Synthesis Using sEMG and Lipreading",
+      "abstract_en": "Speech restoration through silent speech interfaces (SSIs) has emerged as a promising assistive technology for individuals with impaired or absent laryngeal voice production. Among non-invasive SSI modalities, surface electromyography (sEMG) and video-based lipreading provide complementary articulatory information, yet their integration for continuous speech synthesis remains underexplored. Moreover, existing multimodal approaches rarely address robustness to modality degradation or temporary sensor failure, limiting their applicability in realistic scenarios. In this work, we propose a masked multimodal speech synthesis framework that jointly leverages sEMG and lipreading signals through modality masking during training. Under multispeaker settings, the proposed approach reduces word error rate by up to 14 absolute percentage points compared to the strongest unimodal baseline. Experimental results not only show that masking strategies are critical for these performance gains and robustness under low-bitrate conditions, but also that they generalize better than degradation-specific data augmentations in the presence of modality absence conditions. Phone-level analyses further reveal complementary contributions across modalities, with particularly strong benefits for vowels and for specific consonant groups. Overall, these findings demonstrate the effectiveness and robustness of masked multimodal integration for silent speech synthesis, although adaptation to laryngectomized speakers remains an open research challenge.",
+      "authors": [
+        "Eder del Blanco",
+        "David Gimeno-Gómez",
+        "Eva Navas",
+        "Carlos-D. Martínez-Hinarejos",
+        "Inma Hernáez"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.09667v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-08T15:50:51Z",
+      "updated": "2026-06-08T15:50:51Z"
+    },
+    {
+      "arxiv_id": "2606.09677v1",
+      "title_en": "MeCo: One-Step MeanFlow-based Corrector for Multi-Channel Speech Separation",
+      "abstract_en": "While discriminative models for multi-channel speech separation excel in reference-based metrics, they often exhibit suboptimal human listening quality. To address this, we propose a novel MeanFlow-based one-step generative corrector (MeCo). MeCo learns a conditional average velocity field to map discriminative estimates directly onto the clean speech manifold in a single step. To maximize one-step generation performance, we introduce Data-Space Optimization (DSO). DSO integrates an $\\mathbf{x}_r$-loss, which penalizes prediction errors on longer displacement intervals to serve as a generative objective for human listening quality, with an Endpoint SI-SDR loss that directly optimizes terminal signal fidelity. Experiments demonstrate that MeCo achieves state-of-the-art (SOTA) performance with minimal computational overhead, simultaneously achieving superior signal fidelity and human listening quality in both in-domain and out-of-domain scenarios.",
+      "authors": [
+        "Dohwan Kim",
+        "Jung-Woo Choi"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.09677v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "eess.AS"
+      ],
+      "published": "2026-06-08T15:58:31Z",
+      "updated": "2026-06-08T15:58:31Z"
+    },
+    {
+      "arxiv_id": "2606.09717v1",
+      "title_en": "What Makes Synthetic Speech Sound Sarcastic? A Prosody-Controlled Perception Study",
+      "abstract_en": "Prosody plays a central role in sarcasm perception, yet previous studies have relied on naturally produced speech that lacks fine-grained control over individual acoustic dimensions. As prosodic cues co-vary in natural data, isolating their independent contributions remains challenging. We introduce a controlled framework using neural text-to-speech (TTS) with prompt-based prosodic conditioning to manipulate speech rate, pitch variation, and loudness. An orthogonal stimulus set was constructed to enable causal testing of prosodic cue effects. Human listeners rated sarcasm and naturalness, and their judgments were compared with predictions from a foundation model capable of processing audio input. Results show that loudness primarily drives human sarcasm perception, whereas the model assigns greater weight to speech rate, leading to distinct cue-weighting patterns. This study shows how controllable neural TTS enables investigation of prosodic cue weighting in speech perception.",
+      "authors": [
+        "Zhu Li",
+        "Shekhar Nayak",
+        "Matt Coler"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.09717v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-08T16:43:37Z",
+      "updated": "2026-06-08T16:43:37Z"
+    },
+    {
+      "arxiv_id": "2606.09780v1",
+      "title_en": "Quality-Diversity Search in Sound Generation: Investigating Innovation Engines for Audio Exploration",
+      "abstract_en": "This study addresses the challenges composers and sound designers face in creating and refining tools to achieve their musical goals. Using evolutionary processes to promote diversity and foster serendipitous discoveries, we automate the search through uncharted sonic spaces for sound discovery, arguing that diversity-promoting algorithms can bridge the gap between the theoretical realisation and practical accessibility of sounds. We describe a system for generative sound synthesis combining Quality Diversity (QD) algorithms with a supervised discriminative model, inspired by the Innovation Engine algorithm, and explore different configurations and the interplay between the chosen synthesis approach and the discriminative model. We examine the interaction between Compositional Pattern Producing Networks (CPPNs) and Digital Signal Processing (DSP) graphs, introducing a novel approach that uses multiple specialised CPPNs for different frequency ranges; this yields simpler networks while maintaining performance comparable to single-CPPN setups. We also investigate evolutionary stepping stones by analysing goal switches between musical and non-musical contexts, revealing how lineages traverse unlikely paths to current elites. Expanding the behaviour space of a previous study to include various sound durations, we uncover specialisation within temporal niches. Results indicate that CPPN and DSP graphs coupled with a Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) and a deep learning classifier can generate a substantial variety of synthetic sounds, diverse and innovative across temporal and contextual dimensions. We present the generated sound objects through an online explorer and as rendered sound files, and, in the context of music composition, an experimental application that showcases their creative potential across various durations and contexts.",
+      "authors": [
+        "Björn Þór Jónsson",
+        "Çağrı Erdem",
+        "Stefano Fasciani",
+        "Kyrre Glette"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.09780v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.NE",
+        "cs.SD"
+      ],
+      "published": "2026-06-08T17:40:09Z",
+      "updated": "2026-06-08T17:40:09Z"
+    }
+  ]
+}
