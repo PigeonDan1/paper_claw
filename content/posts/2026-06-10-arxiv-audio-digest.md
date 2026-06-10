@@ -1,0 +1,199 @@
+<div align="center">
+
+# 📰 Paper Claw
+
+**2026-06-10**
+
+</div>
+
+---
+
+## 📊 今日速览
+
+| 指标 | 数值 |
+|:---|:---|
+| ⏰ 时间窗口 | 2026-06-09 12:56:38 CST → 2026-06-10 13:07:54 CST |
+| 📄 论文总数 | **9** 篇 |
+
+### 分类统计
+
+- **Speech LLM**: 1 篇
+- **ASR**: 1 篇
+- **TTS**: 0 篇
+- **Enhancement**: 0 篇
+- **SLU**: 0 篇
+- **Paralinguistics**: 0 篇
+- **Audio**: 7 篇
+
+> 💡 今日共收录 9 篇新论文，主要分布在 Speech LLM 1, ASR 1, Audio 7。
+> 📈 整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。
+
+---
+
+## 🏷️ Speech LLM
+
+### 1. Multi-Faceted Interactivity Alignment in Full-Duplex Speech Models
+
+👤 **作者**: Atsumoto Ohashi, Neil Zeghidour, Alexandre Défossez, Eugene Kharitonov
+🔗 **来源**: [https://arxiv.org/abs/2606.11167v1](https://arxiv.org/abs/2606.11167v1)
+
+**摘要**
+> Full-duplex spoken dialogue models can listen and speak simultaneously, making them a promising architecture for natural conversation. However, current models are trained solely with supervised learning through token-level likelihood maximization, which does not directly optimize interaction-level behaviors, causing interactivity issues such as excessive silence and ill-timed turn-taking. Recent work has applied reinforcement learning (RL) to improve interactivity, but existing methods address only a limited set of interactive behaviors in their rewards. In this work, we propose a post-training alignment method that comprehensively improves the interactivity of full-duplex spoken dialogue models through RL. We address the four canonical axes of interactivity: pause handling, turn-taking, backchanneling, and user interruption. For each axis, we extract short audio segments from human conversation corpora and optimize the model with axis-specific reward functions. An extra LLM-based reward for response quality prevents semantic degradation. We apply our method to two open-source models, Moshi and PersonaPlex, demonstrating consistent improvements in interactivity on both offline evaluation with pre-recorded audio and real-time multi-turn dialogue evaluation.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音大模型」方向，核心任务由题目《Multi-Faceted Interactivity Alignment in Full-Duplex Speech Models》所界定。 从摘要看，作者主要围绕 spoken dialogue 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Recent work has applied reinforcement learning (RL) to improve interactivity, but existing methods address only a limited set of interactive behaviors in their rewards. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：spoken dialogue。 |
+
+---
+## 🏷️ ASR
+
+### 1. Speech Encoder Fusion for LLM-based Automatic Speech Recognition
+
+👤 **作者**: Jakob Poncelet, Hugo Van hamme
+🔗 **来源**: [https://arxiv.org/abs/2606.10853v1](https://arxiv.org/abs/2606.10853v1)
+
+**摘要**
+> Speech-aware large language models (LLMs) can incorporate speech through pre-trained acoustic encoders that project speech features into the LLM embedding space. While the choice of the speech encoder critically influences performance, different encoders often exhibit complementary strengths, motivating their combination. In this work, we investigate whether fusing multiple pre-trained speech encoders can enhance speech-aware LLMs for automatic speech recognition (ASR). We explore several fusion strategies beyond simple feature concatenation, including learned combinations and Transformer-based fusion architectures, and evaluate them across mono- and multilingual ASR settings as well as diarized speech recognition. Our results indicate that carefully fusing multiple parallel speech encoders improves downstream performance in all scenarios with limited computational overhead.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音识别」方向，核心任务由题目《Speech Encoder Fusion for LLM-based Automatic Speech Recognition》所界定。 从摘要看，作者主要围绕 automatic speech recognition 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Our results indicate that carefully fusing multiple parallel speech encoders improves downstream performance in all scenarios with limited computational overhead. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：automatic speech recognition。 |
+
+---
+## 🏷️ TTS
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Enhancement
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ SLU
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Paralinguistics
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Audio
+
+### 1. Towards Deep Contextual Reasoning from Broad Descriptions for ASR with Speech-LLM via Metadata-Driven Reasoning Chains
+
+👤 **作者**: Jakob Poncelet, Hugo Van hamme
+🔗 **来源**: [https://arxiv.org/abs/2606.10838v1](https://arxiv.org/abs/2606.10838v1)
+
+**摘要**
+> Speech recognition often fails on rare, domain-specific terms and context-related named entities. Existing contextualization techniques typically bias decoding with keywords or phrase lists, which does not scale well or exploit deeper knowledge. We propose a training method that teaches a speech-LLM to use broad descriptions (e.g. from videos) as weak semantic priors to perform contextual reasoning grounded in the audio. We build 400 hours of reasoning-augmented speech data by pairing erroneous hypotheses with video metadata and LLM-generated reasoning explanations that justify context-driven corrections. We finetune the speech-LLM to perform chain-of-thought reasoning: generate an initial transcript, then reason over the context, and finally return a corrected transcript. On held-out YouTube-derived test sets, our approach reduces errors, with specific improvements on rare words and named entities, and lays groundwork for deeper contextual reasoning in speech recognition.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Towards Deep Contextual Reasoning from Broad Descriptions for ASR with Speech-LLM via Metadata-Driven Reasoning Chains》所界定。 从摘要看，作者主要围绕 towards、deep、contextual 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：On held-out YouTube-derived test sets, our approach reduces errors, with specific improvements on rare words and named entities, and lays groundwork for deeper contextual reasoning in speech recognition. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：towards, deep, contextual。 |
+
+---
+### 2. Phoneme-First Prediction for LLM-Based Speech Recognition
+
+👤 **作者**: Jakob Poncelet, Hugo Van hamme
+🔗 **来源**: [https://arxiv.org/abs/2606.10864v1](https://arxiv.org/abs/2606.10864v1)
+
+**摘要**
+> Recent research has explored integrating Large Language Models (LLMs) with speech encoders to create speech-augmented LLMs capable of contextualized speech recognition. The main challenge lies in aligning the semantic embeddings of LLMs with the acoustic representations of speech encoders. We propose a novel approach that teaches the LLM to first predict phonemes from the speech features before generating the final transcript. By integrating a phoneme prediction step directly into the LLM, the model develops a fine-grained knowledge of pronunciation, reducing acoustic confusion and improving transcription accuracy and explainability. Our method is cheap and simple, as phoneme targets can be automatically derived from existing transcripts. Through comprehensive experiments, we show that intermediate phoneme prediction can improve speech recognition, particularly in low-resource settings, and yields outputs that are acoustically more faithful to the speech.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Phoneme-First Prediction for LLM-Based Speech Recognition》所界定。 从摘要看，作者主要围绕 phoneme-first、prediction、llm-based 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：By integrating a phoneme prediction step directly into the LLM, the model develops a fine-grained knowledge of pronunciation, reducing acoustic confusion and improving transcription accuracy and explainability. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：phoneme-first, prediction, llm-based。 |
+
+---
+### 3. RAT: Reference-Augmented Training for ASV Anti-Spoofing
+
+👤 **作者**: Vojtěch Staněk, Anton Firc, Jakub Reš, Kamil Malinka
+🔗 **来源**: [https://arxiv.org/abs/2606.10908v1](https://arxiv.org/abs/2606.10908v1)
+
+**摘要**
+> We introduce a spoofing countermeasure architecture conditioned on speaker-reference recordings, but observe that it converges to a solution that effectively ignores the reference during inference. Surprisingly, training with a reference channel induces invariance that improves deepfake detection, even when the reference is absent or mismatched during inference. Based on this observation, we propose a Reference-Augmented Training (RAT) strategy. RAT yields improved detection performance compared to single-utterance baselines, even when the reference recording is replaced with a zero vector at inference. Through rigorous analysis, we demonstrate that the optimization process rapidly diminishes the reference contributions, leading to inference largely independent of the reference channel. Using RAT, we achieve state-of-the-art 2.57% EER and 0.074 minDCF on the ASVspoof 5 benchmark with a single detector, surpassing even large ensemble systems.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《RAT: Reference-Augmented Training for ASV Anti-Spoofing》所界定。 从摘要看，作者主要围绕 reference-augmented、training、anti-spoofing 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Surprisingly, training with a reference channel induces invariance that improves deepfake detection, even when the reference is absent or mismatched during inference. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：reference-augmented, training, anti-spoofing。 |
+
+---
+### 4. Ethical and Technical Limits of Deepfake Speech Datasets
+
+👤 **作者**: Vojtěch Staněk, Eva Trnovská, Kamil Malinka, Anton Firc
+🔗 **来源**: [https://arxiv.org/abs/2606.10911v1](https://arxiv.org/abs/2606.10911v1)
+
+**摘要**
+> Claims about the robustness and fairness of deepfake speech detectors are only as credible as the datasets used to train and evaluate those systems. We present a dataset-level audit of the deepfake speech landscape. We compile and analyze 39 deepfake speech datasets, examining key attributes including accessibility, documentation, demographic and language coverage, dataset scale, and the underlying bona fide speech sources. Our audit reveals two important takeaways. Firstly, fairness assessment is largely infeasible because most datasets lack demographic metadata, and only a few contain gender or language labels. This prevents any meaningful subgroup analysis and leaves other demographic attributes unaddressed. Secondly, we identify substantial overlap in underlying bona fide source corpora across datasets, which can undermine cross-dataset evaluation and lead to overstated generalization claims.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Ethical and Technical Limits of Deepfake Speech Datasets》所界定。 从摘要看，作者主要围绕 ethical、technical、limits 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We present a dataset-level audit of the deepfake speech landscape. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：ethical, technical, limits。 |
+
+---
+### 5. What Do Deepfake Speech Detectors Actually Hear?
+
+👤 **作者**: Vojtěch Staněk, Veronika Jirmusová, Anton Firc, Kamil Malinka, Jakub Reš, Martin Perešíni
+🔗 **来源**: [https://arxiv.org/abs/2606.10912v1](https://arxiv.org/abs/2606.10912v1)
+
+**摘要**
+> Deepfake speech detectors often output a single score without explaining why an audio sample is flagged, where in the signal the evidence lies, or what cues drive the decision. We propose an audio-native explainability pipeline using Integrated Gradients on time-aligned self-supervised representations to localize decision evidence over time. We apply the proposed method to three WavLM-based detectors (AASIST, CA-MHFA, SLS) on ASVspoof 5 and manually annotate the highest-attribution regions to provide a semantic meaning of the most important cues. Despite similar performance, the detectors rely on different cues: AASIST emphasizes non-speech/environment cues, CA-MHFA focuses on localized phoneme artifacts, and SLS relies on word boundaries and spectral integrity. We move beyond speculative reasoning and validate our findings by causal masking of the primary detector cues. Observed performance degradation further supports the explained detector semantics.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《What Do Deepfake Speech Detectors Actually Hear?》所界定。 从摘要看，作者主要围绕 what、deepfake、speech 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We propose an audio-native explainability pipeline using Integrated Gradients on time-aligned self-supervised representations to localize decision evidence over time. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：what, deepfake, speech。 |
+
+---
+### 6. Optimizing 2D Input Representations and Sub-phase Fusion Strategies for Differential Diagnosis of Asthma and COPD Using CNN- and GRU-Based Networks
+
+👤 **作者**: Ipek Sen, Ozgur Ozdemir, Elena Battini Sonmez
+🔗 **来源**: [https://arxiv.org/abs/2606.10972v1](https://arxiv.org/abs/2606.10972v1)
+
+**摘要**
+> This study aims to explore the performance of the VAR model in comparison with mel-frequency cepstral coefficient (MFCC) matrices and log-mel spectrograms using deep learning. In pulmonary sound classification, spectrogram-based representations suffer from inconsistent temporal dimensions due to varying respiratory cycle durations. Along with traditional trimming/zero-padding, adaptive-length windowing was presented to fix their temporal dimensions. Their spectral and temporal dimensions were optimized by testing a range of parameters. Different convolutional neural network (CNN) architectures were employed to extract features from the two-dimensional representations obtained over the sub-phases. The extracted sub-phase features were then fused using various strategies including direct concatenation, gated recurrent unit (GRU) network and GRU with attention mechanism. Model performances were assessed through respiratory cycle-based evaluation and subject-based evaluation comprising multiple respiratory cycles. Several data augmentation techniques were also studied to cope with limitations in data size. The best cycle-based F1-score (0.877) was obtained using the MFCC matrices with thirteen coefficients and 64-point time resolution per sub-phase representation followed by direct feature concatenation, and the best subject-based F1-score (0.855) was obtained using the MFCC matrices with thirteen coefficients and 256-point time resolution per full-cycle representation, both obtained by adaptive-length windowing. Augmentation degraded the performance of models overall, yet mixup augmentation was the best among the methods tested. MFCC outperformed log-mel spectrogram and VAR model in differentiation of asthma and COPD. Sophisticated fusion strategies did not improve the diagnosis. Augmentation did not contribute, demonstrating the significance of authentic data in pulmonary sound studies.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Optimizing 2D Input Representations and Sub-phase Fusion Strategies for Differential Diagnosis of Asthma and COPD Using CNN- and GRU-Based Networks》所界定。 从摘要看，作者主要围绕 optimizing、input、representations 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：MFCC outperformed log-mel spectrogram and VAR model in differentiation of asthma and COPD. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：optimizing, input, representations。 |
+
+---
+### 7. Data-Driven Runway and Taxiway Exits Prediction of Landing Aircraft: A Case Study at Hartsfield-Jackson Atlanta International Airport
+
+👤 **作者**: Alex Porcayo, Yutian Pang, Maria Thomas, John-Paul Clarke
+🔗 **来源**: [https://arxiv.org/abs/2606.11017v1](https://arxiv.org/abs/2606.11017v1)
+
+**摘要**
+> Airport surface operations increasingly constrain performance at high-throughput hubs. This study examines arrival taxi-in decisions at Hartsfield-Jackson Atlanta International Airport (KATL) and proposes a two-stage, data-driven decision aid that mirrors controller workflow. Stage I predicts the runway exit selected by an arriving aircraft. Stage II predicts whether, given that exit, the aircraft will cross the active departure runway at a designated point or use the end-around taxiway. Models are trained using ASDE-X surface trajectories, aircraft characteristics, ramp destinations, short-horizon traffic rates, and weather across multiple look-back windows. We benchmark nine classifiers, including Random Forest, XGBoost, LightGBM, and CatBoost, and evaluate accuracy, macro-F1, precision-recall behavior, confusion matrices, Brier score, and Expected Calibration Error. Across east and west flows, XGBoost and LightGBM outperform Random Forest. Stage I achieves 0.86-0.89 accuracy with macro-F1 scores of 0.40-0.50, while Stage II achieves 0.70-0.74 accuracy with macro-F1 scores of 0.28-0.55. Feature-importance analysis shows that approach speed is the main driver of exit choice. Departure rate, crossing rate, ramp destination, and, for west flow, the selected exit are the strongest predictors of crossing versus end-around routing. Minority classes remain harder to predict because of feature-space overlap, as shown by t-SNE and UMAP analyses. The proposed framework supports controller situational awareness through calibrated, explainable predictions while preserving human responsibility for final routing decisions.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Data-Driven Runway and Taxiway Exits Prediction of Landing Aircraft: A Case Study at Hartsfield-Jackson Atlanta International Airport》所界定。 从摘要看，作者主要围绕 data-driven、runway、taxiway 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Across east and west flows, XGBoost and LightGBM outperform Random Forest. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：data-driven, runway, taxiway。 |
+
+---
+
+<div align="center">
+
+*Generated by [Paper Claw](https://github.com/yourusername/paper_claw)*
+
+</div>
