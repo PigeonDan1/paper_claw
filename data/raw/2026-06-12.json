@@ -1,0 +1,112 @@
+{
+  "window": {
+    "start": "2026-06-11T13:16:46.600214+08:00",
+    "end": "2026-06-12T13:22:49.515484+08:00"
+  },
+  "fetched_count": 6,
+  "deduplicated_count": 5,
+  "new_count": 5,
+  "papers": [
+    {
+      "arxiv_id": "2606.13450v1",
+      "title_en": "Endpoint Anticipation for Low-Latency Spoken Dialogue",
+      "abstract_en": "While low-latency interaction is critical for spoken dialogue, cascaded architectures are often bottlenecked by reactive turn-completion detection. We propose Endpoint Anticipation, shifting from reactive detection to proactive forecasting of end-of-turn signals. Our speech-based model anticipates endpoints upto 2.56 seconds in advance, enabling speculative execution of LLM and TTS pipelines on partial context. We introduce metrics to quantify the trade-off between realized latency reduction and computational redundancy. Evaluation across conversational and task-oriented datasets shows our model consistently outperforms competitive VAP-based baselines. Integration with the Unmute framework demonstrates a 505 ms average latency reduction with a 28.4% increase in speculative computation, effectively masking sequential bottlenecks to enable complex reasoning in real-time speech-to-speech interaction.",
+      "authors": [
+        "Sathvik Udupa",
+        "Shinji Watanabe",
+        "Petr Schwarz",
+        "Jan Cernocky"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.13450v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-11T15:09:45Z",
+      "updated": "2026-06-11T15:09:45Z"
+    },
+    {
+      "arxiv_id": "2606.13480v1",
+      "title_en": "A beam--membrane biomechanical vocal fold model incorporating posturing and glottal conformation",
+      "abstract_en": "The posture of the vocal folds produced by laryngeal muscle activation plays a central role in determining the dynamics of voice production. Abnormal vocal fold configurations are frequently associated with inefficient phonation and a variety of voice disorders. Although diverse glottal closure patterns have been observed clinically, the biomechanical mechanisms governing their dynamic behavior and resulting phonatory characteristics remain incompletely understood. Moreover, existing numerical models that incorporate the effects of the intrinsic musculature on posturing and glottal conformation are computationally expensive, which limits their suitability for large-scale parametric investigations. In this work, we introduce a computationally inexpensive vocal fold (VF) model wherein the body and cover VF layers are treated as a composite beam and a coupled membrane, respectively. Intrinsic laryngeal muscle activation, in addition to positioning the arytenoid cartilages and cricothyroid joint, introduces moments at the boundaries of the structure that influence glottal conformation. The model produces phonatory characteristics that are qualitatively consistent with those reported in high-fidelity finite-element models and clinical studies, thereby supporting its predictive capability while offering substantial computational advantage. The proposed framework provides biomechanical insights into the influence of incomplete glottal closure on phonation dynamics and may serve as a computationally tractable tool for investigating mechanisms underlying certain voice disorders.",
+      "authors": [
+        "Mohamed A. Serry",
+        "Matías Zañartu",
+        "Sean D. Peterson"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.13480v1",
+      "primary_category": "physics.med-ph",
+      "source_categories": [
+        "eess.AS",
+        "physics.bio-ph",
+        "physics.comp-ph",
+        "physics.flu-dyn",
+        "physics.med-ph"
+      ],
+      "published": "2026-06-11T15:31:13Z",
+      "updated": "2026-06-11T15:31:13Z"
+    },
+    {
+      "arxiv_id": "2606.13544v1",
+      "title_en": "Adaptive Turn-Taking for Real-time Multi-Party Voice Agents",
+      "abstract_en": "Turn-taking in multi-party spoken conversations remains a fundamental challenge for voice-based agents, particularly under dynamic floor competition and varying user expectations. We propose ModeratorLM, a role-playing voice agent that conditions turn-taking behavior on an explicitly assigned role in multi-party settings. The system is built on a speech large language model operating in chunk-wise streaming manner. We further introduce a reasoning-augmented variant that incorporates chain-of-thought reasoning over conversational context and the assigned role. We construct RolePlayConv, a large-scale synthetic dataset of spoken multi-party conversations with diverse assistant roles. Experiments on real-world meeting data and RolePlayConv show improved turn-taking precision by over 40% and recall by more than 70%, while substantially reducing false-positive interruptions compared to non-role-conditioned baselines.",
+      "authors": [
+        "Soumyajit Mitra",
+        "Prabhat Pandey",
+        "Abhinav Jain",
+        "Shanmukha Sahith",
+        "K V Vijay Girish"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.13544v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-06-11T16:27:45Z",
+      "updated": "2026-06-11T16:27:45Z"
+    },
+    {
+      "arxiv_id": "2606.13626v1",
+      "title_en": "Generative Modeling of Bach-Style Symbolic Music: A Comparative Study of Autoregressive, Latent-Variable, and Adversarial Approaches",
+      "abstract_en": "We study generative modeling of Bach-style symbolic piano music using a shared MIDI corpus and three model families: autoregressive LSTMs with attention, latent-variable models including recurrent VAEs and vector-quantized VAEs, and generative adversarial networks. We compare their ability to model polyphonic note sequences, learn useful latent representations, and generate stylistically coherent compositions. Our experiments show that the autoregressive LSTM with attention produces the most musically coherent samples, while vector quantization helps mitigate posterior collapse and yields more structured outputs than conventional recurrent VAEs. The adversarial approach captures local pitch patterns but remains difficult to train and generalizes less reliably to Bach's style. These results highlight the relative strengths and failure modes of autoregressive, latent-variable, and adversarial approaches for symbolic music generation.",
+      "authors": [
+        "Kyuil Lee",
+        "Dezhi Yu",
+        "Yongkang Huang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.13626v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-06-11T17:39:55Z",
+      "updated": "2026-06-11T17:39:55Z"
+    },
+    {
+      "arxiv_id": "2606.13640v1",
+      "title_en": "The Moving Drone: Negotiating Agency Between the Voice and the Virtual",
+      "abstract_en": "Melodic material in Hindustani music is presented in relation to a tonic, usually sustained by the tanpura, a four-stringed drone instrument. Rooted in Hindustani music, 'The Moving Drone' sets the traditionally static drone into motion that, throughout the performance, gains increasing agency transitioning from reactive to more proactive roles. The work employs four independent loopers in Max/MSP to function as 'virtual' drones. They are populated cyclically in real-time as the vocalist improvises, creating an organic and evolving feedback loop between the voice and the virtual drone. This relationship further evolves melodically by pitch shifting the loops, which introduces a dimension of sudden, explicit movement. Then it changes timbrally, via the integration of GaMaDHaNi, a singer conditioned pitch-to-voice generative AI model to resynthesize looped audio. While current music AI approaches prioritize high-fidelity and realism of generated content which has sparked anxiety over job replacement for the music community, this work intentionally utilizes low-fidelity generative outputs, further necessitating human interpretation and situational context in order to be complete. 'The Moving Drone' positions technology and generative AI within established socio-cultural musical practices, proposing a virtual drone as an active, responsive, and co-creative musical agent.",
+      "authors": [
+        "Nithya Shikarpur",
+        "Victor Arul",
+        "Anna Huang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.13640v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-06-11T17:47:01Z",
+      "updated": "2026-06-11T17:47:01Z"
+    }
+  ]
+}
