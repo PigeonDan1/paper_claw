@@ -1,0 +1,76 @@
+{
+  "window": {
+    "start": "2026-06-15T14:11:41.634149+08:00",
+    "end": "2026-06-16T14:19:18.590414+08:00"
+  },
+  "fetched_count": 5,
+  "deduplicated_count": 3,
+  "new_count": 3,
+  "papers": [
+    {
+      "arxiv_id": "2606.16837v1",
+      "title_en": "Robust Spoofed Speech Detection via Temporal Pyramid Modeling",
+      "abstract_en": "Spoofed speech detection is increasingly challenged by realistic synthesis, voice conversion, and replay attacks, with cross-dataset generalization remaining a major limitation. This work we propose a Temporal Pyramid Adapter that utilize parallel temporal convolutions with varying receptive fields to capture multi-scale spoofing cues, ranging from local artifacts to global prosodic irregularities. We also integrated self-supervised XLS-R representations combined with front-end adapters, including Mel, Sinc, and a Temporal Pyramid design for multi-scale temporal modeling. The proposed model is evaluated cross multiple benchmark including ASVspoof 2017, ASVspoof 2021 (DF/LA), PartialSpoof, DiffSSD, and multilingual HQ-MPSD datasets. Experimental results demonstrate that Temporal Pyramid model obtained AUC of 99.24% and a EER of 3.87% on the PartialSpoof database, which is significantly outperforming the base model and several SOTA baseline such as LCNN-BLSTM (9.87% EER) and TRACE (8.08% EER). Additionally, multilingual evaluations confirm that while spoofing artifact are independent from language. While self-supervised representations improve robustness, performance degrades under domain and language shifts, highlighting the need for better adaptation and calibration strategies.",
+      "authors": [
+        "Mahtab Masoudi Nezhad",
+        "Nima Karimian"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.16837v1",
+      "primary_category": "cs.CV",
+      "source_categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.SD"
+      ],
+      "published": "2026-06-15T15:16:10Z",
+      "updated": "2026-06-15T15:16:10Z"
+    },
+    {
+      "arxiv_id": "2606.16969v1",
+      "title_en": "Probing Low Frame Rate Degradation in Neural Audio Codecs",
+      "abstract_en": "Low frame rates in neural audio codecs are attractive for autoregressive speech synthesis, where the generation cost scales linearly with the sequence length. Recent work has demonstrated that codecs can operate at 12.5 Hz and below, but the mechanisms underlying low frame rate degradation remain insufficiently understood. We investigate these mechanisms through a controlled frame rate ablation. We reproduce a quality cliff at 6.25 Hz reported in previous works and evaluate candidate explanations: phonemic collisions and codebook saturation, neither of which shows evidence of a fundamental barrier. The cliff is instead caused by suboptimal training configuration: fixed clip duration during training yields too few tokens at low frame rates, starving the decoder of inter-token context. Once corrected, WER degrades smoothly with phonemic load down to 3.1 Hz and 1.6 Hz, suggesting the inference-time efficiency gains of low frame rate codecs are more accessible than previously assumed.",
+      "authors": [
+        "Alex Gichamba",
+        "Moise Busogi"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.16969v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-15T17:06:21Z",
+      "updated": "2026-06-15T17:06:21Z"
+    },
+    {
+      "arxiv_id": "2606.17006v1",
+      "title_en": "TuneJury: An Open Metric for Improving Music Generation Preference Alignment",
+      "abstract_en": "We introduce TuneJury, an open, instance-level pairwise reward model for text-to-music that predicts a music preference score from a text prompt and an audio clip. The released checkpoint is trained on publicly available human-preference labels covering arena-style (A vs. B) votes, metric-alignment preference pairs, crowdsourced pairwise comparisons, and expert aesthetic ratings. The predicted score margin between two clips is well calibrated on our held-out test split, supporting data filtering via a simple score threshold. TuneJury generalizes to both held-out test pairs and out-of-distribution benchmarks, remaining competitive with prior baselines on the latter. For generators released after training, we introduce anchor calibration, a post-hoc, per-system Bradley-Terry calibration that recovers agreement at substantially better data efficiency than from-scratch retraining. The same frozen reward drives consistent reward-axis gains across three downstream applications: inference-time best-of-N selection, DITTO-style latent optimization, and expert-iteration post-training. TuneJury is available at https://github.com/yonghyunk1m/TuneJury.",
+      "authors": [
+        "Yonghyun Kim",
+        "Junwon Lee",
+        "Haiwen Xia",
+        "Yinghao Ma",
+        "Junghyun Koo",
+        "Koichi Saito",
+        "Yuki Mitsufuji",
+        "Chris Donahue"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.17006v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MM",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-15T17:39:30Z",
+      "updated": "2026-06-15T17:39:30Z"
+    }
+  ]
+}
