@@ -1,0 +1,161 @@
+{
+  "window": {
+    "start": "2026-06-16T14:19:18.590414+08:00",
+    "end": "2026-06-17T13:54:42.570903+08:00"
+  },
+  "fetched_count": 8,
+  "deduplicated_count": 7,
+  "new_count": 7,
+  "papers": [
+    {
+      "arxiv_id": "2606.18019v1",
+      "title_en": "Reading between the Lines: Leveraging Large Language Models for Global Dementia and Depression Assessment from Clinical Interviews",
+      "abstract_en": "Dementia and depression are the most prevalent neuropsychiatric disorders in geriatric populations, and their overlapping symptoms pose major challenges for differential diagnosis. In this study, we investigate open-weights Large Language Models (LLMs) for predicting dementia and depression severity from speech samples collected during standardized history taking interviews with 154 German-speaking subjects. We introduce an observer-based Global Depression Scale (GDS-D) aligned with the established Global Deterioration Scale (GDS), enabling parallel global staging of affective and cognitive symptoms. We compare three LLMs (Mistral 3.1, DeepHermes, Qwen3) in two settings: (1) zero-shot prediction and (2) LLM-based feature extraction for Support Vector Regression, using human and pause-enriched transcripts. Results show that LLMs effectively predict depression severity in zero-shot settings (best MAE of 0.60), while dementia assessment benefits substantially from structured feature extraction (best MAE of 0.78), reducing errors by up to 35% over zero-shot baselines. Pause-enriched transcripts achieve competitive performance with human transcriptions, demonstrating the viability of fully automatic screening pipelines for differential neuropsychiatric assessment.",
+      "authors": [
+        "Franziska Braun",
+        "Alea Rüggeberg",
+        "Thomas Ranzenberger",
+        "Hartmut Lehfeld",
+        "Thomas Hillemacher",
+        "Tobias Bocklet",
+        "Korbinian Riedhammer"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.18019v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-16T15:01:30Z",
+      "updated": "2026-06-16T15:01:30Z"
+    },
+    {
+      "arxiv_id": "2606.18054v1",
+      "title_en": "AI-based Cognitive-linguistic Features for Dementia Assessment in Picture Description",
+      "abstract_en": "Picture descriptions provide valuable insights into several clinical constructs related to cognitive-linguistic abilities. However, operationalizing these constructs into quantitative measures remains challenging, limiting interpretability and clinical utility. We introduced seven constructs tailored to the Cookie Theft picture description task and prompted large language models (LLMs) to evaluate them, generating severity scores and example-based explanations. Among the examined LLMs, Claude 3.5 Sonnet performed the best, producing severity scores that significantly distinguish cognitively impaired individuals from healthy controls. The model achieves a high accuracy of 85% on the ADReSS dataset. Expert evaluation of Claude's scores and explanations yields a 3.99/5 average agreement. The findings demonstrate the potential of LLMs to operationalize clinical constructs and generate interpretable evaluations, offering a promising approach for accessible cognitive screening tools.",
+      "authors": [
+        "Lingfeng Xu",
+        "Prad Kadambi",
+        "Samuel Goldinger",
+        "Visar Berisha",
+        "Kimberly D. Mueller",
+        "Julie Liss"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.18054v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-16T15:32:03Z",
+      "updated": "2026-06-16T15:32:03Z"
+    },
+    {
+      "arxiv_id": "2606.18072v1",
+      "title_en": "One-Step Token-to-Waveform Generation with MeanFlow in Latent Space",
+      "abstract_en": "Neural audio codecs are central to modern LLM-based Text-to-Speech (TTS) and multimodal systems. As low-bitrate semantic codecs gain prominence, the Token-to-Waveform (Token2Wav) decoder becomes a bottleneck determining both perceptual quality and system efficiency. Conventional multi-step flow-matching decoders offer superior quality but suffer from high inference latency due to iterative sampling, creating a severe quality-speed trade-off. In this paper, we propose a novel Token2Wav architecture that overcomes this limitation by applying MeanFlow in a highly compressed latent space. By modeling the average velocity rather than the instantaneous velocity field, MeanFlow enables true one-step generation. Operating in the latent domain mitigates the memory and stability issues of waveform-level flows, yielding up to a 17$\\times$ improvement in Real-Time Factor (RTF) compared to multi-step baselines with negligible quality degradation. Furthermore, we introduce refinement strategies that mitigate latent mismatch, including decoder-only fine-tuning with the MeanFlow generator frozen and end-to-end joint fine-tuning, improving fidelity without increasing inference-time cost. Code and demo are publicly available.",
+      "authors": [
+        "Zheqi Dai",
+        "Guangyan Zhang",
+        "Zhen Ye",
+        "Jingyu Li",
+        "Haolin He",
+        "Chunyat Wu",
+        "Yiwen Guo",
+        "Qiuqiang Kong"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.18072v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-16T15:40:37Z",
+      "updated": "2026-06-16T15:40:37Z"
+    },
+    {
+      "arxiv_id": "2606.18094v1",
+      "title_en": "Next-Turn: Duration-Aware Streaming Endpoint Detection via Time-to-Next-Speech-Onset Prediction",
+      "abstract_en": "Endpoint detection (EPD) is essential for natural turn-taking in streaming speech systems. However, reliably determining the endpoint of an utterance is challenging because speakers often pause mid-utterance due to hesitations and disfluencies. Semantic EPD has emerged as a promising direction to address this issue but is hindered by ambiguous supervision and strict streaming constraints. We propose Next-Turn that uses the time-to-next-speech-onset as the training objective, where targets are derived directly from speech timestamps and require no additional annotation. Experiments show that the proposed method outperforms conventional acoustic and recent semantic EPD baselines, achieving a 25.9% absolute improvement in endpoint accuracy within 320 ms over the strongest baseline. In addition, joint training with the duration-aware objective complements standard binary EPD, with gains that increase monotonically with increasing pauses.",
+      "authors": [
+        "Tristan Tsoi",
+        "Jiajun Deng",
+        "Yingke Zhu",
+        "Huu Quyen Dang",
+        "Tianxiang Cao",
+        "Nikita Kuzmin",
+        "Tao Zhong",
+        "Simon Lui"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.18094v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-06-16T15:58:36Z",
+      "updated": "2026-06-16T15:58:36Z"
+    },
+    {
+      "arxiv_id": "2606.18122v1",
+      "title_en": "Embedded Machine Learning for Microcontroller-Class Edge Devices: Data, Feature, Evaluation, and Deployment Pipelines",
+      "abstract_en": "Embedded machine learning moves inference from cloud services to resource-constrained devices that must acquire data, preprocess signals, run a model, and act within tight limits on memory, energy, and latency. This paper presents a systems-oriented synthesis of an embedded machine-learning workflow for microcontroller-class platforms. The emphasis is placed on engineering decisions that are often hidden in generic machine-learning introductions: sampling and buffering, feature extraction as dimensionality reduction, validation under class imbalance, model/runtime co-design, and streaming deployment. Two representative signal families are used throughout the paper. The first is inertial motion recognition, where a two-second, three-axis accelerometer window is transformed from raw samples into root-mean-square and spectral features before classification. The second is keyword spotting, where audio is sampled, anti-aliased, transformed into mel-frequency cepstral coefficients, and processed by a compact one-dimensional convolutional network. The paper concludes with practical design rules for robust on-device inference, including data curation, quantization, thresholding, scheduling, and field monitoring.",
+      "authors": [
+        "Mostafa Darvishi"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.18122v1",
+      "primary_category": "cs.LG",
+      "source_categories": [
+        "cs.AI",
+        "cs.AR",
+        "cs.LG",
+        "eess.AS",
+        "eess.SP"
+      ],
+      "published": "2026-06-16T16:22:24Z",
+      "updated": "2026-06-16T16:22:24Z"
+    },
+    {
+      "arxiv_id": "2606.18134v1",
+      "title_en": "Grounding Spoken LLMs in Multi-Speaker Audio via Diarization Conditioning",
+      "abstract_en": "We propose diarization-conditioned spoken language models (SLMs), a strategy for extending SLMs to far-field multi-talker audio. Rather than adapting the decoder via Serialized Output Training, which risks catastrophic forgetting, we condition the acoustic encoder on diarization masks to extract target-speaker representations, keeping the decoder frozen. We instantiate this as Dixtral, integrating a Diarization Conditioned Whisper (DiCoW) encoder into the Voxtral SLM. On AMI, NOTSOFAR-1, LibriSpeechMix, and Mixer6, Dixtral outperforms Gemini 3.0 Flash, VibeVoice, and Voxtral Mini Transcribe V2 on speaker-attributed transcription by 29.0%, 19.8%, and 16.0% absolute cpWER respectively. On a novel long-form multi-speaker QA benchmark, zero-shot Dixtral matches Gemini on far-field content understanding, and when fine-tuned surpasses both Gemini and Voxtral operating on close-talk across all tasks.",
+      "authors": [
+        "Alexander Polok",
+        "Samuele Cornell",
+        "Sathvik Udupa",
+        "Jan Černocký",
+        "Shinji Watanabe",
+        "Lukáš Burget"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.18134v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-16T16:34:35Z",
+      "updated": "2026-06-16T16:34:35Z"
+    },
+    {
+      "arxiv_id": "2606.18135v1",
+      "title_en": "Descriptor: Certus Caliber Classification Gunshot Dataset (C3GD)",
+      "abstract_en": "In this work, we introduce the Certus Caliber Classification Gunshot Dataset (C3GD), a publicly accessible data set developed for the analysis of firearm muzzle blast sounds. The dataset aims to provide a wide variety of firearms, calibers, cartridges, microphones, and microphone locations with metadata detailed beyond what is currently otherwise available. It comprises more than 8000 field-collected data points from 28 firearms across 16 calibers. Because data collection in the field is costly, much of the existing research has been done using gunshot audio collected from the internet, which increases the risk of low-quality data and label noise. This dataset is primarily focused on caliber classification, but can also be used for gunshot detection, audio separation, and audio signal processing, providing a diversified and real-world reference. The dataset aims to provide enough diversity to be able to generalize to more real-world applications while also providing enough metadata for detailed academic analysis.",
+      "authors": [
+        "Sinclair Gurny",
+        "Ryan Quinn"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.18135v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-06-16T16:35:41Z",
+      "updated": "2026-06-16T16:35:41Z"
+    }
+  ]
+}
