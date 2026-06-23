@@ -1,0 +1,29 @@
+{
+  "window": {
+    "start": "2026-06-22T14:15:37.272838+08:00",
+    "end": "2026-06-23T12:52:10.445751+08:00"
+  },
+  "fetched_count": 1,
+  "deduplicated_count": 1,
+  "new_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2606.23665v1",
+      "title_en": "PHAST-Net: Attention-Guided, Physics-Informed Network for Unified Estimation of Ideal Time-Frequency Representations",
+      "abstract_en": "We introduce PHAST-Net, an attention-guided, physics-informed network for unified estimation of Ideal Time-Frequency Representations (ITFRs), spanning spectral, tempo-based, metrical, and harmonic representations such as Spectrograms, Tempograms, and Metrograms. PHAST-Net learns an application-general mapping from a constellation of wavelet transforms, the proposed Continuous Log-frequency Adaptive Wavelet Transform (CLAWT), to high-resolution, cross-term-suppressed time-frequency (T-F) representations. The proposed constellation of CLAWTs is selected through Cohen's class kernel analysis to maximise curvature coverage in a logarithmic-frequency T-F plane tailored to harmonic signal structure. PHAST-Net further incorporates a proposed physics-informed auxiliary reprojection loss designed to reconstruct the idealised observed CLAWT constellation from the predicted ITFR and the corresponding Cohen's class kernels during training. This auxiliary objective promotes transform consistency and energy conservation, mitigates pathological target sparsity, and enhances optimisation stability. Attention layers further promote effective cross-term suppression across the input constellation. The log-frequency formulation also enables Harmonic PHAST-Net, which estimates a Harmonic ITFR that isolates fundamental structure, supporting robust fundamental-only representations for speech and music, such as derived fundamental Tempograms and Metrograms. We further introduce Spline-PHAST-Net, which parameterises detected and associated T-F ridges as continuous spline trajectories, enabling arbitrary-grid re-rendering and signal reconstruction. Trained on an effectively unbounded procedurally generated dataset, PHAST-Net demonstrates improved accuracy over established approaches, providing a unified framework for high-resolution, cross-term-robust analysis of speech, music, and broader nonstationary signals.",
+      "authors": [
+        "James M. Cozens",
+        "Simon J. Godsill"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.23665v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.CV",
+        "eess.AS"
+      ],
+      "published": "2026-06-22T17:49:00Z",
+      "updated": "2026-06-22T17:49:00Z"
+    }
+  ]
+}

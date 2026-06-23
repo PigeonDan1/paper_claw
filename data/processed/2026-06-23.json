@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-06-23T12:52:13.020891+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-06-22T14:15:37.272838+08:00",
+    "end": "2026-06-23T12:52:10.445751+08:00",
+    "start_display": "2026-06-22 14:15:37 CST",
+    "end_display": "2026-06-23 12:52:10 CST"
+  },
+  "summary": {
+    "total": 1,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 0,
+      "TTS": 0,
+      "Enhancement": 0,
+      "SLU": 0,
+      "Paralinguistics": 0,
+      "Audio": 1
+    },
+    "headline": "今日共收录 1 篇新论文，主要分布在 Audio 1。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-06-23-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2606.23665v1",
+      "title_en": "PHAST-Net: Attention-Guided, Physics-Informed Network for Unified Estimation of Ideal Time-Frequency Representations",
+      "abstract_en": "We introduce PHAST-Net, an attention-guided, physics-informed network for unified estimation of Ideal Time-Frequency Representations (ITFRs), spanning spectral, tempo-based, metrical, and harmonic representations such as Spectrograms, Tempograms, and Metrograms. PHAST-Net learns an application-general mapping from a constellation of wavelet transforms, the proposed Continuous Log-frequency Adaptive Wavelet Transform (CLAWT), to high-resolution, cross-term-suppressed time-frequency (T-F) representations. The proposed constellation of CLAWTs is selected through Cohen's class kernel analysis to maximise curvature coverage in a logarithmic-frequency T-F plane tailored to harmonic signal structure. PHAST-Net further incorporates a proposed physics-informed auxiliary reprojection loss designed to reconstruct the idealised observed CLAWT constellation from the predicted ITFR and the corresponding Cohen's class kernels during training. This auxiliary objective promotes transform consistency and energy conservation, mitigates pathological target sparsity, and enhances optimisation stability. Attention layers further promote effective cross-term suppression across the input constellation. The log-frequency formulation also enables Harmonic PHAST-Net, which estimates a Harmonic ITFR that isolates fundamental structure, supporting robust fundamental-only representations for speech and music, such as derived fundamental Tempograms and Metrograms. We further introduce Spline-PHAST-Net, which parameterises detected and associated T-F ridges as continuous spline trajectories, enabling arbitrary-grid re-rendering and signal reconstruction. Trained on an effectively unbounded procedurally generated dataset, PHAST-Net demonstrates improved accuracy over established approaches, providing a unified framework for high-resolution, cross-term-robust analysis of speech, music, and broader nonstationary signals.",
+      "authors": [
+        "James M. Cozens",
+        "Simon J. Godsill"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.23665v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.CV",
+        "eess.AS"
+      ],
+      "published": "2026-06-22T17:49:00Z",
+      "updated": "2026-06-22T17:49:00Z",
+      "keywords_en": [
+        "phast-net",
+        "attention-guided",
+        "physics-informed",
+        "network",
+        "unified",
+        "estimation"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《PHAST-Net: Attention-Guided, Physics-Informed Network for Unified Estimation of Ideal Time-Frequency Representations》所界定。 从摘要看，作者主要围绕 phast-net、attention-guided、physics-informed 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Trained on an effectively unbounded procedurally generated dataset, PHAST-Net demonstrates improved accuracy over established approaches, providing a unified framework for high-resolution, cross-term-robust analysis of speech, music, and broader nonstationary signals. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：phast-net, attention-guided, physics-informed。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [],
+    "TTS": [],
+    "Enhancement": [],
+    "SLU": [],
+    "Paralinguistics": [],
+    "Audio": [
+      {
+        "arxiv_id": "2606.23665v1",
+        "title_en": "PHAST-Net: Attention-Guided, Physics-Informed Network for Unified Estimation of Ideal Time-Frequency Representations",
+        "abstract_en": "We introduce PHAST-Net, an attention-guided, physics-informed network for unified estimation of Ideal Time-Frequency Representations (ITFRs), spanning spectral, tempo-based, metrical, and harmonic representations such as Spectrograms, Tempograms, and Metrograms. PHAST-Net learns an application-general mapping from a constellation of wavelet transforms, the proposed Continuous Log-frequency Adaptive Wavelet Transform (CLAWT), to high-resolution, cross-term-suppressed time-frequency (T-F) representations. The proposed constellation of CLAWTs is selected through Cohen's class kernel analysis to maximise curvature coverage in a logarithmic-frequency T-F plane tailored to harmonic signal structure. PHAST-Net further incorporates a proposed physics-informed auxiliary reprojection loss designed to reconstruct the idealised observed CLAWT constellation from the predicted ITFR and the corresponding Cohen's class kernels during training. This auxiliary objective promotes transform consistency and energy conservation, mitigates pathological target sparsity, and enhances optimisation stability. Attention layers further promote effective cross-term suppression across the input constellation. The log-frequency formulation also enables Harmonic PHAST-Net, which estimates a Harmonic ITFR that isolates fundamental structure, supporting robust fundamental-only representations for speech and music, such as derived fundamental Tempograms and Metrograms. We further introduce Spline-PHAST-Net, which parameterises detected and associated T-F ridges as continuous spline trajectories, enabling arbitrary-grid re-rendering and signal reconstruction. Trained on an effectively unbounded procedurally generated dataset, PHAST-Net demonstrates improved accuracy over established approaches, providing a unified framework for high-resolution, cross-term-robust analysis of speech, music, and broader nonstationary signals.",
+        "authors": [
+          "James M. Cozens",
+          "Simon J. Godsill"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.23665v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "cs.CV",
+          "eess.AS"
+        ],
+        "published": "2026-06-22T17:49:00Z",
+        "updated": "2026-06-22T17:49:00Z",
+        "keywords_en": [
+          "phast-net",
+          "attention-guided",
+          "physics-informed",
+          "network",
+          "unified",
+          "estimation"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《PHAST-Net: Attention-Guided, Physics-Informed Network for Unified Estimation of Ideal Time-Frequency Representations》所界定。 从摘要看，作者主要围绕 phast-net、attention-guided、physics-informed 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Trained on an effectively unbounded procedurally generated dataset, PHAST-Net demonstrates improved accuracy over established approaches, providing a unified framework for high-resolution, cross-term-robust analysis of speech, music, and broader nonstationary signals. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：phast-net, attention-guided, physics-informed。"
+        }
+      }
+    ]
+  },
+  "model_name": "deepseek-v3"
+}
