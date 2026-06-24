@@ -1,0 +1,131 @@
+{
+  "window": {
+    "start": "2026-06-23T12:52:10.445751+08:00",
+    "end": "2026-06-24T12:55:56.518168+08:00"
+  },
+  "fetched_count": 9,
+  "deduplicated_count": 6,
+  "new_count": 6,
+  "papers": [
+    {
+      "arxiv_id": "2606.24528v1",
+      "title_en": "SphereVBx: Spherical Variational Bayes Clustering for Simplified EEND-VC Diarization",
+      "abstract_en": "We propose SphereVBx, a Bayesian clustering framework for hyperspherical embeddings based on Toroidal Probabilistic Spherical Discriminant Analysis (T-PSDA). The method follows the variational Bayesian formulation of VBx while replacing the Gaussian Probabilistic Linear Discriminant Analysis (PLDA) backend with T-PSDA, resulting in variational inference in a mixture of von Mises-Fisher distributions. We apply SphereVBx to speaker diarization and in particular to the end-to-end neural diarization with vector clustering (EEND-VC) framework. A parameter-free variant, denoted SphereVBx-PF, corresponds to a spherical similarity model closely related to cosine scoring and does not require pretrained backend parameters. Experiments on multiple diarization benchmarks show that SphereVBx improves clustering accuracy in cascaded diarization pipelines and achieves comparable or better performance in the EEND-VC framework while significantly simplifying its clustering stage.",
+      "authors": [
+        "Petr Pálka",
+        "Jiangyu Han",
+        "Prachi Singh",
+        "Marc Delcroix",
+        "Naohiro Tawara",
+        "Lukáš Burget"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24528v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-23T12:57:49Z",
+      "updated": "2026-06-23T12:57:49Z"
+    },
+    {
+      "arxiv_id": "2606.24648v1",
+      "title_en": "ParaPairAudioBench: Paralinguistic Pairwise Audio Benchmark for LALM-as-a-Judge",
+      "abstract_en": "Large Audio-Language Models (LALMs) have been widely used as judge models for the automatic evaluation of generated speech. However, prior approaches predominantly focus on holistic naturalness, leaving fine-grained paralinguistic distinctions underexplored. We introduce ParaPairAudioBench, a pairwise benchmark of 5,175 audio pairs across five paralinguistic dimensions: Style, Rate, Emphasis, Age, and Gender. Our experiments show that current LALM judges still lag behind human judgments by 32%p on average and exhibit severe calibration failures, particularly in Tie cases where the correct decision is to abstain. To further analyze lexical versus acoustic reliance, the benchmark includes both same-transcript and cross-transcript conditions. ParaPairAudioBench enables multi-dimensional, calibration-aware assessment of the reliability of LALM-as-a-Judge for paralinguistic speech evaluation.",
+      "authors": [
+        "Jisu Jeon",
+        "Seungyeon Jwa",
+        "Joosung Lee",
+        "Jinhyeon Kim",
+        "Woojin Chung",
+        "Hwiyeol Jo",
+        "Jeonghoon Kim",
+        "Jonghyun Choi",
+        "Soyoon Kim"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24648v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-23T14:43:43Z",
+      "updated": "2026-06-23T14:43:43Z"
+    },
+    {
+      "arxiv_id": "2606.24661v1",
+      "title_en": "Perceptual Evaluation of Higher-Order Ambisonic Codecs on Both Synthetic Mixing and Native Recordings",
+      "abstract_en": "Spatial audio is spreading in applications such as virtual and augmented reality and immersive games. The higher-order ambisonic (HOA) format is particularly useful in this context. Transmitting spatial information requires multiple channels, e.g., 16 channels for 3rd-order ambisonics, resulting in increased memory requirements for storage and higher bitrates for communication. Therefore, efficient compression algorithms are necessary for those contents. The recently standardized IVAS codec allows the coding of HOA content for communication use-cases. Here, we propose to evaluate it in comparison with a basic multi-mono approach across a variety of contents and spatialization methods. Results show that IVAS outperforms the multi-mono approach at the same bitrate. In particular, this codec exploits inter-channel correlation to reduce the bitrate. We point out that it is therefore especially robust for signals with a high interchannel correlation, such as those composed of a limited number of plane waves. Conversely, the multi-mono approach is unable to exploit this correlation and performs poorly on this type of signal.",
+      "authors": [
+        "Adrien Llave",
+        "Grégory Pallone",
+        "Jérôme Daniel"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24661v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-23T14:52:24Z",
+      "updated": "2026-06-23T14:52:24Z"
+    },
+    {
+      "arxiv_id": "2606.24714v1",
+      "title_en": "CN-NewsTTS Bench: a target-level automatic benchmark for raw-input Chinese news TTS pronunciation",
+      "abstract_en": "Chinese news text contains dense written forms such as scores, hyphenated model names, ranges, unit symbols, percentages, English abbreviations, and mixed Chinese-Latin-digit names. These forms are frequent in real listening workflows, and a text-to-speech (TTS) system can preserve the written string while changing the spoken meaning. We introduce CN-NewsTTS Bench v0.1, an open target-level benchmark for evaluating whether Chinese news TTS products pronounce such targets correctly from raw text, without user-side rules, LLM rewriting, SSML hints, or manual edits. The release contains a 200-record development set, an 800-record public test set, 992 public auto-evaluable targets, fixed transcripts from a three-ASR ensemble, an automatic target scorer, and initial results for seven product TTS systems. We additionally report ASR-route diagnostics, ASR-subset ablations, category-level results, confidence intervals, and provider configuration metadata. The best system reaches 0.879 strict accuracy, while several systems remain below 0.60.",
+      "authors": [
+        "Shijun Luo"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24714v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-23T15:34:58Z",
+      "updated": "2026-06-23T15:34:58Z"
+    },
+    {
+      "arxiv_id": "2606.24745v1",
+      "title_en": "Beyond U-Net: A Latent-Representation-Aligned Skip-Free Backbone for Flow-Matching Speech Enhancement",
+      "abstract_en": "Generative models, particularly diffusion and score-based approaches, have recently achieved strong performance in speech enhancement, but their iterative sampling process limits real-time deployment. Flow Matching offers an efficient alternative by transporting noisy speech toward clean speech through an ordinary differential equation with few function evaluations. In this work, we propose a skip-free encoder-decoder backbone for flow-matching speech enhancement, guided by Latent Representation Alignment (LRA). Instead of relying on U-Net skip connections, which may transfer noise-correlated low-level features to the decoder, the proposed model aligns its bottleneck and decoder representations with clean latent features extracted from a frozen Descript Audio Codec encoder-decoder without quantization. This codec-aligned supervision promotes compact clean-speech representations while preserving efficient few-step inference. Experiments on WSJ0-CHiME3 and VoiceBank-DEMAND show improved PESQ and perceptual quality, especially on VoiceBank-DEMAND, using only five function evaluations.",
+      "authors": [
+        "Wangyi Pu",
+        "Michele Scarpiniti"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24745v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-23T16:09:31Z",
+      "updated": "2026-06-23T16:09:31Z"
+    },
+    {
+      "arxiv_id": "2606.24813v1",
+      "title_en": "A Methodology for Characterizing Underwater Radiated Noise from Submerged Electric Vehicles in a Coastal Environment: An AUV Test Case",
+      "abstract_en": "Submerged electric vehicles (SEVs), including autonomous underwater vehicles (AUVs), remotely operated vehicles, and diver propulsion systems, may radiate distinct tonal, harmonic, and modulated acoustic components associated with electric propulsion drives and motor-control electronics. Characterizing these signatures is relevant to passive detection and engineering diagnostics, but remains challenging in coastal environments because ambient noise, shallow-water propagation, and aspect-dependent radiation can obscure vehicle-related features. Existing underwater radiated noise (URN) standards, developed primarily for surface vessels, do not address the spectral, operational, and geometric complexity of SEV measurements. This paper presents an eight-step methodology for SEV URN characterization, covering measurement design, cavitation assessment, frequency-band selection, ambient-noise characterization, spectral and time-frequency analysis, subsystem-oriented interpretation, propagation-corrected source-related estimation, and angular and operational analysis. The novelty lies in integrating calibrated pass-by acoustics with synchronized vehicle metadata, ambient-noise context, and subsystem-oriented analysis to resolve tonal and modulated features that broadband methods cannot capture. The methodology is demonstrated using an A18D AUV measured in coastal water. Drive-related tonal groups were observed near 5.56, 11.1, and 22.2 kHz, with harmonic structure up to 105 kHz. Source-related tonal PSD estimates ranged from 77 to 120 dB re 1 uPa^2/Hz at 1 m",
+      "authors": [
+        "Mark Shipton",
+        "Amir Boag",
+        "Roee Diamant"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24813v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-23T16:59:23Z",
+      "updated": "2026-06-23T16:59:23Z"
+    }
+  ]
+}

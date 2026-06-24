@@ -1,0 +1,440 @@
+{
+  "generated_at": "2026-06-24T12:56:02.946849+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-06-23T12:52:10.445751+08:00",
+    "end": "2026-06-24T12:55:56.518168+08:00",
+    "start_display": "2026-06-23 12:52:10 CST",
+    "end_display": "2026-06-24 12:55:56 CST"
+  },
+  "summary": {
+    "total": 6,
+    "counts": {
+      "Speech LLM": 1,
+      "ASR": 0,
+      "TTS": 1,
+      "Enhancement": 1,
+      "SLU": 0,
+      "Paralinguistics": 0,
+      "Audio": 3
+    },
+    "headline": "今日共收录 6 篇新论文，主要分布在 Speech LLM 1, TTS 1, Enhancement 1, Audio 3。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-06-24-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2606.24528v1",
+      "title_en": "SphereVBx: Spherical Variational Bayes Clustering for Simplified EEND-VC Diarization",
+      "abstract_en": "We propose SphereVBx, a Bayesian clustering framework for hyperspherical embeddings based on Toroidal Probabilistic Spherical Discriminant Analysis (T-PSDA). The method follows the variational Bayesian formulation of VBx while replacing the Gaussian Probabilistic Linear Discriminant Analysis (PLDA) backend with T-PSDA, resulting in variational inference in a mixture of von Mises-Fisher distributions. We apply SphereVBx to speaker diarization and in particular to the end-to-end neural diarization with vector clustering (EEND-VC) framework. A parameter-free variant, denoted SphereVBx-PF, corresponds to a spherical similarity model closely related to cosine scoring and does not require pretrained backend parameters. Experiments on multiple diarization benchmarks show that SphereVBx improves clustering accuracy in cascaded diarization pipelines and achieves comparable or better performance in the EEND-VC framework while significantly simplifying its clustering stage.",
+      "authors": [
+        "Petr Pálka",
+        "Jiangyu Han",
+        "Prachi Singh",
+        "Marc Delcroix",
+        "Naohiro Tawara",
+        "Lukáš Burget"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24528v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-23T12:57:49Z",
+      "updated": "2026-06-23T12:57:49Z",
+      "keywords_en": [
+        "spherevbx",
+        "spherical",
+        "variational",
+        "bayes",
+        "clustering",
+        "simplified"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《SphereVBx: Spherical Variational Bayes Clustering for Simplified EEND-VC Diarization》所界定。 从摘要看，作者主要围绕 spherevbx、spherical、variational 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Experiments on multiple diarization benchmarks show that SphereVBx improves clustering accuracy in cascaded diarization pipelines and achieves comparable or better performance in the EEND-VC framework while significantly simplifying its clustering stage. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：spherevbx, spherical, variational。"
+      }
+    },
+    {
+      "arxiv_id": "2606.24648v1",
+      "title_en": "ParaPairAudioBench: Paralinguistic Pairwise Audio Benchmark for LALM-as-a-Judge",
+      "abstract_en": "Large Audio-Language Models (LALMs) have been widely used as judge models for the automatic evaluation of generated speech. However, prior approaches predominantly focus on holistic naturalness, leaving fine-grained paralinguistic distinctions underexplored. We introduce ParaPairAudioBench, a pairwise benchmark of 5,175 audio pairs across five paralinguistic dimensions: Style, Rate, Emphasis, Age, and Gender. Our experiments show that current LALM judges still lag behind human judgments by 32%p on average and exhibit severe calibration failures, particularly in Tie cases where the correct decision is to abstain. To further analyze lexical versus acoustic reliance, the benchmark includes both same-transcript and cross-transcript conditions. ParaPairAudioBench enables multi-dimensional, calibration-aware assessment of the reliability of LALM-as-a-Judge for paralinguistic speech evaluation.",
+      "authors": [
+        "Jisu Jeon",
+        "Seungyeon Jwa",
+        "Joosung Lee",
+        "Jinhyeon Kim",
+        "Woojin Chung",
+        "Hwiyeol Jo",
+        "Jeonghoon Kim",
+        "Jonghyun Choi",
+        "Soyoon Kim"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24648v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-23T14:43:43Z",
+      "updated": "2026-06-23T14:43:43Z",
+      "keywords_en": [
+        "audio-language model"
+      ],
+      "digest_category": "Speech LLM",
+      "category_label": "语音大模型",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音大模型」方向，核心任务由题目《ParaPairAudioBench: Paralinguistic Pairwise Audio Benchmark for LALM-as-a-Judge》所界定。 从摘要看，作者主要围绕 audio-language model 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Our experiments show that current LALM judges still lag behind human judgments by 32%p on average and exhibit severe calibration failures, particularly in Tie cases where the correct decision is to abstain. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：audio-language model。"
+      }
+    },
+    {
+      "arxiv_id": "2606.24661v1",
+      "title_en": "Perceptual Evaluation of Higher-Order Ambisonic Codecs on Both Synthetic Mixing and Native Recordings",
+      "abstract_en": "Spatial audio is spreading in applications such as virtual and augmented reality and immersive games. The higher-order ambisonic (HOA) format is particularly useful in this context. Transmitting spatial information requires multiple channels, e.g., 16 channels for 3rd-order ambisonics, resulting in increased memory requirements for storage and higher bitrates for communication. Therefore, efficient compression algorithms are necessary for those contents. The recently standardized IVAS codec allows the coding of HOA content for communication use-cases. Here, we propose to evaluate it in comparison with a basic multi-mono approach across a variety of contents and spatialization methods. Results show that IVAS outperforms the multi-mono approach at the same bitrate. In particular, this codec exploits inter-channel correlation to reduce the bitrate. We point out that it is therefore especially robust for signals with a high interchannel correlation, such as those composed of a limited number of plane waves. Conversely, the multi-mono approach is unable to exploit this correlation and performs poorly on this type of signal.",
+      "authors": [
+        "Adrien Llave",
+        "Grégory Pallone",
+        "Jérôme Daniel"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24661v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-23T14:52:24Z",
+      "updated": "2026-06-23T14:52:24Z",
+      "keywords_en": [
+        "perceptual",
+        "evaluation",
+        "higher-order",
+        "ambisonic",
+        "codecs",
+        "both"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Perceptual Evaluation of Higher-Order Ambisonic Codecs on Both Synthetic Mixing and Native Recordings》所界定。 从摘要看，作者主要围绕 perceptual、evaluation、higher-order 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Results show that IVAS outperforms the multi-mono approach at the same bitrate. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：perceptual, evaluation, higher-order。"
+      }
+    },
+    {
+      "arxiv_id": "2606.24714v1",
+      "title_en": "CN-NewsTTS Bench: a target-level automatic benchmark for raw-input Chinese news TTS pronunciation",
+      "abstract_en": "Chinese news text contains dense written forms such as scores, hyphenated model names, ranges, unit symbols, percentages, English abbreviations, and mixed Chinese-Latin-digit names. These forms are frequent in real listening workflows, and a text-to-speech (TTS) system can preserve the written string while changing the spoken meaning. We introduce CN-NewsTTS Bench v0.1, an open target-level benchmark for evaluating whether Chinese news TTS products pronounce such targets correctly from raw text, without user-side rules, LLM rewriting, SSML hints, or manual edits. The release contains a 200-record development set, an 800-record public test set, 992 public auto-evaluable targets, fixed transcripts from a three-ASR ensemble, an automatic target scorer, and initial results for seven product TTS systems. We additionally report ASR-route diagnostics, ASR-subset ablations, category-level results, confidence intervals, and provider configuration metadata. The best system reaches 0.879 strict accuracy, while several systems remain below 0.60.",
+      "authors": [
+        "Shijun Luo"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24714v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-23T15:34:58Z",
+      "updated": "2026-06-23T15:34:58Z",
+      "keywords_en": [
+        "text-to-speech",
+        "tts system"
+      ],
+      "digest_category": "TTS",
+      "category_label": "语音合成",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音合成」方向，核心任务由题目《CN-NewsTTS Bench: a target-level automatic benchmark for raw-input Chinese news TTS pronunciation》所界定。 从摘要看，作者主要围绕 text-to-speech、tts system 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：These forms are frequent in real listening workflows, and a text-to-speech (TTS) system can preserve the written string while changing the spoken meaning. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：text-to-speech, tts system。"
+      }
+    },
+    {
+      "arxiv_id": "2606.24745v1",
+      "title_en": "Beyond U-Net: A Latent-Representation-Aligned Skip-Free Backbone for Flow-Matching Speech Enhancement",
+      "abstract_en": "Generative models, particularly diffusion and score-based approaches, have recently achieved strong performance in speech enhancement, but their iterative sampling process limits real-time deployment. Flow Matching offers an efficient alternative by transporting noisy speech toward clean speech through an ordinary differential equation with few function evaluations. In this work, we propose a skip-free encoder-decoder backbone for flow-matching speech enhancement, guided by Latent Representation Alignment (LRA). Instead of relying on U-Net skip connections, which may transfer noise-correlated low-level features to the decoder, the proposed model aligns its bottleneck and decoder representations with clean latent features extracted from a frozen Descript Audio Codec encoder-decoder without quantization. This codec-aligned supervision promotes compact clean-speech representations while preserving efficient few-step inference. Experiments on WSJ0-CHiME3 and VoiceBank-DEMAND show improved PESQ and perceptual quality, especially on VoiceBank-DEMAND, using only five function evaluations.",
+      "authors": [
+        "Wangyi Pu",
+        "Michele Scarpiniti"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24745v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-23T16:09:31Z",
+      "updated": "2026-06-23T16:09:31Z",
+      "keywords_en": [
+        "speech enhancement"
+      ],
+      "digest_category": "Enhancement",
+      "category_label": "语音增强",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音增强」方向，核心任务由题目《Beyond U-Net: A Latent-Representation-Aligned Skip-Free Backbone for Flow-Matching Speech Enhancement》所界定。 从摘要看，作者主要围绕 speech enhancement 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Generative models, particularly diffusion and score-based approaches, have recently achieved strong performance in speech enhancement, but their iterative sampling process limits real-time deployment. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech enhancement。"
+      }
+    },
+    {
+      "arxiv_id": "2606.24813v1",
+      "title_en": "A Methodology for Characterizing Underwater Radiated Noise from Submerged Electric Vehicles in a Coastal Environment: An AUV Test Case",
+      "abstract_en": "Submerged electric vehicles (SEVs), including autonomous underwater vehicles (AUVs), remotely operated vehicles, and diver propulsion systems, may radiate distinct tonal, harmonic, and modulated acoustic components associated with electric propulsion drives and motor-control electronics. Characterizing these signatures is relevant to passive detection and engineering diagnostics, but remains challenging in coastal environments because ambient noise, shallow-water propagation, and aspect-dependent radiation can obscure vehicle-related features. Existing underwater radiated noise (URN) standards, developed primarily for surface vessels, do not address the spectral, operational, and geometric complexity of SEV measurements. This paper presents an eight-step methodology for SEV URN characterization, covering measurement design, cavitation assessment, frequency-band selection, ambient-noise characterization, spectral and time-frequency analysis, subsystem-oriented interpretation, propagation-corrected source-related estimation, and angular and operational analysis. The novelty lies in integrating calibrated pass-by acoustics with synchronized vehicle metadata, ambient-noise context, and subsystem-oriented analysis to resolve tonal and modulated features that broadband methods cannot capture. The methodology is demonstrated using an A18D AUV measured in coastal water. Drive-related tonal groups were observed near 5.56, 11.1, and 22.2 kHz, with harmonic structure up to 105 kHz. Source-related tonal PSD estimates ranged from 77 to 120 dB re 1 uPa^2/Hz at 1 m",
+      "authors": [
+        "Mark Shipton",
+        "Amir Boag",
+        "Roee Diamant"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.24813v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-23T16:59:23Z",
+      "updated": "2026-06-23T16:59:23Z",
+      "keywords_en": [
+        "methodology",
+        "characterizing",
+        "underwater",
+        "radiated",
+        "noise",
+        "from"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《A Methodology for Characterizing Underwater Radiated Noise from Submerged Electric Vehicles in a Coastal Environment: An AUV Test Case》所界定。 从摘要看，作者主要围绕 methodology、characterizing、underwater 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：The methodology is demonstrated using an A18D AUV measured in coastal water. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：methodology, characterizing, underwater。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [
+      {
+        "arxiv_id": "2606.24648v1",
+        "title_en": "ParaPairAudioBench: Paralinguistic Pairwise Audio Benchmark for LALM-as-a-Judge",
+        "abstract_en": "Large Audio-Language Models (LALMs) have been widely used as judge models for the automatic evaluation of generated speech. However, prior approaches predominantly focus on holistic naturalness, leaving fine-grained paralinguistic distinctions underexplored. We introduce ParaPairAudioBench, a pairwise benchmark of 5,175 audio pairs across five paralinguistic dimensions: Style, Rate, Emphasis, Age, and Gender. Our experiments show that current LALM judges still lag behind human judgments by 32%p on average and exhibit severe calibration failures, particularly in Tie cases where the correct decision is to abstain. To further analyze lexical versus acoustic reliance, the benchmark includes both same-transcript and cross-transcript conditions. ParaPairAudioBench enables multi-dimensional, calibration-aware assessment of the reliability of LALM-as-a-Judge for paralinguistic speech evaluation.",
+        "authors": [
+          "Jisu Jeon",
+          "Seungyeon Jwa",
+          "Joosung Lee",
+          "Jinhyeon Kim",
+          "Woojin Chung",
+          "Hwiyeol Jo",
+          "Jeonghoon Kim",
+          "Jonghyun Choi",
+          "Soyoon Kim"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.24648v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.CL",
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-06-23T14:43:43Z",
+        "updated": "2026-06-23T14:43:43Z",
+        "keywords_en": [
+          "audio-language model"
+        ],
+        "digest_category": "Speech LLM",
+        "category_label": "语音大模型",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音大模型」方向，核心任务由题目《ParaPairAudioBench: Paralinguistic Pairwise Audio Benchmark for LALM-as-a-Judge》所界定。 从摘要看，作者主要围绕 audio-language model 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Our experiments show that current LALM judges still lag behind human judgments by 32%p on average and exhibit severe calibration failures, particularly in Tie cases where the correct decision is to abstain. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：audio-language model。"
+        }
+      }
+    ],
+    "ASR": [],
+    "TTS": [
+      {
+        "arxiv_id": "2606.24714v1",
+        "title_en": "CN-NewsTTS Bench: a target-level automatic benchmark for raw-input Chinese news TTS pronunciation",
+        "abstract_en": "Chinese news text contains dense written forms such as scores, hyphenated model names, ranges, unit symbols, percentages, English abbreviations, and mixed Chinese-Latin-digit names. These forms are frequent in real listening workflows, and a text-to-speech (TTS) system can preserve the written string while changing the spoken meaning. We introduce CN-NewsTTS Bench v0.1, an open target-level benchmark for evaluating whether Chinese news TTS products pronounce such targets correctly from raw text, without user-side rules, LLM rewriting, SSML hints, or manual edits. The release contains a 200-record development set, an 800-record public test set, 992 public auto-evaluable targets, fixed transcripts from a three-ASR ensemble, an automatic target scorer, and initial results for seven product TTS systems. We additionally report ASR-route diagnostics, ASR-subset ablations, category-level results, confidence intervals, and provider configuration metadata. The best system reaches 0.879 strict accuracy, while several systems remain below 0.60.",
+        "authors": [
+          "Shijun Luo"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.24714v1",
+        "primary_category": "cs.CL",
+        "source_categories": [
+          "cs.CL",
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-06-23T15:34:58Z",
+        "updated": "2026-06-23T15:34:58Z",
+        "keywords_en": [
+          "text-to-speech",
+          "tts system"
+        ],
+        "digest_category": "TTS",
+        "category_label": "语音合成",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音合成」方向，核心任务由题目《CN-NewsTTS Bench: a target-level automatic benchmark for raw-input Chinese news TTS pronunciation》所界定。 从摘要看，作者主要围绕 text-to-speech、tts system 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：These forms are frequent in real listening workflows, and a text-to-speech (TTS) system can preserve the written string while changing the spoken meaning. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：text-to-speech, tts system。"
+        }
+      }
+    ],
+    "Enhancement": [
+      {
+        "arxiv_id": "2606.24745v1",
+        "title_en": "Beyond U-Net: A Latent-Representation-Aligned Skip-Free Backbone for Flow-Matching Speech Enhancement",
+        "abstract_en": "Generative models, particularly diffusion and score-based approaches, have recently achieved strong performance in speech enhancement, but their iterative sampling process limits real-time deployment. Flow Matching offers an efficient alternative by transporting noisy speech toward clean speech through an ordinary differential equation with few function evaluations. In this work, we propose a skip-free encoder-decoder backbone for flow-matching speech enhancement, guided by Latent Representation Alignment (LRA). Instead of relying on U-Net skip connections, which may transfer noise-correlated low-level features to the decoder, the proposed model aligns its bottleneck and decoder representations with clean latent features extracted from a frozen Descript Audio Codec encoder-decoder without quantization. This codec-aligned supervision promotes compact clean-speech representations while preserving efficient few-step inference. Experiments on WSJ0-CHiME3 and VoiceBank-DEMAND show improved PESQ and perceptual quality, especially on VoiceBank-DEMAND, using only five function evaluations.",
+        "authors": [
+          "Wangyi Pu",
+          "Michele Scarpiniti"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.24745v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.AI",
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-06-23T16:09:31Z",
+        "updated": "2026-06-23T16:09:31Z",
+        "keywords_en": [
+          "speech enhancement"
+        ],
+        "digest_category": "Enhancement",
+        "category_label": "语音增强",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音增强」方向，核心任务由题目《Beyond U-Net: A Latent-Representation-Aligned Skip-Free Backbone for Flow-Matching Speech Enhancement》所界定。 从摘要看，作者主要围绕 speech enhancement 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Generative models, particularly diffusion and score-based approaches, have recently achieved strong performance in speech enhancement, but their iterative sampling process limits real-time deployment. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech enhancement。"
+        }
+      }
+    ],
+    "SLU": [],
+    "Paralinguistics": [],
+    "Audio": [
+      {
+        "arxiv_id": "2606.24528v1",
+        "title_en": "SphereVBx: Spherical Variational Bayes Clustering for Simplified EEND-VC Diarization",
+        "abstract_en": "We propose SphereVBx, a Bayesian clustering framework for hyperspherical embeddings based on Toroidal Probabilistic Spherical Discriminant Analysis (T-PSDA). The method follows the variational Bayesian formulation of VBx while replacing the Gaussian Probabilistic Linear Discriminant Analysis (PLDA) backend with T-PSDA, resulting in variational inference in a mixture of von Mises-Fisher distributions. We apply SphereVBx to speaker diarization and in particular to the end-to-end neural diarization with vector clustering (EEND-VC) framework. A parameter-free variant, denoted SphereVBx-PF, corresponds to a spherical similarity model closely related to cosine scoring and does not require pretrained backend parameters. Experiments on multiple diarization benchmarks show that SphereVBx improves clustering accuracy in cascaded diarization pipelines and achieves comparable or better performance in the EEND-VC framework while significantly simplifying its clustering stage.",
+        "authors": [
+          "Petr Pálka",
+          "Jiangyu Han",
+          "Prachi Singh",
+          "Marc Delcroix",
+          "Naohiro Tawara",
+          "Lukáš Burget"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.24528v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-06-23T12:57:49Z",
+        "updated": "2026-06-23T12:57:49Z",
+        "keywords_en": [
+          "spherevbx",
+          "spherical",
+          "variational",
+          "bayes",
+          "clustering",
+          "simplified"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《SphereVBx: Spherical Variational Bayes Clustering for Simplified EEND-VC Diarization》所界定。 从摘要看，作者主要围绕 spherevbx、spherical、variational 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Experiments on multiple diarization benchmarks show that SphereVBx improves clustering accuracy in cascaded diarization pipelines and achieves comparable or better performance in the EEND-VC framework while significantly simplifying its clustering stage. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：spherevbx, spherical, variational。"
+        }
+      },
+      {
+        "arxiv_id": "2606.24661v1",
+        "title_en": "Perceptual Evaluation of Higher-Order Ambisonic Codecs on Both Synthetic Mixing and Native Recordings",
+        "abstract_en": "Spatial audio is spreading in applications such as virtual and augmented reality and immersive games. The higher-order ambisonic (HOA) format is particularly useful in this context. Transmitting spatial information requires multiple channels, e.g., 16 channels for 3rd-order ambisonics, resulting in increased memory requirements for storage and higher bitrates for communication. Therefore, efficient compression algorithms are necessary for those contents. The recently standardized IVAS codec allows the coding of HOA content for communication use-cases. Here, we propose to evaluate it in comparison with a basic multi-mono approach across a variety of contents and spatialization methods. Results show that IVAS outperforms the multi-mono approach at the same bitrate. In particular, this codec exploits inter-channel correlation to reduce the bitrate. We point out that it is therefore especially robust for signals with a high interchannel correlation, such as those composed of a limited number of plane waves. Conversely, the multi-mono approach is unable to exploit this correlation and performs poorly on this type of signal.",
+        "authors": [
+          "Adrien Llave",
+          "Grégory Pallone",
+          "Jérôme Daniel"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.24661v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-06-23T14:52:24Z",
+        "updated": "2026-06-23T14:52:24Z",
+        "keywords_en": [
+          "perceptual",
+          "evaluation",
+          "higher-order",
+          "ambisonic",
+          "codecs",
+          "both"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Perceptual Evaluation of Higher-Order Ambisonic Codecs on Both Synthetic Mixing and Native Recordings》所界定。 从摘要看，作者主要围绕 perceptual、evaluation、higher-order 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Results show that IVAS outperforms the multi-mono approach at the same bitrate. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：perceptual, evaluation, higher-order。"
+        }
+      },
+      {
+        "arxiv_id": "2606.24813v1",
+        "title_en": "A Methodology for Characterizing Underwater Radiated Noise from Submerged Electric Vehicles in a Coastal Environment: An AUV Test Case",
+        "abstract_en": "Submerged electric vehicles (SEVs), including autonomous underwater vehicles (AUVs), remotely operated vehicles, and diver propulsion systems, may radiate distinct tonal, harmonic, and modulated acoustic components associated with electric propulsion drives and motor-control electronics. Characterizing these signatures is relevant to passive detection and engineering diagnostics, but remains challenging in coastal environments because ambient noise, shallow-water propagation, and aspect-dependent radiation can obscure vehicle-related features. Existing underwater radiated noise (URN) standards, developed primarily for surface vessels, do not address the spectral, operational, and geometric complexity of SEV measurements. This paper presents an eight-step methodology for SEV URN characterization, covering measurement design, cavitation assessment, frequency-band selection, ambient-noise characterization, spectral and time-frequency analysis, subsystem-oriented interpretation, propagation-corrected source-related estimation, and angular and operational analysis. The novelty lies in integrating calibrated pass-by acoustics with synchronized vehicle metadata, ambient-noise context, and subsystem-oriented analysis to resolve tonal and modulated features that broadband methods cannot capture. The methodology is demonstrated using an A18D AUV measured in coastal water. Drive-related tonal groups were observed near 5.56, 11.1, and 22.2 kHz, with harmonic structure up to 105 kHz. Source-related tonal PSD estimates ranged from 77 to 120 dB re 1 uPa^2/Hz at 1 m",
+        "authors": [
+          "Mark Shipton",
+          "Amir Boag",
+          "Roee Diamant"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.24813v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-06-23T16:59:23Z",
+        "updated": "2026-06-23T16:59:23Z",
+        "keywords_en": [
+          "methodology",
+          "characterizing",
+          "underwater",
+          "radiated",
+          "noise",
+          "from"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《A Methodology for Characterizing Underwater Radiated Noise from Submerged Electric Vehicles in a Coastal Environment: An AUV Test Case》所界定。 从摘要看，作者主要围绕 methodology、characterizing、underwater 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：The methodology is demonstrated using an A18D AUV measured in coastal water. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：methodology, characterizing, underwater。"
+        }
+      }
+    ]
+  },
+  "model_name": "deepseek-v3"
+}
