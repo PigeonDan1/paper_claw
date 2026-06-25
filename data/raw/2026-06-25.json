@@ -1,0 +1,89 @@
+{
+  "window": {
+    "start": "2026-06-24T12:55:56.518168+08:00",
+    "end": "2026-06-25T12:55:02.772646+08:00"
+  },
+  "fetched_count": 4,
+  "deduplicated_count": 4,
+  "new_count": 4,
+  "papers": [
+    {
+      "arxiv_id": "2606.25959v1",
+      "title_en": "SE-AGCNet: An End-to-End Framework for Joint Speech Enhancement and Loudness Control in Meeting Scenarios",
+      "abstract_en": "Conventional audio pipelines typically treat speech enhancement (SE) and automatic gain control (AGC) as discrete modules, which often limits overall performance. For instance, applying AGC before SE may inadvertently amplify background noise, while prioritizing SE tends to over-suppress low-volume speech. To address these limitations, we propose SE-AGCNet, an end-to-end framework that jointly optimizes SE and AGC. Tailored for meeting scenarios with significant volume variations, SE-AGCNet leverages the synergy between the two tasks: SE preserves quiet speech, thereby facilitating effective volume adjustment by the AGC component. Furthermore, we propose a specialized data simulation pipeline, SE-AGC-DataGen, and incorporate standardized loudness evaluation metrics: integrated loudness (LUFS), short-term loudness (St LUFS), and LRA. Experiments show that SE-AGCNet consistently achieves target loudness while improving speech quality and ASR accuracy over competitive baselines.",
+      "authors": [
+        "Jinming Zhang",
+        "Wei Rao",
+        "Xionghu Zhong",
+        "Eng Siong Chng"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.25959v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "eess.AS"
+      ],
+      "published": "2026-06-24T15:32:42Z",
+      "updated": "2026-06-24T15:32:42Z"
+    },
+    {
+      "arxiv_id": "2606.25980v1",
+      "title_en": "FoleySet: A Multi-Level Human-Annotated Foley Sound Dataset",
+      "abstract_en": "In audiovisual post-production, Foley refers to synchronous sound effects associated with human actions, such as footsteps, cloth rustle, and prop handling, that are recreated to match the on-screen movements and interactions of characters. These sounds are often recorded by professional Foley artists using physical props. This resource-intensive workflow has motivated data-driven research on Foley, including tasks such as classification, retrieval, and generation; however, high-quality annotated Foley datasets for training remain scarce. To address this gap, we present FoleySet, a publicly available Foley dataset of 10,000 audio clips annotated with a two-level Foley taxonomy. This dataset provides a standardized, Creative Commons-licensed resource for data-driven Foley classification, retrieval, and generation.",
+      "authors": [
+        "Sunshiyu Wang",
+        "Alexander Lerch"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.25980v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-06-24T15:51:06Z",
+      "updated": "2026-06-24T15:51:06Z"
+    },
+    {
+      "arxiv_id": "2606.25990v1",
+      "title_en": "SpeechEQ: Benchmarking Emotional Intelligence Quotient in Socially Aware Voice Conversational Models",
+      "abstract_en": "As multimodal conversational systems increasingly engage in spoken interaction, their ability to navigate paralinguistic social cues has become a critical bottleneck for natural human-AI communication. However, existing evaluations of machine emotional intelligence assess reasoning exclusively through isolated text or passive acoustic perception, overlooking the complex cross-modal reasoning required for active, multi-turn dialogue. We introduce \\textsc{SpeechEQ}, a comprehensive framework designed to evaluate the sociolinguistic reasoning of Speech-Language Models (SLMs). The framework includes a validated dataset of 2,265 dialogues across 15 Emotional Quotient (EQ) subscales grounded in EQ-i 2.0 theory, along with a multi-turn evaluation protocol measured by our proposed Spoken EQ (SEQ) score inspired by human EQ assessments. Experiments show limitations in how both existing Speech Emotion Recognition and end-to-end Speech-Language Models understand and apply paralinguistic cues through speech. While end-to-end architectures outperform cascaded systems, \\textsc{SpeechEQ} reveals that current multimodal models remain bottlenecked by a text-reliant ``modality shortcut,'' an alignment-induced ``safety trap,'' and ``contextual amnesia,'' highlighting the barriers to truly emotionally aware AI. Our benchmark can be accessed at https://huggingface.co/datasets/SpeechEQ/SpeechEQ and demo page at https://binomial14.github.io/speecheq-demo/",
+      "authors": [
+        "Liang-Yuan Wu",
+        "Zih-Ching Chen",
+        "Tongshuang Wu",
+        "Chao-Han Huck Yang",
+        "Hua Shen"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.25990v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-06-24T16:03:38Z",
+      "updated": "2026-06-24T16:03:38Z"
+    },
+    {
+      "arxiv_id": "2606.26083v1",
+      "title_en": "Real-Time Voice AI Hears but Does Not Listen",
+      "abstract_en": "Speech conveys information through both words and vocal delivery. We evaluate four leading production realtime voice systems-OpenAI's GPT Realtime 2, Google's Gemini 3.1 Flash Live, and Alibaba's Qwen3.5 Omni Plus and Omni Flash-on tasks where the words and the delivery patterns both convey meaningful information. Across three consequential scenarios, all four systems act on the words rather than the voice. They end calls with crying callers who insist nothing is wrong, approve wire transfers authorized in frightened voices, and enroll callers whose agreement is clearly sarcastic. Surprisingly, this is often not a failure of perception. When asked directly, three of the four systems reliably identify the distress, fear, or sarcasm they later ignore when making decisions. We observe a similar pattern when these realtime voice systems estimate accent and age, as their responses frequently follow the biases of the words rather than the acoustic properties of the speaker. We term this disconnect between perception and action the emotional intelligence gap of voice AI. Prompting systems to explicitly attend to vocal delivery improves performance only partially and inconsistently. Our findings show that current realtime voice AI systems often behave as if speech had been reduced to a transcript, suggesting that they should be used with caution in settings where the tone and emotion of delivery convey important information.",
+      "authors": [
+        "Martijn Bartelds",
+        "Federico Bianchi",
+        "James Zou"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.26083v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-06-24T17:55:38Z",
+      "updated": "2026-06-24T17:55:38Z"
+    }
+  ]
+}
