@@ -1,0 +1,29 @@
+{
+  "window": {
+    "start": "2026-06-25T12:55:02.772646+08:00",
+    "end": "2026-06-26T13:00:07.060042+08:00"
+  },
+  "fetched_count": 1,
+  "deduplicated_count": 1,
+  "new_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2606.27320v1",
+      "title_en": "Elastic Time: Dynamic Frame Rate Bottlenecks for Neural Audio Coding",
+      "abstract_en": "Neural audio autoencoders have become a core component of compression, feature extraction, and generation. However, while existing systems support variable bitrate, the vast majority of models still operate at a fixed latent frame-rate, allocating equal temporal budget to regions with very different information density, which can result in unnecessarily long sequences. We introduce Elastic Time, a dynamic frame-rate bottleneck that converts fixed-frame-rate autoencoders to dynamic ones. Our method learns a lightweight latent predictor used to decide which frames can be skipped and later reconstructed, enabling efficient greedy boundary selection at inference. Experiments show our method enables deployment-time rate control while improving efficiency-quality tradeoffs relative to baselines. Overall, we provide a flexible mechanism for adjusting temporal resolution in audio autoencoders, potentially facilitating more efficient downstream modeling for generation and long-context tasks.",
+      "authors": [
+        "Dimitrios Bralios",
+        "Paris Smaragdis",
+        "Minje Kim"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.27320v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-06-25T17:33:09Z",
+      "updated": "2026-06-25T17:33:09Z"
+    }
+  ]
+}
