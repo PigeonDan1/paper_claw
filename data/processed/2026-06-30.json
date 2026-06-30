@@ -1,0 +1,387 @@
+{
+  "generated_at": "2026-06-30T12:55:38.434205+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-06-29T13:20:26.897216+08:00",
+    "end": "2026-06-30T12:55:31.996605+08:00",
+    "start_display": "2026-06-29 13:20:26 CST",
+    "end_display": "2026-06-30 12:55:31 CST"
+  },
+  "summary": {
+    "total": 5,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 1,
+      "TTS": 0,
+      "Enhancement": 0,
+      "SLU": 0,
+      "Paralinguistics": 1,
+      "Audio": 3
+    },
+    "headline": "今日共收录 5 篇新论文，主要分布在 ASR 1, Paralinguistics 1, Audio 3。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-06-30-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2606.30356v1",
+      "title_en": "OLIVE: View-Augmented Latent Prediction with Waveform Reconstruction for Speech SSL",
+      "abstract_en": "We propose Online Latent prediction with Invariant Views and rEconstruction (OLIVE), a self-supervised speech representation learning framework that jointly optimizes analysis and synthesis objectives. OLIVE combines view-augmented masked latent prediction with waveform reconstruction under a unified objective. Reconstruction constrains early encoder features to retain signal-level information, while masked latent prediction shapes later contextual representations toward invariance for robust downstream performance. We show that these objectives enable representations that support a broad range of tasks. In particular, OLIVE improves results on generation and speaker tasks, maintains competitive performance on recognition and semantic tasks, and improves waveform reconstruction.",
+      "authors": [
+        "Karl El Hajal",
+        "Mathew Magimai. -Doss"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.30356v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.LG",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-29T14:24:19Z",
+      "updated": "2026-06-29T14:24:19Z",
+      "keywords_en": [
+        "olive",
+        "view-augmented",
+        "latent",
+        "prediction",
+        "with",
+        "waveform"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《OLIVE: View-Augmented Latent Prediction with Waveform Reconstruction for Speech SSL》所界定。 从摘要看，作者主要围绕 olive、view-augmented、latent 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We show that these objectives enable representations that support a broad range of tasks. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：olive, view-augmented, latent。"
+      }
+    },
+    {
+      "arxiv_id": "2606.30369v1",
+      "title_en": "Predicting Timbre Traits for Interpretable Assessment of Musical Sound Synthesizers",
+      "abstract_en": "Measuring neural audio synthesizers' performance is now routinely conducted using distribution based metrics such as the Fréchet Audio Distance (FAD). Although this metric can be correlated with human perception, it offers limited interpretability beyond ranking different approaches. In this paper, we introduce a deep neural timbre trait predictor composed of a pretrained audio neural embedding (CLAP), and a shallow learnable component. The latter is trained using the RWC musical instrument database and human judgments of 20 timbre descriptions (e.g., woody, percussive, rumbling, etc.) for 31 instruments. The resulting model shows strong correlation with average human ratings (r = 0.66, p < 0.001). We then demonstrate the benefit of this predictor for evaluating the performance of TokenSynth, a neural sound synthesizer. First, the Mean Absolute Error (MAE) computed over the set of generated sounds under different conditioning modalities of the model provides the same ranking as a FAD computed with the RWC database as a reference, suggesting that the proposed predictors are able to provide equivalent information on a distributional basis. Second, because the model is able to qualitatively analyze isolated sounds, we can determine which generated sounds could be improved and identify specific timbral dimensions that need adjustment.",
+      "authors": [
+        "Théo Chasle Cauchy",
+        "Modan Tailleur",
+        "Lindsey Reymore",
+        "Fanny Roche",
+        "Mathieu Lagrange"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.30369v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-06-29T14:33:44Z",
+      "updated": "2026-06-29T14:33:44Z",
+      "keywords_en": [
+        "predicting",
+        "timbre",
+        "traits",
+        "interpretable",
+        "assessment",
+        "musical"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Predicting Timbre Traits for Interpretable Assessment of Musical Sound Synthesizers》所界定。 从摘要看，作者主要围绕 predicting、timbre、traits 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：The resulting model shows strong correlation with average human ratings (r = 0.66, p < 0.001). 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：predicting, timbre, traits。"
+      }
+    },
+    {
+      "arxiv_id": "2606.30550v1",
+      "title_en": "SIGMA: Saliency-Guided Sparse Mask Attacks for Speech Emotion Recognition",
+      "abstract_en": "Speech conveys rich emotional information. As Speech Emotion Recognition (SER) is usually deployed in privacy-sensitive and reliability-critical environments, adversarial attacks on SER have attracted increasing attention. Existing sparse attacks control the number of perturbed elements, yet, they often lack explainability guidance and explicit measures of explanation consistency. A unified treatment of sparsity and magnitude constraints is also uncommon. In addition, transferability across attack families and target models remains limited. Hence, we propose a SalIency-Guided sparse Mask Attack (SIGMA). On self-supervised speech features, we use post-hoc explainable artificial intelligence (XAI) techniques to produce saliency maps and identify the scope of the mask, and then restrict magnitude-bounded updates to this mask. The mask is computed once and can be reused across models and different sparsity attacks to amortise cost. We evaluate on the IEMOCAP and TESS datasets. Under matched budgets and across multiple sparse-attack settings, SIGMA maintains competitive attack success rates, navigating a conscious trade-off between attack efficacy and explanation consistency. SIGMA therefore provides an efficient and interpretable framework for analysing the vulnerability and explanation behaviour of SER models under structured perturbations.",
+      "authors": [
+        "Qiyang Sun",
+        "Yi Chang",
+        "Zixing Zhang",
+        "Björn W. Schuller"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.30550v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-06-29T16:48:21Z",
+      "updated": "2026-06-29T16:48:21Z",
+      "keywords_en": [
+        "emotion recognition"
+      ],
+      "digest_category": "Paralinguistics",
+      "category_label": "副语言学",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「副语言学」方向，核心任务由题目《SIGMA: Saliency-Guided Sparse Mask Attacks for Speech Emotion Recognition》所界定。 从摘要看，作者主要围绕 emotion recognition 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：As Speech Emotion Recognition (SER) is usually deployed in privacy-sensitive and reliability-critical environments, adversarial attacks on SER have attracted increasing attention. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：emotion recognition。"
+      }
+    },
+    {
+      "arxiv_id": "2606.30580v1",
+      "title_en": "MeloDISinger: Melody-Aware & Duration-Preserving Singing Voice Editing with Audio Infilling",
+      "abstract_en": "Text-based singing voice editing (SVE) aims to revise sung lyrics while preserving the original melody, total duration, and non-edited regions. In this paper, we propose MeloDISinger, a flow-matching-based SVE model for melody-aware and duration-preserving editing. Its core module, MeloDRP, predicts fixed-budget duration ratios, enabling explicit span-wise duration control. For melody-aware duration allocation, MeloDRP fuses phonetic cues with pseudo-MIDI melodic context through cross-attention, while temporal-overlap supervision encourages soft phoneme--note correspondences. We further use a flow-matching mel decoder for audio infilling to synthesize edited regions while preserving surrounding context. In addition, we introduce a duration-aware edited-lyric generation pipeline using WhisperX and an LLM to construct feasible evaluation scenarios. Experiments demonstrate state-of-the-art performance in both objective and subjective evaluations.",
+      "authors": [
+        "Yoonjeong Park",
+        "Jaekwon Im",
+        "Juhan Nam"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.30580v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-29T17:22:27Z",
+      "updated": "2026-06-29T17:22:27Z",
+      "keywords_en": [
+        "whisper"
+      ],
+      "digest_category": "ASR",
+      "category_label": "语音识别",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音识别」方向，核心任务由题目《MeloDISinger: Melody-Aware & Duration-Preserving Singing Voice Editing with Audio Infilling》所界定。 从摘要看，作者主要围绕 whisper 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Experiments demonstrate state-of-the-art performance in both objective and subjective evaluations. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：whisper。"
+      }
+    },
+    {
+      "arxiv_id": "2606.30642v1",
+      "title_en": "LeVo 2: Stable and Melodious Song Generation via Hierarchical Representation Modeling and Progressive Post-Training",
+      "abstract_en": "Full-length song generation must preserve coherence and musicality, render detailed vocal and accompaniment acoustics, and follow lyrics and prompts. Existing language model-based systems face a structural trade-off: mixed-token modeling preserves vocal-instrument coordination but obscures track-specific details, whereas dual-track prediction improves acoustics but requires longer sequences and weakens global planning. We present LeVo 2, a hybrid LLM-Diffusion framework for controllable full-length song generation. LeVo 2 formulates this trade-off as hierarchical modeling: LeLM first predicts mixed tokens for semantic planning, then predicts vocal and accompaniment tokens in parallel for track-specific refinement, while a diffusion-based Music Codec reconstructs full-length waveforms. A central contribution of this extended version is an aesthetics-guided training schedule for alignment. During pre-training, an automated music aesthetic evaluation framework assigns musicality-tier conditions to large-scale data, providing musicality priors before preference alignment. Progressive post-training applies SFT, large-scale offline DPO, and closed-loop semi-online DPO to separately improve generation quality, controllability, and musicality. Modular extension then trains the Track-Specific LM for acoustic refinement while preserving the aligned semantic planner. This schedule separates musicality learning, controllability alignment, and acoustic refinement, mitigating optimization conflict and the limitations of static offline preference pairs. Expert listening tests and objective evaluations show that LeVo 2 outperforms open-source baselines across six subjective dimensions, and approaches leading commercial systems on several listening metrics. Ablations validate the effects of the training strategy, aesthetics guidance, scaling, and hierarchical architecture.",
+      "authors": [
+        "Shun Lei",
+        "Huaicheng Zhang",
+        "Dapeng Wu",
+        "Yaoxun Xu",
+        "Lishi Zuo",
+        "Wei Tan",
+        "Hangting Chen",
+        "Guangzheng Li",
+        "Jianwei Yu",
+        "Zhiyong Wu",
+        "Dong Yu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.30642v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-06-29T17:59:20Z",
+      "updated": "2026-06-29T17:59:20Z",
+      "keywords_en": [
+        "levo",
+        "stable",
+        "melodious",
+        "song",
+        "generation",
+        "hierarchical"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《LeVo 2: Stable and Melodious Song Generation via Hierarchical Representation Modeling and Progressive Post-Training》所界定。 从摘要看，作者主要围绕 levo、stable、melodious 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Existing language model-based systems face a structural trade-off: mixed-token modeling preserves vocal-instrument coordination but obscures track-specific details, whereas dual-track prediction improves acoustics but requires longer sequences and weakens global planning. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：levo, stable, melodious。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [
+      {
+        "arxiv_id": "2606.30580v1",
+        "title_en": "MeloDISinger: Melody-Aware & Duration-Preserving Singing Voice Editing with Audio Infilling",
+        "abstract_en": "Text-based singing voice editing (SVE) aims to revise sung lyrics while preserving the original melody, total duration, and non-edited regions. In this paper, we propose MeloDISinger, a flow-matching-based SVE model for melody-aware and duration-preserving editing. Its core module, MeloDRP, predicts fixed-budget duration ratios, enabling explicit span-wise duration control. For melody-aware duration allocation, MeloDRP fuses phonetic cues with pseudo-MIDI melodic context through cross-attention, while temporal-overlap supervision encourages soft phoneme--note correspondences. We further use a flow-matching mel decoder for audio infilling to synthesize edited regions while preserving surrounding context. In addition, we introduce a duration-aware edited-lyric generation pipeline using WhisperX and an LLM to construct feasible evaluation scenarios. Experiments demonstrate state-of-the-art performance in both objective and subjective evaluations.",
+        "authors": [
+          "Yoonjeong Park",
+          "Jaekwon Im",
+          "Juhan Nam"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.30580v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-06-29T17:22:27Z",
+        "updated": "2026-06-29T17:22:27Z",
+        "keywords_en": [
+          "whisper"
+        ],
+        "digest_category": "ASR",
+        "category_label": "语音识别",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音识别」方向，核心任务由题目《MeloDISinger: Melody-Aware & Duration-Preserving Singing Voice Editing with Audio Infilling》所界定。 从摘要看，作者主要围绕 whisper 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Experiments demonstrate state-of-the-art performance in both objective and subjective evaluations. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：whisper。"
+        }
+      }
+    ],
+    "TTS": [],
+    "Enhancement": [],
+    "SLU": [],
+    "Paralinguistics": [
+      {
+        "arxiv_id": "2606.30550v1",
+        "title_en": "SIGMA: Saliency-Guided Sparse Mask Attacks for Speech Emotion Recognition",
+        "abstract_en": "Speech conveys rich emotional information. As Speech Emotion Recognition (SER) is usually deployed in privacy-sensitive and reliability-critical environments, adversarial attacks on SER have attracted increasing attention. Existing sparse attacks control the number of perturbed elements, yet, they often lack explainability guidance and explicit measures of explanation consistency. A unified treatment of sparsity and magnitude constraints is also uncommon. In addition, transferability across attack families and target models remains limited. Hence, we propose a SalIency-Guided sparse Mask Attack (SIGMA). On self-supervised speech features, we use post-hoc explainable artificial intelligence (XAI) techniques to produce saliency maps and identify the scope of the mask, and then restrict magnitude-bounded updates to this mask. The mask is computed once and can be reused across models and different sparsity attacks to amortise cost. We evaluate on the IEMOCAP and TESS datasets. Under matched budgets and across multiple sparse-attack settings, SIGMA maintains competitive attack success rates, navigating a conscious trade-off between attack efficacy and explanation consistency. SIGMA therefore provides an efficient and interpretable framework for analysing the vulnerability and explanation behaviour of SER models under structured perturbations.",
+        "authors": [
+          "Qiyang Sun",
+          "Yi Chang",
+          "Zixing Zhang",
+          "Björn W. Schuller"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.30550v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.SD"
+        ],
+        "published": "2026-06-29T16:48:21Z",
+        "updated": "2026-06-29T16:48:21Z",
+        "keywords_en": [
+          "emotion recognition"
+        ],
+        "digest_category": "Paralinguistics",
+        "category_label": "副语言学",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「副语言学」方向，核心任务由题目《SIGMA: Saliency-Guided Sparse Mask Attacks for Speech Emotion Recognition》所界定。 从摘要看，作者主要围绕 emotion recognition 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：As Speech Emotion Recognition (SER) is usually deployed in privacy-sensitive and reliability-critical environments, adversarial attacks on SER have attracted increasing attention. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：emotion recognition。"
+        }
+      }
+    ],
+    "Audio": [
+      {
+        "arxiv_id": "2606.30356v1",
+        "title_en": "OLIVE: View-Augmented Latent Prediction with Waveform Reconstruction for Speech SSL",
+        "abstract_en": "We propose Online Latent prediction with Invariant Views and rEconstruction (OLIVE), a self-supervised speech representation learning framework that jointly optimizes analysis and synthesis objectives. OLIVE combines view-augmented masked latent prediction with waveform reconstruction under a unified objective. Reconstruction constrains early encoder features to retain signal-level information, while masked latent prediction shapes later contextual representations toward invariance for robust downstream performance. We show that these objectives enable representations that support a broad range of tasks. In particular, OLIVE improves results on generation and speaker tasks, maintains competitive performance on recognition and semantic tasks, and improves waveform reconstruction.",
+        "authors": [
+          "Karl El Hajal",
+          "Mathew Magimai. -Doss"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.30356v1",
+        "primary_category": "cs.CL",
+        "source_categories": [
+          "cs.CL",
+          "cs.LG",
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-06-29T14:24:19Z",
+        "updated": "2026-06-29T14:24:19Z",
+        "keywords_en": [
+          "olive",
+          "view-augmented",
+          "latent",
+          "prediction",
+          "with",
+          "waveform"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《OLIVE: View-Augmented Latent Prediction with Waveform Reconstruction for Speech SSL》所界定。 从摘要看，作者主要围绕 olive、view-augmented、latent 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We show that these objectives enable representations that support a broad range of tasks. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：olive, view-augmented, latent。"
+        }
+      },
+      {
+        "arxiv_id": "2606.30369v1",
+        "title_en": "Predicting Timbre Traits for Interpretable Assessment of Musical Sound Synthesizers",
+        "abstract_en": "Measuring neural audio synthesizers' performance is now routinely conducted using distribution based metrics such as the Fréchet Audio Distance (FAD). Although this metric can be correlated with human perception, it offers limited interpretability beyond ranking different approaches. In this paper, we introduce a deep neural timbre trait predictor composed of a pretrained audio neural embedding (CLAP), and a shallow learnable component. The latter is trained using the RWC musical instrument database and human judgments of 20 timbre descriptions (e.g., woody, percussive, rumbling, etc.) for 31 instruments. The resulting model shows strong correlation with average human ratings (r = 0.66, p < 0.001). We then demonstrate the benefit of this predictor for evaluating the performance of TokenSynth, a neural sound synthesizer. First, the Mean Absolute Error (MAE) computed over the set of generated sounds under different conditioning modalities of the model provides the same ranking as a FAD computed with the RWC database as a reference, suggesting that the proposed predictors are able to provide equivalent information on a distributional basis. Second, because the model is able to qualitatively analyze isolated sounds, we can determine which generated sounds could be improved and identify specific timbral dimensions that need adjustment.",
+        "authors": [
+          "Théo Chasle Cauchy",
+          "Modan Tailleur",
+          "Lindsey Reymore",
+          "Fanny Roche",
+          "Mathieu Lagrange"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.30369v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.SD"
+        ],
+        "published": "2026-06-29T14:33:44Z",
+        "updated": "2026-06-29T14:33:44Z",
+        "keywords_en": [
+          "predicting",
+          "timbre",
+          "traits",
+          "interpretable",
+          "assessment",
+          "musical"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Predicting Timbre Traits for Interpretable Assessment of Musical Sound Synthesizers》所界定。 从摘要看，作者主要围绕 predicting、timbre、traits 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：The resulting model shows strong correlation with average human ratings (r = 0.66, p < 0.001). 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：predicting, timbre, traits。"
+        }
+      },
+      {
+        "arxiv_id": "2606.30642v1",
+        "title_en": "LeVo 2: Stable and Melodious Song Generation via Hierarchical Representation Modeling and Progressive Post-Training",
+        "abstract_en": "Full-length song generation must preserve coherence and musicality, render detailed vocal and accompaniment acoustics, and follow lyrics and prompts. Existing language model-based systems face a structural trade-off: mixed-token modeling preserves vocal-instrument coordination but obscures track-specific details, whereas dual-track prediction improves acoustics but requires longer sequences and weakens global planning. We present LeVo 2, a hybrid LLM-Diffusion framework for controllable full-length song generation. LeVo 2 formulates this trade-off as hierarchical modeling: LeLM first predicts mixed tokens for semantic planning, then predicts vocal and accompaniment tokens in parallel for track-specific refinement, while a diffusion-based Music Codec reconstructs full-length waveforms. A central contribution of this extended version is an aesthetics-guided training schedule for alignment. During pre-training, an automated music aesthetic evaluation framework assigns musicality-tier conditions to large-scale data, providing musicality priors before preference alignment. Progressive post-training applies SFT, large-scale offline DPO, and closed-loop semi-online DPO to separately improve generation quality, controllability, and musicality. Modular extension then trains the Track-Specific LM for acoustic refinement while preserving the aligned semantic planner. This schedule separates musicality learning, controllability alignment, and acoustic refinement, mitigating optimization conflict and the limitations of static offline preference pairs. Expert listening tests and objective evaluations show that LeVo 2 outperforms open-source baselines across six subjective dimensions, and approaches leading commercial systems on several listening metrics. Ablations validate the effects of the training strategy, aesthetics guidance, scaling, and hierarchical architecture.",
+        "authors": [
+          "Shun Lei",
+          "Huaicheng Zhang",
+          "Dapeng Wu",
+          "Yaoxun Xu",
+          "Lishi Zuo",
+          "Wei Tan",
+          "Hangting Chen",
+          "Guangzheng Li",
+          "Jianwei Yu",
+          "Zhiyong Wu",
+          "Dong Yu"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.30642v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.AI",
+          "cs.SD"
+        ],
+        "published": "2026-06-29T17:59:20Z",
+        "updated": "2026-06-29T17:59:20Z",
+        "keywords_en": [
+          "levo",
+          "stable",
+          "melodious",
+          "song",
+          "generation",
+          "hierarchical"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《LeVo 2: Stable and Melodious Song Generation via Hierarchical Representation Modeling and Progressive Post-Training》所界定。 从摘要看，作者主要围绕 levo、stable、melodious 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Existing language model-based systems face a structural trade-off: mixed-token modeling preserves vocal-instrument coordination but obscures track-specific details, whereas dual-track prediction improves acoustics but requires longer sequences and weakens global planning. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：levo, stable, melodious。"
+        }
+      }
+    ]
+  },
+  "model_name": "deepseek-v3"
+}
