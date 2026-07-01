@@ -1,0 +1,51 @@
+{
+  "window": {
+    "start": "2026-06-30T12:55:31.996605+08:00",
+    "end": "2026-07-01T13:13:12.900660+08:00"
+  },
+  "fetched_count": 2,
+  "deduplicated_count": 2,
+  "new_count": 2,
+  "papers": [
+    {
+      "arxiv_id": "2606.31729v1",
+      "title_en": "Is Natural Always Appropriate? Investigating Naturalness and Appropriateness Across Different Domains for TTS Evaluation",
+      "abstract_en": "Text-to-speech (TTS) evaluation is an open challenge. While the primary target was \"naturalness,\" recent fidelity gains shifted focus toward \"appropriateness\" and whether speech is correct for its context. In this work, we examine how perception changes when the expected downstream use varies. We measure the appropriateness and human-likeness of five SOTA TTS systems across five domains: AI assistant, reader, actor, animated character, and spontaneous speaker. Results show appropriateness varies across domains independently of naturalness. While systems shine at reading, expressive domains remain challenging, and optimizing for one can degrade others. Furthermore, naturalness scores tend to penalize stylized speech while rewarding spontaneity. Finally, our study also highlights blind spots in one-size-fits-all evaluation metrics across more expressive domains. We demonstrate that TTS performance is not \"solved\" but depends on the target domain, requiring context-aware evaluation.",
+      "authors": [
+        "Dominika Woszczyk",
+        "Andreas Triantafyllopoulos",
+        "Jura Miniota",
+        "Éva Székely",
+        "Bjoern Schuller"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.31729v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.LG",
+        "eess.AS"
+      ],
+      "published": "2026-06-30T14:28:41Z",
+      "updated": "2026-06-30T14:28:41Z"
+    },
+    {
+      "arxiv_id": "2606.31730v1",
+      "title_en": "A Fair and Transparent Framework for Speech-Based Depression Detection: Balancing Interpretability and Performance",
+      "abstract_en": "While speech provides rich, non-invasive biomarkers for mental-health assessment, clinical adoption is limited by opaque models and potential demographic bias. In this work we propose a methodological framework to evaluate robustness and interpretability for automated depression detection on the extended DAIC-WOZ dataset using low-complexity machine learning baselines (RF, SVM, and MLP) chosen to mitigate overfitting and enhance generalization in combination with human-understandable acoustic features (MFCCs, eGeMAPS). To balance accuracy with clinical trust, we leverage explainability methods (LIME and SHAP) for feature selection, validating our findings with statistical significance tests and demographic fairness analyses to mitigate spurious, artifact-driven correlations. Empirical results demonstrate that an optimized subset of explainable AI (XAI)-selected features combined with an MLP architecture achieves a state-of-the-art test accuracy of 82\\%. Ultimately, this work provides a transparent framework for robust and ethical assistive technologies that can be applied to any other binary task.",
+      "authors": [
+        "Mariel Estevez",
+        "Alfonso Ortega",
+        "Antonio Miguel",
+        "Eduardo Lleida"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.31730v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-30T14:29:20Z",
+      "updated": "2026-06-30T14:29:20Z"
+    }
+  ]
+}

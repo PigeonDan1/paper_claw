@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-07-01T13:13:26.161248+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-06-30T12:55:31.996605+08:00",
+    "end": "2026-07-01T13:13:12.900660+08:00",
+    "start_display": "2026-06-30 12:55:31 CST",
+    "end_display": "2026-07-01 13:13:12 CST"
+  },
+  "summary": {
+    "total": 2,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 0,
+      "TTS": 1,
+      "Enhancement": 0,
+      "SLU": 0,
+      "Paralinguistics": 0,
+      "Audio": 1
+    },
+    "headline": "今日共收录 2 篇新论文，主要分布在 TTS 1, Audio 1。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-07-01-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2606.31729v1",
+      "title_en": "Is Natural Always Appropriate? Investigating Naturalness and Appropriateness Across Different Domains for TTS Evaluation",
+      "abstract_en": "Text-to-speech (TTS) evaluation is an open challenge. While the primary target was \"naturalness,\" recent fidelity gains shifted focus toward \"appropriateness\" and whether speech is correct for its context. In this work, we examine how perception changes when the expected downstream use varies. We measure the appropriateness and human-likeness of five SOTA TTS systems across five domains: AI assistant, reader, actor, animated character, and spontaneous speaker. Results show appropriateness varies across domains independently of naturalness. While systems shine at reading, expressive domains remain challenging, and optimizing for one can degrade others. Furthermore, naturalness scores tend to penalize stylized speech while rewarding spontaneity. Finally, our study also highlights blind spots in one-size-fits-all evaluation metrics across more expressive domains. We demonstrate that TTS performance is not \"solved\" but depends on the target domain, requiring context-aware evaluation.",
+      "authors": [
+        "Dominika Woszczyk",
+        "Andreas Triantafyllopoulos",
+        "Jura Miniota",
+        "Éva Székely",
+        "Bjoern Schuller"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.31729v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.LG",
+        "eess.AS"
+      ],
+      "published": "2026-06-30T14:28:41Z",
+      "updated": "2026-06-30T14:28:41Z",
+      "keywords_en": [
+        "text-to-speech",
+        "tts system"
+      ],
+      "digest_category": "TTS",
+      "category_label": "语音合成",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音合成」方向，核心任务由题目《Is Natural Always Appropriate? Investigating Naturalness and Appropriateness Across Different Domains for TTS Evaluation》所界定。 从摘要看，作者主要围绕 text-to-speech、tts system 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Results show appropriateness varies across domains independently of naturalness. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：text-to-speech, tts system。"
+      }
+    },
+    {
+      "arxiv_id": "2606.31730v1",
+      "title_en": "A Fair and Transparent Framework for Speech-Based Depression Detection: Balancing Interpretability and Performance",
+      "abstract_en": "While speech provides rich, non-invasive biomarkers for mental-health assessment, clinical adoption is limited by opaque models and potential demographic bias. In this work we propose a methodological framework to evaluate robustness and interpretability for automated depression detection on the extended DAIC-WOZ dataset using low-complexity machine learning baselines (RF, SVM, and MLP) chosen to mitigate overfitting and enhance generalization in combination with human-understandable acoustic features (MFCCs, eGeMAPS). To balance accuracy with clinical trust, we leverage explainability methods (LIME and SHAP) for feature selection, validating our findings with statistical significance tests and demographic fairness analyses to mitigate spurious, artifact-driven correlations. Empirical results demonstrate that an optimized subset of explainable AI (XAI)-selected features combined with an MLP architecture achieves a state-of-the-art test accuracy of 82\\%. Ultimately, this work provides a transparent framework for robust and ethical assistive technologies that can be applied to any other binary task.",
+      "authors": [
+        "Mariel Estevez",
+        "Alfonso Ortega",
+        "Antonio Miguel",
+        "Eduardo Lleida"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2606.31730v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-06-30T14:29:20Z",
+      "updated": "2026-06-30T14:29:20Z",
+      "keywords_en": [
+        "fair",
+        "transparent",
+        "framework",
+        "speech-based",
+        "depression",
+        "detection"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《A Fair and Transparent Framework for Speech-Based Depression Detection: Balancing Interpretability and Performance》所界定。 从摘要看，作者主要围绕 fair、transparent、framework 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Empirical results demonstrate that an optimized subset of explainable AI (XAI)-selected features combined with an MLP architecture achieves a state-of-the-art test accuracy of 82\\%. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：fair, transparent, framework。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [],
+    "TTS": [
+      {
+        "arxiv_id": "2606.31729v1",
+        "title_en": "Is Natural Always Appropriate? Investigating Naturalness and Appropriateness Across Different Domains for TTS Evaluation",
+        "abstract_en": "Text-to-speech (TTS) evaluation is an open challenge. While the primary target was \"naturalness,\" recent fidelity gains shifted focus toward \"appropriateness\" and whether speech is correct for its context. In this work, we examine how perception changes when the expected downstream use varies. We measure the appropriateness and human-likeness of five SOTA TTS systems across five domains: AI assistant, reader, actor, animated character, and spontaneous speaker. Results show appropriateness varies across domains independently of naturalness. While systems shine at reading, expressive domains remain challenging, and optimizing for one can degrade others. Furthermore, naturalness scores tend to penalize stylized speech while rewarding spontaneity. Finally, our study also highlights blind spots in one-size-fits-all evaluation metrics across more expressive domains. We demonstrate that TTS performance is not \"solved\" but depends on the target domain, requiring context-aware evaluation.",
+        "authors": [
+          "Dominika Woszczyk",
+          "Andreas Triantafyllopoulos",
+          "Jura Miniota",
+          "Éva Székely",
+          "Bjoern Schuller"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.31729v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "cs.LG",
+          "eess.AS"
+        ],
+        "published": "2026-06-30T14:28:41Z",
+        "updated": "2026-06-30T14:28:41Z",
+        "keywords_en": [
+          "text-to-speech",
+          "tts system"
+        ],
+        "digest_category": "TTS",
+        "category_label": "语音合成",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音合成」方向，核心任务由题目《Is Natural Always Appropriate? Investigating Naturalness and Appropriateness Across Different Domains for TTS Evaluation》所界定。 从摘要看，作者主要围绕 text-to-speech、tts system 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Results show appropriateness varies across domains independently of naturalness. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：text-to-speech, tts system。"
+        }
+      }
+    ],
+    "Enhancement": [],
+    "SLU": [],
+    "Paralinguistics": [],
+    "Audio": [
+      {
+        "arxiv_id": "2606.31730v1",
+        "title_en": "A Fair and Transparent Framework for Speech-Based Depression Detection: Balancing Interpretability and Performance",
+        "abstract_en": "While speech provides rich, non-invasive biomarkers for mental-health assessment, clinical adoption is limited by opaque models and potential demographic bias. In this work we propose a methodological framework to evaluate robustness and interpretability for automated depression detection on the extended DAIC-WOZ dataset using low-complexity machine learning baselines (RF, SVM, and MLP) chosen to mitigate overfitting and enhance generalization in combination with human-understandable acoustic features (MFCCs, eGeMAPS). To balance accuracy with clinical trust, we leverage explainability methods (LIME and SHAP) for feature selection, validating our findings with statistical significance tests and demographic fairness analyses to mitigate spurious, artifact-driven correlations. Empirical results demonstrate that an optimized subset of explainable AI (XAI)-selected features combined with an MLP architecture achieves a state-of-the-art test accuracy of 82\\%. Ultimately, this work provides a transparent framework for robust and ethical assistive technologies that can be applied to any other binary task.",
+        "authors": [
+          "Mariel Estevez",
+          "Alfonso Ortega",
+          "Antonio Miguel",
+          "Eduardo Lleida"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2606.31730v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-06-30T14:29:20Z",
+        "updated": "2026-06-30T14:29:20Z",
+        "keywords_en": [
+          "fair",
+          "transparent",
+          "framework",
+          "speech-based",
+          "depression",
+          "detection"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《A Fair and Transparent Framework for Speech-Based Depression Detection: Balancing Interpretability and Performance》所界定。 从摘要看，作者主要围绕 fair、transparent、framework 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Empirical results demonstrate that an optimized subset of explainable AI (XAI)-selected features combined with an MLP architecture achieves a state-of-the-art test accuracy of 82\\%. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：fair, transparent, framework。"
+        }
+      }
+    ]
+  },
+  "model_name": "deepseek-v3"
+}
