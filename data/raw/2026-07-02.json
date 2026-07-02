@@ -1,0 +1,69 @@
+{
+  "window": {
+    "start": "2026-07-01T13:13:12.900660+08:00",
+    "end": "2026-07-02T12:49:35.258725+08:00"
+  },
+  "fetched_count": 3,
+  "deduplicated_count": 3,
+  "new_count": 3,
+  "papers": [
+    {
+      "arxiv_id": "2607.00946v1",
+      "title_en": "A Geometric Perspective on Composable Emotion Steering in Text-to-Speech Models",
+      "abstract_en": "While prior work has explored emotion control in hybrid text-to-speech systems, the geometric properties of these modules, and their implications for steerability, remain poorly understood. We present the first comparative study of speech language model (SLM) and conditional flow-matching (CFM) modules as activation steering sites for mixed emotion speech synthesis. We first characterize emotion representations using linear probing and local intrinsic dimensionality (LID), and then evaluate single-site and joint steering for mixed-emotion synthesis. Our results show that SLM offers a clean, low-dimensional emotion-specific subspace with strong speaker--emotion disentanglement, while CFM exhibitspoor cross-speaker generalization due to speaker--emotion entanglement. Joint steering increases emotion intensity but degrades proportional control and speech quality on in-distribution data. These findings provide practical guidance for multi-site activation steering in hybrid TTS systems and highlight the importance of representation geometry in controllable speech generation.",
+      "authors": [
+        "Siyi Wang",
+        "James Bailey",
+        "Ting Dang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.00946v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-07-01T13:46:16Z",
+      "updated": "2026-07-01T13:46:16Z"
+    },
+    {
+      "arxiv_id": "2607.01108v1",
+      "title_en": "NPUsper: Eliminating Redundant Computation for Real-Time Whisper on Mobile NPUs",
+      "abstract_en": "We present NPUsper, a live transcription system that makes Whisper efficient on mobile NPUs by eliminating redundant computation. To avoid the heavy padding used by prior streaming systems, NPUsper detects hallucinated tokens online from temporal patterns in decoder cross-attention, allowing each inference round to process short audio inputs with minimal carryover. For efficient mobile-NPU execution, we propose controlled unrolling, which executes autoregressive decoding as K-step chunk graphs, removing unnecessary KV-cache computation and reducing graph-dispatch overhead. NPUsper achieves up to 4.84x lower per-word latency, up to 33.2x lower time-to-first-token (TTFT), and up to 88.64% lower average power consumption compared with baselines, while maintaining comparable transcription accuracy. The code is available at https://github.com/npusper/NPUsper.",
+      "authors": [
+        "Sihyeon Lee",
+        "Hojeong Lee",
+        "Sungwon Woo",
+        "Chengpo Yan",
+        "Suman Banerjee",
+        "Seyeon Kim"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.01108v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-07-01T16:00:16Z",
+      "updated": "2026-07-01T16:00:16Z"
+    },
+    {
+      "arxiv_id": "2607.01161v1",
+      "title_en": "Disentangling Speaker and Language Effects in Cross-Lingual Speaker Verification for Iberian Languages",
+      "abstract_en": "Cross-lingual speaker verification (SV) systems typically exhibit performance degradation when enrollment and test utterances are spoken in different languages. However, standard evaluation protocols confound language mismatch with inter-speaker variability, as evaluation is generally performed with different speakers across languages. In this work, we introduce a bilingual same-speaker evaluation set for five Iberian languages, enabling analysis of cross-lingual SV under constant speaker identity. We apply this setup to a HuBERT-based SV system previously shown to exhibit strong language dependence, and analyze results using the Cross-Lingual Transfer Matrix (CLTM) to study pairwise cross-lingual transfer. Our results show that speaker-related variability accounts for part of the observed degradation, but language mismatch remains the main driver of cross-lingual performance loss. These findings provide a more precise characterization of language dependence in cross-lingual SV.",
+      "authors": [
+        "Pol Buitrago",
+        "Javier Hernando"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.01161v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-07-01T16:44:19Z",
+      "updated": "2026-07-01T16:44:19Z"
+    }
+  ]
+}
