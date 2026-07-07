@@ -1,0 +1,176 @@
+{
+  "window": {
+    "start": "2026-07-06T13:01:04.752667+08:00",
+    "end": "2026-07-07T12:39:15.920323+08:00"
+  },
+  "fetched_count": 8,
+  "deduplicated_count": 7,
+  "new_count": 7,
+  "papers": [
+    {
+      "arxiv_id": "2607.05051v1",
+      "title_en": "Listen, Think, Transcribe: Continuous Latent Test-Time Scaling for ASR",
+      "abstract_en": "End-to-end ASR models transcribe in a single pass, leaving no room for the decoder to revisit hard inputs. We propose LatentASR, a parameter-efficient method that adds continuous latent test-time scaling to a frozen ASR backbone. Two small trainable modules drive it: a Latent Adapter that iteratively refines a few latent prefix positions through bounded, stabilized updates, and a Value Head that predicts whether extra computation will help and halts the loop early. The Qwen3-ASR-0.6B backbone stays fully frozen, and we train only ~4M extra parameters. We activate this loop with a deliberately small, diverse 500-utterance training set. Under this minimal-data regime, standard adaptation methods all regress: full fine-tuning, LoRA, and prompt tuning each increase WER. LatentASR is the only tested method that reduces WER on both clean benchmarks (FLEURS -2.54% and VoxPopuli -0.47% relative). The reductions are concentrated on intrinsically hard inputs. On accented and code-switched speech (ASCEND), LatentASR achieves a 16.0% relative CER reduction. Across 30 FLEURS languages (23,049 utterances), the multilingual WER decreases uniformly across resource tiers, confirming that the adapter generalizes without overfitting. Dynamic halting preserves most of the clean-set reduction at a fraction of the compute, skipping roughly half of all utterances at the entry gate. Our results show that a small, carefully chosen activation set can switch on test-time scaling inside a frozen ASR model without corrupting the model itself, converting fixed per-utterance compute into input-dependent compute where it is most needed.",
+      "authors": [
+        "Ho Lam Chung",
+        "Yiming Chen",
+        "Dau-Cheng Lyu",
+        "Hsiao-Tsung Hung",
+        "Hung-yi Lee"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.05051v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-07-06T13:25:33Z",
+      "updated": "2026-07-06T13:25:33Z"
+    },
+    {
+      "arxiv_id": "2607.05058v1",
+      "title_en": "Context-Aware ASR for Mandarin Technical Lectures",
+      "abstract_en": "Technical lectures mix Mandarin speech with English technical terms. These terms carry the core meaning of the lecture, yet they occupy few characters. Character error rate (CER) therefore hides their recognition failures. We study whether lecture context helps recognize these terms. We build a term-rich Mandarin AI/ML lecture benchmark, and we define term-centric metrics that measure technical-term recognition directly. We then propose a two-pass, reference-free decoding method. The first pass runs segment-only ASR. We extract the most frequent technical terms from the first-pass hypotheses, and we prompt the recognizer with this self-built glossary in the second pass. Across five ASR backbones, the first-pass glossary raises term recall for every model and holds or lowers CER on all five. On Breeze-ASR-25 it lifts term recall from 52.50% to 60.13% while lowering CER, and a hybrid that adds a small external term list reaches 62.05% recall and 82.73% term precision. Lecture context, recovered from the model's own output, is a practical signal for technical-term recognition. Term-centric evaluation exposes errors that CER misses.",
+      "authors": [
+        "Ho-Lam Chung",
+        "Yiming Chen",
+        "Hung-yi Lee"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.05058v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-07-06T13:31:09Z",
+      "updated": "2026-07-06T13:31:09Z"
+    },
+    {
+      "arxiv_id": "2607.05060v1",
+      "title_en": "Towards Language-Agnostic Speech Inversion",
+      "abstract_en": "Characteristic timing patterns are reflected in the acoustic speech signal, encompassing both vocal tract configuration and acoustic excitation. Previous studies have demonstrated that speech inversion (SI) systems can recover these timing patterns from speech, including oral tract variables (tongue and lip constrictions) and source information such as periodic and aperiodic energies and fundamental frequency. In this study, we develop an SI system that simultaneously estimates oral tract variables and three source information parameters trained on co-recorded American English speech audio and articulatory kinematics and investigate cross-linguistic generalizability by evaluating performance on previously unseen languages. Pearson product-moment correlation scores of 0.83 and 0.74 were achieved on untrained French and Russian respectively, across oral tract variables and source information when comparing estimated data with ground-truth measurements.",
+      "authors": [
+        "Saba Tabatabaee",
+        "Mark Tiede",
+        "Suzanne Boyce",
+        "Liran Oren",
+        "Carol Espy-Wilson"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.05060v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-07-06T13:31:43Z",
+      "updated": "2026-07-06T13:31:43Z"
+    },
+    {
+      "arxiv_id": "2607.05196v1",
+      "title_en": "Unified Audio Intelligence Without Regressing on Text Intelligence",
+      "abstract_en": "Audio intelligence involves understanding, reasoning about, and generating both audio and speech. In this work, we introduce Nemotron-Labs-Audex-30B-A3B (Audex), a unified audio-text LLM built on Nemotron-Cascade-2-30B-A3B, a strong text-only MoE LLM. Audex adopts a simple unified design with a single Transformer decoder: audio inputs are encoded and projected into the text embedding space, while text tokens and quantized audio output tokens are treated uniformly during generation. This architecture enables strong audio-text fusion, seamless multimodal generation, and compatibility with standard LLM training and inference infrastructure. For training, we meticulously curate audio-text datasets comprising 157.4B audio tokens and 320.5B text tokens. We apply multi-stage supervised training on these datasets, followed by text-only Cascade RL and multi-domain on-policy distillation. Audex delivers state-of-the-art audio understanding, speech recognition and translation, text-to-speech, audio generation, and speech-to-speech generation, while preserving very compelling reasoning, alignment, knowledge, long-context, and agentic capabilities of its text-only LLM backbone with marginal or no regression. We release the model checkpoints to facilitate open research.",
+      "authors": [
+        "Zhifeng Kong",
+        "Sang-gil Lee",
+        "Jaehyeon Kim",
+        "Boxin Wang",
+        "Zihan Liu",
+        "Sungwon Kim",
+        "Yang Chen",
+        "Arushi Goel",
+        "Rajarshi Roy",
+        "Wenliang Dai",
+        "Zhuolin Yang",
+        "Yangyi Chen",
+        "Dongfu Jiang",
+        "Sreyan Ghosh",
+        "Tuomas Rintamaki",
+        "Andrew Tao",
+        "Jonathan Raiman",
+        "Mohammad Shoeybi",
+        "Bryan Catanzaro",
+        "Wei Ping"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.05196v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-07-06T15:11:57Z",
+      "updated": "2026-07-06T15:11:57Z"
+    },
+    {
+      "arxiv_id": "2607.05276v1",
+      "title_en": "ProPS: Prompted Profile Synthesis for Natural Language-Conditioned Speaker Embedding Distributions",
+      "abstract_en": "Speaker embeddings, or x-vectors, are widely used to represent speaker identity and speaker-related attributes, but existing embedding extractors are typically descriptive rather than generative: they map an observed speech segment to an x-vector, which is then used for downstream applications. We introduce ProPS, Prompted Profile Synthesis, a framework for generating distributions of speaker embeddings conditioned on natural language prompts such as \"a thirties male speaker with an Indian accent\". ProPS converts human-written profile descriptions into sentence embeddings and uses a mixture density network trained on a large-scale dataset to predict a Gaussian mixture model in the x-vector space. The model is trained by maximizing the likelihood that real speaker embeddings match the requested profile, and its generated distributions are evaluated by negative log-likelihood on held-out x-vectors and by attribute classification accuracies on sampled synthetic x-vectors. Experiments show that ProPS produces profile-conditioned distributions and generates x-vectors that preserve requested speaker attributes such as age, gender, accent, and prosodic characteristics. This design enables controllable speaker-profile synthesis for speech generation systems like Text-To-Speech (TTS) or Voice Conversion (VC) while anchoring generated distributions in observed speaker-embedding structure.",
+      "authors": [
+        "Thomas Thebaud",
+        "Junhyeok Lee",
+        "Laureano Moro-Velazquez",
+        "Jesus Villalba Lopez",
+        "Najim Dehak"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.05276v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "eess.AS"
+      ],
+      "published": "2026-07-06T16:21:34Z",
+      "updated": "2026-07-06T16:21:34Z"
+    },
+    {
+      "arxiv_id": "2607.05364v1",
+      "title_en": "REDDIT: Correcting Model-Generated Timestamp Drift in ASR without Forgetting via Replay-Based Distribution Editing",
+      "abstract_en": "Modern autoregressive ASR systems can emit timestamps as decoded tokens, enabling timestamped transcription without frame-level aligners or inference-time post-processing. We show that these generated timestamps can drift across long non-speech spans: the transcript may remain plausible, but the decoded time axis drifts away from the audio. We study this non-speech-induced timestamp drift with self-built gap and long-gap benchmarks across 15 evaluated timestamp-producing ASR and audio-language systems. Naive timestamp-corrected fine-tuning improves alignment but can severely degrade non-target ASR behavior, exposing a forgetting problem. We propose REDDIT(REplay-based Distribution eDITing), a lightweight two-stage post-training framework that corrects timestamps while avoiding this catastrophic forgetting: it first edits timestamp targets under the model's own replayed decoder context while matching the frozen base distribution on non-timestamp tokens, then applies a short edited-prefix refinement stage. In this framework, we construct correction supervision without human transcripts or human timestamp annotations by combining VAD-trimmed speech spans with inserted non-speech gaps and known concatenation offsets. On Whisper-tiny, 34.9 hours of targeted correction audio used and only 1.6% of model parameters updated, raising long-gap mIoU from 38.7% to 95.0% and reducing mixed-gap out-of-domain AAS from 2752 ms to 223 ms while preserving CV-en MER at 41.3% (versus 524.2% for ordinary SFT decoder tuning).",
+      "authors": [
+        "Cheng-Kang Chou",
+        "Ming-To Chuang",
+        "Ke-Han Lu",
+        "Chan-Jan Hsu",
+        "Hung-yi Lee"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.05364v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-07-06T17:40:54Z",
+      "updated": "2026-07-06T17:40:54Z"
+    },
+    {
+      "arxiv_id": "2607.05365v1",
+      "title_en": "SPEARBench: A Benchmark for Naturalness Evaluation in Streaming Speech-to-Speech Language Models",
+      "abstract_en": "Streaming speech-to-speech language models aim to answer spoken queries directly with synthetic speech. However, standard speech and text benchmarks do not capture whether these systems behave naturally in conversations, where timing, turn-taking, prosody, interpersonal stance, language and dialect consistency, and relationship-aware appropriateness jointly shape perceived quality. We introduce SPEARBench, a benchmark for evaluating naturalness in speech-to-speech language models from question-answer interactions. SPEARBench constructs controlled dialogue prompts from the Seamless Interaction corpus, runs inference across multiple models, and evaluates generated answers using a multidimensional protocol that covers response latency, interruptions, speech quality, ASR robustness, language and dialect consistency, emotional naturalness, interpersonal stance, and explainable distributional baselines. The benchmark includes original human answers as a reference condition and reports results for several contemporary models. Results show that current models can achieve high signal-level quality and low ASR error while still differing from human conversational behavior in latency, overlap, dialect preservation, emotional adaptation, and interpersonal stance dynamics.",
+      "authors": [
+        "Thomas Thebaud",
+        "Yuzhe Wang",
+        "Hao Zhang",
+        "Sathvik Manikantan Napa Ugandhar",
+        "Ashish Hallur",
+        "Georgi Tinchev",
+        "Venkatesh Ravichandran",
+        "Laureano Moro-Velazquez"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.05365v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-07-06T17:42:59Z",
+      "updated": "2026-07-06T17:42:59Z"
+    }
+  ]
+}
