@@ -1,0 +1,29 @@
+{
+  "window": {
+    "start": "2026-07-08T11:59:46.987234+08:00",
+    "end": "2026-07-09T12:39:12.505483+08:00"
+  },
+  "fetched_count": 1,
+  "deduplicated_count": 1,
+  "new_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2607.07579v1",
+      "title_en": "Text-Independent Speaker Verification Using Discrete Audio Tokens",
+      "abstract_en": "Neural audio codecs (NACs) enable efficient audio compression and have achieved success in downstream tasks such as speech synthesis. However, their discrete representations consistently underperform traditional spectral features in automatic speaker verification (ASV). We empirically demonstrate that speaker cues are implicitly preserved in discrete tokens but remain underutilized by conventional ASV training paradigms. To address this, we propose a Cross-Feature Knowledge Distillation (CFKD) framework. By guiding the codec-based student to mimic the embedding space of a strong Fbank-based teacher, CFKD provides structured supervision for effective utilization of speaker information in tokens. Experiments on the VoxCeleb benchmarks show that CFKD substantially improves the ASV performance of codec-based systems, allowing them to approach the accuracy of Fbank-based teacher models and highlighting the potential of discrete audio tokens for diverse speech tasks.",
+      "authors": [
+        "Zheng Liang",
+        "Junjie Li",
+        "Kong Aik Lee"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.07579v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-07-08T16:03:44Z",
+      "updated": "2026-07-08T16:03:44Z"
+    }
+  ]
+}

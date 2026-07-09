@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-07-09T12:39:14.929597+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-07-08T11:59:46.987234+08:00",
+    "end": "2026-07-09T12:39:12.505483+08:00",
+    "start_display": "2026-07-08 11:59:46 CST",
+    "end_display": "2026-07-09 12:39:12 CST"
+  },
+  "summary": {
+    "total": 1,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 0,
+      "TTS": 1,
+      "Enhancement": 0,
+      "SLU": 0,
+      "Paralinguistics": 0,
+      "Audio": 0
+    },
+    "headline": "今日共收录 1 篇新论文，主要分布在 TTS 1。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-07-09-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2607.07579v1",
+      "title_en": "Text-Independent Speaker Verification Using Discrete Audio Tokens",
+      "abstract_en": "Neural audio codecs (NACs) enable efficient audio compression and have achieved success in downstream tasks such as speech synthesis. However, their discrete representations consistently underperform traditional spectral features in automatic speaker verification (ASV). We empirically demonstrate that speaker cues are implicitly preserved in discrete tokens but remain underutilized by conventional ASV training paradigms. To address this, we propose a Cross-Feature Knowledge Distillation (CFKD) framework. By guiding the codec-based student to mimic the embedding space of a strong Fbank-based teacher, CFKD provides structured supervision for effective utilization of speaker information in tokens. Experiments on the VoxCeleb benchmarks show that CFKD substantially improves the ASV performance of codec-based systems, allowing them to approach the accuracy of Fbank-based teacher models and highlighting the potential of discrete audio tokens for diverse speech tasks.",
+      "authors": [
+        "Zheng Liang",
+        "Junjie Li",
+        "Kong Aik Lee"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.07579v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-07-08T16:03:44Z",
+      "updated": "2026-07-08T16:03:44Z",
+      "keywords_en": [
+        "speech synthesis",
+        "speaker verification"
+      ],
+      "digest_category": "TTS",
+      "category_label": "语音合成",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音合成」方向，核心任务由题目《Text-Independent Speaker Verification Using Discrete Audio Tokens》所界定。 从摘要看，作者主要围绕 speech synthesis、speaker verification 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Neural audio codecs (NACs) enable efficient audio compression and have achieved success in downstream tasks such as speech synthesis. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech synthesis, speaker verification。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [],
+    "TTS": [
+      {
+        "arxiv_id": "2607.07579v1",
+        "title_en": "Text-Independent Speaker Verification Using Discrete Audio Tokens",
+        "abstract_en": "Neural audio codecs (NACs) enable efficient audio compression and have achieved success in downstream tasks such as speech synthesis. However, their discrete representations consistently underperform traditional spectral features in automatic speaker verification (ASV). We empirically demonstrate that speaker cues are implicitly preserved in discrete tokens but remain underutilized by conventional ASV training paradigms. To address this, we propose a Cross-Feature Knowledge Distillation (CFKD) framework. By guiding the codec-based student to mimic the embedding space of a strong Fbank-based teacher, CFKD provides structured supervision for effective utilization of speaker information in tokens. Experiments on the VoxCeleb benchmarks show that CFKD substantially improves the ASV performance of codec-based systems, allowing them to approach the accuracy of Fbank-based teacher models and highlighting the potential of discrete audio tokens for diverse speech tasks.",
+        "authors": [
+          "Zheng Liang",
+          "Junjie Li",
+          "Kong Aik Lee"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2607.07579v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-07-08T16:03:44Z",
+        "updated": "2026-07-08T16:03:44Z",
+        "keywords_en": [
+          "speech synthesis",
+          "speaker verification"
+        ],
+        "digest_category": "TTS",
+        "category_label": "语音合成",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音合成」方向，核心任务由题目《Text-Independent Speaker Verification Using Discrete Audio Tokens》所界定。 从摘要看，作者主要围绕 speech synthesis、speaker verification 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Neural audio codecs (NACs) enable efficient audio compression and have achieved success in downstream tasks such as speech synthesis. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech synthesis, speaker verification。"
+        }
+      }
+    ],
+    "Enhancement": [],
+    "SLU": [],
+    "Paralinguistics": [],
+    "Audio": []
+  },
+  "model_name": "deepseek-v3"
+}
