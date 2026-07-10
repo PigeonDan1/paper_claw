@@ -1,0 +1,154 @@
+<div align="center">
+
+# 📰 Paper Claw
+
+**2026-07-10**
+
+</div>
+
+---
+
+## 📊 今日速览
+
+| 指标 | 数值 |
+|:---|:---|
+| ⏰ 时间窗口 | 2026-07-09 12:39:12 CST → 2026-07-10 12:41:07 CST |
+| 📄 论文总数 | **6** 篇 |
+
+### 分类统计
+
+- **Speech LLM**: 0 篇
+- **ASR**: 1 篇
+- **TTS**: 0 篇
+- **Enhancement**: 1 篇
+- **SLU**: 0 篇
+- **Paralinguistics**: 0 篇
+- **Audio**: 4 篇
+
+> 💡 今日共收录 6 篇新论文，主要分布在 ASR 1, Enhancement 1, Audio 4。
+> 📈 整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。
+
+---
+
+## 🏷️ Speech LLM
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ ASR
+
+### 1. Why Do You Say It Like That? A Phoneme-Level Framework for Explainable Speech Deepfake Detection
+
+👤 **作者**: Anna Taylor, Michele Panariello, Massimiliano Todisco, Chiara Galdi, Nicholas Evans, Driss Matrouf
+🔗 **来源**: [https://arxiv.org/abs/2607.08586v1](https://arxiv.org/abs/2607.08586v1)
+
+**摘要**
+> As the accuracy of speech deepfake detection improves with the use of self-supervised representations such as wav2vec 2.0 and HuBERT, understanding why the speech is classified as bona fide or deepfake remains an open challenge. In pursuit of more trustworthy and interpretable artificial intelligence, we introduce a phoneme-level analysis framework that connects model predictions to measurable phonetic units. Our post-hoc explainability method is generally applicable to a variety of speech deepfake detection systems based on convolutional neural networks since it leverages Gradient-weighted Class Activation Mapping in conjunction with speech recognition to generate saliency maps aligned with phonemes and pauses. This pipeline reveals statistically significant attack- and speaker-dependent phonetic cues associated with spoofed speech in terms that humans can understand. Experiments using ASVspoof 5 show comparable detection performance to similar architectures while providing linguistic interpretations across speakers and spoofing conditions.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音识别」方向，核心任务由题目《Why Do You Say It Like That? A Phoneme-Level Framework for Explainable Speech Deepfake Detection》所界定。 从摘要看，作者主要围绕 wav2vec、hubert 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：As the accuracy of speech deepfake detection improves with the use of self-supervised representations such as wav2vec 2.0 and HuBERT, understanding why the speech is classified as bona fide or deepfake remains an open challenge. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：wav2vec, hubert。 |
+
+---
+## 🏷️ TTS
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Enhancement
+
+### 1. It Takes Few to TANGO: A Quantized Distributed Model for Binaural Speech Enhancement
+
+👤 **作者**: Zahra Benslimane, Pierre Chouteau, Martyna Poreba, Fabrice Auzanneau, Michal Szczepanski, Fabian Chersi, Romain Serizel
+🔗 **来源**: [https://arxiv.org/abs/2607.08645v1](https://arxiv.org/abs/2607.08645v1)
+
+**摘要**
+> Neural network-based multichannel speech enhancement systems achieve strong enhancement performance, but their computational and memory requirements limit deployment on resource-constrained devices. This paper investigates low-precision inference for TANGO, a hybrid distributed binaural speech enhancement system combining neural mask estimation with spatial filtering. We evaluate post-training quantization and quantization-aware training for the neural components, and analyze how quantization errors in the mask estimators propagate through the downstream spatial filtering stage. Our analysis shows that, although quantization degrades intermediate mask estimates, the spatial filtering stage compensates for most quantization-induced errors. Leveraging this robustness, we simplify TANGO into MN-TANGO, reducing both model size and computational complexity while maintaining comparable final performance. By combining INT8 weight-and-activation quantization with ERB compression and grouped recurrent layers, the most compact MN-TANGO reaches 4.65 MMAC/s and 0.177 MB.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音增强」方向，核心任务由题目《It Takes Few to TANGO: A Quantized Distributed Model for Binaural Speech Enhancement》所界定。 从摘要看，作者主要围绕 speech enhancement 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Neural network-based multichannel speech enhancement systems achieve strong enhancement performance, but their computational and memory requirements limit deployment on resource-constrained devices. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech enhancement。 |
+
+---
+## 🏷️ SLU
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Paralinguistics
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Audio
+
+### 1. A Quantized Native Runtime for On-Device Semantic Audio Generation
+
+👤 **作者**: Matteo Spanio, Antonio Rodà
+🔗 **来源**: [https://arxiv.org/abs/2607.08526v1](https://arxiv.org/abs/2607.08526v1)
+
+**摘要**
+> Semantic audio applications increasingly require controllable generation on commodity and embedded hardware rather than through framework-heavy datacenter stacks. We present \textit{aria}, a dependency-free native runtime that runs the complete text-to-music pipeline of Stable Audio~3 (SA3) on ordinary GPUs, CPU-only machines, and a Raspberry~Pi~5, with no Python or deep-learning framework underneath. Our main contribution is a study of quantization: running the model at lower numerical precision to fit tight memory budgets, saving memory in place rather than adding to it. Because the runtime owns every internal tensor, it also exposes activation steering, a low-cost way to steer what the model generates. We judge the quality cost with three independent measures of the output (prompt adherence, overall audio quality, taste preservation), each compared against the ordinary variation between random seeds. Eight-bit precision shows no measurable quality loss on any measure while sharply cutting memory, and it is the fastest mode on the GPU; four-bit adds a small, bounded cost but shrinks the footprint enough to run the $1.2$-billion-parameter model on an $8$\,GB Pi. Against the official implementation, aria matches or exceeds generation speed and starts about seven times faster. A case study of the steering interface generates music carrying taste associations (\emph{sonic seasoning}), with genuine but bounded control for a subset of attributes. These results make a compact, quantized runtime with built-in control a practical basis for on-device semantic audio in Internet-of-Sounds settings. The \textit{aria} runtime is released at https://github.com/matteospanio/aria.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《A Quantized Native Runtime for On-Device Semantic Audio Generation》所界定。 从摘要看，作者主要围绕 audio generation 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Eight-bit precision shows no measurable quality loss on any measure while sharply cutting memory, and it is the fastest mode on the GPU; four-bit adds a small, bounded cost but shrinks the footprint enough to run the $1.2$-billion-parameter model on an $8$\,GB Pi. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：audio generation。 |
+
+---
+### 2. Structural Bottlenecks on Frequency Representation in End-to-End Audio Models
+
+👤 **作者**: Nicole Cosme-Clifford
+🔗 **来源**: [https://arxiv.org/abs/2607.08545v1](https://arxiv.org/abs/2607.08545v1)
+
+**摘要**
+> End-to-end neural audio models achieve high-fidelity compression and generation. We might read that performance as evidence they directly represent interpretable features such as pitch and timbre, but a model can produce plausible outputs without doing so. A model may encode these features in any reachable basis, but regardless of which, the features are well described as compositions of time-frequency-localized primitives. Whether state-of-the-art encoders preserve access to these primitives, and thus to compositions of them, remains unclear. Through theoretical analysis and controlled experiments, we show that several state-of-the-art strided convolutional encoders impose two structural bottlenecks, both predictable from architecture and signal structure, on access to these primitives: (1) they collapse primitives into alias equivalence classes, establishing a bound on representational capacity, and (2) they limit the frequency resolution available to learned filters, restricting separability. For well structured data, we find collapse rates of 31-35% and filter bandwidths 10-35x above the theoretical resolution bound, confirming that both bottlenecks arise under realistic signal conditions. We then introduce Gabor Latent Refactorization (GLRF), a lightweight post-hoc intervention that re-expresses encoder latents in a frequency-localized basis, reducing filter bandwidths from 10-35x to 1.5-3x of the theoretical resolution bound while preserving reconstruction fidelity and improving control over attributes like pitch. These results show that the encoders in question predictably degrade access to frequency-localized primitives, entangling the features that depend on them, and that a lightweight, retraining-free intervention can recover much of that access, improving steerability and interpretability.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Structural Bottlenecks on Frequency Representation in End-to-End Audio Models》所界定。 从摘要看，作者主要围绕 structural、bottlenecks、frequency 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：End-to-end neural audio models achieve high-fidelity compression and generation. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：structural, bottlenecks, frequency。 |
+
+---
+### 3. Multimodal Digital Biomarker for Asthma: Complementary Roles of Vocal, Clinical and Demographic Factors
+
+👤 **作者**: Vladimir Despotovic, Milena Despotovic, Abir Elbeji, Petr V. Nazarov, Guy Fagherazzi
+🔗 **来源**: [https://arxiv.org/abs/2607.08714v1](https://arxiv.org/abs/2607.08714v1)
+
+**摘要**
+> Asthma affects over 260 million people worldwide, yet diagnosis remains dependent on spirometry and specialist assessment, limiting accessibility in primary care and low-resource settings. Vocal biomarkers offer a promising non-invasive alternative, but prior studies have largely focused on acoustic features without integrating clinical context. We present a multimodal Mixture-of-Experts framework for asthma detection that adaptively combines acoustic embeddings from sustained vowel phonation and reading passage tasks with structured clinical and demographic data. The model was evaluated on a matched cohort of 1,218 asthma cases and healthy controls from the Colive Voice study. The multimodal model achieved an AUROC of 0.85 and Brier score of 0.17, outperforming unimodal and bimodal approaches. Adaptive gating analysis revealed increased reliance on audio features in participants with greater respiratory symptom burden, whereas clinical features contributed more strongly in less symptomatic individuals. These findings support scalable and explainable asthma screening using smartphone-collected voice recordings.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Multimodal Digital Biomarker for Asthma: Complementary Roles of Vocal, Clinical and Demographic Factors》所界定。 从摘要看，作者主要围绕 multimodal、digital、biomarker 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：The multimodal model achieved an AUROC of 0.85 and Brier score of 0.17, outperforming unimodal and bimodal approaches. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：multimodal, digital, biomarker。 |
+
+---
+### 4. MulTTiPop: A Multitrack Transcription Dataset for Pop Music
+
+👤 **作者**: Nathan Pruyne, Benjamin Stoler, William Chen, Chien-yu Huang, Shinji Watanabe, Chris Donahue
+🔗 **来源**: [https://arxiv.org/abs/2607.08756v1](https://arxiv.org/abs/2607.08756v1)
+
+**摘要**
+> We present MulTTiPop, a dataset of pop music segments and their associated multitrack MIDI recordings for the evaluation of automatic music transcription models. MulTTiPop contains 572 segments of popular music totaling 3.5 hours of audio, and contains songs from diverse genres and decades from the 1930s to 2000s. To collect this dataset, we perform metadata-based matching on song segments from the Lakh MIDI and TheoryTab datasets, manually identify an anchor beat between the audio and MIDI, then use beat tracking on the audio and warp the MIDI to match its tempo and timing. We evaluate state-of-the-art automatic music transcription models on MulTTiPop and find substantial room for improvement, with the best model achieving 38% Onset F1. More details and sound examples of MulTTiPop are available at https://gclef-cmu.org/multtipop.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《MulTTiPop: A Multitrack Transcription Dataset for Pop Music》所界定。 从摘要看，作者主要围绕 multtipop、multitrack、transcription 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We evaluate state-of-the-art automatic music transcription models on MulTTiPop and find substantial room for improvement, with the best model achieving 38% Onset F1. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：multtipop, multitrack, transcription。 |
+
+---
+
+<div align="center">
+
+*Generated by [Paper Claw](https://github.com/yourusername/paper_claw)*
+
+</div>
