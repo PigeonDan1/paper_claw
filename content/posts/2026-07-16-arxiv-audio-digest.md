@@ -1,0 +1,124 @@
+<div align="center">
+
+# 📰 Paper Claw
+
+**2026-07-16**
+
+</div>
+
+---
+
+## 📊 今日速览
+
+| 指标 | 数值 |
+|:---|:---|
+| ⏰ 时间窗口 | 2026-07-15 11:50:16 CST → 2026-07-16 11:53:04 CST |
+| 📄 论文总数 | **4** 篇 |
+
+### 分类统计
+
+- **Speech LLM**: 0 篇
+- **ASR**: 1 篇
+- **TTS**: 1 篇
+- **Enhancement**: 0 篇
+- **SLU**: 0 篇
+- **Paralinguistics**: 0 篇
+- **Audio**: 2 篇
+
+> 💡 今日共收录 4 篇新论文，主要分布在 ASR 1, TTS 1, Audio 2。
+> 📈 整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。
+
+---
+
+## 🏷️ Speech LLM
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ ASR
+
+### 1. Rethinking Speech Foundation Model Fine-tuning: Better SFT or Better Match?
+
+👤 **作者**: Wangjin Zhou, Yizhou Zhang, Yichi Wang, Tatsuya Kawahara
+🔗 **来源**: [https://arxiv.org/abs/2607.13864v1](https://arxiv.org/abs/2607.13864v1)
+
+**摘要**
+> Supervised fine-tuning (SFT) is widely used to adapt self-supervised speech representations to downstream classification tasks. Small gains observed under a single pretrained checkpoint are often interpreted as method-level improvements, i.e., a higher attainable performance ceiling. We show that such conclusions are not always reliable because SFT outcomes depend strongly on the specific pretrained instance. We conduct a systematic study on 3 SUPERB classification tasks, evaluating 8 SFT variants across 9 pretrained checkpoints from wav2vec~2.0, HuBERT, and WavLM, with multi-seed repetitions on representative base-scale models. We find that the identity of the statistically indistinguishable top-group SFT recipe is often checkpoint-dependent, with limited transferability across pretrained instances. These findings suggest that many reported downstream gains reflect instance and seed dependent elicitation match, rather than universally improving the attainable performance ceiling.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音识别」方向，核心任务由题目《Rethinking Speech Foundation Model Fine-tuning: Better SFT or Better Match?》所界定。 从摘要看，作者主要围绕 wav2vec、hubert 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Small gains observed under a single pretrained checkpoint are often interpreted as method-level improvements, i.e., a higher attainable performance ceiling. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：wav2vec, hubert。 |
+
+---
+## 🏷️ TTS
+
+### 1. From Continuous Deployment to Queryable Dataset: Terabyte-Scale AIS-Aligned Passive Acoustic Labelling
+
+👤 **作者**: Wayne Renaud, Priyanka Aravindan, Gabriel Spadon
+🔗 **来源**: [https://arxiv.org/abs/2607.13840v1](https://arxiv.org/abs/2607.13840v1)
+
+**摘要**
+> Long-duration passive acoustic deployments produce large archives of recordings that are not linked to vessel tracks or encounter structure, leaving range and contact conditions unavailable as variables and requiring manual selection for analysis. To address this limitation, we propose a database-native workflow that aligns hydrophone recordings with Automatic Identification System (AIS) position reports to produce distance-resolved data. Fixed-duration recording windows and AIS messages are stored as persistent geospatial tables and associated through an indexed spatiotemporal join, replacing in-memory nested iteration with a single scalable set-based database process capable of handling continuous, multi-year, million-window archival deployments without exhausting available memory. In this study, the approach processes approximately 9.5x10e5 recording windows and 6.9x10e6 AIS position reports, producing a structured table that separates no-contact, single-contact, and two-contact windows, with the closest point of approach computed directly where applicable and background conditions characterized via deterministic spectral ranking. This formulation enables a GeoAI framework in which spatially indexed, queryable data become directly usable for machine learning. The resulting data product reveals predominantly noise-dominated conditions, with vessel contributions emerging mainly at shorter ranges, indicating that the task lies in extracting structure under background-limited regimes. Spectrogram and quantitative analyses show weak tonal signatures embedded in noise and a consistent decay of signal-to-noise ratio with distance, supporting the use of this representation for scalable machine learning, similarity analysis, and predictive acoustic modelling in real maritime environments.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音合成」方向，核心任务由题目《From Continuous Deployment to Queryable Dataset: Terabyte-Scale AIS-Aligned Passive Acoustic Labelling》所界定。 从摘要看，作者主要围绕 acoustic model 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Spectrogram and quantitative analyses show weak tonal signatures embedded in noise and a consistent decay of signal-to-noise ratio with distance, supporting the use of this representation for scalable machine learning, similarity analysis, and predictive acoustic modelling in real maritime environments. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：acoustic model。 |
+
+---
+## 🏷️ Enhancement
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ SLU
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Paralinguistics
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Audio
+
+### 1. Genre Bias or Aesthetic Perception? Identifying and Mitigating Shortcut Learning in Music Evaluation
+
+👤 **作者**: Yizhou Zhang, Wangjin Zhou, Yi Zhao, Wei Tan, Keisuke Imoto, Zhi Gong
+🔗 **来源**: [https://arxiv.org/abs/2607.13903v1](https://arxiv.org/abs/2607.13903v1)
+
+**摘要**
+> Music aesthetics scoring plays a critical role in applications such as dataset curation, generative model evaluation, and reward modeling for music generation. Recent approaches rely on deep neural networks trained on human-annotated ratings, but these models may exploit spurious correlations rather than capturing perceptually meaningful aesthetics. In this work, we identify a previously underexplored failure mode in music evaluation models: genre-induced shortcut learning. Through a systematic analysis of SongEval, we show that biases in training data lead to strong correlations between genre-related features and predicted scores, causing the model to use them as a proxy for aesthetics. This results in systematic overestimation of pop music and undervaluation of high-quality samples from other genres, leading to predictions that are inconsistent with human preferences. To address this issue, we propose a training objective that jointly reweights hard samples and regularizes group-level performance, encouraging the model to learn genre-invariant representations of musicality. Experimental results demonstrate that our method reduces genre-dependent bias and improves alignment with human preferences, as reflected by gains in both cross-genre and within-genre preference alignment.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Genre Bias or Aesthetic Perception? Identifying and Mitigating Shortcut Learning in Music Evaluation》所界定。 从摘要看，作者主要围绕 genre、bias、aesthetic 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Through a systematic analysis of SongEval, we show that biases in training data lead to strong correlations between genre-related features and predicted scores, causing the model to use them as a proxy for aesthetics. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：genre, bias, aesthetic。 |
+
+---
+### 2. MetaPerch: Learning from metadata for bioacoustics foundation models
+
+👤 **作者**: Mustafa Chasmai, Vincent Dumoulin, Jenny Hamer
+🔗 **来源**: [https://arxiv.org/abs/2607.14072v1](https://arxiv.org/abs/2607.14072v1)
+
+**摘要**
+> Bioacoustic foundation models rely on large-scale citizen science platforms like Xeno-Canto for geographically and ecologically diverse data. Recent work has shown that supervision alone can produce SotA species detection models when trained on this large-scale data -- however, there remains unutilized potential in the form of recording metadata readily available within these community-driven data hubs. In this work, we explore the use of metadata -- such as location and time -- as auxiliary supervision signals, allowing the model to leverage species-metadata correlations in its learned representation. Auxiliary metadata losses provide additional information beyond vocalizations alone that can encourage a richer, more robust representation that generalizes better to species distribution and acoustic domain shifts -- important challenges for deployment in real-world passive acoustic monitoring (PAM) settings. We introduce MetaPerch, a new foundation model that achieves strong species identification performance across multiple challenging domains and present an extensive empirical study of the effects of 9 diverse metadata sources on 17 bioacoustic datasets.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《MetaPerch: Learning from metadata for bioacoustics foundation models》所界定。 从摘要看，作者主要围绕 metaperch、learning、from 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Recent work has shown that supervision alone can produce SotA species detection models when trained on this large-scale data -- however, there remains unutilized potential in the form of recording metadata readily available within these community-driven data hubs. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：metaperch, learning, from。 |
+
+---
+
+<div align="center">
+
+*Generated by [Paper Claw](https://github.com/yourusername/paper_claw)*
+
+</div>

@@ -1,0 +1,89 @@
+{
+  "window": {
+    "start": "2026-07-15T11:50:16.868218+08:00",
+    "end": "2026-07-16T11:53:04.185158+08:00"
+  },
+  "fetched_count": 4,
+  "deduplicated_count": 4,
+  "new_count": 4,
+  "papers": [
+    {
+      "arxiv_id": "2607.13840v1",
+      "title_en": "From Continuous Deployment to Queryable Dataset: Terabyte-Scale AIS-Aligned Passive Acoustic Labelling",
+      "abstract_en": "Long-duration passive acoustic deployments produce large archives of recordings that are not linked to vessel tracks or encounter structure, leaving range and contact conditions unavailable as variables and requiring manual selection for analysis. To address this limitation, we propose a database-native workflow that aligns hydrophone recordings with Automatic Identification System (AIS) position reports to produce distance-resolved data. Fixed-duration recording windows and AIS messages are stored as persistent geospatial tables and associated through an indexed spatiotemporal join, replacing in-memory nested iteration with a single scalable set-based database process capable of handling continuous, multi-year, million-window archival deployments without exhausting available memory. In this study, the approach processes approximately 9.5x10e5 recording windows and 6.9x10e6 AIS position reports, producing a structured table that separates no-contact, single-contact, and two-contact windows, with the closest point of approach computed directly where applicable and background conditions characterized via deterministic spectral ranking. This formulation enables a GeoAI framework in which spatially indexed, queryable data become directly usable for machine learning. The resulting data product reveals predominantly noise-dominated conditions, with vessel contributions emerging mainly at shorter ranges, indicating that the task lies in extracting structure under background-limited regimes. Spectrogram and quantitative analyses show weak tonal signatures embedded in noise and a consistent decay of signal-to-noise ratio with distance, supporting the use of this representation for scalable machine learning, similarity analysis, and predictive acoustic modelling in real maritime environments.",
+      "authors": [
+        "Wayne Renaud",
+        "Priyanka Aravindan",
+        "Gabriel Spadon"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.13840v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.DB",
+        "cs.SD"
+      ],
+      "published": "2026-07-15T13:47:56Z",
+      "updated": "2026-07-15T13:47:56Z"
+    },
+    {
+      "arxiv_id": "2607.13864v1",
+      "title_en": "Rethinking Speech Foundation Model Fine-tuning: Better SFT or Better Match?",
+      "abstract_en": "Supervised fine-tuning (SFT) is widely used to adapt self-supervised speech representations to downstream classification tasks. Small gains observed under a single pretrained checkpoint are often interpreted as method-level improvements, i.e., a higher attainable performance ceiling. We show that such conclusions are not always reliable because SFT outcomes depend strongly on the specific pretrained instance. We conduct a systematic study on 3 SUPERB classification tasks, evaluating 8 SFT variants across 9 pretrained checkpoints from wav2vec~2.0, HuBERT, and WavLM, with multi-seed repetitions on representative base-scale models. We find that the identity of the statistically indistinguishable top-group SFT recipe is often checkpoint-dependent, with limited transferability across pretrained instances. These findings suggest that many reported downstream gains reflect instance and seed dependent elicitation match, rather than universally improving the attainable performance ceiling.",
+      "authors": [
+        "Wangjin Zhou",
+        "Yizhou Zhang",
+        "Yichi Wang",
+        "Tatsuya Kawahara"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.13864v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-07-15T14:07:58Z",
+      "updated": "2026-07-15T14:07:58Z"
+    },
+    {
+      "arxiv_id": "2607.13903v1",
+      "title_en": "Genre Bias or Aesthetic Perception? Identifying and Mitigating Shortcut Learning in Music Evaluation",
+      "abstract_en": "Music aesthetics scoring plays a critical role in applications such as dataset curation, generative model evaluation, and reward modeling for music generation. Recent approaches rely on deep neural networks trained on human-annotated ratings, but these models may exploit spurious correlations rather than capturing perceptually meaningful aesthetics. In this work, we identify a previously underexplored failure mode in music evaluation models: genre-induced shortcut learning. Through a systematic analysis of SongEval, we show that biases in training data lead to strong correlations between genre-related features and predicted scores, causing the model to use them as a proxy for aesthetics. This results in systematic overestimation of pop music and undervaluation of high-quality samples from other genres, leading to predictions that are inconsistent with human preferences. To address this issue, we propose a training objective that jointly reweights hard samples and regularizes group-level performance, encouraging the model to learn genre-invariant representations of musicality. Experimental results demonstrate that our method reduces genre-dependent bias and improves alignment with human preferences, as reflected by gains in both cross-genre and within-genre preference alignment.",
+      "authors": [
+        "Yizhou Zhang",
+        "Wangjin Zhou",
+        "Yi Zhao",
+        "Wei Tan",
+        "Keisuke Imoto",
+        "Zhi Gong"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.13903v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-07-15T14:44:50Z",
+      "updated": "2026-07-15T14:44:50Z"
+    },
+    {
+      "arxiv_id": "2607.14072v1",
+      "title_en": "MetaPerch: Learning from metadata for bioacoustics foundation models",
+      "abstract_en": "Bioacoustic foundation models rely on large-scale citizen science platforms like Xeno-Canto for geographically and ecologically diverse data. Recent work has shown that supervision alone can produce SotA species detection models when trained on this large-scale data -- however, there remains unutilized potential in the form of recording metadata readily available within these community-driven data hubs. In this work, we explore the use of metadata -- such as location and time -- as auxiliary supervision signals, allowing the model to leverage species-metadata correlations in its learned representation. Auxiliary metadata losses provide additional information beyond vocalizations alone that can encourage a richer, more robust representation that generalizes better to species distribution and acoustic domain shifts -- important challenges for deployment in real-world passive acoustic monitoring (PAM) settings. We introduce MetaPerch, a new foundation model that achieves strong species identification performance across multiple challenging domains and present an extensive empirical study of the effects of 9 diverse metadata sources on 17 bioacoustic datasets.",
+      "authors": [
+        "Mustafa Chasmai",
+        "Vincent Dumoulin",
+        "Jenny Hamer"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.14072v1",
+      "primary_category": "cs.LG",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-07-15T17:42:41Z",
+      "updated": "2026-07-15T17:42:41Z"
+    }
+  ]
+}
