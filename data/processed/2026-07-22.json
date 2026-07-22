@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-07-22T12:09:33.623851+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-07-21T12:01:09.268214+08:00",
+    "end": "2026-07-22T12:09:31.110403+08:00",
+    "start_display": "2026-07-21 12:01:09 CST",
+    "end_display": "2026-07-22 12:09:31 CST"
+  },
+  "summary": {
+    "total": 1,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 1,
+      "TTS": 0,
+      "Enhancement": 0,
+      "SLU": 0,
+      "Paralinguistics": 0,
+      "Audio": 0
+    },
+    "headline": "今日共收录 1 篇新论文，主要分布在 ASR 1。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-07-22-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2607.19212v1",
+      "title_en": "Teleportation Game: Quantum Teleportation in Multi-Agent Systems for Interactive Music",
+      "abstract_en": "This paper introduces an interactive music system with quantum musical agents that communicate by teleporting quantum states to one another. Human performers interact in real time with agents whose melodic and rhythmic behaviours are encoded as quantum states using Single Qubit Probability Amplitude Modulation (SQPAM) and structured through Quantum Phase Estimation (QPE). Up to three agents are combined within a single quantum circuit, with directed communication via quantum teleportation. We are interested in supporting ambiguous, transformative interactions reminiscent of free Jazz improvisation. Therefore, rather than treating noise and decoherence as limitations, the system embraces NISQ-era constraints as creative affordances, framing agent communication as quantum whispers, that is, deliberate, musically expressive imperfections in state transfer. We provide demonstrations and analyses based on melodic correlation, pitch-set distance, and state fidelity, where a continuum between imitation and divergence can be observed. We developed a tunable interpretation method to assess how agents reinterpret teleported states. This work positions teleportation as a promising interaction mechanism for agent-based quantum computer music and outlines future directions toward distributed ensembles connected via the Quantum Internet.",
+      "authors": [
+        "Eduardo Reck Miranda",
+        "Scott Yeiichi Oshiro"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.19212v1",
+      "primary_category": "quant-ph",
+      "source_categories": [
+        "cs.SD",
+        "quant-ph"
+      ],
+      "published": "2026-07-21T15:42:20Z",
+      "updated": "2026-07-21T15:42:20Z",
+      "keywords_en": [
+        "whisper"
+      ],
+      "digest_category": "ASR",
+      "category_label": "语音识别",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音识别」方向，核心任务由题目《Teleportation Game: Quantum Teleportation in Multi-Agent Systems for Interactive Music》所界定。 从摘要看，作者主要围绕 whisper 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We are interested in supporting ambiguous, transformative interactions reminiscent of free Jazz improvisation. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：whisper。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [
+      {
+        "arxiv_id": "2607.19212v1",
+        "title_en": "Teleportation Game: Quantum Teleportation in Multi-Agent Systems for Interactive Music",
+        "abstract_en": "This paper introduces an interactive music system with quantum musical agents that communicate by teleporting quantum states to one another. Human performers interact in real time with agents whose melodic and rhythmic behaviours are encoded as quantum states using Single Qubit Probability Amplitude Modulation (SQPAM) and structured through Quantum Phase Estimation (QPE). Up to three agents are combined within a single quantum circuit, with directed communication via quantum teleportation. We are interested in supporting ambiguous, transformative interactions reminiscent of free Jazz improvisation. Therefore, rather than treating noise and decoherence as limitations, the system embraces NISQ-era constraints as creative affordances, framing agent communication as quantum whispers, that is, deliberate, musically expressive imperfections in state transfer. We provide demonstrations and analyses based on melodic correlation, pitch-set distance, and state fidelity, where a continuum between imitation and divergence can be observed. We developed a tunable interpretation method to assess how agents reinterpret teleported states. This work positions teleportation as a promising interaction mechanism for agent-based quantum computer music and outlines future directions toward distributed ensembles connected via the Quantum Internet.",
+        "authors": [
+          "Eduardo Reck Miranda",
+          "Scott Yeiichi Oshiro"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2607.19212v1",
+        "primary_category": "quant-ph",
+        "source_categories": [
+          "cs.SD",
+          "quant-ph"
+        ],
+        "published": "2026-07-21T15:42:20Z",
+        "updated": "2026-07-21T15:42:20Z",
+        "keywords_en": [
+          "whisper"
+        ],
+        "digest_category": "ASR",
+        "category_label": "语音识别",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音识别」方向，核心任务由题目《Teleportation Game: Quantum Teleportation in Multi-Agent Systems for Interactive Music》所界定。 从摘要看，作者主要围绕 whisper 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We are interested in supporting ambiguous, transformative interactions reminiscent of free Jazz improvisation. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：whisper。"
+        }
+      }
+    ],
+    "TTS": [],
+    "Enhancement": [],
+    "SLU": [],
+    "Paralinguistics": [],
+    "Audio": []
+  },
+  "model_name": "deepseek-v3"
+}

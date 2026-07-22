@@ -1,0 +1,29 @@
+{
+  "window": {
+    "start": "2026-07-21T12:01:09.268214+08:00",
+    "end": "2026-07-22T12:09:31.110403+08:00"
+  },
+  "fetched_count": 1,
+  "deduplicated_count": 1,
+  "new_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2607.19212v1",
+      "title_en": "Teleportation Game: Quantum Teleportation in Multi-Agent Systems for Interactive Music",
+      "abstract_en": "This paper introduces an interactive music system with quantum musical agents that communicate by teleporting quantum states to one another. Human performers interact in real time with agents whose melodic and rhythmic behaviours are encoded as quantum states using Single Qubit Probability Amplitude Modulation (SQPAM) and structured through Quantum Phase Estimation (QPE). Up to three agents are combined within a single quantum circuit, with directed communication via quantum teleportation. We are interested in supporting ambiguous, transformative interactions reminiscent of free Jazz improvisation. Therefore, rather than treating noise and decoherence as limitations, the system embraces NISQ-era constraints as creative affordances, framing agent communication as quantum whispers, that is, deliberate, musically expressive imperfections in state transfer. We provide demonstrations and analyses based on melodic correlation, pitch-set distance, and state fidelity, where a continuum between imitation and divergence can be observed. We developed a tunable interpretation method to assess how agents reinterpret teleported states. This work positions teleportation as a promising interaction mechanism for agent-based quantum computer music and outlines future directions toward distributed ensembles connected via the Quantum Internet.",
+      "authors": [
+        "Eduardo Reck Miranda",
+        "Scott Yeiichi Oshiro"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.19212v1",
+      "primary_category": "quant-ph",
+      "source_categories": [
+        "cs.SD",
+        "quant-ph"
+      ],
+      "published": "2026-07-21T15:42:20Z",
+      "updated": "2026-07-21T15:42:20Z"
+    }
+  ]
+}
