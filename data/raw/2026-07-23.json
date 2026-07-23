@@ -1,0 +1,107 @@
+{
+  "window": {
+    "start": "2026-07-22T12:09:31.110403+08:00",
+    "end": "2026-07-23T12:00:19.265993+08:00"
+  },
+  "fetched_count": 5,
+  "deduplicated_count": 4,
+  "new_count": 4,
+  "papers": [
+    {
+      "arxiv_id": "2607.20086v1",
+      "title_en": "Cumsum-Composable Phase Transport for Low-Cost Streaming Keyword Spotting",
+      "abstract_en": "State-space sequence models are attractive for streaming speech because they maintain compact recurrent state, but scan-style training kernels can have unfavorable constants for short audio tasks. We study cumsum-composable phase transport, a streaming-native temporal layer for keyword spotting. Each layer projects acoustic frames to complex channels, transports them by learned unitary rotations, accumulates a finite window using prefix differences, and applies a gated residual update. The same prefix representation gives exact batched training with ordinary cumulative sums and exact online inference with one prefix update per frame. Unitary transport is the key constraint: inverse rotations have norm one, keeping prefix terms well conditioned while memory is supplied by windows or block readouts. On Google Speech Commands v2 with 12 labels, mel+cumsum models retain competitive accuracy with compact baselines. The strongest single-seed run reaches 97.3\\% test accuracy; a 51.6K-parameter tied model also reaches 97.3\\%, and a 24.8K tied model reaches 96.8\\% versus 97.1\\% for a 25.6K MelCNNMaxPool baseline. In a matched cumsum-versus-scan benchmark, cumsum+window gives comparable accuracy, 94.82\\% versus 94.33\\%, while training 1.07x faster and reducing single-example latency from 7.09 ms to 5.01 ms on a Tesla T4. These results support cumsum phase transport as a simple low-cost temporal primitive for streaming keyword spotting.",
+      "authors": [
+        "Mahesh Godavarti"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.20086v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-07-22T12:36:53Z",
+      "updated": "2026-07-22T12:36:53Z"
+    },
+    {
+      "arxiv_id": "2607.20166v1",
+      "title_en": "Audio-Zero: Label-Free Self-Evolution for Fine-Grained Audio Reasoning",
+      "abstract_en": "Large Audio Language models (LALMs) have made rapid progress on acoustic understanding, yet they still struggle with fine-grained audio reasoning (e.g., recognizing event order, repetitions and duration). Existing post-training methods heavily rely on expensive external labels or provide only coarse semantic signals. To bridge this gap, we introduce Audio-Zero, the first label-free self-evolution framework in the field of LALMs that improves fine-grained auditory perception and reasoning. Audio-Zero constructs an auditory self-play game from unlabeled audio contrast pairs: most players hear a reference audio, while one odd listener hears a subtle variant. The model first generates clues describing what it hears and then identifies the odd listener by reasoning over inconsistencies among clues. Since the odd listener is known by construction, the game provides verifiable rewards without any annotated answers. Experiments with Qwen2-Audio-7B-Instruct and Qwen2.5-Omni-7B on TREA, MMAU Test-mini and MMAR show that Audio-Zero improves fine-grained audio reasoning while preserving broad audio understanding. Evolutionary and diagnostic analyses further reveal that increasingly fine-grained auditory descriptions emerge naturally from game pressure.",
+      "authors": [
+        "Siqian Tong",
+        "Xuan Li",
+        "Chaozhuo Li",
+        "Baolong Bi",
+        "Yiwei Wang",
+        "Yujun Cai",
+        "Shenghua Liu",
+        "Chengpeng Hao"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.20166v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-07-22T14:03:25Z",
+      "updated": "2026-07-22T14:03:25Z"
+    },
+    {
+      "arxiv_id": "2607.20253v1",
+      "title_en": "Pushing the Frontier of Full-Song Generation: Hierarchical Autoregressive Planning Meets Flow-Matching Rendering",
+      "abstract_en": "In this report, we present a unified song generation framework capable of producing high-quality full-length music from lyrics, text descriptions, and musical attributes. The proposed framework supports three tasks: Lyrics-to-Song Generation, which generates complete songs from text descriptions, lyrics, and musical attributes; Instrumental Music Generation, which creates music without vocals; and Cover Song Generation, which reinterprets existing songs with different styles while preserving their melodic content. Architecturally, our system consists of four main components: a semantic-aware tokenizer, hybird-LM, FullDiT, and a two-level melody module. The tokenizer encodes audio into 8-codebook RVQ tokens for efficient discrete music representation. Based on these tokens, hybird-LM performs hierarchical autoregressive audio-token modeling for full-song generation. To improve audio fidelity, FullDiT performs full-song flow matching in a continuous VAE latent space conditioned on codec tokens, lyrics, and text captions. For cover song generation, the melody module extracts and discretizes melody cues from reference audio to guide generation while preserving the original melodic content. Finally, we investigate DPO, GRPO, and OPD as reward-based post-training strategies for hybird-LM and apply flow-based GRPO to FullDiT to improve musicality and rendering quality. Experimental results on a multilingual automatic benchmark, complemented by the Artificial Analysis Music with Vocals leaderboard, show that the proposed framework achieves competitive performance in the evaluated settings.",
+      "authors": [
+        "Junyu Dai",
+        "Xinyue Fan",
+        "Weiqin Li",
+        "Xiangang Li",
+        "Yunjia Li",
+        "Bin Ma",
+        "Yukun Ma",
+        "Chongjia Ni",
+        "Yufei Shi",
+        "Haoxu Wang",
+        "Menglin Wu",
+        "Jianwei Yu",
+        "Huaicheng Zhang",
+        "Han Zhao",
+        "Shengkui Zhao",
+        "Haina Zhu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.20253v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-07-22T15:11:46Z",
+      "updated": "2026-07-22T15:11:46Z"
+    },
+    {
+      "arxiv_id": "2607.20386v1",
+      "title_en": "Improved Monitoring of Honey bee Colony Strength via Audio IoT Sensors, Modulation Tensorgrams and Recurrent Neural Networks",
+      "abstract_en": "Honey bees (Apis mellifera) play a crucial role in agriculture and ecosystem stability as key pollinators of crops and wild plants. As such, monitoring hive strength remotely with Internet of Things (IoT) sensors has become a crucial task. Previously, handcrafted features extracted from the modulation spectrum of audio IoT devices were shown to improve acoustic monitoring of colony strength. In this paper, we hypothesize that important discriminative information is present in the temporal dynamics of the modulation spectrum, but this information is discarded with prior methods. As such, we explore the use of a new modulation tensorgram where the time dimension is kept. This new representation is used as input to a convolutional neural network (CNN) and a convolutional recurrent deep neural networks (CRDNN). Using the public UrBAN dataset, which contains more than 3,000 hours of beehive audio recordings, we show that the proposed method improves both accuracy and cross-hive generalizability over prior benchmark methods, and the results further suggest improved robustness to noisy in-the-wild recording conditions. We use saliency maps and gradient-weighted class activation maps for explainability and show the importance of the modulation spectral temporal dynamics for the task at hand. Overall, our results suggest that accurate, generalizable, and robust acoustic monitoring of honey bee colony strength is possible.",
+      "authors": [
+        "Mahsa Abdollahi",
+        "Yi Zhu",
+        "Heitor R. Guimarães",
+        "Nico Coallier",
+        "Ségolène Maucourt",
+        "Pierre Giovenazzo",
+        "Tiago H. Falk"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.20386v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-07-22T17:13:30Z",
+      "updated": "2026-07-22T17:13:30Z"
+    }
+  ]
+}
