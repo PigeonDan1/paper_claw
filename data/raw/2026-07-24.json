@@ -1,0 +1,50 @@
+{
+  "window": {
+    "start": "2026-07-23T12:00:19.265993+08:00",
+    "end": "2026-07-24T11:58:50.990179+08:00"
+  },
+  "fetched_count": 2,
+  "deduplicated_count": 2,
+  "new_count": 2,
+  "papers": [
+    {
+      "arxiv_id": "2607.21393v1",
+      "title_en": "From Read Speech to Spoken Digits: A Task-Specific Evaluation of Speech Privacy With Informed Attackers",
+      "abstract_en": "Protecting speech privacy in real-life audio recordings is a growing concern. This contribution evaluates the effectiveness of three obfuscation techniques in protecting linguistic speech content, using digit recognition as a task-specific and practically motivated evaluation scenario. As a first baseline, a general-purpose speech recognition model and a digit-specific classifier were applied as informed attackers to recognise both single digits and concatenated digit sequences. Our experimental results demonstrate significant differences in recognition performance across digit modality, speech rate, and attack model. These findings emphasize the need for more comprehensive and application-oriented evaluation methods to ensure speech privacy.",
+      "authors": [
+        "Jule Pohlhausen",
+        "Anjana Rajasekhar",
+        "Anna Leschanowsky",
+        "Joerg Bitzer"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.21393v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-07-23T14:55:24Z",
+      "updated": "2026-07-23T14:55:24Z"
+    },
+    {
+      "arxiv_id": "2607.21424v1",
+      "title_en": "An Evaluation Framework for Structured Audio Captions Validated by Controlled Perturbations",
+      "abstract_en": "Recent advancements in automated audio captioning (AAC) have shifted from monolithic sentence generation toward structured formats that explicitly disentangle distinct acoustic and semantic properties. However, evaluating this heterogeneous data remains a significant challenge. Existing caption metrics focus on flat textual outputs and fail to reliably assess multimodal attributes. To bridge this gap, we propose a multi-axis evaluation framework tailored for structured audio descriptions. Building on the AudioCards dataset, we evaluate outputs across five orthogonal axes: tag-sets, descriptions, logical reasoning, numeric measurements, and spectral profiles. Our approach combines Large Language Model (LLM) judges to capture semantic nuance with deterministic computational metrics to precisely measure acoustic deviations. To rigorously validate the reliability of this framework, we introduce a controlled perturbation testing protocol that injects typed, graded errors into groundtruth annotations. Our results demonstrate that this framework successfully distinguishes meaning-preserving paraphrases from genuine semantic and acoustic corruptions.",
+      "authors": [
+        "Liang-Yuan Wu",
+        "Sripathi Sridhar",
+        "Mark Cartwright",
+        "Magdalena Fuentes"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.21424v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-07-23T15:26:52Z",
+      "updated": "2026-07-23T15:26:52Z"
+    }
+  ]
+}
