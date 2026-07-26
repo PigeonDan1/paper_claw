@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-07-26T12:18:54.290288+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-07-25T11:56:35.906089+08:00",
+    "end": "2026-07-26T12:18:53.667901+08:00",
+    "start_display": "2026-07-25 11:56:35 CST",
+    "end_display": "2026-07-26 12:18:53 CST"
+  },
+  "summary": {
+    "total": 0,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 0,
+      "TTS": 0,
+      "Enhancement": 0,
+      "SLU": 0,
+      "Paralinguistics": 0,
+      "Audio": 0
+    },
+    "headline": "今日时间窗口内未发现新的论文。",
+    "trend": "系统已完成抓取、归档与状态更新，可等待下一次定时运行。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-07-26-arxiv-audio-digest.md",
+  "papers": [],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [],
+    "TTS": [],
+    "Enhancement": [],
+    "SLU": [],
+    "Paralinguistics": [],
+    "Audio": []
+  },
+  "model_name": null
+}
