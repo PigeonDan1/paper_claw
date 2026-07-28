@@ -1,0 +1,241 @@
+<div align="center">
+
+# 📰 Paper Claw
+
+**2026-07-28**
+
+</div>
+
+---
+
+## 📊 今日速览
+
+| 指标 | 数值 |
+|:---|:---|
+| ⏰ 时间窗口 | 2026-07-26 12:18:53 CST → 2026-07-28 11:52:41 CST |
+| 📄 论文总数 | **12** 篇 |
+
+### 分类统计
+
+- **Speech LLM**: 0 篇
+- **ASR**: 1 篇
+- **TTS**: 5 篇
+- **Enhancement**: 1 篇
+- **SLU**: 0 篇
+- **Paralinguistics**: 0 篇
+- **Audio**: 5 篇
+
+> 💡 今日共收录 12 篇新论文，主要分布在 ASR 1, TTS 5, Enhancement 1, Audio 5。
+> 📈 整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。
+
+---
+
+## 🏷️ Speech LLM
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ ASR
+
+### 1. MoLGE: Mixture of Language Group Experts for Efficient Scaling of Massively Multilingual Speech Recognition
+
+👤 **作者**: Sangmin Lee, Woojin Chung, Woongjib Choi, Hong-Goo Kang
+🔗 **来源**: [https://arxiv.org/abs/2607.24030v1](https://arxiv.org/abs/2607.24030v1)
+
+**摘要**
+> Massively multilingual automatic speech recognition (ASR) models covering hundreds of languages must maintain robust performance across diverse linguistic and acoustic conditions. However, these models often encounter the curse of multilinguality, where model capacity is diluted across languages. To address this challenge, we propose Mixture of Language Group Experts (MoLGE), built upon speech self-supervised models (S3Ms). MoLGE assigns dedicated expert modules to clusters of similar languages, reducing the number of required submodules compared to conventional language-specific Mixture-of-Experts (MoE) schemes. It further integrates a hierarchical Low-Rank Adaptation (LoRA) strategy into the disentangled acoustic and linguistic components of the S3M architecture, enabling efficient modeling of language-specific characteristics while maintaining parameter efficiency. Further, we investigate the impact of language grouping strategies based on both linguistic and data-driven criteria on overall performance, providing an interpretable perspective on how language structure influences scalability in multilingual speech systems. In experiments, we evaluate MoLGE on a multilingual benchmark encompassing 495 languages. Results demonstrate that MoLGE consistently outperforms dense multilingual baselines with a minimal increase in trainable parameters. Notably, these language grouping strategies yield substantial improvements for both phonetic and orthographic aspects of ASR modeling. Our findings suggest that structured language specialization provides an effective pathway for massively scaling language coverage of multilingual ASR.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音识别」方向，核心任务由题目《MoLGE: Mixture of Language Group Experts for Efficient Scaling of Massively Multilingual Speech Recognition》所界定。 从摘要看，作者主要围绕 automatic speech recognition 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Results demonstrate that MoLGE consistently outperforms dense multilingual baselines with a minimal increase in trainable parameters. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：automatic speech recognition。 |
+
+---
+## 🏷️ TTS
+
+### 1. Memory Efficient Audio Synthesis with Decoupled Temporal Depth Diffusion Transformers
+
+👤 **作者**: Dongseong Hwang, Prasanth Yadla, Kaan Elgin, Shifas Padinjaru Veettil, Sivanand Achanta, Dipjyoti Paul, Ramya Rasipuram, Tyler Johnson, Emad Soroush, Chung-Cheng Chiu, Zhifeng Chen
+🔗 **来源**: [https://arxiv.org/abs/2607.23811v1](https://arxiv.org/abs/2607.23811v1)
+
+**摘要**
+> Siri Expressive Voices synthesize rich, configurable speech in real time and entirely on device, powered by AFM 3 Core Advanced, Apple's most powerful on-device foundation model. This work presents the memory-efficient audio synthesis architecture behind that capability: a detokenizer that converts the semantic audio tokens emitted by the foundation model into high-fidelity audio within the tight compute and memory budget of the Apple Matrix Coprocessor (AMX). We convert semantic audio tokens to a residual vector quantization (RVQ) representation with a three-component design, a streaming encoder, a temporal decoder, and a depth decoder, that systematically decouples temporal and depth processing. A single reusable depth decoder with Diffusion Transformer (DiT)-style stage conditioning generates all RVQ levels autoregressively, replacing the dedicated per-level decoders of prior multi-decoder architectures, while causal sliding window attention with fixed-window key-value caching yields constant memory complexity independent of sequence length. Deployed on the AMX, the detokenizer sustains roughly 10 ms per generation step, about 16x faster than real time, with a peak runtime memory of only 21 MB and 329 MB of on-device assets, enabling continuous streaming synthesis of 20-320 seconds of audio. This constant, small footprint replaces the linear and quadratic memory scaling of conventional transformer- and GAN-based approaches. Ablation studies validate the key architectural components, and audio quality assessment confirms that the architecture maintains synthesis fidelity while achieving efficiency gains over existing methods. Operating at a 1-billion-parameter activation size within AFM 3 Core Advanced, it improves Mean Opinion Score by +0.28 overall (4.15 vs. 3.87) and by +0.42 on conversational speech (4.24 vs. 3.82) over the prior on-device text-to-speech system.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音合成」方向，核心任务由题目《Memory Efficient Audio Synthesis with Decoupled Temporal Depth Diffusion Transformers》所界定。 从摘要看，作者主要围绕 text-to-speech 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Ablation studies validate the key architectural components, and audio quality assessment confirms that the architecture maintains synthesis fidelity while achieving efficiency gains over existing methods. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：text-to-speech。 |
+
+---
+### 2. Qwen-Audio-3.0-TTS: Freely Controllable and Highly Robust Speech Synthesis with Multi-Stage Training Paradigm
+
+👤 **作者**: Bajian Xiang, Cheng Wen, Han Zhao, Hao Wang, Haoxu Wang, Jiawei Jin, Jiayan Cui, Jie Chen, Mengxi Nie, Tianyu Zhao, Weiqin Li, Xiang Lv, Xiangang Li, Yang Xiang, Yang Zhou
+🔗 **来源**: [https://arxiv.org/abs/2607.23938v1](https://arxiv.org/abs/2607.23938v1)
+
+**摘要**
+> In this report, we present Qwen-Audio-3.0-TTS, a production-oriented speech synthesis system that jointly advances content consistency, speaker similarity, prosodic naturalness, audio quality, controllability, multilingual coverage, efficiency, and robustness. It combines a 12.5~Hz low-frame-rate speech tokenizer for reduced inference latency with a five-stage progressive training paradigm for coordinated language model (LM) and flow-matching model (FM) optimization. The model provides production-level control through free-style natural-language instructions and fine-grained inline tags, while supporting 16 languages, 20 Chinese dialect regions, one-pass long-form synthesis up to 3 minutes, and robust generation from noisy, reverberant, or unclear reference speech. Across SEED-TTS-Eval, CV3-Eval, instruction-following, long-form, and acoustic-robustness evaluations, Qwen-Audio-3.0-TTS achieves state-of-the-art performance on many reported dimensions or the strongest aggregate results. It also ranks first on the independent Artificial Analysis Text-to-Speech Leaderboard. These results establish Qwen-Audio-3.0-TTS as a strong foundation for production-level speech synthesis.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音合成」方向，核心任务由题目《Qwen-Audio-3.0-TTS: Freely Controllable and Highly Robust Speech Synthesis with Multi-Stage Training Paradigm》所界定。 从摘要看，作者主要围绕 text-to-speech、speech synthesis 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Across SEED-TTS-Eval, CV3-Eval, instruction-following, long-form, and acoustic-robustness evaluations, Qwen-Audio-3.0-TTS achieves state-of-the-art performance on many reported dimensions or the strongest aggregate results. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：text-to-speech, speech synthesis。 |
+
+---
+### 3. Leveraging Gradient Reversal Loss and Multitask Learning for Datasets-Aware Audio Deepfake Detection
+
+👤 **作者**: Mingrui Liang, Thomas Thebaud, Lukasz Wojciak, Laureano Moro Velazquez, Yishay Carmiel, Jesus Villalba Lopez, Najim Dehak
+🔗 **来源**: [https://arxiv.org/abs/2607.23961v1](https://arxiv.org/abs/2607.23961v1)
+
+**摘要**
+> Recent advances in speech synthesis and voice conversion, which pose threats to security and privacy, have underscored the need for deepfake detection technology. Although existing detection systems achieve strong performance on individual datasets, they often fail to generalize across diverse datasets. Prior methods for improving generalization, including data augmentation, adversarial training on auxiliary factors such as language or codec types, and Mixture-of-Experts (MoE), are limited by predefined augmentation coverage, difficulties in obtaining auxiliary factors, and substantial model complexity. In this work, we propose a practical dataset-aware framework for deepfake detection. Our method targets heterogeneous datasets for which auxiliary annotations such as language, codec, or spoofing method may not be consistently available. We therefore rely only on dataset identity as a naturally available supervisory signal for multitask (MT) and gradient reversal layer (GRL) training, allowing the model to investigate both dataset-aware multitask supervision and adversarial suppression of dataset-specific information. We conduct experiments following the 2025 Speech DeepFake Arena benchmark protocol, evaluating our model across multiple evaluation datasets and reporting aggregate performance in terms of Equal Error Rate (EER), including Average EER and Pooled EER. Compared with the baseline, MT reduces Average EER by 13.14% relatively, while GRL reduces Pooled EER by 5.32% relatively. These results demonstrate that our method can improve aggregate detection performance across heterogeneous evaluation datasets, offering a practical solution for deploying reliable deepfake detection systems on diverse and unseen real-world data.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音合成」方向，核心任务由题目《Leveraging Gradient Reversal Loss and Multitask Learning for Datasets-Aware Audio Deepfake Detection》所界定。 从摘要看，作者主要围绕 speech synthesis 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Although existing detection systems achieve strong performance on individual datasets, they often fail to generalize across diverse datasets. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：speech synthesis。 |
+
+---
+### 4. Revisiting Vocos: That Phasiness Business in Time-Frequency Neural Vocoding
+
+👤 **作者**: Ünal Ege Gaznepoğlu, Frank Zalkow, Mohammad Joshaghani, Emanuël A. P. Habets, Nils Peters, Christian Dittmar
+🔗 **来源**: [https://arxiv.org/abs/2607.24323v1](https://arxiv.org/abs/2607.24323v1)
+
+**摘要**
+> Recently, time-frequency neural vocoders have been approaching the state-of-the-art quality of time-domain neural vocoders. Vocos is a notable example due to its efficiency, but its audio quality lags behind the time-domain vocoders and the reasons remain debated. Thus, in this study, we revisit Vocos from a phase reconstruction perspective. First, we quantify the gap between time-domain and time-frequency domain vocoders using bandlimited mel spectrograms as inputs. Later, via an ablation study, we verify the Vocos architecture is effective for magnitude modeling, but less so for phase. We then adapt the Vocos backbone to predict phase differences, a precursor for phase reconstruction, and identify 1D convolutional layers are hindering their accurate prediction. Our findings indicate that future research needs to focus on inductive biases that allow the architecture to better model the time-frequency structure of speech signals, without sacrificing the support for arbitrary input representations.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音合成」方向，核心任务由题目《Revisiting Vocos: That Phasiness Business in Time-Frequency Neural Vocoding》所界定。 从摘要看，作者主要围绕 neural vocoder 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Recently, time-frequency neural vocoders have been approaching the state-of-the-art quality of time-domain neural vocoders. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：neural vocoder。 |
+
+---
+### 5. Let Me Look at You: Advanced Facial Expression Modeling for Conversational Speech Synthesis
+
+👤 **作者**: Yifan Hu, Shuwei He, Rui Liu, Haizhou Li
+🔗 **来源**: [https://arxiv.org/abs/2607.24430v1](https://arxiv.org/abs/2607.24430v1)
+
+**摘要**
+> Conversational Speech Synthesis is a fundamental component of human-computer interaction, aiming to generate contextually appropriate, expressive, and empathetic speech. However, facial expressions encode subtle and rich affective cues that are crucial for empathetic speech interaction, whereas existing approaches often overlook this important modality. In addition, the lack of large-scale natural conversational datasets with both speech and visual modalities also limits the development of visual affect understanding in conversational settings.To address these limitations, we propose FacialTalker, a facial-expression-aware CSS framework built upon a large language model backbone. To efficiently encode facial expressions, we propose AUTokenizer, a single-codebook visual tokenizer that discretizes each frame-level facial expression into a compact token, trained with supervision from combinations of facial Action Units. We further introduce a dual direct preference optimization (DualDPO) strategy, which extends the DPO by jointly imposing preference constraints on both visual and speech token sequences, to enhance the model's understanding of facial expressions and speech semantics in multimodal conversational contexts. Moreover, we construct VSDD-1K, a large-scale multimodal dialogue dataset collected through a fully automated pipeline from real-world Internet conversations, comprising over 1,033 hours of synchronized speaker videos and speech, with more than 85\% of frames containing valid faces. Extensive objective and subjective experiments demonstrate that FacialTalker consistently outperforms strong baselines in facial-expression perception and speech synthesis quality, generating speech that is more natural, expressive, and better aligned with the conversational context. The results also validate the effectiveness of our training strategy and dataset construction pipeline.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音合成」方向，核心任务由题目《Let Me Look at You: Advanced Facial Expression Modeling for Conversational Speech Synthesis》所界定。 从摘要看，作者主要围绕 speech synthesis 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Extensive objective and subjective experiments demonstrate that FacialTalker consistently outperforms strong baselines in facial-expression perception and speech synthesis quality, generating speech that is more natural, expressive, and better aligned with the conversational context. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech synthesis。 |
+
+---
+## 🏷️ Enhancement
+
+### 1. Automatic Audio Equalization with Semantic Embeddings
+
+👤 **作者**: Eloi Moliner, Vesa Välimäki, Konstantinos Drossos, Matti S. Hämäläinen
+🔗 **来源**: [https://arxiv.org/abs/2607.23846v1](https://arxiv.org/abs/2607.23846v1)
+
+**摘要**
+> This paper presents a data-driven approach to automatic blind equalization of audio by predicting log-mel spectral features and deriving an inverse filter. The method uses a deep neural network, where a pre-trained model provides semantic embeddings as a backbone, and only a lightweight head is trained. This design is intended to enhance training efficiency and generalization. Trained on both music and speech, the model is robust to noise and reverberation. Objective evaluations confirm its effectiveness, and subjective tests show performance comparable to that of an oracle that uses true log-mel spectral features, indicating that the model accurately estimates the desired characteristics, with remaining limitations attributed to the filtering stage. Overall, the results highlight the potential of the method for real-world audio enhancement applications.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音增强」方向，核心任务由题目《Automatic Audio Equalization with Semantic Embeddings》所界定。 从摘要看，作者主要围绕 audio enhancement 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Objective evaluations confirm its effectiveness, and subjective tests show performance comparable to that of an oracle that uses true log-mel spectral features, indicating that the model accurately estimates the desired characteristics, with remaining limitations attributed to the filtering stage. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：audio enhancement。 |
+
+---
+## 🏷️ SLU
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Paralinguistics
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Audio
+
+### 1. Expose Your Disguise: Recovering Source Speaker Identity From Voice Conversion
+
+👤 **作者**: Hanlei Zhang, Zhongming Ma, Mingyang Zhang, Tengfei Liu, Yushi Cheng, Yanjiao Chen
+🔗 **来源**: [https://arxiv.org/abs/2607.23650v1](https://arxiv.org/abs/2607.23650v1)
+
+**摘要**
+> Voice conversion (VC) poses a significant threat to biometric security by allowing attackers to impersonate target speakers. In forensic contexts, recovering the source speaker's identity from converted audio is vital for narrowing the field of suspects. To address this, we propose TRIDENT, a retracing framework designed to restore a source speaker's original identity from a converted audio sample. TRIDENT utilizes a three-pronged architecture consisting of a primary extractor and two auxiliary branches. The first auxiliary branch identifies the underlying voice conversion mechanism. This design acknowledges that even if the exact conversion strategy is unknown, a high-performance model adopted by the attacker is typically a derivative or variant of established mainstream ones. The second auxiliary branch extracts a latent representation of the target speaker, facilitating the isolation of target-specific traits from the composite converted audio sample. Finally, the main extractor leverages insights from both auxiliary branches to decouple confounding factors and distill a highly discriminative representation of the source speaker's identity. Experimental results demonstrate that TRIDENT achieves an accuracy as high as 90.99% against 7 state-of-the-art voice conversion methods. Furthermore, TRIDENT maintains robust performance under challenging conditions, including telephony channels, unseen languages, and adaptive scenarios.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Expose Your Disguise: Recovering Source Speaker Identity From Voice Conversion》所界定。 从摘要看，作者主要围绕 expose、your、disguise 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Experimental results demonstrate that TRIDENT achieves an accuracy as high as 90.99% against 7 state-of-the-art voice conversion methods. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：expose, your, disguise。 |
+
+---
+### 2. OmniVAE: An Audio-Video VAE with Cross-Modal Alignment for Joint Generation
+
+👤 **作者**: Jun Zhan, Chen Yang, Yitian Gong, Donghua Yu, Kuangwei Chen, Wenbo Zhang, Kexin Huang, Qi Luo, Zhe Xu, Ying Zhu, Jin Wang, Tengyue Zhang, Qi Chen, Cheng Chang, Songlin Wang, Junqi Dai, Jiasheng Ye, Xiaogui Yang, Tianyi Liang, Xiangyu Peng, Zhaoye Fei, Shimin Li, Qinyuan Cheng, Xie Chen, Xinchi Chen, Xipeng Qiu
+🔗 **来源**: [https://arxiv.org/abs/2607.23855v1](https://arxiv.org/abs/2607.23855v1)
+
+**摘要**
+> Recent generative models are moving beyond silent video or standalone audio synthesis toward the joint generation of synchronized audio and video. Despite this progress, jointly generating audio and video with fine-grained cross-modal correspondence remains challenging due to their fundamental structural differences. Most existing methods use audio and video VAEs trained separately. As a result, the two latent spaces lack cross-modal alignment, leaving the downstream generative model to learn cross-modal synchronization from scratch. We present OmniVAE, a jointly trained audio-video VAE that learns fine-grained semantic alignment between audio and video latent representations. Beyond reconstruction, OmniVAE uses a segment-level audio-video contrastive objective to capture temporal-semantic correspondence and align the two latent spaces. In parallel, it distills features from pretrained modality-specific semantic encoders into each modality, improving the downstream learnability of both latent spaces. Extensive experiments show that both objectives consistently improve the learnability of the latent spaces, translating into higher generation quality and more accurate cross-modal synchronization in downstream text-to-audio-video generation. These findings underscore the importance of learning unified representations as a foundation for omnimodal modeling.1
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《OmniVAE: An Audio-Video VAE with Cross-Modal Alignment for Joint Generation》所界定。 从摘要看，作者主要围绕 omnivae、audio-video、with 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：In parallel, it distills features from pretrained modality-specific semantic encoders into each modality, improving the downstream learnability of both latent spaces. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：omnivae, audio-video, with。 |
+
+---
+### 3. Modeling Stylistic Co-evolution in Symbolic Music Heritage Collections
+
+👤 **作者**: Yulong He, Ivan Smirnov, Yanming Li
+🔗 **来源**: [https://arxiv.org/abs/2607.23957v1](https://arxiv.org/abs/2607.23957v1)
+
+**摘要**
+> Digitized musical heritage collections offer new opportunities to examine how stylistic traditions change over historical time, but computational analyses often reduce musical works to static classifications or similarity scores. This article proposes a representation-to-dynamics framework for studying cross-cultural harmonic change in Western art music. Starting from symbolic chord sequences, we derive contextual chord embeddings, project work-level representations into a shared harmonic space, and reconstruct country-level trajectories through temporally causal Kalman filtering. These trajectories are then modeled with DeGroot and Friedkin--Johnsen dynamics, yielding interpretable influence-like networks and estimates of stylistic anchoring. We apply the framework to a curated corpus of 480 dated works from 1875 to 1940 across Russia, France, Germany, Austria, and a heterogeneous ''Others'' group. Models fitted on 1875--1925 are evaluated through recursive forecasts for 1930--1940, testing whether the estimated dependency structure remains informative across a potentially changing historical and stylistic regime. The estimated trajectories and influence patterns are broadly consistent with established music-historical accounts of late Romantic and early modernist exchange, including the close relationship between German and Austrian traditions and historically plausible cross-currents between Russian and French traditions. PCA-variance-weighted estimation provides modest improvements while preserving a single interpretable influence network. Rather than treating the estimated matrices as direct causal evidence, the framework offers a reproducible quantitative layer for cultural heritage research, complementing archival and musicological interpretation.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Modeling Stylistic Co-evolution in Symbolic Music Heritage Collections》所界定。 从摘要看，作者主要围绕 modeling、stylistic、co-evolution 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：PCA-variance-weighted estimation provides modest improvements while preserving a single interpretable influence network. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：modeling, stylistic, co-evolution。 |
+
+---
+### 4. Disentangling Acoustic Cues in Alzheimer's Pathology and Perception: The Roles of Language and Gender
+
+👤 **作者**: Liu He, Yuanchao Li, Yin-Long Liu, Rui Feng, Yiming Wang, Jiaxin Chen, Yizhe Wang, Jiahong Yuan
+🔗 **来源**: [https://arxiv.org/abs/2607.23977v1](https://arxiv.org/abs/2607.23977v1)
+
+**摘要**
+> Acoustic biomarkers show promise for detecting Alzheimer's Disease (AD), yet whether the cues driving diagnostic AI align with those salient to human listeners is underexplored across languages and genders, where pathological markers and perceptual strategies differ. We train models to predict clinical AD status (pathology) and human perceptual scores across Mandarin and Greek, male and female speakers. Using SHAP for interpretability and statistical models for validation, we compare feature importance by subgroup. Results reveal a context-dependent divergence: pathological-perceptual alignment is significant for Mandarin and female speakers but disappears for Greek and male speakers, where pathology models did not exceed chance; this is a failure mode that population-specific auditing surfaces. Global Explainable AI (XAI) explanations can mask critical demographic divergences, highlighting the need for population-specific explainability auditing for equitable deployment of clinical speech AI.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Disentangling Acoustic Cues in Alzheimer's Pathology and Perception: The Roles of Language and Gender》所界定。 从摘要看，作者主要围绕 disentangling、acoustic、cues 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Acoustic biomarkers show promise for detecting Alzheimer's Disease (AD), yet whether the cues driving diagnostic AI align with those salient to human listeners is underexplored across languages and genders, where pathological markers and perceptual strategies differ. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：disentangling, acoustic, cues。 |
+
+---
+### 5. Mind the Microphone Gap: Benchmarking Array Upsampling Strategies for Latent Acoustic Mapping
+
+👤 **作者**: Philipp Schmidt, Huw Cheston, Juan Azcarreta, Adrian Stepien, Çağdaş Bilen, Iran R. Roman
+🔗 **来源**: [https://arxiv.org/abs/2607.24463v1](https://arxiv.org/abs/2607.24463v1)
+
+**摘要**
+> Latent Acoustic Mapping (LAM) is a self-supervised learning method that generates high-resolution spherical acoustic maps from multichannel recordings without labelled data, matching supervised baselines on direction-of-arrival benchmarks. However, LAM degrades significantly with sparse 4-channel arrays, as the low-resolution cross-spectral matrix captures far less spatial information than the 32-channel inputs LAM was designed for. We benchmark a diverse set of upsampling architectures, spanning lightweight convolutional networks, iterative back-projection models, physics-informed networks, and generative adversarial approaches. We also study whether aligning these upsamplers with LAM by training them jointly or in different stages helps preserve the spatial structure that LAM depends on. Results show that the original full-resolution LAM is the strongest, that separately trained lightweight models are the most competitive learned approaches, and that representation alignment between the upsampler and LAM matters more than model complexity.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Mind the Microphone Gap: Benchmarking Array Upsampling Strategies for Latent Acoustic Mapping》所界定。 从摘要看，作者主要围绕 mind、microphone、benchmarking 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Results show that the original full-resolution LAM is the strongest, that separately trained lightweight models are the most competitive learned approaches, and that representation alignment between the upsampler and LAM matters more than model complexity. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：mind, microphone, benchmarking。 |
+
+---
+
+<div align="center">
+
+*Generated by [Paper Claw](https://github.com/yourusername/paper_claw)*
+
+</div>
