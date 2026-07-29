@@ -1,0 +1,505 @@
+{
+  "generated_at": "2026-07-29T11:56:44.356299+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-07-28T11:52:41.973374+08:00",
+    "end": "2026-07-29T11:56:33.760362+08:00",
+    "start_display": "2026-07-28 11:52:41 CST",
+    "end_display": "2026-07-29 11:56:33 CST"
+  },
+  "summary": {
+    "total": 7,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 0,
+      "TTS": 0,
+      "Enhancement": 0,
+      "SLU": 0,
+      "Paralinguistics": 0,
+      "Audio": 7
+    },
+    "headline": "今日共收录 7 篇新论文，主要分布在 Audio 7。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-07-29-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2607.25787v1",
+      "title_en": "GraphIDyOM: A graph-native Python reimplementation of IDyOM for musical expectation modelling",
+      "abstract_en": "The Information Dynamics of Music model (IDyOM) has played a central role in computational accounts of musical expectation by providing event-by-event estimates of uncertainty and surprise from symbolic musical sequences. However, its reference implementation is difficult to integrate with contemporary Python workflows, and its internal memory structures are not easily accessible for inspection or modification. We introduce GraphIDyOM, a graph-native Python reimplementation of IDyOM that represents long-term and short-term predictive memories as explicit graph objects while preserving the model's variable-order, multiple-viewpoint architecture. GraphIDyOM returns event-wise information content and entropy, exposes internal memory structures for analysis and export, and supports access through a local server. We validate the implementation against the original Lisp IDyOM across single, projected, and multiple-viewpoint configurations, and benchmark its coverage and computational performance against a recent reimplementation. We then demonstrate how the explicit memory representation supports network analysis of learned memories, projection of expectation values onto musical networks, recency-sensitive memory retrieval, and interactive applications. GraphIDyOM therefore provides both a faithful and accessible reimplementation of a widely used model and a platform for studying musical expectation through memory, topology, and interaction.",
+      "authors": [
+        "Lluc Bono Rosselló"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.25787v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD",
+        "q-bio.NC"
+      ],
+      "published": "2026-07-28T14:38:29Z",
+      "updated": "2026-07-28T14:38:29Z",
+      "keywords_en": [
+        "graphidyom",
+        "graph-native",
+        "python",
+        "reimplementation",
+        "idyom",
+        "musical"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《GraphIDyOM: A graph-native Python reimplementation of IDyOM for musical expectation modelling》所界定。 从摘要看，作者主要围绕 graphidyom、graph-native、python 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We then demonstrate how the explicit memory representation supports network analysis of learned memories, projection of expectation values onto musical networks, recency-sensitive memory retrieval, and interactive applications. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：graphidyom, graph-native, python。"
+      }
+    },
+    {
+      "arxiv_id": "2607.25870v1",
+      "title_en": "VAD to the Bone: Ultra-Tiny Speech Activity Detection for Edge Deployment",
+      "abstract_en": "Voice activity detection (VAD) triggers downstream speech processing in always-on systems under strict memory, latency, and compute constraints. Recent compact models report strong accuracy but rely on components that are not widely supported: learnable filterbanks, recurrent layers, or non-causal post-processing. We propose kiloVAD, designed for embedded inference using standard Mel features, CNN-only layers, and tunable context/spectral parameters. We introduce per-layer structured pruning with self-distillation and angle-based quantization-aware training (QAT) that outperforms standard QAT by 1-4%. Evaluated per-frame under causal conditions, kiloVAD achieves 0.850 AUC on AVA-Speech with 2.1 k parameters and 200 ms context, establishing a new state of the art for causal, deployment-ready VAD.",
+      "authors": [
+        "Stephen Bauer",
+        "Sheila Seidel",
+        "Shanza Iftikhar",
+        "Scott Veidenheimer",
+        "Gorkem Ulkar"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.25870v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.LG",
+        "eess.AS"
+      ],
+      "published": "2026-07-28T15:37:44Z",
+      "updated": "2026-07-28T15:37:44Z",
+      "keywords_en": [
+        "bone",
+        "ultra-tiny",
+        "speech",
+        "activity",
+        "detection",
+        "edge"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《VAD to the Bone: Ultra-Tiny Speech Activity Detection for Edge Deployment》所界定。 从摘要看，作者主要围绕 bone、ultra-tiny、speech 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We introduce per-layer structured pruning with self-distillation and angle-based quantization-aware training (QAT) that outperforms standard QAT by 1-4%. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：bone, ultra-tiny, speech。"
+      }
+    },
+    {
+      "arxiv_id": "2607.25887v1",
+      "title_en": "Device Invariance using Domain Adaptation on Acoustic Scene Classification",
+      "abstract_en": "This paper explores the effectiveness of domain adaptation techniques when using convolutional neural network (CNN)-based and transformer-based feature representations for acoustic scene classification. Two well-known domain adaptation techniques, namely domain adversarial neural network (also called DANN) and conditional domain adversarial network (also called CDAN) are evaluated under various domain shifts. Our study indicates that DANN provides effective domain adaptation fairly consistently for both feature extractors. On the other hand, CDAN provides effective domain adaptation only for CNN-based feature extractors. The study gives insights into how domain adaptation methods may need to be tailored to the underlying feature representation. Experimental evaluation with multiple devices on the DCASE 2020 dataset supports the observations.",
+      "authors": [
+        "Abhishek dileep",
+        "Shubham Sharma",
+        "Padmanabhan Rajan"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.25887v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-07-28T15:47:37Z",
+      "updated": "2026-07-28T15:47:37Z",
+      "keywords_en": [
+        "acoustic scene"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Device Invariance using Domain Adaptation on Acoustic Scene Classification》所界定。 从摘要看，作者主要围绕 acoustic scene 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Two well-known domain adaptation techniques, namely domain adversarial neural network (also called DANN) and conditional domain adversarial network (also called CDAN) are evaluated under various domain shifts. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：acoustic scene。"
+      }
+    },
+    {
+      "arxiv_id": "2607.25888v1",
+      "title_en": "Depression Markers in Speech: An Approach based on Tract Variables Dynamics",
+      "abstract_en": "This study identifies new depression biomarkers based on the dynamical properties of tract variables, which represent geometric features describing the configuration of the speech articulators. A key advantage of this approach lies in its ability to quantify aspects of the articulatory process that have not been previously explored in the context of depression, namely predictability, complexity, and randomness. These properties are respectively characterised using the Largest Lyapunov Exponent, the Correlation Dimension, and the Sample Entropy. Thorough experiments were conducted on the Androids Corpus, a publicly available dataset comprising 64 speakers diagnosed with depression by clinicians and 54 control speakers with no reported history of mental health conditions. The results indicate that the proposed biomarkers effectively discriminate between the depressed and control speakers, as evidenced by the high Cliffs delta values across both read and spontaneous speech.",
+      "authors": [
+        "Sahar Altalhi",
+        "Tanaya Guha",
+        "Alessandro Vinciarelli"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.25888v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "eess.AS"
+      ],
+      "published": "2026-07-28T15:48:07Z",
+      "updated": "2026-07-28T15:48:07Z",
+      "keywords_en": [
+        "depression",
+        "markers",
+        "speech",
+        "approach",
+        "based",
+        "tract"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Depression Markers in Speech: An Approach based on Tract Variables Dynamics》所界定。 从摘要看，作者主要围绕 depression、markers、speech 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：A key advantage of this approach lies in its ability to quantify aspects of the articulatory process that have not been previously explored in the context of depression, namely predictability, complexity, and randomness. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：depression, markers, speech。"
+      }
+    },
+    {
+      "arxiv_id": "2607.25903v1",
+      "title_en": "CARE: A Multimodal Corpus for Studying Speech and Non-Verbal Communication Across Multiple Medical Conditions",
+      "abstract_en": "Automatic analysis of multimodal speech has shown strong potential for computationally detecting and monitoring a wide range of neurological, psychiatric, and respiratory conditions. However, progress in this field is limited by existing publicly accessible datasets, which are often small in scale, focused on a single condition or disease, and primarily speech focused. Moreover, if key confounding variables such as education, medication use, comorbidities, or mood state are insufficiently documented, the reliability and interpretability of computational analyses are further compromised. To address these limitations, we introduce CARE v1.0, a curated multimodal English dataset of approximately 144 hours of short video interviews collected from 612 individuals across 12 medical conditions plus a control cohort. For each video, a comprehensive set of clinically relevant multimodal descriptors is provided, alongside structured metadata covering factors such as medication, life impacts, and expressed emotions. The corpus's breadth and heterogeneity support a wide range of applications, including automatic disease and symptom detection, multimodal modelling of speech and non-verbal behaviour under emotionally charged contexts, and studies of disease trajectories and coping processes.",
+      "authors": [
+        "David Gimeno-Gómez",
+        "Catarina Botelho",
+        "Carlos-D. Martínez-Hinarejos",
+        "Isabel Trancoso",
+        "Alberto Abad"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.25903v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-07-28T16:00:40Z",
+      "updated": "2026-07-28T16:00:40Z",
+      "keywords_en": [
+        "care",
+        "multimodal",
+        "corpus",
+        "studying",
+        "speech",
+        "non-verbal"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《CARE: A Multimodal Corpus for Studying Speech and Non-Verbal Communication Across Multiple Medical Conditions》所界定。 从摘要看，作者主要围绕 care、multimodal、corpus 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Automatic analysis of multimodal speech has shown strong potential for computationally detecting and monitoring a wide range of neurological, psychiatric, and respiratory conditions. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：care, multimodal, corpus。"
+      }
+    },
+    {
+      "arxiv_id": "2607.25919v1",
+      "title_en": "Spacing Out: On the Reliability of Binaural Music Source Separation Metrics",
+      "abstract_en": "Despite the rising popularity of immersive audio, binaural music remains underexplored in music information retrieval (MIR), particularly regarding the task of music source separation (MSS). While existing stereo MSS models can process binaural audio, they often degrade the spatial quality of the separated stems and undermine listener immersion. Through a perceptual study comparing binaural and stereo MSS outputs, we evaluate how well objective spatial distortion metrics correlate with human perception. Our findings reveal varied agreement between these metrics and human judgment, highlighting a lack of reliability when used to evaluate binaural music tasks. Specifically, we find that Interaural Time Difference (ITD) estimation is highly sensitive to noise and separation artifacts. In evaluating two alternative ITD estimation methods, we uncover a critical trade-off between robustness and accuracy, particularly for narrow-band instruments like bass. These results underscore the need for accurate, interpretable spatial metrics designed for binaural music to develop models that preserve source localization and listener immersion.",
+      "authors": [
+        "Richa Namballa",
+        "Magdalena Fuentes"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.25919v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS",
+        "eess.SP"
+      ],
+      "published": "2026-07-28T16:09:28Z",
+      "updated": "2026-07-28T16:09:28Z",
+      "keywords_en": [
+        "source separation",
+        "music information retrieval"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Spacing Out: On the Reliability of Binaural Music Source Separation Metrics》所界定。 从摘要看，作者主要围绕 source separation、music information retrieval 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：While existing stereo MSS models can process binaural audio, they often degrade the spatial quality of the separated stems and undermine listener immersion. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：source separation, music information retrieval。"
+      }
+    },
+    {
+      "arxiv_id": "2607.26024v1",
+      "title_en": "LLM4OSC: Profile-Bound Natural Language Control with Deterministic Validation for Open Sound Control",
+      "abstract_en": "Open Sound Control (OSC) is the dominant wire protocol for real-time parametric control in professional audio, live performance, and virtual production. Large language models can emit plausible OSC, but they hallucinate addresses, mishandle type tags, and fail under paraphrase- unacceptable in show-critical contexts. We present LLM4OSC, a local-first architecture in which models propose structured intent JSON over a human-reviewed device profile, and deterministic code validates, clamps, and encodes before any UDP send. We introduce a frozen evaluation harness with CI gates on wrong-send rate: mismatches that would still pass validation and transmit. On a Max/MSP hero profile (12 patterns; 8 literal + 8 paraphrase + 4 refusal cases), after profile tag enrichment, symbolic slot fill, NL refine, and a retrieval confidence gate, backends B0--B3 all pass frozen gates (100% semantic accuracy, 0% wrong-send). B0 (rules) remains the production default at ~0.05ms; LLM backends remain ~3-4s. Historical few-shot B2 accuracy of 62.5% rises to 100% on this suite only after symbolic post-processing- not because the 0.5B model alone becomes show-safe. We argue for propose-validate-send and wrong-send rate as first-class metrics for language-to-control systems.",
+      "authors": [
+        "Yuan-Yi Fan"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.26024v1",
+      "primary_category": "cs.HC",
+      "source_categories": [
+        "cs.HC",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-07-28T17:36:22Z",
+      "updated": "2026-07-28T17:36:22Z",
+      "keywords_en": [
+        "profile-bound",
+        "natural",
+        "language",
+        "control",
+        "with",
+        "deterministic"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《LLM4OSC: Profile-Bound Natural Language Control with Deterministic Validation for Open Sound Control》所界定。 从摘要看，作者主要围绕 profile-bound、natural、language 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Large language models can emit plausible OSC, but they hallucinate addresses, mishandle type tags, and fail under paraphrase- unacceptable in show-critical contexts. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：profile-bound, natural, language。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [],
+    "TTS": [],
+    "Enhancement": [],
+    "SLU": [],
+    "Paralinguistics": [],
+    "Audio": [
+      {
+        "arxiv_id": "2607.25787v1",
+        "title_en": "GraphIDyOM: A graph-native Python reimplementation of IDyOM for musical expectation modelling",
+        "abstract_en": "The Information Dynamics of Music model (IDyOM) has played a central role in computational accounts of musical expectation by providing event-by-event estimates of uncertainty and surprise from symbolic musical sequences. However, its reference implementation is difficult to integrate with contemporary Python workflows, and its internal memory structures are not easily accessible for inspection or modification. We introduce GraphIDyOM, a graph-native Python reimplementation of IDyOM that represents long-term and short-term predictive memories as explicit graph objects while preserving the model's variable-order, multiple-viewpoint architecture. GraphIDyOM returns event-wise information content and entropy, exposes internal memory structures for analysis and export, and supports access through a local server. We validate the implementation against the original Lisp IDyOM across single, projected, and multiple-viewpoint configurations, and benchmark its coverage and computational performance against a recent reimplementation. We then demonstrate how the explicit memory representation supports network analysis of learned memories, projection of expectation values onto musical networks, recency-sensitive memory retrieval, and interactive applications. GraphIDyOM therefore provides both a faithful and accessible reimplementation of a widely used model and a platform for studying musical expectation through memory, topology, and interaction.",
+        "authors": [
+          "Lluc Bono Rosselló"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2607.25787v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.SD",
+          "q-bio.NC"
+        ],
+        "published": "2026-07-28T14:38:29Z",
+        "updated": "2026-07-28T14:38:29Z",
+        "keywords_en": [
+          "graphidyom",
+          "graph-native",
+          "python",
+          "reimplementation",
+          "idyom",
+          "musical"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《GraphIDyOM: A graph-native Python reimplementation of IDyOM for musical expectation modelling》所界定。 从摘要看，作者主要围绕 graphidyom、graph-native、python 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We then demonstrate how the explicit memory representation supports network analysis of learned memories, projection of expectation values onto musical networks, recency-sensitive memory retrieval, and interactive applications. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：graphidyom, graph-native, python。"
+        }
+      },
+      {
+        "arxiv_id": "2607.25870v1",
+        "title_en": "VAD to the Bone: Ultra-Tiny Speech Activity Detection for Edge Deployment",
+        "abstract_en": "Voice activity detection (VAD) triggers downstream speech processing in always-on systems under strict memory, latency, and compute constraints. Recent compact models report strong accuracy but rely on components that are not widely supported: learnable filterbanks, recurrent layers, or non-causal post-processing. We propose kiloVAD, designed for embedded inference using standard Mel features, CNN-only layers, and tunable context/spectral parameters. We introduce per-layer structured pruning with self-distillation and angle-based quantization-aware training (QAT) that outperforms standard QAT by 1-4%. Evaluated per-frame under causal conditions, kiloVAD achieves 0.850 AUC on AVA-Speech with 2.1 k parameters and 200 ms context, establishing a new state of the art for causal, deployment-ready VAD.",
+        "authors": [
+          "Stephen Bauer",
+          "Sheila Seidel",
+          "Shanza Iftikhar",
+          "Scott Veidenheimer",
+          "Gorkem Ulkar"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2607.25870v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "cs.LG",
+          "eess.AS"
+        ],
+        "published": "2026-07-28T15:37:44Z",
+        "updated": "2026-07-28T15:37:44Z",
+        "keywords_en": [
+          "bone",
+          "ultra-tiny",
+          "speech",
+          "activity",
+          "detection",
+          "edge"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《VAD to the Bone: Ultra-Tiny Speech Activity Detection for Edge Deployment》所界定。 从摘要看，作者主要围绕 bone、ultra-tiny、speech 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We introduce per-layer structured pruning with self-distillation and angle-based quantization-aware training (QAT) that outperforms standard QAT by 1-4%. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：bone, ultra-tiny, speech。"
+        }
+      },
+      {
+        "arxiv_id": "2607.25887v1",
+        "title_en": "Device Invariance using Domain Adaptation on Acoustic Scene Classification",
+        "abstract_en": "This paper explores the effectiveness of domain adaptation techniques when using convolutional neural network (CNN)-based and transformer-based feature representations for acoustic scene classification. Two well-known domain adaptation techniques, namely domain adversarial neural network (also called DANN) and conditional domain adversarial network (also called CDAN) are evaluated under various domain shifts. Our study indicates that DANN provides effective domain adaptation fairly consistently for both feature extractors. On the other hand, CDAN provides effective domain adaptation only for CNN-based feature extractors. The study gives insights into how domain adaptation methods may need to be tailored to the underlying feature representation. Experimental evaluation with multiple devices on the DCASE 2020 dataset supports the observations.",
+        "authors": [
+          "Abhishek dileep",
+          "Shubham Sharma",
+          "Padmanabhan Rajan"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2607.25887v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "cs.AI",
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-07-28T15:47:37Z",
+        "updated": "2026-07-28T15:47:37Z",
+        "keywords_en": [
+          "acoustic scene"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Device Invariance using Domain Adaptation on Acoustic Scene Classification》所界定。 从摘要看，作者主要围绕 acoustic scene 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Two well-known domain adaptation techniques, namely domain adversarial neural network (also called DANN) and conditional domain adversarial network (also called CDAN) are evaluated under various domain shifts. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：acoustic scene。"
+        }
+      },
+      {
+        "arxiv_id": "2607.25888v1",
+        "title_en": "Depression Markers in Speech: An Approach based on Tract Variables Dynamics",
+        "abstract_en": "This study identifies new depression biomarkers based on the dynamical properties of tract variables, which represent geometric features describing the configuration of the speech articulators. A key advantage of this approach lies in its ability to quantify aspects of the articulatory process that have not been previously explored in the context of depression, namely predictability, complexity, and randomness. These properties are respectively characterised using the Largest Lyapunov Exponent, the Correlation Dimension, and the Sample Entropy. Thorough experiments were conducted on the Androids Corpus, a publicly available dataset comprising 64 speakers diagnosed with depression by clinicians and 54 control speakers with no reported history of mental health conditions. The results indicate that the proposed biomarkers effectively discriminate between the depressed and control speakers, as evidenced by the high Cliffs delta values across both read and spontaneous speech.",
+        "authors": [
+          "Sahar Altalhi",
+          "Tanaya Guha",
+          "Alessandro Vinciarelli"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2607.25888v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "cs.AI",
+          "eess.AS"
+        ],
+        "published": "2026-07-28T15:48:07Z",
+        "updated": "2026-07-28T15:48:07Z",
+        "keywords_en": [
+          "depression",
+          "markers",
+          "speech",
+          "approach",
+          "based",
+          "tract"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Depression Markers in Speech: An Approach based on Tract Variables Dynamics》所界定。 从摘要看，作者主要围绕 depression、markers、speech 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：A key advantage of this approach lies in its ability to quantify aspects of the articulatory process that have not been previously explored in the context of depression, namely predictability, complexity, and randomness. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：depression, markers, speech。"
+        }
+      },
+      {
+        "arxiv_id": "2607.25903v1",
+        "title_en": "CARE: A Multimodal Corpus for Studying Speech and Non-Verbal Communication Across Multiple Medical Conditions",
+        "abstract_en": "Automatic analysis of multimodal speech has shown strong potential for computationally detecting and monitoring a wide range of neurological, psychiatric, and respiratory conditions. However, progress in this field is limited by existing publicly accessible datasets, which are often small in scale, focused on a single condition or disease, and primarily speech focused. Moreover, if key confounding variables such as education, medication use, comorbidities, or mood state are insufficiently documented, the reliability and interpretability of computational analyses are further compromised. To address these limitations, we introduce CARE v1.0, a curated multimodal English dataset of approximately 144 hours of short video interviews collected from 612 individuals across 12 medical conditions plus a control cohort. For each video, a comprehensive set of clinically relevant multimodal descriptors is provided, alongside structured metadata covering factors such as medication, life impacts, and expressed emotions. The corpus's breadth and heterogeneity support a wide range of applications, including automatic disease and symptom detection, multimodal modelling of speech and non-verbal behaviour under emotionally charged contexts, and studies of disease trajectories and coping processes.",
+        "authors": [
+          "David Gimeno-Gómez",
+          "Catarina Botelho",
+          "Carlos-D. Martínez-Hinarejos",
+          "Isabel Trancoso",
+          "Alberto Abad"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2607.25903v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-07-28T16:00:40Z",
+        "updated": "2026-07-28T16:00:40Z",
+        "keywords_en": [
+          "care",
+          "multimodal",
+          "corpus",
+          "studying",
+          "speech",
+          "non-verbal"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《CARE: A Multimodal Corpus for Studying Speech and Non-Verbal Communication Across Multiple Medical Conditions》所界定。 从摘要看，作者主要围绕 care、multimodal、corpus 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Automatic analysis of multimodal speech has shown strong potential for computationally detecting and monitoring a wide range of neurological, psychiatric, and respiratory conditions. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：care, multimodal, corpus。"
+        }
+      },
+      {
+        "arxiv_id": "2607.25919v1",
+        "title_en": "Spacing Out: On the Reliability of Binaural Music Source Separation Metrics",
+        "abstract_en": "Despite the rising popularity of immersive audio, binaural music remains underexplored in music information retrieval (MIR), particularly regarding the task of music source separation (MSS). While existing stereo MSS models can process binaural audio, they often degrade the spatial quality of the separated stems and undermine listener immersion. Through a perceptual study comparing binaural and stereo MSS outputs, we evaluate how well objective spatial distortion metrics correlate with human perception. Our findings reveal varied agreement between these metrics and human judgment, highlighting a lack of reliability when used to evaluate binaural music tasks. Specifically, we find that Interaural Time Difference (ITD) estimation is highly sensitive to noise and separation artifacts. In evaluating two alternative ITD estimation methods, we uncover a critical trade-off between robustness and accuracy, particularly for narrow-band instruments like bass. These results underscore the need for accurate, interpretable spatial metrics designed for binaural music to develop models that preserve source localization and listener immersion.",
+        "authors": [
+          "Richa Namballa",
+          "Magdalena Fuentes"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2607.25919v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "cs.SD",
+          "eess.AS",
+          "eess.SP"
+        ],
+        "published": "2026-07-28T16:09:28Z",
+        "updated": "2026-07-28T16:09:28Z",
+        "keywords_en": [
+          "source separation",
+          "music information retrieval"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Spacing Out: On the Reliability of Binaural Music Source Separation Metrics》所界定。 从摘要看，作者主要围绕 source separation、music information retrieval 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：While existing stereo MSS models can process binaural audio, they often degrade the spatial quality of the separated stems and undermine listener immersion. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：source separation, music information retrieval。"
+        }
+      },
+      {
+        "arxiv_id": "2607.26024v1",
+        "title_en": "LLM4OSC: Profile-Bound Natural Language Control with Deterministic Validation for Open Sound Control",
+        "abstract_en": "Open Sound Control (OSC) is the dominant wire protocol for real-time parametric control in professional audio, live performance, and virtual production. Large language models can emit plausible OSC, but they hallucinate addresses, mishandle type tags, and fail under paraphrase- unacceptable in show-critical contexts. We present LLM4OSC, a local-first architecture in which models propose structured intent JSON over a human-reviewed device profile, and deterministic code validates, clamps, and encodes before any UDP send. We introduce a frozen evaluation harness with CI gates on wrong-send rate: mismatches that would still pass validation and transmit. On a Max/MSP hero profile (12 patterns; 8 literal + 8 paraphrase + 4 refusal cases), after profile tag enrichment, symbolic slot fill, NL refine, and a retrieval confidence gate, backends B0--B3 all pass frozen gates (100% semantic accuracy, 0% wrong-send). B0 (rules) remains the production default at ~0.05ms; LLM backends remain ~3-4s. Historical few-shot B2 accuracy of 62.5% rises to 100% on this suite only after symbolic post-processing- not because the 0.5B model alone becomes show-safe. We argue for propose-validate-send and wrong-send rate as first-class metrics for language-to-control systems.",
+        "authors": [
+          "Yuan-Yi Fan"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2607.26024v1",
+        "primary_category": "cs.HC",
+        "source_categories": [
+          "cs.HC",
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-07-28T17:36:22Z",
+        "updated": "2026-07-28T17:36:22Z",
+        "keywords_en": [
+          "profile-bound",
+          "natural",
+          "language",
+          "control",
+          "with",
+          "deterministic"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《LLM4OSC: Profile-Bound Natural Language Control with Deterministic Validation for Open Sound Control》所界定。 从摘要看，作者主要围绕 profile-bound、natural、language 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Large language models can emit plausible OSC, but they hallucinate addresses, mishandle type tags, and fail under paraphrase- unacceptable in show-critical contexts. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：profile-bound, natural, language。"
+        }
+      }
+    ]
+  },
+  "model_name": "deepseek-v3"
+}
