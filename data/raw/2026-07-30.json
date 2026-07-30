@@ -1,0 +1,82 @@
+{
+  "window": {
+    "start": "2026-07-29T11:56:33.760362+08:00",
+    "end": "2026-07-30T11:47:52.823134+08:00"
+  },
+  "fetched_count": 3,
+  "deduplicated_count": 3,
+  "new_count": 3,
+  "papers": [
+    {
+      "arxiv_id": "2607.26874v1",
+      "title_en": "Detection of AI-generated stems within hybrid human-AI music",
+      "abstract_en": "This paper presents, to the best of our knowledge, the first study on detecting human-AI hybrid music tracks created by mixing human-produced and AI-generated stems. Building on recent work showing that AI music detectors can identify decoder-related artifacts in fully generated music, we investigate whether such artifacts remain detectable at the stem level after mixing. Using MUSDB18-HQ database in a two-stem vocals + accompaniment setting, we simulate hybrid mixtures by autoencoding individual stems with a neural codec. We compare two strategies combining AI-generated mix detection and source separation. A naive sequential pipeline, where source separation is followed by detection on separated sources, confirms that artifacts associated with an AI-generated stem are not reliably recovered by generic source separation systems. We therefore propose a parallel architecture in which source separation is only used to estimate source-relative energy within the mixture. We then train simple stem-specific binary classifiers that take as input the generated mix prediction together with the relative energy of the target stem on short audio chunks. Averaging chunk-level predictions yields encouraging track-level results, highlighting the potential of such approaches for detecting AI-generated stems in hybrid music.",
+      "authors": [
+        "François Rigaud",
+        "Gabriel Meseguer-Brocal",
+        "Benjamin Martin",
+        "Romain Hennequin"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.26874v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-07-29T13:03:58Z",
+      "updated": "2026-07-29T13:03:58Z"
+    },
+    {
+      "arxiv_id": "2607.27011v1",
+      "title_en": "Qwen-Audio-3.0-Gen-Preview Technical Report",
+      "abstract_en": "Existing single-domain and multi-task audio systems remain limited in directly organizing speech, music, sound effects, ambience, and multiple roles into long-form temporal scenes. We present Qwen-Audio-3.0-Gen-Preview, a unified non-autoregressive framework that uses a Diffusion Transformer (DiT) and a shared variational autoencoder (VAE) to generate the complete mixed waveform. Prompt enhancement converts free-form requests into structured temporal records that are rendered as textual conditions, while a two-stage data curriculum and semantic conditional views train the proposed model to use these conditions across domains. A shared continuous VAE compresses 48kHz stereo waveforms into 25Hz latent sequences and incorporates semantic supervision, providing one representation for speech, music, sound effects, and their mixtures. On Seed-TTS-Eval, speaker similarity is the proposed model's clearest strength across all three subsets, and on the multi-speaker benchmark, the proposed model shows higher cross-turn consistency than Seed-Audio-1.0 in both languages. On AudioCaps, its advantages are concentrated in evaluations using large audio-language models and AudioBox. Relative to Seed-Audio-1.0, it achieves stronger temporal localization. Using approximately 10% music data of a dedicated in-house model, the proposed model remains close across all seven SongBench components and leads in three while retaining speech and general-audio capabilities. These results demonstrate the potential of unified generation for temporally structured, multi-domain audio.",
+      "authors": [
+        "Junyu Dai",
+        "Xiaoyue Duan",
+        "Xinyue Fan",
+        "Yihan Feng",
+        "Xiangang Li",
+        "Yunjia Li",
+        "Lejun Min",
+        "Yufei Shi",
+        "Xingchen Song",
+        "Yiran Wang",
+        "Cheng Wen",
+        "Menglin Wu",
+        "Bajian Xiang",
+        "Huaicheng Zhang",
+        "Han Zhao",
+        "Ruichen Zheng"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.27011v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-07-29T15:06:58Z",
+      "updated": "2026-07-29T15:06:58Z"
+    },
+    {
+      "arxiv_id": "2607.27109v1",
+      "title_en": "MMAC: A Massive Multi-dimensional Benchmark for Audio Captioning",
+      "abstract_en": "With the development of audio large language models (AudioLLMs), audio captioning needs to move from brief descriptions toward open-ended and fine-grained free-form descriptions. Existing evaluations often focus on generation quality or task performance, making it difficult to diagnose information coverage and description reliability. We propose MMAC, a \\textbf{M}assive \\textbf{M}ulti-dimensional benchmark for \\textbf{A}udio \\textbf{C}aptioning. MMAC contains 5,638 audio clips from more than 20 data sources, covering 6 capability categories and 15 evaluation dimensions. Given a model-generated caption, MMAC checks whether it mentions relevant information in the target dimension and whether the mentioned content is consistent with the reference label. We evaluate representative open-source and proprietary AudioLLMs. Results show clear differences across evaluation dimensions, information coverage, and description reliability. We will release the MMAC benchmark and evaluation code.",
+      "authors": [
+        "Weijie Wu",
+        "Junbo Li",
+        "Lin Li",
+        "Jun Fang",
+        "Qingyang Hong"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.27109v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-07-29T16:38:08Z",
+      "updated": "2026-07-29T16:38:08Z"
+    }
+  ]
+}
