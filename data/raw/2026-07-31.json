@@ -1,0 +1,32 @@
+{
+  "window": {
+    "start": "2026-07-30T11:47:52.823134+08:00",
+    "end": "2026-07-31T12:14:43.241162+08:00"
+  },
+  "fetched_count": 1,
+  "deduplicated_count": 1,
+  "new_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2607.28351v1",
+      "title_en": "Teffic-Audio: Tell Fact from Fiction",
+      "abstract_en": "Speech deepfake detection has expanded in scope with increasingly heterogeneous spoofing mechanisms, including speech synthesis, voice conversion, vocoder reconstruction, and neural-codec resynthesis. The resulting spoofing artifacts can be further shaped by variability in source speech, recording environments, and transmission channels. This variability makes robust generalization across heterogeneous conditions a central requirement for practical detection systems. This report presents Teffic-Audio, a general speech deepfake detection system designed for comprehensive evaluation environment. Teffic-Audio adopts a straightforward detector architecture consisting of a Conformer-based speech encoder, multi-head attentive statistics pooling, and a binary classifier. Rather than relying on additional architectural complexity, the system improves generalization through its training recipe, which integrates multi-source data, attack- and source-balanced sampling, and diverse audio augmentation. Trained only with open-source data, Teffic-Audio achieves a pooled EER of 1.454% on the 14 test sets of Speech-DF-Arena, outperforming all currently public systems on the leaderboard. It also obtains the lowest EER on five individual test sets and shows a favorable performance-complexity trade-off compared with larger leading systems. Overall, Teffic-Audio provides a strong and practical reference system for general speech deepfake detection.",
+      "authors": [
+        "Wan Lin",
+        "Li Wang",
+        "Jindong Wang",
+        "Kunyu Feng",
+        "Zhizheng Wu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2607.28351v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-07-30T15:21:38Z",
+      "updated": "2026-07-30T15:21:38Z"
+    }
+  ]
+}
