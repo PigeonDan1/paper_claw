@@ -1,0 +1,198 @@
+{
+  "window": {
+    "start": "2026-08-04T11:55:42.932522+08:00",
+    "end": "2026-08-05T11:50:39.923234+08:00"
+  },
+  "fetched_count": 10,
+  "deduplicated_count": 9,
+  "new_count": 9,
+  "papers": [
+    {
+      "arxiv_id": "2608.03610v1",
+      "title_en": "Language-Specialized Multi-Teacher On-Policy Distillation for Multilingual LLM-Based ASR",
+      "abstract_en": "Modern LLM-based ASR systems have established multilingual capability as a standard feature, leveraging large-scale multilingual corpora and LLMs' cross-lingual knowledge to achieve competitive performance across multilingual benchmarks. However, joint modeling of languages with heterogeneous acoustic, phonological, and lexical characteristics inevitably introduces optimization conflicts, undermining language-wise specialization. To address this challenge, we propose Language-Specialized Multi-Teacher On-Policy Distillation (LS-MOPD), which decouples language-specific knowledge acquisition from multilingual capability integration: language-specialized teachers are independently optimized via reinforcement learning (RL), after which their expertise is integrated into a generalist multilingual student through language routing and token-level multi-teacher distillation, thereby reducing direct cross-lingual optimization conflicts. We further explore two acoustic-prefix configurations, static and dynamic, to examine how teacher--student prefix consistency influences the efficacy of on-policy distillation. Experiments on benchmarks covering Mandarin, Mandarin subdialects, Cantonese, and English demonstrate that LS-MOPD substantially outperforms RL baselines and consistently surpasses the empirical performance envelope defined by best-performing RL teachers, revealing its potential to generalize beyond all teachers in multilingual ASR.",
+      "authors": [
+        "Yuan Xie",
+        "Jiaqi Song",
+        "Xianliang Wang",
+        "Ming Lei",
+        "Jie Gao",
+        "Jie Wu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.03610v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-08-04T13:02:47Z",
+      "updated": "2026-08-04T13:02:47Z"
+    },
+    {
+      "arxiv_id": "2608.03623v1",
+      "title_en": "Speaker Verification Under Real Classroom Conditions for English Speech",
+      "abstract_en": "Developing speaker verification (SV) models that are robust to classroom noise and effective across both children and adult speakers is critical for AI tools supporting educational environments. In this study, we use a real-world English-speaking classrooms dataset containing partial speaker identity annotations, with most recordings remaining unlabeled. We adapt the WavLM-TDNN model for classroom SV, achieving average relative reductions in Equal Error Rate (EER) of 23.99% and 6.32% compared to the ECAPA-TDNN baseline and the ECAPA-TDNN model trained on classroom data, respectively. Additionally, we investigate two training strategies for SV in classroom settings: self-supervised learning (SSL) and a two-stage approach that first pre-trains with SSL and then fine-tunes with limited annotated data. Five-fold cross-validation demonstrates that the two-stage strategy consistently outperforms the SSL-only approach, achieving an average relative EER reduction of 13.39%.",
+      "authors": [
+        "Saba Tabatabaee",
+        "Jing Liu",
+        "Megh Krishnaswamy",
+        "Carol Espy-Wilson"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.03623v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-08-04T13:12:41Z",
+      "updated": "2026-08-04T13:12:41Z"
+    },
+    {
+      "arxiv_id": "2608.03650v1",
+      "title_en": "Echo-Aware Modulation for Compact-Latent Frequency-Time Modeling in Lightweight Acoustic Echo Cancellation",
+      "abstract_en": "Existing lightweight acoustic echo cancellation (AEC) systems often combine linear AEC with Bark-domain DNN-based suppression to lower the computational footprint. In such systems, downsampling layers further compress the input features into a compact bottleneck representation, but this compression weakens frequency-time modeling capacity and degrades performance. To mitigate this limitation, we propose MSA-EchoLite, a lightweight Bark-domain AEC framework with an asymmetric dual-branch encoder and an echo-aware frequency-time modulation (EAM) module. The EAM module enriches the compressed bottleneck representation by modeling discrepancy and correlation cues between the dual-branch microphone and echo-related latent features. Experimental results show that the Bark-domain variant of MSA-EchoLite offers a better performance-complexity trade-off than its frequency-domain counterpart but is more sensitive to feature compression. With only 26.1% additional FLOPs over its non-EAM Bark-domain variant, its EAM-enhanced version achieves 99.1% of the PESQ of the frequency-domain counterpart, which requires nearly twice the FLOPs, and even surpasses it in SDR. Overall, MSA-EchoLite outperforms state-of-the-art lightweight AEC models while using only 0.2 M parameters and 100 M FLOPs/s.",
+      "authors": [
+        "Ye Ni",
+        "Ruiyu Liang",
+        "Qingyun Wang",
+        "Kai Xie",
+        "Cairong Zou",
+        "Björn W. Schuller"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.03650v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-08-04T13:33:22Z",
+      "updated": "2026-08-04T13:33:22Z"
+    },
+    {
+      "arxiv_id": "2608.03721v1",
+      "title_en": "On the Geometry of Music Bandwidth Extension in Latent Spaces of Audio Codecs",
+      "abstract_en": "Recent audio restoration increasingly relies on large-scale conditional latent generative modeling, including diffusion, Schrodinger Bridges, and Flow Matching variants, to invert degradations such as bandwidth limitation or noise. We present an analysis of the performance of various state-of-the-art methods compared to simple arithmetic transformations in the latent spaces of multiple neural codecs for musical bandwidth extension. We show that estimating a single transport vector between the clean and degraded latent centroids on a reference set, and adding it to degraded latents, can yield restoration performance competitive with large diffusion models. This suggests, first, that some neural codec latent spaces exhibit structure aligned with audio bandwidth; and second, that in such cases complex conditional models may offer only limited gains over a simple vector addition. We argue that these findings reveal an interesting avenue for future research whereby models could take advantage of the latent space structure in order to offer greater training and parameter efficiency, and overall better performance. Additionally, we propose to consider this simple arithmetic transformation as a baseline for music bandwidth extension research, as it allows an assessment of the contribution of learnable parameters towards restoration performance.",
+      "authors": [
+        "Hendrik Vincent Koops",
+        "Hao Hao Tan",
+        "Elio Quinton"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.03721v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-08-04T14:19:59Z",
+      "updated": "2026-08-04T14:19:59Z"
+    },
+    {
+      "arxiv_id": "2608.03742v1",
+      "title_en": "AI-Based Sound Effect Generation: A Narrative Review of Generative Models Across Input Modalities",
+      "abstract_en": "Sound effects play a crucial role in conveying actions, events, and environmental cues across digital applications, often requiring a high degree of variation and contextual adaptability. Artificial intelligence (AI)-driven audio generative models are rapidly growing in popularity and have the potential to transform the way sound is synthesized and used across various applications. In response to this growing momentum, this chapter reviews and analyzes recent AI-based generative models for sound effect synthesis, with a focus on how different input modalities (text, visual, audio, and multimodal) affect the quality, controllability, and contextual relevance of the generated audio. It examines 30 peer-reviewed articles sourced from Google Scholar, IEEE Xplore, and the ACM Digital Library, exploring the evolution of AI generative models over the past five years. The results show that multiple models achieved state-of-the-art performance, producing high-fidelity, semantically aligned, and increasingly temporally coherent sound effects across tasks. However, despite these advances, the review identifies persistent challenges, including limitations in temporal synchronization for complex multi-event scenarios, gaps between objective metrics and human perception, and trade-offs between controllability and generative diversity. Overall, the chapter highlights that AI-driven sound effect generation is progressing toward more adaptive, scalable, and context-aware systems, offering significant implications for future sound design workflows and interactive media applications.",
+      "authors": [
+        "Sandy Abdo",
+        "Bill Kapralos",
+        "Priyamvada Tripathi",
+        "KC Collins",
+        "Adam Dubrowski"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.03742v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-08-04T14:36:34Z",
+      "updated": "2026-08-04T14:36:34Z"
+    },
+    {
+      "arxiv_id": "2608.03920v1",
+      "title_en": "Equivariant Music Transformer",
+      "abstract_en": "Humans recognize a musical passage even when it is shifted in time or transposed in pitch, indicating a notion of equivariance in the representation space. Our analysis, however, shows that standard music transformers map such time-shifted or pitch-transposed inputs onto uncorrelated representations: these models become progressively less equivariant as they scale in size or train longer. This suggests that in standard music transformers, additional model capacity is allocated to memorizing absolute patterns rather than capturing shared musical structures. In this paper, we propose the Equivariant Music Transformer (EMT), which enforces equivariance through self-distillation by jointly optimizing a next-token-prediction and an auxiliary equivariance regularization loss. We find that the additional equivariance loss acts as a beneficial regularizer, simultaneously improving next-token prediction and producing equivariant latent representations. Through both objective and subjective evaluations, EMT demonstrates superior equivariance and generative capability compared to data augmentation, feature engineering, and state-of-the-art (SOTA) baselines. More broadly, our findings reveal that standard language modeling methods alone do not capture music's translational symmetries, and dedicated inductive biases are required to produce better music representations. The code, weights and demos are available online.",
+      "authors": [
+        "Zixun Guo",
+        "Simon Dixon"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.03920v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-08-04T16:51:58Z",
+      "updated": "2026-08-04T16:51:58Z"
+    },
+    {
+      "arxiv_id": "2608.03964v1",
+      "title_en": "Identity-Faithful Audio-Visual Target Speaker Extraction with QIANGDA and VOXBLINK2-AVSE",
+      "abstract_en": "Audio-visual target speaker extraction should return the speaker indicated by the video, yet a separator can ignore the visual cue and repeatedly output the acoustically dominant voice. We introduce QIANGDA, a Mandarin AV-TSE benchmark of jointly recorded real two-speaker mixtures with synchronized multi-view video. Each scene also contains preceding A-only and B-only stages that provide in-scene speaker references. It contains 77 scenes and 7,598 clips (11.84 hours), including 6,042 dual-annotated mixtures. After processing there leave 6,038 evaluable mixtures and 12,076 target-speaker rows. We additionally curate VOXBLINK2-AVSE from VoxBlink2, comprising 250,828 synchronized audio--lip-ROI pairs from 28,421 identities and 766.17 hours of speech. Our extractor uses frozen, 1,280-dimensional projected AV-HuBERT features, target-conditioned training, and layer-wise feature modulation. We jointly evaluate content with Qwen3-ASR-1.7B CER and target identity with WeSpeaker ResNet34 plus Overlapped Speech Detection (OSD). On the complete manifest, the best archived checkpoint obtains 0.2261 CER, 82.22% strict output correctness, and 69.53% both-output strict success.",
+      "authors": [
+        "Peijun Yang",
+        "Zhan Jin",
+        "Juan Liu",
+        "Ming Li"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.03964v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-08-04T17:28:41Z",
+      "updated": "2026-08-04T17:28:41Z"
+    },
+    {
+      "arxiv_id": "2608.03977v1",
+      "title_en": "Transfer Learning for Avian Bioacoustics under Sparse Positive Labels",
+      "abstract_en": "Passive acoustic monitoring is an important tool for biodiversity assessment and wildlife conservation because it supports continuous and non-invasive monitoring of species across large spatial and temporal scales. Robust monitoring remains challenging because many datasets contain sparse positive labels, where species presences may be confirmed while unannotated species cannot be assumed absent. In this work, we study transfer learning under sparse positive labels using BirdCLEF+ 2026 as a target benchmark and BirdCLEF 2021, iNatSounds, WABAD, and BirdSet as external bioacoustic sources. We introduce a multi-source reliability framework that models heterogeneous bioacoustic datasets as distinct supervision sources with differing reliability. Our approach achieves 0.584 macro average precision and 0.860 macro AUC on public BirdCLEF+ 2026 validation labels while outperforming naive source pooling strategies. The strongest gains arise from passive acoustic monitoring datasets and biologically informed source selection. Our findings suggest that transfer learning in bioacoustics is fundamentally a weak supervision and negative transfer problem.",
+      "authors": [
+        "Dhyey Patel",
+        "Yunting Yin"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.03977v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-08-04T17:42:05Z",
+      "updated": "2026-08-04T17:42:05Z"
+    },
+    {
+      "arxiv_id": "2608.03999v1",
+      "title_en": "Agogic: Performance-Timed Music Tokens for LLM-Native Text-to-Symbolic-Music Generation",
+      "abstract_en": "Text-to-music language models begin with a choice usually made by default: how to tokenize music. Normally entangled with backbone, data, and recipe, its effect has never been measured in isolation. We fix pretrained Qwen3.5 (0.8B-27B), data, budget, and decoding, and swap only the representation across seven tokenizations, anchoring texture metrics to each representation's model-free ceiling. The ordering is clean and surprising: representation, not model size, is the binding variable for distributional fidelity. Scaling the backbone 34x barely moves Frechet Music Distance (FMD), whereas switching representation halves it. PMT, a performance-resolution stream we release (10 ms timing, per-note velocity, multi-track texture; 609 symbols), reaches FMD 159 at 0.8B against 272-286 for beat grids (1.7-1.8x lower, up to 2.8x elsewhere; non-overlapping bootstrap CIs), so a 0.8B performance-resolution model beats a 27B beat grid. It reappears on a 26M from-scratch backbone and a second performance-resolution tokenizer: a property of the class, not one lucky vocabulary. Nor is it a finer-lattice artifact: snapping PMT's onsets to the beat grids' resolution still leaves it 67-129 FMD ahead of both (n=500). The effect is distributional; whether it is audible is a separate question, left open by our probe, with a human study pre-registered. Native caption adherence is weak but separable: a lightweight decode-time constraint doubles instrument-F1 (.28 to .60) and Correct-Key (.16 to .35) at no distributional cost. We release the harness, 25+ checkpoints, two corpora (86.6k aligned across caption/MIDI/ABC/audio; 6.25M captioned, the largest for music), and an imprinting diagnostic: published text-to-MIDI systems reproduce their training distribution near-invariant to the caption (72% vs. 71% chord-time on disjoint domains). The field's next representation claim can now be measured, not asserted.",
+      "authors": [
+        "Junhao Chen",
+        "Mingjin Chen",
+        "Jingjia Mao",
+        "Lin Chen",
+        "Saining Zhang",
+        "Minglin Chen",
+        "Ruocheng Wu",
+        "Liaoyuan Fan",
+        "Wenyi Li",
+        "Mingju Gao",
+        "Henghaofan Zhang",
+        "Zhihao Li",
+        "Hao Zhao",
+        "Yufei Wang",
+        "Ruqi Huang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.03999v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-08-04T17:56:49Z",
+      "updated": "2026-08-04T17:56:49Z"
+    }
+  ]
+}
