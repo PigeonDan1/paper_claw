@@ -1,0 +1,55 @@
+{
+  "window": {
+    "start": "2026-08-05T11:50:39.923234+08:00",
+    "end": "2026-08-06T11:55:27.753436+08:00"
+  },
+  "fetched_count": 2,
+  "deduplicated_count": 2,
+  "new_count": 2,
+  "papers": [
+    {
+      "arxiv_id": "2608.04902v1",
+      "title_en": "Visual Representation Matters: Exploiting Temporal Differences in Video-to-Audio Generation",
+      "abstract_en": "Video-to-audio (V2A) generation extends image-to-audio generation (I2A) by introducing consecutive frames that provide essential temporal cues for audio synthesis. However, existing conditional diffusion-based V2A methods typically enhance visual conditioning with additional audio-visual supervision, acoustic structure prediction, or reasoning from large multimodal models, requiring extra networks or strong inductive biases. Inspired by recent advances in visual representation learning, we introduce TD-V2A, which leverages temporal differences (TD) as the key representation that distinguishes V2A from I2A, enriching visual conditioning with minimal architectural modification. We first investigate TD at both the frame and feature levels to identify the most effective representation level at which TD complements visual representations. Based on these findings, we develop a hierarchically continual learning strategy and an annealed temporal differences guidance method to progressively learn and exploit TD information during diffusion training and sampling process, respectively. Extensive experiments on benchmark datasets demonstrate that effectively exploiting TD through our proposed framework significantly improves end-to-end V2A generation quality, even outperforming dedicated V2A representations such as contrastive audio-visual pretraining.",
+      "authors": [
+        "Zehua Chen",
+        "Junyou Wang",
+        "Yuxuan Jiang",
+        "Zhenying Fang",
+        "Yusheng Dai",
+        "Jianfei Chen",
+        "Ziwei Liu",
+        "Jun Zhu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.04902v1",
+      "primary_category": "cs.CV",
+      "source_categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-08-05T14:28:05Z",
+      "updated": "2026-08-05T14:28:05Z"
+    },
+    {
+      "arxiv_id": "2608.05138v1",
+      "title_en": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
+      "abstract_en": "Modern Greek is absent from NVIDIA's Nemotron retrieval models and from major multilingual retrieval benchmarks, despite being important for retrieval-augmented generation (RAG) in legal, energy, financial, and medical applications. We present an end-to-end adaptation of the Nemotron retrieval stack for Modern Greek, including corpus mining, synthetic supervision, retrieval model training, reranker adaptation, reader fine-tuning, and a new benchmark called HERA. Our study shows that a parameter-free BM25 baseline outperforms several off-the-shelf multilingual dense retrieval models on specialist Greek corpora. After fine-tuning on 65,773 Greek retrieval pairs, a Nemotron 1B embedder improves nDCG@10 from 0.362 to 0.835 and substantially outperforms its unadapted counterpart. The learned language competence transfers to general-domain Greek, although the advantage over BM25 remains domain-dependent. We further adapt a cross-encoder reranker and demonstrate consistent improvements across specialist domains. Finally, we LoRA-tune a Nemotron 30B-A3B mixture-of-experts reader for grounded generation, increasing judged answer correctness from 29.4% to 66.9% while significantly improving faithfulness and citation quality. We also introduce HERA, the first large-scale Greek benchmark for retrieval-augmented generation, and release our adapted models and benchmark to support future research on Greek-language RAG systems.",
+      "authors": [
+        "Ayoub Kirouane",
+        "Christos Petrocheilos"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.05138v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-08-05T17:56:40Z",
+      "updated": "2026-08-05T17:56:40Z"
+    }
+  ]
+}
