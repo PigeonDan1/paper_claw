@@ -1,0 +1,51 @@
+{
+  "window": {
+    "start": "2026-08-06T11:55:27.753436+08:00",
+    "end": "2026-08-07T11:41:13.843983+08:00"
+  },
+  "fetched_count": 2,
+  "deduplicated_count": 2,
+  "new_count": 2,
+  "papers": [
+    {
+      "arxiv_id": "2608.06139v1",
+      "title_en": "Explicit and Stable Pseudospectral Time-Domain Method for the Föppl-von Kármán Equations",
+      "abstract_en": "Modal synthesis is a widely-used technique for simulation of musical instrument dynamics. In the linear case, a modal decomposition leads to an uncoupled system of damped and forced harmonic oscillators which can be efficiently solved by standard time-stepping methods. However, extensions to nonlinear problems are challenging due to the presence of products of modal expansions in the governing equations. In the case of the Föppl-von Kármán plate, the nonlinear coupling between the modes is described by a fourth-order tensor and is prohibitively expensive to evaluate in the modal domain. In this work, we propose a pseudospectral method in which the products are evaluated on a grid in the spatial domain while spatial derivatives are computed exactly in the modal domain. Discrete sine and cosine transforms between the modal and spatial domains are used to impose simply supported boundary conditions for the plate. Finally, we prove non-negativity of the nonlinear potential energy of the system and employ a scalar auxiliary variable technique for explicit and stable time integration in the modal domain. As a result, we reduce the computational cost of modal synthesis while preserving its advantages like a precise control over the simulated frequency range. Sound examples are presented.",
+      "authors": [
+        "Victor Zheleznov",
+        "Stefan Bilbao"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.06139v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD",
+        "physics.comp-ph"
+      ],
+      "published": "2026-08-06T15:09:38Z",
+      "updated": "2026-08-06T15:09:38Z"
+    },
+    {
+      "arxiv_id": "2608.06165v1",
+      "title_en": "Audio-to-Score Transcription using Pre-trained Features, Data Augmentation, and the New SheetSage-A2S Dataset",
+      "abstract_en": "Existing audio-to-score (A2S) systems primarily focus on classical music, and the application to popular music remains underexplored. This paper first presents the new SheetSage-A2S Dataset, which includes 61 hours of audio with \\texttt{**kern} score encodings for 9,468 clips originating from 6,066 unique songs, the first of its kind to facilitate A2S research for popular music. Additionally, we improve on existing A2S approaches by using data augmentation and MuQ, a pretrained feature-extraction model for music audio, to enhance generalisation abilities and extract meaningful audio features. Results show that the proposed A2S model achieves 4.98\\% symbol error rate (SER) on the Quartets collection for classical music, which significantly outperforms the 15.3\\% SER from the existing state-of-the-art \\cite{alfaro-contrerasTransformer2024}. Additionally, our model achieves 20.92\\% SER on the SheetSage-A2S dataset for popular music, serving as a strong benchmark for future research. The dataset, model, and code are made publicly available at: https://github.com/Multimodal-Music-Research-Lab/SheetSage2Kern_model.",
+      "authors": [
+        "Eoin Cummins",
+        "Zhongyi Huang",
+        "Alexandre D'Hooge",
+        "Zhuoro Mo",
+        "Yaolong Ju"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.06165v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "published": "2026-08-06T15:33:18Z",
+      "updated": "2026-08-06T15:33:18Z"
+    }
+  ]
+}
