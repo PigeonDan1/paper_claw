@@ -1,0 +1,122 @@
+{
+  "window": {
+    "start": "2026-08-10T11:02:47.951734+08:00",
+    "end": "2026-08-11T10:55:56.058601+08:00"
+  },
+  "fetched_count": 7,
+  "deduplicated_count": 5,
+  "new_count": 5,
+  "papers": [
+    {
+      "arxiv_id": "2608.09451v1",
+      "title_en": "Dynamic Clustering for Cross-Segment Permutation Alignment in Long Speech Separation",
+      "abstract_en": "Long speech separation typically employs a segment-separation-stitch paradigm where recordings are divided into short segments, processed independently, and stitched together. Its challenge lies in predicting cross-segment permutations. This paper proposes a training-free dynamic clustering approach for cross-segment permutation alignment using speaker embedding reference pools. The method predicts the permutation using the cosine similarity between current segment embeddings and the reference pools. The approach updates reference pools by retaining the most representative speaker embeddings based on their overall cosine similarity with existing references. As a plug-and-play post-processing module compatible with existing separation models, the proposed method demonstrates superior performance compared to existing methods on dense and sparse long speech scenarios, particularly in challenging sparse scenarios with extended utterance gaps, and further shows robustness to speaker count estimation errors in unknown speaker count scenarios.",
+      "authors": [
+        "Yuzhu Wang",
+        "Archontis Politis",
+        "Konstantinos Drossos",
+        "Tuomas Virtanen"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.09451v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-08-10T11:23:35Z",
+      "updated": "2026-08-10T11:23:35Z"
+    },
+    {
+      "arxiv_id": "2608.09559v1",
+      "title_en": "AudioMap: Cloze-and-Choice Reinforcement Learning for Time-Aware Dense Audio Captioning",
+      "abstract_en": "Time-aware dense audio captioning (TDAC) aims to generate multiple fine-grained attributes (dense) of the audio with precise time boundaries (time-aware). Existing methods struggle to achieve these two goals and mainly rely on supervised fine-tuning, yielding sub-optimal performance. While reinforcement learning (RL) shows promise, applying it to TDAC faces two main challenges: (1) existing rewards are too coarse to supervise multi-event, multi-attribute, and multi-relation descriptions in a fine-grained manner; and (2) temporal supervision is difficult for free-form captions, where flexible event-time expressions make reliable event-time correspondence challenging. To address these challenges, we propose AudioMap, a novel RL-based TDAC framework, which shifts to a unified cloze-and-choice reward paradigm. Specifically, we introduce the Evidence Sufficiency Reward (ESR) with an asymmetric hierarchical scoring mechanism to promote fine-grained accuracy and descriptive richness across diverse acoustic dimensions. Furthermore, we design the Event-Conditioned Temporal Reward (ECTR) to structurally bind timestamps to event semantics via temporal IoU, accompanied by a dual-curriculum learning strategy to facilitate the training process. Finally, to support this task, we construct the first time-aware fine-grained audio captioning dataset, AudioMapCap-44K, which contains 44K carefully annotated captions. Extensive experiments across diverse benchmarks show that AudioMap achieves state-of-the-art (SOTA) performance among open-source models and delivers competitive or superior results relative to proprietary models. Project page and release updates are available at https://github.com/ryysayhi/AudioMap.",
+      "authors": [
+        "Yan Rong",
+        "Fengji Ma",
+        "Xu Li",
+        "Jinting Wang",
+        "Chen Zhang",
+        "Li Liu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.09559v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-08-10T12:57:34Z",
+      "updated": "2026-08-10T12:57:34Z"
+    },
+    {
+      "arxiv_id": "2608.09571v1",
+      "title_en": "SonicWeave: Chunk-Routed Mixture-of-Experts for Unified Audio Scene Generation",
+      "abstract_en": "Text-conditioned general audio generation is moving beyond isolated speech, music, and sound-effect synthesis toward a single model that can compose them into controllable, coherent audio scenes. This unified setting is particularly challenging: heterogeneous components impose conflicting structural requirements on a shared backbone, while a complex mixed scene may contain locally distinct or overlapping content that demands fine-grained adaptation within the same clip. Existing audio mixture-of-experts (MoEs) mainly route at the domain level, while token-wise routing overlooks the local continuity inherent to acoustic signals. We propose SonicWeave, a flow-matching model for unified audio scene generation. At its core is a chunk-routed MoE with a conflict-gated prior-evidence routing mechanism (CPE-MoE). CPE-MoE routes contiguous acoustic chunks by combining a global prior that encodes the structured text condition and diffusion phase with local evidence from the evolving acoustic state. A learned conflict gate favors the prior when local states are unreliable, while allowing local evidence to influence routing when a region departs from the global scene context. SonicWeave supports speech, music, sound effects, singing, and their fine-grained mixtures with a single set of weights. Across TTS, TTA, and TTM benchmarks, SonicWeave consistently improves over controlled Dense and Base-MoE baselines. Complex-scene evaluation further demonstrates improved compositional quality, while routing analyses reveal content-dependent expert specialization across diffusion phases. These results suggest that temporally coherent, prior-evidence routing is an effective conditional-computation strategy for unified audio generation. Project page: https://caiyunrui.github.io/SonicWeave.",
+      "authors": [
+        "Yunrui Cai",
+        "Xu Li",
+        "Yucheng Zhou",
+        "Jinchao Li",
+        "Dingdong Wang",
+        "Dongchao Yang",
+        "Xixin Wu",
+        "Chen Zhang",
+        "Zhiyong Wu",
+        "Pengfei Wan",
+        "Helen Meng"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.09571v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-08-10T13:07:24Z",
+      "updated": "2026-08-10T13:07:24Z"
+    },
+    {
+      "arxiv_id": "2608.09593v1",
+      "title_en": "MADBench: A Benchmark for Modality-Aware Audio Deepfake Detection",
+      "abstract_en": "Recent advances in speech synthesis and audio generation have made high-fidelity acoustic forgery low-cost and difficult to attribute, enabling a realistic attack scenario in which speech and background audio are independently manipulated over otherwise authentic video. Yet existing research either focuses on visual manipulation, addresses speech detection in isolation, or conflates speech and non-speech audio as a single undifferentiated audio stream, overlooking the distinct forensic challenges posed by background audio. This conflation is consequential: the two acoustic components arise from fundamentally different generative mechanisms, exhibit distinct artifact profiles, and pose different challenges to detection systems. We introduce MADBench, the first benchmark that treats speech and environmental audio as distinct acoustic components, enabling component-aware evaluation of audio deepfake detection across independently manipulated forgery sources. We benchmark representative state-of-the-art detectors and multimodal large language models under a unified protocol. Our experiments reveal that environmental audio manipulation is more detectable than synthetic speech across general-purpose encoders, while existing pretrained detectors fail on both acoustic components, and manipulated environmental audio asymmetrically degrades speech deepfake detection, findings entirely invisible under the single-label paradigm of prior benchmarks. MADBench establishes a rigorous foundation for future research into robust, component-aware audio deepfake detection.",
+      "authors": [
+        "Yanqiu Li",
+        "Yang Xiao",
+        "Jisheng Bai",
+        "Bin Chen",
+        "Hong Jia",
+        "Ting Dang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.09593v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-08-10T13:27:09Z",
+      "updated": "2026-08-10T13:27:09Z"
+    },
+    {
+      "arxiv_id": "2608.09767v1",
+      "title_en": "Structured Phonological Representations for Audio-Articulatory rtMRI Speech Classification",
+      "abstract_en": "Real-time MRI makes it possible to observe vocal-tract articulation during speech, but mapping these articulatory patterns to phonetic and phonological categories remains challenging. We investigate whether PhonoQ, an audio-based model trained to recognize structured phonological features, provides useful information for audio--articulatory modeling. Specifically, we extract representations from PhonoQ's Conformer module, whose training is shaped by supervision for manner, place, voicing, and vowel features. Using articulatory contours with synchronized audio-derived features, we compare WavLM-large and HuBERT-large baselines with models that incorporate PhonoQ-derived representations. Across unseen-speech and unseen-subject settings, these features improve macro-F1 for phonological targets including manner, place, voicing, vowel height, and vowel backness, and also improve fine-grained 39-phoneme classification. In a contour-only inference setting, audio-derived teacher supervision yields modest but consistent gains over contour-only training, indicating that phonological information from synchronized audio can be partially transferred to articulatory models. Finally, posterior analyses show interpretable surface-sensitive patterns consistent with flapping-like /t/ realizations, /t/-/r/ retraction or affrication, and nasal place assimilation.",
+      "authors": [
+        "Abner Hernandez",
+        "Tomás Arias Vergara",
+        "Daiqi Liu",
+        "Andreas Maier",
+        "Paula Andrea Pérez-Toro"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.09767v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-08-10T15:58:07Z",
+      "updated": "2026-08-10T15:58:07Z"
+    }
+  ]
+}
