@@ -1,0 +1,56 @@
+{
+  "window": {
+    "start": "2026-08-13T11:19:21.183835+08:00",
+    "end": "2026-08-14T11:16:38.220697+08:00"
+  },
+  "fetched_count": 2,
+  "deduplicated_count": 2,
+  "new_count": 2,
+  "papers": [
+    {
+      "arxiv_id": "2608.13101v1",
+      "title_en": "CASA: Content-Acoustic Speaking Assessment with Speech Encoder and Large Language Model",
+      "abstract_en": "Research on automatic speaking assessment (ASA) has increasingly adopted multimodal speech large language models to assess learners' speaking performance. However, existing studies provide limited analysis of how acoustic and content information contribute to predictions and how stable the resulting performance is. We propose CASA, a simpler architecture combining Whisper-medium and Qwen3.5-2B that achieves state-of-the-art performance while providing a more interpretable separation between speech delivery and content. On the Speak & Improve Corpus 2025, CASA achieves a root mean square error (RMSE) of 0.358, improving on the previous best RMSE while using approximately half the estimated inference parameters. The general-purpose architecture is designed for adaptation to other ASA corpora without structural changes and relies on three handcrafted fluency features. Through ablations and repeated runs, we analyze the individual and complementary contributions of acoustic and content information, examine performance variability, and demonstrate the potential of large language model reasoning for training-free content validation.",
+      "authors": [
+        "Nhan Phan",
+        "Ilona Lähteenmäki",
+        "Anna von Zansen",
+        "Olli-Pekka Pauna",
+        "Yaroslav Getman",
+        "Tamás Grósz",
+        "Mikko Kurimo"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.13101v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-08-13T11:25:23Z",
+      "updated": "2026-08-13T11:25:23Z"
+    },
+    {
+      "arxiv_id": "2608.13425v1",
+      "title_en": "Motor, Cognitive, or Corpus? What Survives Cross-Lingual Transfer in Speech-Based Parkinsons Disease Detection",
+      "abstract_en": "Self-supervised learning (SSL) speech representations achieve strong performance for Parkinson's disease (PD) detection within individual corpora. However, it remains unclear whether these models capture disease-related characteristics or exploit dataset-specific confounds, particularly since most SSL backbones are pretrained exclusively on healthy speech. To investigate this question, we perform a layer-wise analysis of nine SSL speech backbones using a low-capacity logistic regression probe across three languages. We structure the evaluation as multiple scenarios that progressively introduce distribution shifts in participant identity, recording conditions, language, and pathology. Our results reveal two key findings. First, layer selection is highly corpus-dependent: the optimal representation layer is determined primarily by the source dataset rather than by the SSL architecture itself. Second, the transferred discriminative signal lacks pathological specificity: classifiers trained to detect PD assign similarly high probabilities to both PD and dementia speech in the target corpus. These results highlight critical limitations that must be addressed before speech-based pathology recognition models can be reliably deployed in clinical settings.",
+      "authors": [
+        "Serli Kopar",
+        "Sam Gijsen",
+        "Abner Hernandez",
+        "Paula Andrea Perez-Toro",
+        "Kerstin Ritter"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.13425v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS",
+        "eess.SP"
+      ],
+      "published": "2026-08-13T16:15:32Z",
+      "updated": "2026-08-13T16:15:32Z"
+    }
+  ]
+}
