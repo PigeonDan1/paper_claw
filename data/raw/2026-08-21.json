@@ -1,0 +1,576 @@
+{
+  "window": {
+    "start": "2026-08-18T10:06:44.498532+08:00",
+    "end": "2026-08-21T10:14:31.839623+08:00"
+  },
+  "fetched_count": 31,
+  "deduplicated_count": 27,
+  "new_count": 27,
+  "papers": [
+    {
+      "arxiv_id": "2608.17605v1",
+      "title_en": "Multi-turn Conversational AI from Text to Multimodal Interaction: Data, Models, Evaluation, and Open Challenges",
+      "abstract_en": "Conversational AI is moving beyond isolated text prompts toward sustained, multimodal interaction. In real conversations, users clarify goals, revise requests, interrupt responses, switch topics, and introduce new evidence while expecting systems to preserve context across turns. This makes multi-turn dialogue a distinct challenge requiring systems to maintain and update memory, ground responses across modalities, tools, and external knowledge, and adapt across languages and cultures. This study reviews multi-turn conversational AI across text-only dialogue, AudioLLMs and speech-native systems, multimodal and omni-modal systems, and tool-augmented agents. We organize the literature around datasets and benchmarks, modeling paradigms, training strategies, evaluation setups, and cross-cutting challenges. Our analysis shows that support for multiple modalities has advanced faster than the ability to sustain coherent interaction across a session. Despite stronger capabilities to perceive, speak, and act across modalities, current systems still struggle with persistent memory, cross-turn grounding, full-duplex interaction, robust evaluation, and cultural alignment. We conclude with a research agenda for systems that can remember, revise, ground, speak, listen, act, and adapt across turns, modalities, and cultures. (https://github.com/faiza-sfa/multiturn-conversational-ai-survey)",
+      "authors": [
+        "Syeda Faiza Ahmed",
+        "Zien Sheikh Ali",
+        "Hunzalah Hassan Bhatti",
+        "Firoj Alam",
+        "Shammur Absar Chowdhury"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.17605v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-08-18T10:14:21Z",
+      "updated": "2026-08-18T10:14:21Z"
+    },
+    {
+      "arxiv_id": "2608.18191v1",
+      "title_en": "ChiroEcho: extending automated bat vocalisation classification beyond the learned taxonomy",
+      "abstract_en": "Bats are key indicators of ecosystem health and are protected throughout Europe, making reliable population monitoring a conservation priority. Their cryptic nocturnal lifestyle makes passive acoustic monitoring essential, yet automated identification remains difficult as echolocation calls vary with behaviour and environment and overlap among species. We present a deep learning framework that jointly predicts species and genus and combines genus predictions with geographic species distributions at inference. When only one species of a predicted genus occurs in a region, the framework can resolve species absent from the learned taxonomy. This reframes geographic information as a means of extending, rather than constraining, a classifier's effective taxonomy. Using recordings spanning 35 European bat species, we evaluate closed-set classification, examine the instability of performance estimates for sparsely represented species, and conduct a controlled held-out proof-of-principle experiment. The rare-species analysis shows how limited evaluation data can obscure species-level performance, while the held-out experiment shows that genus predictions and location can recover labels unavailable to the species head. Geographic resolution extends operational coverage from 35 to 41 of the 48 native European bat species, increasing coverage from 73% to 85%. To our knowledge, this is the broadest operational coverage reported for automated European bat classification. More broadly, the bat framework provides proof of principle for resolving unseen fine-grained classes by combining coarse predictions with transparent external constraints.",
+      "authors": [
+        "Burooj Ghani",
+        "Welmoed Eversteijn",
+        "Milan van Hirtum",
+        "Juan Sebastián Cañas",
+        "Vincent J. Kalkman",
+        "Dan Stowell",
+        "A. Leonie Baier"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.18191v1",
+      "primary_category": "cs.LG",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-08-18T12:38:51Z",
+      "updated": "2026-08-18T12:38:51Z"
+    },
+    {
+      "arxiv_id": "2608.17852v1",
+      "title_en": "UniVerse: Benchmarking and Enhancing LALMs on Culturally Inclusive Low-Resource Music Understanding",
+      "abstract_en": "Recent advances in large audio-language models (LALMs) have significantly improved performance in tasks such as music captioning, genre classification, and sound event detection. However, limited attention has been paid to improving their adaptability across diverse musical traditions, particularly folk music rooted in distinct cultural contexts. Folk-music traditions are typically resource-scarce, unevenly represented across regions, and poorly documented. Even when such samples appear in large-scale pre-training, LALMs often fail to capture their structural and stylistic characteristics, partly due to the absence of dedicated evaluation protocols and training solutions. To address these limitations, we introduce UniVerse, a reproducible solution for low-resource music understanding. Specifically, we propose UniVerseBench, a benchmark of 5,042 Q&A pairs across more than 38 cultural and linguistic entities, constructed via an expert-guided yet highly automated pipeline. In parallel, we construct a fully automated, model-generated multi-turn dialogue training dataset UniVerseSet. By training LALMs on UniVerseSet, we systematically adapt and investigate representative multimodal imbalance learning strategies across both dense and Mixture-of-Experts (MoE) architectures. Experimental results indicate that fully automated data curation combined with imbalance-aware training yields non-trivial improvements, but models still struggle to capture fine-grained acoustic features, indicating a gap between surface-level alignment and deep musical comprehension.",
+      "authors": [
+        "Ziya Zhou",
+        "Shangda Wu",
+        "Shenyang Xu",
+        "Yutong Zheng",
+        "Dafang Liang",
+        "Suin Chung",
+        "Danbinaerin Han",
+        "Junyan Jiang",
+        "Yongyi Zang",
+        "Ruibin Yuan",
+        "Rongxiu Zhong",
+        "Shilei Zhang",
+        "Junlan Feng",
+        "Jinglei Liu",
+        "Haotian Zhou",
+        "Zijin Li",
+        "Dasaem Jeong",
+        "Wei Xue",
+        "Yike Guo"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.17852v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.MM",
+        "cs.SD"
+      ],
+      "published": "2026-08-18T14:47:48Z",
+      "updated": "2026-08-18T14:47:48Z"
+    },
+    {
+      "arxiv_id": "2608.17931v1",
+      "title_en": "SpeechSense: A Paralinguistic-Focused Dataset for Fine-Grained Speech Sentiment Analysis",
+      "abstract_en": "Recent advances in AI have revolutionized speech processing, yet effective speech understanding requires discerning not just what is said, but how it is said. Speech Sentiment Analysis plays a critical role in decoding these paralinguistic cues for diverse real-world applications such as recruitment and customer service. However, existing Speech Sentiment Analysis research faces two primary limitations. First, dominant approaches rely on text-centric pipelines that cascade Automatic Speech Recognition with text analysis. This process inevitably discards essential acoustic features like prosody and tone, failing to capture attitudinal meanings in acoustically ambiguous utterances. Second, current benchmarks suffer from a mismatch in label granularity, prioritizing basic emotions (e.g., happy, sad) over the nuanced interpersonal stances (e.g., confident, impatient) necessary for social sensitivity. To address these limitations, we propose a novel dataset, SpeechSense, for fine-grained speech sentiment analysis. Specifically, we define a specialized 8-class taxonomy of interpersonal stances detectable primarily through prosodic cues beyond lexical content alone. We then construct a curated dataset based on this taxonomy, built from high-fidelity speech synthesis and rigorous human validation. Comprehensive experiments across multi-modal LLMs, text-only LLMs, and speech encoders demonstrate that models with acoustic access consistently outperform text-only baselines. These results empirically validate the primacy of acoustic cues in detecting subtle speaker attitudes, highlighting the necessity of SpeechSense. Dataset and supplementary materials are available at https://github.com/Sher13cked/SpeechSense.",
+      "authors": [
+        "Shicheng Ma",
+        "Wenqian Cui",
+        "Irwin King"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.17931v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "published": "2026-08-18T15:51:27Z",
+      "updated": "2026-08-18T15:51:27Z"
+    },
+    {
+      "arxiv_id": "2608.17972v1",
+      "title_en": "Target Speaker Identification: A Low-Latency Streaming Pipeline",
+      "abstract_en": "We present a real-time pipeline of open source, pretrained models for streaming identification of a target speaker, motivated by hearing-aid applications where latency as low as 10 ms can be perceptible. We formulate a two-step approach in which incoming audio is first segmented by speaker using low-latency streaming diarization, followed by speaker verification against a registered target speaker. To emulate conversational speech while minimizing overlap, we use the This American Life Podcast Transcripts dataset and select the host as a consistent target speaker. We benchmark offline diarization with Pyannote and LIUM using diarization error rate (DER) and select Pyannote based on baseline performance and compatibility with streaming. We then evaluate speaker verification using Pyannote and TitaNet-Large and generate ROC curves to select an operating region. We integrate Diart and tune clustering parameters to reduce DER while maintaining real-time operation. We pair Diart with Pyannote verification and evaluate system-level performance by converting predicted and ground-truth speech regions into 100 ms binary masks. Across 17 evaluation episodes, the system achieves greater than 0.90 median accuracy with high specificity (0.95-0.98) at cosine distance thresholds of 0.7-0.75, demonstrating a practical proof of concept for downstream low-latency selective amplification.",
+      "authors": [
+        "Patrick S. Burke",
+        "Satyam Raj",
+        "Sean Kinahan"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.17972v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-08-18T16:24:49Z",
+      "updated": "2026-08-18T16:24:49Z"
+    },
+    {
+      "arxiv_id": "2608.18025v1",
+      "title_en": "Why GPT-Style Models Do Not Directly Transfer to Symbolic Music: Compression in the Wrong Coordinate System",
+      "abstract_en": "GPT-style models achieve strong performance by representing language with finite vocabularies of reusable discrete tokens. This success has motivated symbolic music tokenizations to treat recurring musical structures, such as chords, motifs, and phrases, as reusable units analogous to linguistic tokens. However, tokenization derives its advantage not from reusable combinations alone, but from compression: effective compression requires coordinates in which recurring regularities form stable and predictable conditional distributions. The key problem is therefore not to find larger musical combinations, but to discover the coordinate system in which musical facts become predictively compressible. We formulate the Effectiveness--Losslessness Framework and define tokenization as the construction of a predictively effective and relationally lossless coordinate system. The Predictive Effectiveness Principle defines the Fact--Token Boundary: decoupling and denesting construct coordinate interfaces that expose predictive regularities. The Relational Losslessness Principle defines the Token--State Boundary: tokenization stops before context-dependent relations are fixed, leaving their computation to model states. Controlled symbolic-music experiments validate these boundaries. Effective coordinate construction improves predictive compressibility, while fixed relational projections constrain contextual modeling. Sequence compaction alone does not guarantee predictive compression, while preserving contextual freedom allows higher-order musical organization to emerge without explicit structural labels. These results reveal why GPT-style models do not transfer directly across modalities: architectures transfer, but tokenization interfaces do not. Tokenization must discover effective representations while preserving the relational freedom from which contextual structure can emerge.",
+      "authors": [
+        "Yi Wang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.18025v1",
+      "primary_category": "cs.LG",
+      "source_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-08-18T17:20:12Z",
+      "updated": "2026-08-18T17:20:12Z"
+    },
+    {
+      "arxiv_id": "2608.18226v1",
+      "title_en": "FM Synthesizer Audio-Parameter Shared Embeddings",
+      "abstract_en": "Given a target sound, finding the synthesizer preset that best reproduces it remains a core problem in sound design. Existing methods treat synthesis parameters as flat vectors, discarding the signal routing and parameter interactions that produce audio. We make two contributions. First, to learn a representation of parameters including their signal routing, we design a graph neural network whose message passing structure imitates FM signal processing. Second, we adapt the multimodal objective from SLAP to learn joint embeddings of audio and FM synthesizer parameters, enabling preset retrieval from a gallery. We focus on the Yamaha DX7, where six identical sinusoid operators interact according to one of 32 routing topologies. Our graph encoder's message passing weights are shared across all nodes and layers, enabling processing of arbitrary topologies of any size. When every topology is seen during training, the DX7-GNN and two baselines achieve strong audio-to-preset retrieval. When some topologies are held out for testing, the DX7-GNN substantially outperforms both baselines despite having the fewest parameters. Our ablations further support the claim that imitating FM signal flow in a parameter encoder improves generalization to unseen topologies.",
+      "authors": [
+        "David Braun",
+        "Adam Finkelstein"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.18226v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-08-18T18:15:15Z",
+      "updated": "2026-08-18T18:15:15Z"
+    },
+    {
+      "arxiv_id": "2608.18341v1",
+      "title_en": "Low-Power, Neuromorphic, Acoustic Anomaly Detection for Persistent Machine Monitoring",
+      "abstract_en": "Persistent acoustic monitoring can detect machine faults without physical contact, but always-on inference is constrained by power, latency, and deployment complexity. We demonstrate autoencoder-based acoustic anomaly detection on an Intel Loihi 2 neuromorphic processor under clean and noisy conditions. Log-mel features are computed off chip; normalization, autoencoder inference, L1 reconstruction scoring, and thresholding run on chip. In a clean, microphone-position-invariant ToyADMOS ToyCar benchmark, the on-chip model achieves 0.9959 AUC and 0.9785 standardized pAUC at maximum false-positive rate 0.1. In the DCASE 2026 Task 2 ToyCar noisy benchmark, the model achieves source AUC 0.7990, target AUC 0.6466, and pAUC 0.6426, exceeding reported baseline metrics. Power profiling on a 16-chip Loihi 2 VPX system shows real-time throughput with 0.0406$\\unicode{x2013}$0.0426 mJ dynamic energy per sample, two orders of magnitude lower than both a CPU and GPU. These results support neuromorphic acoustic anomaly detection as a practical candidate for low-power, persistent machine monitoring.",
+      "authors": [
+        "Steven C. Nesbit",
+        "Victor M. Vergara",
+        "Michael A. Felix",
+        "Evan T. Kain",
+        "Luis R. García Carrillo",
+        "Gerd J. Kunde",
+        "Andrew T. Sornborger"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.18341v1",
+      "primary_category": "cs.NE",
+      "source_categories": [
+        "cs.AI",
+        "cs.ET",
+        "cs.LG",
+        "cs.NE",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-08-18T21:46:11Z",
+      "updated": "2026-08-18T21:46:11Z"
+    },
+    {
+      "arxiv_id": "2608.18680v1",
+      "title_en": "Sounds Uncertain: Exploring the Affective Aspects of Sonification for Uncertainty Visualization",
+      "abstract_en": "Affective visualization can influence how users perceive, interpret, and engage with data by embedding and conveying emotion through visual design. While sound is widely used in media to evoke emotions, little is known about how sonification can support affective visualization. In this work, we investigate how sonification can communicate emotion in uncertainty visualizations through a co-design study. Participants created two sonifications to accompany a visualization: one conveying the affective component of uncertainty and one conveying neutrality. Our findings show that uncertainty was commonly associated with wavy auditory qualities related to an ominous sentiment. On the other hand, neutrality was associated with clear and relaxing auditory qualities. These results provide insights for the design of visualizations that integrate sonification to communicate the affective component of uncertainty.",
+      "authors": [
+        "Marcel-Simon Dutt",
+        "Sita A. Vriend",
+        "Elias Elmquist",
+        "Daniel Weiskopf"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.18680v1",
+      "primary_category": "cs.HC",
+      "source_categories": [
+        "cs.HC",
+        "cs.SD"
+      ],
+      "published": "2026-08-19T08:31:09Z",
+      "updated": "2026-08-19T08:31:09Z"
+    },
+    {
+      "arxiv_id": "2608.18825v1",
+      "title_en": "Understanding Multilingual Medical ASR Adaptation Through Layer-Wise Analysis",
+      "abstract_en": "Medical automatic speech recognition (MedASR) requires adaptation to specialised terminology, limited annotated clinical data, and multilingual use cases. Although large-scale pretrained ASR models such as Whisper achieve strong generalisation, their behaviour after medical and multilingual adaptation remains insufficiently understood beyond word error rate (WER). This paper investigates how multilingual medical adaptation reshapes the internal representations of Whisper models through layer-wise encoder analysis. We compare zero-shot decoding, English-only fine-tuning, German-only diagnostic fine-tuning, two-stage EN->EN+DE continuation, and direct EN+DE fine-tuning across Whisper model sizes. Fine-tuning substantially improves MedASR performance, but the best model depends on the adaptation setting: Whisper-Medium gives the lowest English WER (7.72%) and the lowest combined EN+DE WER under direct EN+DE training (26.30%); German-only Whisper-Large-v3 gives the lowest German WER (44.96%), but as a within-corpus diagnostic on 86 single-speaker training utterances rather than robust generalisation. Layer-wise analysis of the two-stage Whisper-Small trajectory shows that English medical fine-tuning produces the dominant encoder shift, whereas multilingual continuation largely preserves the adapted representation space. Domain and language information remain highly recoverable across layers, while linearly recoverable error-predictive cues weaken as WER improves.",
+      "authors": [
+        "Souranil Kahali",
+        "Rituparna Bose",
+        "Abner Hernandez",
+        "Tomas Arias-Vergara",
+        "Andreas Maier",
+        "Ning Ma",
+        "Paula Andrea Perez-Toro"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.18825v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-08-19T11:29:30Z",
+      "updated": "2026-08-19T11:29:30Z"
+    },
+    {
+      "arxiv_id": "2608.19055v1",
+      "title_en": "Generalized Audio-Driven Synthesis of Precise Drummer Motion",
+      "abstract_en": "Music-driven character animation enables and enhances transformative applications in entertainment and interactive education. However, synthesizing realistic drumming motion from audio remains challenging due to the inherent tension between high-acceleration dynamics and the need for extreme spatial-temporal precision. Existing approaches, often reliant on motion matching or MIDI input, struggle with generalizing to diverse real-world audio. Moreover, the field lacks standardized evaluation metrics capable of distinguishing precise drumming from noisy motion. In this paper, we introduce a generative diffusion framework featuring a dual-objective loss function that decouples skeletal integrity from drumstick precision, thus enabling centimeter-level stick precision without sacrificing natural body dynamics. Additionally, leveraging our own dataset and data augmentation strategy, the model generalizes to non-curated, in-the-wild audio. To rigorously evaluate performance, we propose two novel metrics: an impact-to-target distance to quantify spatial precision and an audio-motion correlation score to assess temporal alignment. Our quantitative analysis and user studies demonstrate that our system generates high-quality motion that is often indistinguishable from ground-truth performances.",
+      "authors": [
+        "Álvaro G. Iñesta",
+        "Mattia Ryffel",
+        "Amit H. Bermano",
+        "Robert W. Sumner",
+        "Martin Guay"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19055v1",
+      "primary_category": "cs.CV",
+      "source_categories": [
+        "cs.CV",
+        "cs.GR",
+        "cs.SD"
+      ],
+      "published": "2026-08-19T15:50:29Z",
+      "updated": "2026-08-19T15:50:29Z"
+    },
+    {
+      "arxiv_id": "2608.19061v1",
+      "title_en": "Computational Features for Symbolic Melody Analysis",
+      "abstract_en": "This paper addresses the general problem of extracting music-theoretic and psychological features from symbolically encoded melodies. We review existing melodic feature extraction toolboxes, enumerate their features, and organise them into a common taxonomy. We then describe a new software library that provides implementations of all of these features in a straightforward Python package. We then demonstrate the combined feature set on the Essen Folksong Collection, using the dataset to produce a series of style classification models. These models help us answer key questions about the interpretability and dimensionality of the feature set. Our results show excellent classification accuracy using the full feature set, and promising performance for an eight-dimensional factor-analytic solution that improves the interpretability of the classifier. We distribute our new toolbox as an open-source Python package, $\\mathtt{melody-features}$, which can easily be used in various applications within music analysis, music psychology, and music information retrieval.",
+      "authors": [
+        "David M. Whyatt",
+        "Peter M. C. Harrison"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19061v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-08-19T16:01:00Z",
+      "updated": "2026-08-19T16:01:00Z"
+    },
+    {
+      "arxiv_id": "2608.19084v1",
+      "title_en": "Does Mapping Non-Maximal Probabilities to GMM Components Matter for S-JEPA Encoder Representations?",
+      "abstract_en": "S-JEPA uses soft Gaussian mixture model (GMM) posteriors instead of hard cluster labels to preserve uncertainty. It remains unclear whether the probability values alone are sufficient, or whether it also matters which GMM components receive the non-maximal probabilities. We test this with two matched controls. FIXED-RANDPERM keeps the top-1 component and probability together with the multiset of non-maximal probability values, but reassigns those non-maximal values using a mapping fixed for each physical frame. UNIFORM-TAIL keeps the top-1 component, its probability, and total non-maximal mass but distributes that mass uniformly. Across three independent seeds, REAL SOFT outperforms both controls on two frozen Encoder readouts. It provides better recovery of the original GMM tail and greater accessibility of spectral dynamics over short time scales after controlling for the complete spectrum of the current frame. In two exposure experiments, both readouts improved overall as more frames retained the original mapping. We also descriptively follow one Phase 2 trajectory after the switch to the online GMM. These results show that the numerical probability structure of the soft target does not fully determine the learned Encoder representation. The mapping of non-maximal probabilities to GMM components also matters.",
+      "authors": [
+        "Wenxuan He",
+        "Yunpeng Li",
+        "Shan Liang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19084v1",
+      "primary_category": "cs.LG",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-08-19T16:32:52Z",
+      "updated": "2026-08-19T16:32:52Z"
+    },
+    {
+      "arxiv_id": "2608.19141v1",
+      "title_en": "Geometric Iterative Retrieval for Neural Audio Codec Resynthesis",
+      "abstract_en": "Neural audio codecs based on Residual Vector Quantization (RVQ) have become the dominant discrete representation for token-based general audio generation, yet resynthesizing high-quality audio from coarse codec tokens remains an open problem and bounds the fidelity of every system that generates them. Prior work has framed resynthesis as a choice between discrete token prediction and continuous regression. We argue that this dichotomy is incomplete and introduce geometric iterative retrieval, a paradigm that uses the RVQ layer hierarchy itself as a natural iterative decomposition in continuous codebook space. Rather than classifying over discrete vocabularies or regressing to a single target vector, our method performs contrastive retrieval in the codebook's geometric space. We evaluate our method on codec restoration tasks across speech and music, and show improvements over both single-pass token prediction and one-step regression baselines.",
+      "authors": [
+        "Leo Schmidt-Traub",
+        "Frédéric Berdoz",
+        "Luca A. Lanzendörfer",
+        "Roger Wattenhofer"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19141v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-08-19T17:29:56Z",
+      "updated": "2026-08-19T17:29:56Z"
+    },
+    {
+      "arxiv_id": "2608.19174v1",
+      "title_en": "Finetuning Strategies for Querying Sounds by Vocal Imitation",
+      "abstract_en": "This technical report describes our winning submission to the AES AIMLA 2025 Challenge on querying sound effects by vocal imitation. We investigate two complementary fine-tuning strategies: contrastive learning with a frozen, pretrained CED encoder, and joint contrastive-triplet learning with semi-hard negatives using a MobileNetV3 encoder. This report has been updated for posterity to include details released after the challenge.",
+      "authors": [
+        "Aditya Bhattacharjee",
+        "Christos Plachouras",
+        "Sungkyun Chang",
+        "Emmanouil Benetos"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19174v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.IR",
+        "cs.SD"
+      ],
+      "published": "2026-08-19T17:51:50Z",
+      "updated": "2026-08-19T17:51:50Z"
+    },
+    {
+      "arxiv_id": "2608.19350v1",
+      "title_en": "MultiVerse: A Creator-Centered Approach to Steering Context-Adaptive Lyrics",
+      "abstract_en": "Generative AI may enable new forms of context-aware creative expression by dynamically tailoring media content to its consumption context. For instance, AI systems could adapt song lyrics to the listener and their current activity. However, existing media adaptation systems primarily optimize for audience experience, often neglecting artists' intent, style, and preference. We address this challenge by introducing a novel creator-centered approach to adaptive media authoring and present MultiVerse, a system that instantiates this approach for steering adaptive lyrics. Our approach allows creators to explicitly author controls based on their intent, lyric structure, and audience context, and uses rule-based validations to ensure controls are followed. We conducted a study with 10 songwriters, comparing MultiVerse with a prompting-based workflow for composing adaptive lyrics. The comparison revealed that creators preferred to author how lyrics adapt by explicitly specifying relevant context and adaptation constraints, while recognizing trade-offs in flexibility and iteration speed. Interviews further revealed that creators viewed adaptive media as enabling new forms of audience connection, introducing a distinct creative process, favoring new compositional strategies, and reshaping notions of authorship.",
+      "authors": [
+        "Alexander Wang",
+        "Chris Donahue",
+        "David Lindlbauer"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19350v1",
+      "primary_category": "cs.HC",
+      "source_categories": [
+        "cs.HC",
+        "cs.SD"
+      ],
+      "published": "2026-08-19T18:11:15Z",
+      "updated": "2026-08-19T18:11:15Z"
+    },
+    {
+      "arxiv_id": "2608.19361v1",
+      "title_en": "A Speech Corpus for Mizo Automatic Speech Recognition: Whisper and SraVaani 1.0 Fine-Tuning with Morphology-Aware Evaluation",
+      "abstract_en": "This study reports the development of an Automatic Speech Recognition (ASR) system in Mizo, a low-resource language. The development included collecting 17.62 hours of speech data, curating it, and fine-tuning the Mizo ASR system with three Whisper multilingual models and with the SraVaani 1.0 Indic multilingual model. Whisper-large-v3 achieved the lowest conventional WER (18.08%), while morphology-aware evaluation yielded a WER of 7.22%. Zero-shot evaluation of the SraVaani 1.0 Indic multilingual model yielded a WER of 58.27%, while Mizo-specific fine-tuning reduced the conventional WER to 29.45% and the morphology-aware WER to 17.93%. The results demonstrate that the Whisper model can achieve a substantially low WER, even when adapted to an unseen language. In contrast, SraVaani 1.0 supports the Mizo language in its multilingual model; however, fine-tuning with carefully curated Mizo speech data substantially improves its performance.",
+      "authors": [
+        "Priyankoo Sarmah",
+        "Sanasam Ranbir Singh",
+        "Lalhmingmawia"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19361v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-08-19T18:30:46Z",
+      "updated": "2026-08-19T18:30:46Z"
+    },
+    {
+      "arxiv_id": "2608.19523v1",
+      "title_en": "DAVSS: Distilled Audio-Visual State Space Models",
+      "abstract_en": "State-space models (SSMs) distilled from transformer teachers combine the performance of transformers with the efficiency of SSMs. We extend the Transformer-SSM knowledge distillation to a multimodal setting and propose the Distilled Audio-visual State-Space (DAVSS) model. The DAVSS model, 14M parameters, is 12 times smaller compared to transformer-based models such as CAV-MAE, and still outperforms them. DAVSS improves over the existing audio-visual models by: 1) Finer input resolution: using smaller patch sizes process the input, compensating for the smaller model size by increasing input sequence lengths. This is supported by the observation that a larger patch size results in lower performance. 2) Deeper joint modeling: utilizing a larger portion of the model (30%) for joint audio-visual processing, compared to <5% in CAV-MAE, enabling deeper cross-modal interaction without significantly increasing the computational cost associated with the concatenated audio-visual tokens.",
+      "authors": [
+        "Saurabhchand Bhati",
+        "Mrudula Athi",
+        "Amit S. Chhetri",
+        "James Glass"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19523v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-08-20T00:41:57Z",
+      "updated": "2026-08-20T00:41:57Z"
+    },
+    {
+      "arxiv_id": "2608.19527v1",
+      "title_en": "Does Listening Matter? Backchanneling and Nodding in AI Clone",
+      "abstract_en": "AI clones that imitate a specific person typically reproduce what the person says and how they sound, but not how they listen. We investigate whether adding multimodal listening behaviors gives such a clone more presence and authenticity. We integrated verbal backchannels and head nodding, driven by real-time prediction models, into an AI clone equipped with voice cloning and LLM-based responses. In a within-subjects study (N=35), adding these behaviors significantly improved the perceived attentiveness of the avatar, the sense of talking with the real person, and the feeling of co-presence. These results indicate that AI clone fidelity should extend beyond voice and response content to include interactive listening behavior.",
+      "authors": [
+        "Koji Inoue",
+        "Kazushi Kato",
+        "Tatsuya Kawahara",
+        "Shunichi Kasahara"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19527v1",
+      "primary_category": "cs.HC",
+      "source_categories": [
+        "cs.CL",
+        "cs.HC",
+        "cs.SD"
+      ],
+      "published": "2026-08-20T00:53:25Z",
+      "updated": "2026-08-20T00:53:25Z"
+    },
+    {
+      "arxiv_id": "2608.19827v1",
+      "title_en": "Dancing Through Soundscapes: Designing a Low-Cost, Sound-Based Device for Sensing and Interpreting Movement and Dance",
+      "abstract_en": "When we move through space, we often rely on multiple senses beyond vision to perceive and act in that environment: we ``feel'' the presence of others; we build internal representations and models and recall them to navigate the environment. We also leave traces and impressions that others pick up on. The traces include echoes, heat, the displacement of objects such as furniture or footprints, air movement close to the face of another, smells such as perfume, but also the immediate sounds we make when we move and breathe. Movement is a spatial and temporal activity, and dance as a form of movement practice requires coordination of oneself in relation to others, the space and a potential score. When rehearsing dance, dancers have to relate to others often not just by looking but more often by feeling and imagining or remembering where others are based on experience and shared practice. So how can we approach technology-mediated movement and dance? Why should we explore it? How can we support spatial and temporal practice meaningfully and joyfully? In this work, we focus on sound traces; we present the design and rationale for a sound-based artefact that translates movement-based sound into layered, explorable, generative soundscapes. The work contributes a novel artefact for exploring movement-based activities with a audio-first approach, with a focus on the spatial performative experience. The paper further reflects on observations from workshops and public sharings, including how participants used repetition, stillness, environmental sound, and call-and-response to understand and improvise with the soundscape.",
+      "authors": [
+        "Swen E. Gaudl",
+        "Silvia Carderelli-Gronau"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19827v1",
+      "primary_category": "cs.HC",
+      "source_categories": [
+        "cs.HC",
+        "cs.SD"
+      ],
+      "published": "2026-08-20T09:29:00Z",
+      "updated": "2026-08-20T09:29:00Z"
+    },
+    {
+      "arxiv_id": "2608.19843v1",
+      "title_en": "Fourier is Frontier: Frequency-Aware Autoencoding for High-Fidelity Music Reconstruction",
+      "abstract_en": "Continuous-latent audio autoencoders form the backbone of latent music generators, yet decoders at high compression rates commonly exhibit three failure modes: high-frequency loss, phase incoherence, and stereo-image collapse. These share a structural root: waveform autoencoders lack an explicit frequency axis, leaving no handle for targeted per-band correction. Among five matched-budget representations, the complex STFT achieves the lowest full-band and high-frequency spectral distances, providing direct access to magnitude and phase at every bin. Building on this, we present ear-VAE2, a complex-spectral autoencoder with cross-channel interaction. Spec-SnakeBeta learns a periodic activation per frequency bin with frequency-dependent initialization, outperforming other activation variants while using fewer parameters than the fully independent variant. Duplex-Aware Refiner applies band-specific corrections to magnitude and phase following duplex theory of sound localization. On the 546-track Song Describer Dataset, ear-VAE2 achieves the best point estimates on five of seven reconstruction metrics. The Duplex-Aware Refiner reduces Mel Distance by 19.4% and uses ~45% fewer residual-output dimensions than the Unconstrained Refiner, while also lowering spectral distances, spatial-cue errors, and receiving higher ratings from professional engineers. The downstream generator using ear-VAE2 latents achieves better point estimates on all 12 automatic metrics.Demo page is available at https://eps-acoustic-revolution-lab.github.io/EAR_VAE2/.",
+      "authors": [
+        "Kangdi Wang",
+        "Yusheng Dai",
+        "Jin Xu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19843v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.MM",
+        "cs.SD"
+      ],
+      "published": "2026-08-20T09:43:55Z",
+      "updated": "2026-08-20T09:43:55Z"
+    },
+    {
+      "arxiv_id": "2608.19863v1",
+      "title_en": "Listening Forward: Next Patch Embedding Prediction Enables Scalable Audio Learners",
+      "abstract_en": "Self-supervised learning (SSL) has driven substantial progress in audio representation learning, though existing methods have increasingly relied on elaborate pre-training recipes to reach competitive performance. A markedly different pre-training philosophy underpins the most influential progress in language modeling and, more recently, in visual representation learning: rather than train encoders as static feature extractors, models are trained to predict the next element, a discrete token or a continuous embedding, from the preceding context. Autoregressive prediction thereby provides a unified pre-training interface that transfers across modalities, compelling the model to learn the underlying data distribution. We ask whether such a simple causal paradigm can yield strong audio learners, given that audio's temporal structure makes autoregressive prediction of patch embeddings a natural fit. We introduce NAPE (Next-Audio-Patch-Embedding prediction), a self-supervised framework in which a causal Transformer predicts each next patch embedding of a log-mel spectrogram from the previous ones, using causal masking and stop-gradient as its sole training signal. The design is intentionally minimalist, avoiding reconstruction decoders, acoustic tokenizers, student-teacher setups, and auxiliary regularization losses. Across six audio and speech benchmarks, NAPE achieves state-of-the-art fine-tuning performance on several tasks, scales consistently across encoder sizes, and yields strong linear-probing results. NAPE also produces structured attention patterns without explicit supervision.",
+      "authors": [
+        "Umberto Cappellazzo",
+        "Xubo Liu",
+        "Stavros Petridis",
+        "Maja Pantic"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19863v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-08-20T10:16:07Z",
+      "updated": "2026-08-20T10:16:07Z"
+    },
+    {
+      "arxiv_id": "2608.19919v1",
+      "title_en": "Unified Music Identification for Tracks and Versions",
+      "abstract_en": "Given a music database, track identification (TI) retrieves the exact track matching an audio excerpt, whereas version identification (VI) retrieves its musical versions. Traditionally, the two tasks have been addressed separately. However, as every track is its own closest version, we investigate whether VI can subsume TI. This requires VI systems to be robust to both signal manipulation and audio degradation. We therefore propose a unified benchmark that evaluates accuracy and robustness on each task. Comparing seven existing models on this benchmark, we show that none of them are both accurate and robust on both tasks. We then train a baseline model targeting both tasks and show that a unified system is possible with 10 s TI queries. Lastly, we characterize the two retrieval constraints that limit our model's TI performance. We envision extending this unification to other music identification tasks.",
+      "authors": [
+        "R. Oguz Araz",
+        "Joan Serrà",
+        "Yuki Mitsufuji",
+        "Xavier Serra",
+        "Dmitry Bogdanov"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19919v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-08-20T11:35:33Z",
+      "updated": "2026-08-20T11:35:33Z"
+    },
+    {
+      "arxiv_id": "2608.19936v1",
+      "title_en": "Towards Quantifying Benchmark Optimization in ASR Models",
+      "abstract_en": "Public benchmarks are important measures of Automatic Speech Recognition (ASR) model capabilities. However, by nature of being public, there is risk of models being optimized for these benchmarks in ways that do not generalize well to real-world data. We present a methodology for quantifying benchmark optimization, focusing on cases where the audio underdetermines the reference transcript. We identify three families of behavioral probes that reveal models' capabilities of reproducing benchmark reference spans despite underdetermined audio: reference disagreement, masked-number recovery, and orthographic switching. We find that the highest-scoring open source models output verbatim reference transcript spans even when the relevant audio is contradictory, masked, or ambiguous. Using a variety of mechanistic probes, we show that models respond to narrow acoustic cues to override the faithful representation of the audio in favor of a benchmark-optimized policy. We show the benchmark-optimized behavior can be causally manipulated via low-rank linear steering or simply appending audio to the end of a segment in some cases. Overall, our results indicate that high-performing models exhibit benchmark-conditioned behaviors that can inflate benchmark performance without reflecting improved general-purpose transcription ability.",
+      "authors": [
+        "Theo Lebryk",
+        "David Ayllon",
+        "Alice Baird",
+        "Jakub Piotr Cłapa",
+        "Jens Madsen",
+        "Panagiotis Tzirakis"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19936v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-08-20T11:54:39Z",
+      "updated": "2026-08-20T11:54:39Z"
+    },
+    {
+      "arxiv_id": "2608.19959v1",
+      "title_en": "Tracking the Trend in How Speech Synthesizers Deceive People",
+      "abstract_en": "Advances in speech synthesis have made deepfake audio highly realistic. Earlier studies reported 70-80% human detection accuracy, but relied primarily on older synthesizers. We compare human detection for three selected voice synthesis tools released in 2019, 2022, and 2024 with 82 IT professionals, and benchmark humans against six pretrained detectors on the same material. For fully synthetic speech (full spoofs), the F1 score drops from about 90% for RTVC and YourTTS to 48% for ElevenLabs, although listeners were explicitly warned that deepfakes were present. For partial spoofing, where only one sentence of an utterance is altered, strict accuracy falls to 9%, and listeners classify the synthetic sentence as bona fide 77% of the time. Humans and detectors fail in complementary ways, and neither reliably localizes short manipulations. Additionally, listeners increasingly mislabel bona fide speech as fake, eroding trust in unmanipulated audio. These findings show that human perception alone is unreliable for the selected modern and partial-spoof conditions and motivate procedural verification, provenance, watermarking, and segment-level detection.",
+      "authors": [
+        "Milan Šalko",
+        "Anton Firc",
+        "Kamil Malinka",
+        "Vojtěch Staněk",
+        "Martin Perešini",
+        "Filip Pleško",
+        "Jakub Reš"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.19959v1",
+      "primary_category": "cs.CR",
+      "source_categories": [
+        "cs.CR",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-08-20T12:27:37Z",
+      "updated": "2026-08-20T12:27:37Z"
+    },
+    {
+      "arxiv_id": "2608.20213v1",
+      "title_en": "Explainability by Design: Structured Kolmogorov-Arnold Networks over Probabilistic Attributes for Speech Deepfake Source Tracing",
+      "abstract_en": "Modern speech synthesizers can produce highly realistic speech, making source tracing (i.e. identifying the generator behind a spoofed utterance) increasingly important for forensics, online content provenance, and platform accountability. Building on our prior work on transparent probabilistic attributes, which represent utterances as probability distributions over synthesizer sub-components, we extend speech deepfake source tracing with two key ingredients: multi-task training of the probabilistic attribute extractors and a structured Kolmogorov--Arnold Network (KAN) for attack classification. The probabilistic features are estimated jointly with a multi-task learning module built on a shared AASIST or SSL-AASIST countermeasure backbone. The resulting probabilistic feature embedding is classified by a structured KAN whose topology follows known attribute-to-attack relationships. This provides interpretability by construction: the architecture reflects the generative hierarchy of attacks, while KAN feature-importance scores quantify each probabilistic feature's contribution without post-hoc explainers such as SHAP. On ASVspoof2019-attr-17, the extended framework achieves balanced accuracies above 99% for all seven probabilistic feature extractors, with EERs of 0.16% to 0.07%, and 99.64% balanced accuracy with 0.11% EER for 17-class attack classification. Our revised model outperforms the earlier two-stage baselines, in addition to demonstrating reliable interpretability, with importance scores consistent with SHAP values, and stable results across batch sizes. These findings highlight the potential of structured KAN for speech deepfake source tracing that is both accurate and interpretable by design. For transparency and reproducibility, our codebase is publicly available: https://github.com/HoangHPham/KAN-Probabilistic-Deepfake-Attribution.",
+      "authors": [
+        "Hoang H. Pham",
+        "Manasi Chhibber",
+        "Tomi H. Kinnunen"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.20213v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-08-20T16:11:30Z",
+      "updated": "2026-08-20T16:11:30Z"
+    },
+    {
+      "arxiv_id": "2608.20326v1",
+      "title_en": "$TCP_α$: Margin-Controlled Confidence estimation for reliable Music Information Retrieval",
+      "abstract_en": "Deep neural networks are often overconfident, assigning high confidence even to incorrect predictions. Consequently, users lack a reliable signal for deciding when a prediction can be trusted. Post-hoc confidence estimation addresses this by training a lightweight auxiliary head over a frozen classifier. Existing targets, however, suffer from inherent ambiguity: they assign overlapping confidence values to correct and incorrect predictions, while errors near the decision boundary receive confidence scores indistinguishable from correct predictions. In this work, we propose $TCP_α$, a novel confidence target that resolves these limitations by introducing a margin-controlled penalty for misclassified samples. We prove that $TCP_α$ guarantees complete separation between the target values of correct and incorrect predictions, with a separation margin that is independent of the number of classes and increases monotonically with the penalty parameter. Since accurate classifiers naturally produce very few errors, learning these targets results in a severely imbalanced regression problem. We therefore present a systematic study of training strategies for learning under this imbalance and identify an effective training configuration through extensive ablation studies. We evaluate the proposed approach on rāga identification, investigate its robustness under domain shift, and further validate it on frame-wise ornamentation detection without modifying the selected configuration. Across all settings, $TCP_α$ consistently outperforms existing confidence targets for failure prediction. Rejecting only the least-confident 8\\% of predictions improves the base model's macro-F1 from 0.89 to 0.98, while fine-tuning the confidence head with only 5\\% labeled samples from a new corpus effectively restores performance under domain shift.",
+      "authors": [
+        "Parampreet Singh",
+        "Anushka Singh",
+        "Sumit Kumar",
+        "Vipul Arora"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2608.20326v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.LG",
+        "eess.AS"
+      ],
+      "published": "2026-08-20T17:58:50Z",
+      "updated": "2026-08-20T17:58:50Z"
+    }
+  ]
+}
