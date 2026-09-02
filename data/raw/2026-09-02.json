@@ -1,0 +1,50 @@
+{
+  "window": {
+    "start": "2026-09-01T13:46:49.779553+08:00",
+    "end": "2026-09-02T13:09:33.071750+08:00"
+  },
+  "fetched_count": 2,
+  "deduplicated_count": 2,
+  "new_count": 2,
+  "papers": [
+    {
+      "arxiv_id": "2609.01287v1",
+      "title_en": "Soft Posterior Speaker Injection for Multi-Talker Speech Recognition",
+      "abstract_en": "Multi-talker automatic speech recognition (MT-ASR) remains challenging under overlapping speech. Hard diarization-based segmentation introduces irreversible errors, whereas serialized output training (SOT) avoids explicit segmentation but does not condition a pretrained encoder on speaker activity. We propose Soft Posterior Speaker Injection (SPSI): a lightweight head predicts frame-level speaker posteriors $\\hat{\\mathbf{P}}$ and injects them into Whisper through multi-layer feature-wise linear modulation (FiLM) and decoder speaker-memory prompts. On controlled two-speaker LibriSpeech overlap, SPSI reduces utterance-mean constrained permutation word error rate (cpWER) from 50.7\\% (SOT) to 49.6\\% (one-sided paired bootstrap $p{\\approx}0.006$), with a larger reduction in the high-overlap bin (60.4\\%$\\to$58.8\\%). Same-backbone speaker-auxiliary objectives and voice activity detection (VAD) pipelines do not outperform SOT; zero-shot (ZS) LibriCSS is comparable. Freeze-posterior adaptation with overlap-heavy (OV-heavy) continuation reduces held-out LibriCSS cpWER (sessions 8--9) to 32.4\\% (versus 37.5\\% for SOT). Ablations indicate complementary encoder FiLM and decoder prompts, and that the effective signal is a \\emph{soft} simplex-valued speaker share.",
+      "authors": [
+        "Jian Zhu",
+        "Cheng Luo"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.01287v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.MM",
+        "cs.SD"
+      ],
+      "published": "2026-09-01T14:23:27Z",
+      "updated": "2026-09-01T14:23:27Z"
+    },
+    {
+      "arxiv_id": "2609.01542v1",
+      "title_en": "TAG-Bench: Benchmarking Temporal Audio Grounding in Large Audio Language Models",
+      "abstract_en": "Large audio language models (LALMs) can describe what is heard, but their ability to localize when queried content occurs remains less systematically evaluated. We present TAG-Bench, a benchmark for temporal audio grounding in which a model returns every time interval that matches a natural-language query. TAG-Bench contains 1,750 human-verified query-recording pairs covering 149.5 hours, with eight source-dependent subsets spanning query categories and audio durations from 7 s to 20 min; 22.1% of the queries have multiple ground-truth intervals. Across 21 evaluated systems, the best-performing model achieves 31.2 mIoU and is the only system above 20 mIoU on the two long subsets, yet even this top performer reaches only 21.5% recall at IoU >= 0.7. Moreover, 9 of 21 systems fall below 5 mIoU, and every model under-reports the number of occurrences on one-to-many queries, with none exceeding 13.2% count accuracy. Because responses are free-form, we report parsing-failure rate and MAE coverage: parsing failures remain in mIoU, Recall, gIoU, and count metrics as empty predictions but do not enter MAE. The results separate precise localization, occurrence enumeration, and output-format reliability within a benchmark whose cross-subset comparisons are descriptive rather than controlled estimates of query abstraction or duration. We will release the TAG-Bench data and evaluation code to support future research.",
+      "authors": [
+        "Yuhang Dai",
+        "Xin Shu",
+        "Zengxi Li",
+        "Lei Xie",
+        "Xiangang Li",
+        "Jianwei Yu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.01542v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-09-01T17:07:52Z",
+      "updated": "2026-09-01T17:07:52Z"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+<div align="center">
+
+# 📰 Paper Claw
+
+**2026-09-02**
+
+</div>
+
+---
+
+## 📊 今日速览
+
+| 指标 | 数值 |
+|:---|:---|
+| ⏰ 时间窗口 | 2026-09-01 13:46:49 CST → 2026-09-02 13:09:33 CST |
+| 📄 论文总数 | **2** 篇 |
+
+### 分类统计
+
+- **Speech LLM**: 0 篇
+- **ASR**: 1 篇
+- **TTS**: 0 篇
+- **Enhancement**: 0 篇
+- **SLU**: 0 篇
+- **Paralinguistics**: 0 篇
+- **Audio**: 1 篇
+
+> 💡 今日共收录 2 篇新论文，主要分布在 ASR 1, Audio 1。
+> 📈 整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。
+
+---
+
+## 🏷️ Speech LLM
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ ASR
+
+### 1. Soft Posterior Speaker Injection for Multi-Talker Speech Recognition
+
+👤 **作者**: Jian Zhu, Cheng Luo
+🔗 **来源**: [https://arxiv.org/abs/2609.01287v1](https://arxiv.org/abs/2609.01287v1)
+
+**摘要**
+> Multi-talker automatic speech recognition (MT-ASR) remains challenging under overlapping speech. Hard diarization-based segmentation introduces irreversible errors, whereas serialized output training (SOT) avoids explicit segmentation but does not condition a pretrained encoder on speaker activity. We propose Soft Posterior Speaker Injection (SPSI): a lightweight head predicts frame-level speaker posteriors $\hat{\mathbf{P}}$ and injects them into Whisper through multi-layer feature-wise linear modulation (FiLM) and decoder speaker-memory prompts. On controlled two-speaker LibriSpeech overlap, SPSI reduces utterance-mean constrained permutation word error rate (cpWER) from 50.7\% (SOT) to 49.6\% (one-sided paired bootstrap $p{\approx}0.006$), with a larger reduction in the high-overlap bin (60.4\%$\to$58.8\%). Same-backbone speaker-auxiliary objectives and voice activity detection (VAD) pipelines do not outperform SOT; zero-shot (ZS) LibriCSS is comparable. Freeze-posterior adaptation with overlap-heavy (OV-heavy) continuation reduces held-out LibriCSS cpWER (sessions 8--9) to 32.4\% (versus 37.5\% for SOT). Ablations indicate complementary encoder FiLM and decoder prompts, and that the effective signal is a \emph{soft} simplex-valued speaker share.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音识别」方向，核心任务由题目《Soft Posterior Speaker Injection for Multi-Talker Speech Recognition》所界定。 从摘要看，作者主要围绕 automatic speech recognition、whisper 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Same-backbone speaker-auxiliary objectives and voice activity detection (VAD) pipelines do not outperform SOT; zero-shot (ZS) LibriCSS is comparable. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：automatic speech recognition, whisper。 |
+
+---
+## 🏷️ TTS
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Enhancement
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ SLU
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Paralinguistics
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Audio
+
+### 1. TAG-Bench: Benchmarking Temporal Audio Grounding in Large Audio Language Models
+
+👤 **作者**: Yuhang Dai, Xin Shu, Zengxi Li, Lei Xie, Xiangang Li, Jianwei Yu
+🔗 **来源**: [https://arxiv.org/abs/2609.01542v1](https://arxiv.org/abs/2609.01542v1)
+
+**摘要**
+> Large audio language models (LALMs) can describe what is heard, but their ability to localize when queried content occurs remains less systematically evaluated. We present TAG-Bench, a benchmark for temporal audio grounding in which a model returns every time interval that matches a natural-language query. TAG-Bench contains 1,750 human-verified query-recording pairs covering 149.5 hours, with eight source-dependent subsets spanning query categories and audio durations from 7 s to 20 min; 22.1% of the queries have multiple ground-truth intervals. Across 21 evaluated systems, the best-performing model achieves 31.2 mIoU and is the only system above 20 mIoU on the two long subsets, yet even this top performer reaches only 21.5% recall at IoU >= 0.7. Moreover, 9 of 21 systems fall below 5 mIoU, and every model under-reports the number of occurrences on one-to-many queries, with none exceeding 13.2% count accuracy. Because responses are free-form, we report parsing-failure rate and MAE coverage: parsing failures remain in mIoU, Recall, gIoU, and count metrics as empty predictions but do not enter MAE. The results separate precise localization, occurrence enumeration, and output-format reliability within a benchmark whose cross-subset comparisons are descriptive rather than controlled estimates of query abstraction or duration. We will release the TAG-Bench data and evaluation code to support future research.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《TAG-Bench: Benchmarking Temporal Audio Grounding in Large Audio Language Models》所界定。 从摘要看，作者主要围绕 tag-bench、benchmarking、temporal 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Across 21 evaluated systems, the best-performing model achieves 31.2 mIoU and is the only system above 20 mIoU on the two long subsets, yet even this top performer reaches only 21.5% recall at IoU >= 0.7. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：tag-bench, benchmarking, temporal。 |
+
+---
+
+<div align="center">
+
+*Generated by [Paper Claw](https://github.com/yourusername/paper_claw)*
+
+</div>
