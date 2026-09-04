@@ -1,0 +1,125 @@
+{
+  "window": {
+    "start": "2026-09-03T13:14:26.250384+08:00",
+    "end": "2026-09-04T13:10:29.658259+08:00"
+  },
+  "fetched_count": 5,
+  "deduplicated_count": 5,
+  "new_count": 5,
+  "papers": [
+    {
+      "arxiv_id": "2609.03940v1",
+      "title_en": "Masked Autoregressive Speech Enhancement with Continuous Neural Audio Codec Representations",
+      "abstract_en": "Most previous work on speech enhancement (SE) based on masked generative modeling relied on discrete token representations of audio signals, obtained using neural audio codecs (NACs). However, a recent study has shown that continuous latent representations of NACs can be advantageous for SE in terms of speech quality and intelligibility. In this work, we propose masked autoregressive SE (MARSE), a method for SE based on iterative decoding of masked clean speech frames using continuous NAC representations of speech. In particular, we investigate a set of different decoding policies, ceteris paribus, that is, using the same DNN (a Conformer model), the same NAC (the DAC codec) and the same training setup. The results show that MARSE enables a flexible trade-off between SE performance and computational cost. Audio examples and code are available online.",
+      "authors": [
+        "Yoto Fujita",
+        "Simon Leglaive",
+        "Laurent Girin"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.03940v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-09-03T14:45:42Z",
+      "updated": "2026-09-03T14:45:42Z"
+    },
+    {
+      "arxiv_id": "2609.03982v1",
+      "title_en": "Fairness Evaluation of Edge-AI Implementation for Cleft Lip and Palate Speech ASR",
+      "abstract_en": "Automatic speech recognition (ASR) remains challenging for individuals with cleft lip and palate (CLP) because of limited pathological speech data and large variations in speech characteristics across speakers and severity levels. These recognition difficulties can reduce the accessibility of voice-based human-computer interaction, particularly when cloud-based ASR services are unavailable or unreliable. This work investigates a severity-aware and edge-deployable ASR framework for improving recognition of CLP speech using Whisper-small. The model was fine-tuned using different combinations of normal and CLP speech representing mild, moderate, and severe conditions, together with a CLP-only training configuration, to examine how the inclusion of different severity levels influences recognition performance and fairness across speakers. The pretrained model produced pooled word error rate (WER) and phoneme error rate (PER) values of 62.46% and 52.72%, respectively. Severity-aware fine-tuning substantially improved performance, reducing the best pooled WER to 22.72% and the best pooled PER to 18.44%. Training with a broader representation of CLP severity levels also provided the best overall balance between recognition accuracy and performance consistency across severity groups. Deployment on an NVIDIA Jetson platform demonstrated real-time inference for all fine-tuned models, with real-time factors of 0.167-0.171 and peak GPU memory usage of approximately 566 MB. The results demonstrate that incorporating severity diversity during ASR adaptation can substantially improve recognition of CLP speech while reducing performance disparities across severity groups. The proposed approach further enables low-latency, Internet-independent speech interaction on edge devices, supporting more accessible and inclusive voice-based human-computer interaction for individuals with CLP.",
+      "authors": [
+        "Susmita Bhattacharjee",
+        "Himashri Deka",
+        "H. S. Shekhawat",
+        "S. R. M. Prasanna"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.03982v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-09-03T15:16:23Z",
+      "updated": "2026-09-03T15:16:23Z"
+    },
+    {
+      "arxiv_id": "2609.03992v1",
+      "title_en": "Alignment-Free Text-Audiobox for Voice Dubbing and Full-Duplex Dialogue Synthesis",
+      "abstract_en": "We present Alignment-Free Text-Audiobox (Text-AB), a unified framework for high-quality voice dubbing and full-duplex dialogue synthesis. Building on a Diffusion Transformer trained with a flow-matching objective, Text-AB departs from the Audiobox system along three dimensions. First, it operates in a latent diffusion framework using DAC-VAE features that encode 48 kHz waveforms into a 25 Hz latent sequence, giving over 10x higher compression than previous EnCodec representations while improving resynthesis quality. Second, Text-AB is alignment-free: it consumes raw text via an off-the-shelf text encoder and learns text-speech alignment through cross-attention, removing the need for forced alignment and explicit duration prediction. Third, we scale model and data substantially, pretraining a 3B-parameter model on 480k hours of monolingual speech, followed by supervised fine-tuning on three downstream tasks: cross-lingual voice dubbing, full-duplex dialogue synthesis, and emotional full-duplex dialogue synthesis. At inference, Text-AB supports one-shot generation for up to ~1 min of speech and arbitrarily long-form generation via a multi-diffusion scheme, plus a multi-stage reranking strategy that enhances quality based on automated metrics. On a real-world dubbing benchmark, Text-AB delivers a step-change improvement over the latest internal dubbing system, with large gains in prosody similarity, voice similarity, naturalness, and shareability. For full-duplex dialogue synthesis, it approaches human recordings on short-form conversations and substantially outperforms the latest internal model on long-form human-likeness and expressivity, while natively modeling turn-taking, back-channeling, and emotional dynamics. For emotional dialogue synthesis, emotion conditioning significantly improves emotion alignment and emotional interaction quality over the unconditioned baseline.",
+      "authors": [
+        "Sanyuan Chen",
+        "Min-Jae Hwang",
+        "Sho Inoue",
+        "Anna Sun",
+        "Bokai Yu",
+        "David Kant",
+        "Dongmin Hyun",
+        "Dorian Desblancs",
+        "Gregory Antonovsky",
+        "Oleg Repin",
+        "Peng-Jen Chen",
+        "Xutai Ma",
+        "Zehai Tu",
+        "Juan Pino",
+        "Wei-Ning Hsu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.03992v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-09-03T15:30:22Z",
+      "updated": "2026-09-03T15:30:22Z"
+    },
+    {
+      "arxiv_id": "2609.04085v1",
+      "title_en": "Deep Neural Compression for RIR-Characterized Acoustic Environments with Structure-Aware Constraints",
+      "abstract_en": "Room impulse responses (RIRs) characterize the acoustic environment of a room by capturing how sound propagates and decays within an enclosed space. In applications such as immersive audio rendering, accurate acoustic reconstruction often relies on spatially densely sampled RIRs. This consequently gives rise to a large volume of RIR data, imposing a substantial burden on storage. Although recent neural audio codecs provide an effective framework for low-bitrate compression, their training objectives are mainly tailored to speech and general audio, and are therefore not well aligned with the acoustic characteristics of RIRs. Therefore, we propose an EnCodec-based neural RIR compression method, which incorporates RIR structure-aware constraints at two levels. Specifically, at the RIR level, structure-aware constraints are imposed on the global decay behavior and local energy distribution of RIRs through energy decay curve (EDC) regularization and a short-time window energy constraint, while at the reverberant-speech level, reverberant-speech supervision is further introduced to constrain the consistency of the reverberant speech generated by the reconstructed RIRs. Experimental results show that, at a low bitrate of 375 bps, the proposed method achieves lower RIR reconstruction error and better reverberant-speech perceptual consistency than audio-oriented codecs.",
+      "authors": [
+        "Chen-Yuan Ning",
+        "Yang Ai",
+        "Hui-Peng Du",
+        "Xiao-Hang Jiang",
+        "Zhen-Hua Ling"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.04085v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-09-03T16:53:08Z",
+      "updated": "2026-09-03T16:53:08Z"
+    },
+    {
+      "arxiv_id": "2609.04102v1",
+      "title_en": "Compressing Streaming Neural Audio Encoders via Latent-Space Distillation",
+      "abstract_en": "System-wide Dictation on Apple devices runs entirely on-device, and the speech it transcribes reaches the foundation model through a tokenizer: an encoder that maps short windows of waveform onto the representation the language model reads. Because that model is sparsely activated under Instruction-Following Pruning, only a small subset of its experts occupies DRAM at any time, so the always-on tokenizer competes for the same memory, and its parameter count bears directly on power and latency. In this work we study how to compress such a tokenizer by distillation, taking as the supervision target neither the discrete token nor the output distribution but the pre-quantizer latent the model actually consumes - the last representation the two token interfaces share. We train only the student encoder to regress the teacher's per-frame latent under a squared-error objective, with a single affine layer absorbing the teacher-student width mismatch. Because the target precedes both the quantizer and the language-model bridge, one recipe covers both token interfaces we support, and applies both to a tokenizer pretrained alone and to one jointly trained with a language model. At 2.8x compression the distilled student stays within 1.9% relative WER of its teacher on five of six teacher-student pairs without any fine-tuning, and improves on an independently trained tokenizer of identical capacity by 3.9% relative.",
+      "authors": [
+        "Prasanth Yadla",
+        "Mohammad Samragh",
+        "Dongseong Hwang",
+        "Mingbin Xu",
+        "Yuanyuan Zhang",
+        "Chung-Cheng Chiu",
+        "Yongqiang Wang",
+        "Yuan Liu",
+        "Zhen Huang",
+        "Xiaodan Zhuang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.04102v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-09-03T17:07:52Z",
+      "updated": "2026-09-03T17:07:52Z"
+    }
+  ]
+}
