@@ -1,0 +1,181 @@
+<div align="center">
+
+# 📰 Paper Claw
+
+**2026-09-10**
+
+</div>
+
+---
+
+## 📊 今日速览
+
+| 指标 | 数值 |
+|:---|:---|
+| ⏰ 时间窗口 | 2026-09-09 13:25:32 CST → 2026-09-10 13:23:06 CST |
+| 📄 论文总数 | **8** 篇 |
+
+### 分类统计
+
+- **Speech LLM**: 1 篇
+- **ASR**: 3 篇
+- **TTS**: 0 篇
+- **Enhancement**: 1 篇
+- **SLU**: 0 篇
+- **Paralinguistics**: 0 篇
+- **Audio**: 3 篇
+
+> 💡 今日共收录 8 篇新论文，主要分布在 Speech LLM 1, ASR 3, Enhancement 1, Audio 3。
+> 📈 整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。
+
+---
+
+## 🏷️ Speech LLM
+
+### 1. Unifying Score and Performance for Fine-Grained Music Understanding in Audio-Language Models
+
+👤 **作者**: Milan Liessens Dujardin, Song-Ze Yu, Kevin Miao
+🔗 **来源**: [https://arxiv.org/abs/2609.10351v1](https://arxiv.org/abs/2609.10351v1)
+
+**摘要**
+> Large audio language models (LALMs) have shown promising progress in broad music-understanding tasks such as tagging, retrieval, and captioning. Music understanding that requires finer hearing over both the content and how it is realized within a performance through dynamics, phrasing, articulation, time, and other performance techniques, however, remains at an earlier stage. Existing audio-language model (ALM) training pipelines typically rely on coarse, weakly grounded captions and therefore provide little support for learning these subtle nuances in music, limiting their ability to serve real-world applications in education or artistic practice. We therefore introduce MuNo-SP (Music Notation unifying Score and Performance), a text-based representation that jointly encodes score content and performance information. Building on MuNo-SP, we develop an automatic training-data generation pipeline that uses aligned scores and performances to produce long-form auditory analyses and musically informed question-answer pairs. We use this pipeline to construct MAESTROCaps, a classical piano dataset comprising 148 long-form performance analyses and 31,080 question-answer pairs derived from 148 aligned score-performance pairs. In a human evaluation, MuNo-SP analyses were preferred by majority vote over MIDI-only analyses for eight of nine excerpts. MuNo-SP also performed strongly on a benchmark of score-performance understanding, suggesting that integrating score and performance information enables more reliable and musically informative LALM supervision than a MIDI-only baseline.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音大模型」方向，核心任务由题目《Unifying Score and Performance for Fine-Grained Music Understanding in Audio-Language Models》所界定。 从摘要看，作者主要围绕 audio-language model 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Large audio language models (LALMs) have shown promising progress in broad music-understanding tasks such as tagging, retrieval, and captioning. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：audio-language model。 |
+
+---
+## 🏷️ ASR
+
+### 1. Pushing the Boundaries of Streaming Multi-Speaker ASR: A Systematic Study of Architectural Trade-offs
+
+👤 **作者**: Taejin Park, Ivan Medennikov, Kunal Dhawan, Weiqing Wang, Jagadeesh Balam, Boris Ginsburg
+🔗 **来源**: [https://arxiv.org/abs/2609.10265v1](https://arxiv.org/abs/2609.10265v1)
+
+**摘要**
+> Streaming multi-speaker ASR is a challenging task that must balance accuracy, latency, and efficiency while handling overlapping speech and maintaining coherent long-context modeling over extended conversations in an online fashion. We present a unified framework that categorizes streaming multi-speaker ASR into four architectural strategies based on how diarization and ASR are integrated. Using a shared pair of open-source streaming ASR and diarization models as a common foundation, we derive four multi-speaker ASR systems that differ in whether they employ multiple model instances, fine-tuning, or both. We evaluate these systems across multi-speaker accuracy, single-speaker accuracy degradation, memory footprint, and training complexity. Through this systematic architectural analysis, we clarify the design space for streaming multi-speaker ASR and provide practical guidance for selecting the most suitable approach under diverse deployment constraints.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音识别」方向，核心任务由题目《Pushing the Boundaries of Streaming Multi-Speaker ASR: A Systematic Study of Architectural Trade-offs》所界定。 从摘要看，作者主要围绕 asr system 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We present a unified framework that categorizes streaming multi-speaker ASR into four architectural strategies based on how diarization and ASR are integrated. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：asr system。 |
+
+---
+### 2. Do speech foundation models really learn words?
+
+👤 **作者**: Robin Huo, Ewan Dunbar
+🔗 **来源**: [https://arxiv.org/abs/2609.10434v1](https://arxiv.org/abs/2609.10434v1)
+
+**摘要**
+> Self-supervised speech foundation models are now used in a wide array of downstream applications, including traditional speech recognition and as the basis for tokens in speech-aware language models. Attempts to understand their usefulness have largely focused on probing their representations' ability to discriminate phonemes and words. However, discriminative ability for words need not imply specialized representation of words per se. Good discrimination of words may be explained by good encoding of word form (phonemes) rather than form-independent word representations encoding identity or syntactic/semantic properties. By partialling out phoneme information using residualization, we show that, in later layers, HuBERT and wav2vec 2.0 do in general learn representations which encode words with reasonable fidelity independently of local phonetic content. We show that this simple approach to disentanglement can enhance higher-order linguistic information in word discovery tasks.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音识别」方向，核心任务由题目《Do speech foundation models really learn words?》所界定。 从摘要看，作者主要围绕 wav2vec、hubert 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：By partialling out phoneme information using residualization, we show that, in later layers, HuBERT and wav2vec 2.0 do in general learn representations which encode words with reasonable fidelity independently of local phonetic content. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：wav2vec, hubert。 |
+
+---
+### 3. Phoneme-Aware Pronunciation Representations for L2-English L1-Background Accent Identification
+
+👤 **作者**: Yangyang Qu, Massimiliano Todisco, Nicholas Evans
+🔗 **来源**: [https://arxiv.org/abs/2609.10466v1](https://arxiv.org/abs/2609.10466v1)
+
+**摘要**
+> We study speaker-disjoint accent identification for L2 English, where the goal is to predict a speaker's first-language (L1) background from English pronunciation. Most existing systems classify accents using a single utterance-level representation, but such global representations can obscure pronunciation cues that depend on specific English phonemes. We propose a transcript-assisted model that makes phoneme information explicit during accent identification. Instead of representing an utterance only as a global speech embedding, we represent it as a sequence of pronunciation units, each combining acoustic evidence from a spoken segment with the aligned English phoneme for that segment. A frozen speech encoder provides the acoustic features, while the transcript is used only to obtain phoneme-level forced alignments. No word-level or sentence-level text representation is passed to the accent classifier. Under a four-fold speaker-disjoint protocol on L2-ARCTIC, our model achieves 81.41% accuracy and 81.21% macro-F1, the highest mean performance among the evaluated systems. Diagnostic ablations support the importance of phoneme-aligned token construction, while a Whisper-based ablation shows an additional gain from phoneme information.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音识别」方向，核心任务由题目《Phoneme-Aware Pronunciation Representations for L2-English L1-Background Accent Identification》所界定。 从摘要看，作者主要围绕 whisper 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Under a four-fold speaker-disjoint protocol on L2-ARCTIC, our model achieves 81.41% accuracy and 81.21% macro-F1, the highest mean performance among the evaluated systems. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：whisper。 |
+
+---
+## 🏷️ TTS
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Enhancement
+
+### 1. Teacher-Free Self-Distilled Consistency Trajectory Learning for Fast Speech Enhancement
+
+👤 **作者**: Shuubham Ojha, Carol Espy-Wilson
+🔗 **来源**: [https://arxiv.org/abs/2609.10392v1](https://arxiv.org/abs/2609.10392v1)
+
+**摘要**
+> Consistency trajectory models offer a route to fast, high-quality speech enhancement, collapsing the many reverse steps of diffusion-based enhancers into a handful. When instantiated on a Schrödinger bridge (SB), which pins the generative process to fixed clean and noisy endpoints, existing consistency-trajectory enhancers (SBCTMs) still require a pretrained teacher to supply trajectory supervision, which raises training cost and ties the final quality to that of the teacher. We propose a teacher-free, self-distilled consistency-trajectory framework that removes the external teacher: trajectory targets are generated by an exponential-moving-average (EMA) copy of the student, and the model is trained with a three-stage curriculum of $\x_0$ prediction, a self-distilled shortcut objective, and perceptual fine-tuning with a multi-resolution short-time Fourier transform (MR-STFT) loss. Using the same NCSN++ backbone as SBCTM, our model attains a wide-band PESQ of $3.01$, ESTOI $0.87$, and SI-SDR $19.07$\,dB on VoiceBank+DEMAND without a teacher. Varying step count and inference schedule we find that a geometric schedule at low reverse step count maximizes perceptual quality, while a higher-step uniform schedule favors signal fidelity, with the geometric advantage narrowing with reverse step count.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音增强」方向，核心任务由题目《Teacher-Free Self-Distilled Consistency Trajectory Learning for Fast Speech Enhancement》所界定。 从摘要看，作者主要围绕 speech enhancement 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：When instantiated on a Schrödinger bridge (SB), which pins the generative process to fixed clean and noisy endpoints, existing consistency-trajectory enhancers (SBCTMs) still require a pretrained teacher to supply trajectory supervision, which raises training cost and ties the final quality to that of the teacher. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech enhancement。 |
+
+---
+## 🏷️ SLU
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Paralinguistics
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Audio
+
+### 1. TimeCues Studio: A Workspace for Music Annotation and Algorithm Prototyping
+
+👤 **作者**: Sapir Caduri, Yoav Goldberg
+🔗 **来源**: [https://arxiv.org/abs/2609.10338v1](https://arxiv.org/abs/2609.10338v1)
+
+**摘要**
+> Multimedia applications require precise music annotation-labeled positions, segments, or loops-placed by hand or algorithmically. Machine-learning algorithms are scalable and effective but need annotated training data, scarce for many tasks. TimeCues Studio is an open-source workspace where algorithm-development teams annotate a music corpus, compare detection algorithms against those annotations, and prototype new ones. Unlike existing tools built for a single track at a time, TimeCues targets teams annotating whole collections, tightly integrated with algorithm development. Annotators place several marker types-each supporting ambiguity-aware labeling-on a grid-locked timeline that visualizes many music features, including separated audio stems. The same timeline drives an algorithm-comparison engine with bundled baselines, a Python sandbox for prototyping new models, and an ambiguity-aware evaluator that honors the structured fields. The same visualization suits solo annotators on music-sync projects. TimeCues is MIT-licensed and deploys via one Docker Compose command.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《TimeCues Studio: A Workspace for Music Annotation and Algorithm Prototyping》所界定。 从摘要看，作者主要围绕 timecues、studio、workspace 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Machine-learning algorithms are scalable and effective but need annotated training data, scarce for many tasks. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：timecues, studio, workspace。 |
+
+---
+### 2. AVSRBench: A Multi-Condition AVSR Benchmark
+
+👤 **作者**: Rishabh Jain, Naomi Harte
+🔗 **来源**: [https://arxiv.org/abs/2609.10366v1](https://arxiv.org/abs/2609.10366v1)
+
+**摘要**
+> While AVSR has achieved sub-1% word error rates on the standard LRS3 benchmark, its reliance on broadcast speech obscures whether this reflects true generalization or just domain adaptation. To investigate this gap, we evaluate three AVSR architectures across six conditions: controlled broadcast speech, fixed-grammar utterances, hyper-articulated Lombard speech, read speech from professional lipspeakers and non-professional speakers, and spontaneous multi-party video conversations. We find that visual-only performance deteriorates rapidly beyond broadcast domains, and audio-video fusion mainly benefits Lombard speech environments. Visual understanding degrades sharply at 90° profile views, with multimodal systems relying largely on acoustic fallback. Additionally, speaker articulation proves more critical than minor camera shifts, and LLM-based architectures suffer from poor out-of-domain generalization. Our work highlights a significant generalization gap in current AVSR research. To address this, we also introduce RoomReader-AV as a new benchmark for AVSR and release a unified data preprocessing pipeline to make comprehensive multi-condition evaluation accessible.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《AVSRBench: A Multi-Condition AVSR Benchmark》所界定。 从摘要看，作者主要围绕 avsrbench、multi-condition、avsr 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：While AVSR has achieved sub-1% word error rates on the standard LRS3 benchmark, its reliance on broadcast speech obscures whether this reflects true generalization or just domain adaptation. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：avsrbench, multi-condition, avsr。 |
+
+---
+### 3. Candor-LR: A Dyadic Conversational Dataset for Audio-Visual Speech Recognition
+
+👤 **作者**: Rishabh Jain, Aristeidis Papadopoulos, Zhaofeng Lin, Naomi Harte
+🔗 **来源**: [https://arxiv.org/abs/2609.10394v1](https://arxiv.org/abs/2609.10394v1)
+
+**摘要**
+> Current audio-visual speech recognition (AVSR) benchmarks, like LRS3, rely heavily on clean, scripted and rehearsed speech. They fail to reflect the complexity of natural conversation, which involves overlapping speech, spontaneous turn-taking, unscripted vocabulary and variable acoustic conditions. To shift the field toward realistic dialogue, we introduce Candor-LR, a conversational benchmark derived from the CANDOR corpus of 1,656 natural dyadic videoconferences. Our custom data preparation pipeline yields 713.5, 10.1, and 60.1 hours of training, validation, and test data, respectively. Evaluating pretrained AVSR models on Candor-LR reveals that audio-only accuracy drops sharply compared to LRS3, but visual cues compensate effectively, driving much larger performance gains on Candor-LR than on LRS3. Furthermore, training on this corpus significantly improves cross-domain robustness under both clean and noisy conditions, as its realistic conversational data captures broader audio-video features. We open-source our pipeline to ensure reproducibility, establishing Candor-LR as a challenging benchmark for conversational AVSR.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Candor-LR: A Dyadic Conversational Dataset for Audio-Visual Speech Recognition》所界定。 从摘要看，作者主要围绕 candor-lr、dyadic、conversational 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Furthermore, training on this corpus significantly improves cross-domain robustness under both clean and noisy conditions, as its realistic conversational data captures broader audio-video features. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：candor-lr, dyadic, conversational。 |
+
+---
+
+<div align="center">
+
+*Generated by [Paper Claw](https://github.com/yourusername/paper_claw)*
+
+</div>
