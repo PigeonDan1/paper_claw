@@ -1,0 +1,173 @@
+{
+  "window": {
+    "start": "2026-09-16T13:23:17.008967+08:00",
+    "end": "2026-09-17T13:32:15.988369+08:00"
+  },
+  "fetched_count": 8,
+  "deduplicated_count": 7,
+  "new_count": 7,
+  "papers": [
+    {
+      "arxiv_id": "2609.18673v1",
+      "title_en": "Beyond EER: Multi-Dimensional Evaluation of Information Leakage in Speaker De-Identification",
+      "abstract_en": "Speaker de-identification (SDID) aims to preserve privacy by concealing speaker identity while maintaining speech utility. However, current evaluations often reduce privacy to a single dimension - biometric verification performance - typically measured by Equal Error Rate (EER). This narrow focus ignores critical leakage channels, such as soft biometric inference, embedding-level re-identification, and structural template similarity, which threaten the unlinkability and irreversibility of biometric references. We propose a holistic evaluation framework across five complementary metrics: (i) EER, (ii) soft biometric leakage score , (iii) cumulative match characteristic re-identification analysis, (iv) canonical correlation analysis and Procrustes embedding alignment, and (v) intelligibility via word error rate and semantic similarity. Evaluating five SDID systems from the IARPA ARTS program, we demonstrate that these metrics capture independent dimensions of information leakage. Our results indicate that reliance on a single metric can misrepresent the privacy properties of an SDID system.",
+      "authors": [
+        "Seungmin Seo",
+        "Oleg Aulov",
+        "P. Jonathon Phillips",
+        "Kevin Mangold",
+        "Jonathan Eskin"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.18673v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-09-16T13:50:55Z",
+      "updated": "2026-09-16T13:50:55Z"
+    },
+    {
+      "arxiv_id": "2609.18680v1",
+      "title_en": "HearInContext: A Benchmark for Implicit Context in Speech Recognition",
+      "abstract_en": "Contextual ASR can benefit from semantic cues or from target words explicitly provided in the context. We introduce HearInContext, a Mandarin--English benchmark that pairs shared synthetic speech with assistant replies supporting different interpretations. The benchmark comprises 3,764 semantic test cases built around homophones. Implicit contexts exclude candidate words; explicit contexts name the target. No-context and unrelated-context controls measure the benefit of relevant history and sensitivity to irrelevant history. Context-capable models benefit from implicit cues but achieve higher target recall with explicit hints. Fine-tuning Qwen3-ASR-1.7B improves implicit-context target recall by 11.0 and 11.5 percentage points in Mandarin and English, respectively, while absolute CER/WER changes on AISHELL-1 and LibriSpeech remain below 0.1 percentage points. Gains extend to explicit conditions excluded from fine-tuning and to Mandarin hotword recognition on real recordings.",
+      "authors": [
+        "Yifan Gao",
+        "Yao Tian",
+        "Hongbin Suo"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.18680v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-09-16T13:56:13Z",
+      "updated": "2026-09-16T13:56:13Z"
+    },
+    {
+      "arxiv_id": "2609.18686v1",
+      "title_en": "Multi-Teacher Distillation for Cross-Domain Streaming Electrolaryngeal Speech Encoding",
+      "abstract_en": "Self-supervised learning (SSL) has improved speech representations, yet performance degrades in pathological domains such as electrolaryngeal (EL) speech, and the computational footprint of SSL models limits their applicability in real-time, on-device deployment. We propose a multi-teacher knowledge distillation framework to train a lightweight, streaming content encoder that generalizes across healthy (HE) and EL speech. Two teachers are distilled progressively: a frozen SSL model providing discrete phonetic cluster targets from HE speech, and an EL-fine-tuned speech recognition model supplying continuous bottleneck feature targets. Evaluated via downstream speech recognition, our approach reduces the EL word error rate to 21.2%, compared to 39.3% for the strongest zero-shot SSL baseline. Among causal convolutional, Transformer, Conformer, and Mamba-based student architectures, a Mel-Conformer achieves the best combination of EL accuracy and computational efficiency. The final encoder contains 21.9,M parameters and runs at a real-time factor of 0.30 under ONNX Runtime on a single CPU core.",
+      "authors": [
+        "Benedikt Mayrhofer",
+        "Enrique Orozco Olivares",
+        "Franz Pernkopf",
+        "Philipp Aichinger",
+        "Martin Hagmüller"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.18686v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-09-16T14:00:38Z",
+      "updated": "2026-09-16T14:00:38Z"
+    },
+    {
+      "arxiv_id": "2609.18714v1",
+      "title_en": "Absolute Quality Ratings of Speech Enhancement Systems by Listeners of Different Ages and Degrees of Hearing Loss",
+      "abstract_en": "Speech Enhancement (SE) supports listening, particularly for older adults with age-related hearing loss. Yet, enhanced Speech Quality (SQ) is commonly evaluated by young normal-hearing listeners, and how their ratings translate to older adults remains under-explored. We compared absolute SQ ratings from 40 younger normal-hearing listeners (20-30 years) and 67 older listeners (60-95 years) with diverse audiometric profiles, after screening. Test materials comprised natural dialogues with realistic backgrounds. SQ differences between SE systems that were clear for younger listeners were smaller or inseparable in older groups, regardless of hearing status. Hearing loss severity was associated with lower absolute ratings, but did not strongly modulate the contraction in separable SQ differences. A small, audiometrically mixed subgroup of older listeners showed younger-like rating patterns, suggesting that peripheral audiology alone cannot explain the contraction.",
+      "authors": [
+        "Matteo Torcoli",
+        "Chih-Wei Wu",
+        "Andrea Esposito",
+        "Phillip A. Williams",
+        "Katrien Cambier",
+        "William Wolcott",
+        "Antonio Curci",
+        "Nicholas S. Reed",
+        "Mark Laureyns"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.18714v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-09-16T14:19:30Z",
+      "updated": "2026-09-16T14:19:30Z"
+    },
+    {
+      "arxiv_id": "2609.18748v1",
+      "title_en": "TeleAntiFraud 2.0: A Refreshable, Profile-Grounded, and Audio-Based Benchmark for Telecom Fraud Detection",
+      "abstract_en": "Telecom fraud scripts evolve rapidly and are often designed to resemble routine service conversations, creating two key requirements for audio-based telecom-fraud evaluation. First, benchmarks must incorporate newly observed scam patterns without overwriting previously established test sets. Second, they must distinguish fraud from lawful, near-domain calls rather than relying on topic-separated negative examples. We present TeleAntiFraud 2.0, constructed with our Mixed-Tree Anti-Fraud Generation Pipeline and evaluated under a monthly frozen evaluation protocol. The pipeline transforms online fraud-case abstracts into profile-grounded scenarios, expands them through mixed-tree generation, realizes fraud and non-fraud dialogue paths under shared contexts, renders validated dialogues as role-matched speech, and freezes the resulting audio, labels, prompts, manifests, and provenance records for each monthly evaluation set. Each frozen set contains 900 Chinese calls, comprising 600 fraud and 300 near-domain non-fraud cases. Controlled text experiments show that three classifiers achieve perfect macro-averaged F1 (Macro-F1) when evaluated against unrelated or ordinary negatives, but drop to 0.65-0.68 with near-domain sibling negatives. Full-set audio and automatic-speech-recognition plus large-language-model (ASR+LLM) evaluations further reveal class-prior shortcuts, prediction collapse, and snapshot sensitivity. Together, these findings establish near-domain construction and collapse-aware reporting as core requirements for evaluating audio-based telecom-fraud models under realistic confusable conditions. The accompanying research artifact includes the construction code, evaluation scripts, manifests, and documentation. Our dataset and code are available at https://anonymous.4open.science/r/TeleAntiFraud-2_0-EEB2/.",
+      "authors": [
+        "Huiyuan Liu",
+        "Zhiming Ma",
+        "Yanxing Liu",
+        "Shun Zhang",
+        "Qifan Wang",
+        "Di Liu",
+        "Yifan Wang",
+        "Yuyang Deng",
+        "Haoyang Meng",
+        "Yijin Zhou",
+        "Yuxi Zhao",
+        "Chengxian Hu",
+        "Peidong Wang",
+        "Peng Chen"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.18748v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-09-16T14:41:11Z",
+      "updated": "2026-09-16T14:41:11Z"
+    },
+    {
+      "arxiv_id": "2609.18766v1",
+      "title_en": "FRAUDSkill: Structured Frozen-Weight Skill Optimization for Audio Anti-Fraud Detection",
+      "abstract_en": "Large audio-language models have shown promise for anti-fraud detection by directly processing speech and reasoning over fraud-related evidence. Their deployment, however, requires predictions to follow a predefined label space and a structured decision protocol consisting of service-scenario identification, fraud detection, and conditional fraud-type classification. Existing fine-tuning and prompt-based approaches typically encode task knowledge, constraints, and decision rules into model parameters or manually maintained prompts, making them difficult to adapt as fraud patterns and labeling policies evolve. To this end, we propose FRAUDSkill, a structured frozen-weight adaptation framework that leaves the underlying audio-language model unchanged while optimizing an external layer of skill programs, route-specific policies, and decision rules. We further combine structured output control with validation-guided multi-path inference to ensure protocol-compliant predictions. On the TeleAntiFraud benchmark, FRAUDSkill achieves 73.50% Macro-F1, outperforming the shared frozen-model baseline by 31.96% while reducing invalid outputs to 1.94%. Extensive experiments demonstrate that external skill optimization provides an effective and adaptable solution for structured audio anti-fraud detection without modifying the underlying model. The source code is available at https://anonymous.4open.science/r/FRAUDSKILL-114514.",
+      "authors": [
+        "Chengxian Hu",
+        "Zhiming Ma",
+        "Mingjun Pan",
+        "Yifan Wang",
+        "Shun Zhang",
+        "Qifan Wang",
+        "Zhilei Zhao",
+        "Yijin Zhou",
+        "Yuxi Zhao",
+        "Huiyuan Liu",
+        "Peidong Wang",
+        "Peng Chen"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.18766v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-09-16T14:51:37Z",
+      "updated": "2026-09-16T14:51:37Z"
+    },
+    {
+      "arxiv_id": "2609.18856v1",
+      "title_en": "GrainSpeech: Less Context, More Detail for Compact Speech Synthesis",
+      "abstract_en": "Compact acoustic models face a challenging quality-capacity trade-off. We investigate two factors in this regime: encoder context and Mel-spectrogram supervision. A receptive-field-scaling study shows that expanding self-attention beyond 15 phonemes provides no consistent gains in pitch, energy, or duration prediction. Guided by this finding, we introduce a fixed-receptive-field convolutional encoder that reduces the respective prediction errors by 36.0%, 17.3%, and 3.4%. We further show that directly transferring image-domain gradient-variance supervision restores fine-scale variation but degrades predicted quality, motivating a Mel-specific formulation with axis-specific gradients, overlapping local statistics, and log-domain variance matching. GrainSpeech contains only 264.8K parameters and achieves 17.9x real-time Mel generation on a microcontroller (MCU), while attaining UTMOS scores comparable to substantially larger models with less than 1.5% of their parameters. Source code and demos are available at https://github.com/lab-emi/GrainSpeech.",
+      "authors": [
+        "Zitao Liang",
+        "Chang Gao"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.18856v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD",
+        "eess.AS",
+        "eess.SP"
+      ],
+      "published": "2026-09-16T15:59:20Z",
+      "updated": "2026-09-16T15:59:20Z"
+    }
+  ]
+}
