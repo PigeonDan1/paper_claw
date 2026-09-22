@@ -1,0 +1,111 @@
+{
+  "window": {
+    "start": "2026-09-21T13:34:45.327932+08:00",
+    "end": "2026-09-22T13:31:07.237346+08:00"
+  },
+  "fetched_count": 7,
+  "deduplicated_count": 5,
+  "new_count": 5,
+  "papers": [
+    {
+      "arxiv_id": "2609.24688v1",
+      "title_en": "Understanding Hyperspherical Geometry of ECAPA-TDNN Embedding and Its Impact on Zero-Shot Voice Conversion",
+      "abstract_en": "Angular-margin speaker encoders are widely used in voice conversion, yet the geometry of their classifier prototypes remains poorly understood. We analyze ECAPA-TDNN classifier prototypes as points on the unit hypersphere and characterize their organization using rotation-invariant angular statistics together with global and local effective dimensionality measures. Our analysis shows that standard training can induce angular concentration and a substantial reduction in effective dimensionality. To address this, we investigate two geometric regularization strategies (hinged Riesz log-energy and effective-dimension maximization) applied to classifier prototypes to encourage more uniform hyperspherical coverage. The resulting prototype sets exhibit higher effective dimensionality and improved isotropy, with configuration-dependent effects on speaker-recognition performance. When the corresponding ECAPA-TDNN models are used as speaker encoders for Fast-VGAN, the regularized systems also exhibit improved robustness in zero-shot voice conversion, particularly for previously unseen speakers.",
+      "authors": [
+        "Mathilde Abrassart",
+        "Nicolas Obin",
+        "Axel Roebel"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.24688v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-09-21T14:42:46Z",
+      "updated": "2026-09-21T14:42:46Z"
+    },
+    {
+      "arxiv_id": "2609.24770v1",
+      "title_en": "XSQ-AST: An Explainable Audio Spectrogram Transformer Framework for Localising Synthetic Speech Artifacts",
+      "abstract_en": "Localising artifacts in synthetic speech remains challenging, as most evaluation methods yield only global quality scores. This paper presents XSQ-AST, a framework that combines the SQ-AST speech quality model with WhisperX phoneme alignment and multiple saliency methods to produce temporally localised artifact diagnostics without model retraining. Saliency maps are projected onto continuous distributions via kernel density estimation and onto phoneme boundaries via phoneme-discretised saliency maps. A 40-participant listening test validated the framework across five perceptual dimensions. Attention Rollout, Attention Flow and an adapted GradCAM produced temporal distributions that correlated with listener highlights, with different methods best suited to different artifact types. An AUC-ROC analysis confirmed discrimination above chance.",
+      "authors": [
+        "Ben Heritage",
+        "Luca Resti",
+        "Mónica Villanueva Aylagas",
+        "Timothy Mehlenbacher",
+        "Konrad Tollmar",
+        "James Alfred Walker"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.24770v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD",
+        "eess.AS",
+        "eess.SP"
+      ],
+      "published": "2026-09-21T15:38:11Z",
+      "updated": "2026-09-21T15:38:11Z"
+    },
+    {
+      "arxiv_id": "2609.24771v1",
+      "title_en": "CycleSpeech: Reciprocal Alignment for Instruction-Controlled Speech Synthesis and Paralinguistic Understanding",
+      "abstract_en": "Instruction-controlled speech synthesis and paralinguistic understanding are often trained independently, leaving reciprocal feedback between the two tasks underexplored. We introduce CycleSpeech, a framework that connects generation and understanding through a shared, structured voice profile that serves as a common target for supervision and reciprocal feedback. The forward cycle assesses whether synthesized speech expresses the intended attributes by comparing recovered and target profiles. The backward cycle evaluates whether profiles inferred from real speech can guide reconstruction of the source speaking style. To support both directions, we construct a bilingual dataset of 20,046 examples pairing instructions, target speech, speaker references, and structured profiles. Building on joint supervised fine-tuning, CycleGRPO alternates policy updates using reciprocal rewards grounded in profile consistency and speaking-style reconstruction. Fixed target profiles anchor feedback from the evolving counterpart. This procedure requires neither human preference annotations nor an additional preference-trained reward model. Evaluations on Chinese and English benchmarks show improved instruction adherence and profile recovery while maintaining competitive synthesis quality. Compared with Step-Audio-2-mini, CycleSpeech improves instruction-match accuracy by 4.50 and 10.06 percentage points in Chinese and English, respectively. Controlled ablations further support the contribution of cycle feedback to generation control. These results support structured voice profiles as an interface for reciprocal training between speech generation and paralinguistic understanding. An online demo is available at https://cyclespeech.github.io.",
+      "authors": [
+        "Huan Liao",
+        "Haonan Han",
+        "Xingwen Han",
+        "Dekun Chen",
+        "Yuancheng Wang",
+        "Zhizheng Wu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.24771v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-09-21T15:38:31Z",
+      "updated": "2026-09-21T15:38:31Z"
+    },
+    {
+      "arxiv_id": "2609.24809v1",
+      "title_en": "Fast Time-Varying Exponentiated Convolution Methods for Generative Direction Dependent Reverberation",
+      "abstract_en": "Spherical harmonic encoded acoustic sound-fields capture directional characteristics of room impulse responses that are useful for accurate spatial audio reproduction. However, high costs of multi-microphone measurements and numerical simulations motivate alternative data-set augmentation and synthetic data generation methods that supplement small collections. This paper introduces time-varying exponentiated convolution methods that transform both Gaussian noise and impulse responses into reverberation and modified spectral-decay fields respectively. We derive two recursive and fast convolution algorithms that extend into the spherical harmonic domain, model smooth reverberation time distributions with non-stationary Gaussian processes, and realize an optimal filter design. Experiments evaluate computational performance, and validate out-of-distribution generated impulse responses.",
+      "authors": [
+        "Yuancheng Luo"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.24809v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS",
+        "eess.SP"
+      ],
+      "published": "2026-09-21T16:03:27Z",
+      "updated": "2026-09-21T16:03:27Z"
+    },
+    {
+      "arxiv_id": "2609.24818v1",
+      "title_en": "Automated Assessment of L2 Speech Rhythm Using Low-Frequency Amplitude Modulations",
+      "abstract_en": "Automated Speaking Assessment of non-native speech must effectively evaluate prosody, including speech rhythm, to align with human perception. However, commonly employed rhythm metrics rely on segmental duration, requiring an additional alignment step, which is error-prone in non-native speech containing disfluencies and mispronunciations. We propose an acoustics-based assessment approach that employs a convolutional neural network to extract rhythm features directly from the speech amplitude envelope, motivated by evidence linking low-frequency modulations to rhythm perception. The proposed models are trained on a proficiency score regression task using the speechocean762 dataset and compared against duration-based models. Our results show that a model using the amplitude envelope's first derivative achieves the highest correlation with human-assigned scores on the Fluency and Prosody dimensions, producing significantly lower errors than one using segment durations among less fluent speakers. The findings support acoustic envelope features as robust, alignment-free alternatives for L2 rhythm assessment. Code is released publicly.",
+      "authors": [
+        "João Lima",
+        "Lucas Ueda",
+        "Paula Costa"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.24818v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-09-21T16:07:50Z",
+      "updated": "2026-09-21T16:07:50Z"
+    }
+  ]
+}
