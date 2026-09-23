@@ -1,0 +1,166 @@
+{
+  "window": {
+    "start": "2026-09-22T13:31:07.237346+08:00",
+    "end": "2026-09-23T13:18:26.357966+08:00"
+  },
+  "fetched_count": 9,
+  "deduplicated_count": 7,
+  "new_count": 7,
+  "papers": [
+    {
+      "arxiv_id": "2609.26422v1",
+      "title_en": "Enriching Speech Emotion Representations with Conversational Context",
+      "abstract_en": "Detecting emotions is necessary for building systems that can accurately and adaptively interact with humans. Speech Emotion Recognition (SER) has become an important research focus to develop intelligent spoken interfaces. However, most studies predict emotions at the utterance level, ignoring the conversational context, along with the emotional flow and speaker interactions it carries. In this paper, we introduce ACERT (Averaged Contextual Emotion Representation through Time), a module that integrates a flexible-length window of conversational context to better capture emotional evolution in spoken interactions. To evaluate the robustness of this method, we conducted experiments on datasets spanning diverse emotionally expressive styles and contexts. ACERT outperforms current state-of-the-art (SOTA) approaches on IEMOCAP, establishes the first context-aware benchmark on SAFE, and obtains strong results on MELD for unweighted, class-balanced metrics. Ablation studies show that ACERT's gains come from emotional and conversational continuity, rather than from speaker identity or acoustic conditions.",
+      "authors": [
+        "Arthur Peuvot",
+        "Romaric Besançon",
+        "Gaël de Chalendar",
+        "Bianca Vieru",
+        "Ioana Vasilescu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.26422v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-09-22T13:50:02Z",
+      "updated": "2026-09-22T13:50:02Z"
+    },
+    {
+      "arxiv_id": "2609.26427v1",
+      "title_en": "Persistent Delivery Optimization for Streaming Speech-to-Text Translation with Revisions",
+      "abstract_en": "Revision-capable streaming speech-to-text translation (S2TT) can correct earlier drafts, but process rewards based on visible text may credit content later withdrawn. Persistent Delivery Optimization (PDO) assigns intermediate reward only to content that survives revisions while scoring final quality separately. With 7.49 h of task-specific FLEURS adaptation, PDO achieves the best BLEU on four of five directions and higher COMET than every external streaming baseline in all five directions. Relative to its History-SFT initialization, PDO reduces mean/P90 finalization-aware latency by 10.8\\%/11.3\\% and normalized erasure by 15.8\\%, while emitting at the first permitted 2-s update and improving macro BLEU. Zero-shot evaluation on Europarl-ST and CoVoST 2 confirms that these gains are not confined to the FLEURS training domain.",
+      "authors": [
+        "Zixiang Wan",
+        "Delin Chen",
+        "Wei Shi",
+        "Haihua Xu",
+        "Youxi Xie",
+        "Yuexian Zou"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.26427v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-09-22T13:52:50Z",
+      "updated": "2026-09-22T13:52:50Z"
+    },
+    {
+      "arxiv_id": "2609.26486v1",
+      "title_en": "Not Quite My Tempo: Voice Activity-aware Speech Synthesis for Lip-Synchronous Dubbing",
+      "abstract_en": "Automatic lip-synchronous dubbing requires a speech synthesis model to generate alternating voice and silence patterns in the target language that match the timing of the source clip precisely to ensure an optimal viewing experience. Prior works address this problem by conditioning the speech synthesis process on lip movements extracted from the video signal. In this work, we condition the speech generation on a binary voice-activity signal, which has a lightweight representation and can be produced in multiple ways. We show that the model follows the voice-activity signal with high accuracy while maintaining natural prosody and semantically appropriate pause placement within sentences, as demonstrated through extensive objective and subjective evaluations. By randomly masking this condition during training, we make the feature entirely optional during inference, allowing editors to enforce or relax lip-sync constraints when desired.",
+      "authors": [
+        "Alejandro Pérez-González-de-Martos",
+        "Florian Lux",
+        "Angelina Elizarova",
+        "Milana Shkhanukova",
+        "Andreas Kellner",
+        "Mattia Antonino Di Gangi"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.26486v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "eess.AS"
+      ],
+      "published": "2026-09-22T14:24:10Z",
+      "updated": "2026-09-22T14:24:10Z"
+    },
+    {
+      "arxiv_id": "2609.26488v1",
+      "title_en": "Spoken Language Models that Think Aloud",
+      "abstract_en": "While Chain-of-Thought (CoT) reasoning has improved the capability of language models, directly applying it to Spoken Language Models (SLMs) may introduce long silent intervals under the serial \"think-then-speak\" paradigm, disrupting real-time spoken interaction. To address this issue, we propose an asynchronous think-aloud framework for reasoning-based SLMs within the Thinker-Talker architecture. The framework maintains a primary reasoning stream for logical deduction and a lightweight think-aloud stream that generates short, task-grounded progress utterances conditioned on the user input and the evolving reasoning state. A dynamic balance strategy coordinates the two streams at runtime, triggering additional think-aloud speech to avoid silent gaps and canceling pending utterances when the final response becomes ready. Experiments on spoken reasoning and question-answering benchmarks show that our approach substantially reduces user-audible silence during reasoning while maintaining answer accuracy comparable to that of a serial \"think-then-speak\" baseline, demonstrating the potential of asynchronous think-aloud for responsive interaction in SLMs.",
+      "authors": [
+        "Junyi Ao",
+        "Kainan Peng",
+        "Mingbo Ma",
+        "Shun Zhang",
+        "Zhenyu Tang",
+        "Xutai Ma",
+        "Xiang Li",
+        "Yinghao Li",
+        "Yuancheng Wang",
+        "Zhizheng Wu",
+        "Haizhou Li",
+        "Qing He",
+        "Xubo Liu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.26488v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-09-22T14:25:04Z",
+      "updated": "2026-09-22T14:25:04Z"
+    },
+    {
+      "arxiv_id": "2609.26536v1",
+      "title_en": "Transcribe, Translate, and Optimize: Joint Reward Learning for Speech Translation",
+      "abstract_en": "In LLM-based speech translation, transcription-based chain-of-thought (CoT) suffers from a mismatch between reference transcripts used in supervised fine-tuning (SFT) and model-generated transcripts at inference. To address this, we propose joint recognition and translation fine-tuning via group relative policy optimization (GRPO). We score both transcripts and translations, with translation conditioned on model-generated transcripts, and compare three token advantage strategies. Using Qwen2.5-Omni-3B across four languages, we evaluate CoT against direct speech translation (Direct ST) under SFT and GRPO, training on CoVoST 2 and testing on CoVoST 2 and FLEURS. CoT GRPO outperforms Direct ST GRPO by 1.77 and 0.83 average BLEU points on CoVoST 2 and FLEURS. Compared to CoT SFT, GRPO boosts BLEU by 0.82 and 0.67 points and reduces word error rate (WER) by 8.8% and 7.2% relatively. These results highlight reinforcement fine-tuning as an effective method to mitigate the training-inference mismatch, jointly improving recognition and translation.",
+      "authors": [
+        "Yanghe Dong",
+        "Wanting Huang",
+        "Weiran Wang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.26536v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-09-22T14:57:51Z",
+      "updated": "2026-09-22T14:57:51Z"
+    },
+    {
+      "arxiv_id": "2609.26635v1",
+      "title_en": "MambaVoice: Lightweight Audiovisual Singing Voice Separation Via A Hybrid Mamba-Transformer Model",
+      "abstract_en": "Isolating a target singing voice from a music video remains challenging, particularly in the presence of multiple vocalists and dense instrumental accompaniment. We propose MambaVoice, a lightweight audiovisual framework that leverages a hybrid Mamba--Transformer architecture for targeted singing voice separation. The model jointly encodes audio and visual streams using an attention-based band-split audio encoder and a spatio-temporal graph convolutional network (ST-GCN) for facial motion features. These modalities are fused through a multiplicative gating mechanism, enabling visual cues to selectively modulate audio representations. The fused features are processed by a hybrid backbone that combines Transformer self-attention with Selective State Space Models (SSMs), achieving efficient long-range temporal modeling with linear complexity. We evaluated MambaVoice on the Acappella and URSing datasets under challenging conditions, including mixtures with interfering singers. At 16.2 million parameters, the model demonstrates comparable performance, achieving 14.18 dB SDR on Acappella and strong cross-dataset performance on URSing, comparable to larger models at a fraction of the parameter count. These findings highlight the effectiveness of hybrid SSM--attention architectures for scalable, efficient audiovisual source separation, suggesting they are well-suited as lightweight components within larger pipelines. We conduct a perceptual study that further supports our improvements in objective metrics. We provide our implementation online.",
+      "authors": [
+        "Adithi Shankar",
+        "Gopika Krishnan",
+        "Gloria Haro",
+        "Xavier Serra",
+        "Martín Rocamora"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.26635v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-09-22T16:08:39Z",
+      "updated": "2026-09-22T16:08:39Z"
+    },
+    {
+      "arxiv_id": "2609.26648v1",
+      "title_en": "ROAM-ASD: Robust Open-World Active Speaker Detection with Flexible Multimodal Fusion",
+      "abstract_en": "Active speaker detection (ASD) requires reliable association between visible faces and acoustic speech, yet existing systems often degrade under challenging domains or incomplete observations. We introduce ROAM-ASD, a robust audiovisual framework that jointly models audio, full-face, and fine-grained mouth representations. A unified joint self-attention mechanism processes all input streams together with modality-agnostic query tokens, enabling direct interaction among available modality inputs. Modality dropout further improves robustness when input streams are unavailable. ROAM-ASD achieves state-of-the-art performance across five ASD benchmarks: 98.8% mAP on WASD, 87.9% on UniTalk, 96.5% on AVA, 99.3% on ASW, and 98.2% on Talkies, improving over previous best systems by 5.1, 4.7, 0.9, 1.0, and 2.1 mAP points, respectively. ROAM-ASD also substantially improves zero-shot cross-dataset generalization and remains robust to missing observations.",
+      "authors": [
+        "Pu Wang",
+        "Yujun Wang",
+        "Hugo Van hamme"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.26648v1",
+      "primary_category": "cs.MM",
+      "source_categories": [
+        "cs.CV",
+        "cs.MM",
+        "cs.SD",
+        "eess.AS",
+        "eess.IV"
+      ],
+      "published": "2026-09-22T16:18:10Z",
+      "updated": "2026-09-22T16:18:10Z"
+    }
+  ]
+}
