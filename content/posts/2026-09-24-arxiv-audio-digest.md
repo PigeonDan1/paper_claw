@@ -1,0 +1,127 @@
+<div align="center">
+
+# 📰 Paper Claw
+
+**2026-09-24**
+
+</div>
+
+---
+
+## 📊 今日速览
+
+| 指标 | 数值 |
+|:---|:---|
+| ⏰ 时间窗口 | 2026-09-23 13:18:26 CST → 2026-09-24 13:33:38 CST |
+| 📄 论文总数 | **4** 篇 |
+
+### 分类统计
+
+- **Speech LLM**: 1 篇
+- **ASR**: 0 篇
+- **TTS**: 0 篇
+- **Enhancement**: 0 篇
+- **SLU**: 0 篇
+- **Paralinguistics**: 0 篇
+- **Audio**: 3 篇
+
+> 💡 今日共收录 4 篇新论文，主要分布在 Speech LLM 1, Audio 3。
+> 📈 整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。
+
+---
+
+## 🏷️ Speech LLM
+
+### 1. Mizar: A 159M-Parameter Audio-Language Model for Audio Understanding
+
+👤 **作者**: Kaiyang Li, Shaobo Han, Yue Tian, Shihao Ji
+🔗 **来源**: [https://arxiv.org/abs/2609.28344v1](https://arxiv.org/abs/2609.28344v1)
+
+**摘要**
+> Audio-language models (ALMs) integrate acoustic perception with the knowledge encoded in language models, enabling contextual understanding of auditory events. Making these capabilities practical on devices with limited memory and computation motivates our focus on small ALMs with fewer than 200M parameters. We introduce a recipe that brings together architecture, data, and three-stage training to build Mizar, a 159.3M-parameter ALM. Its architecture connects a compact CED-Small audio encoder to SmolLM2-135M through a frequency-merging mapper. With supervision drawn from ReasonAQA, AudioMCQ, and AVQA, the model undergoes three training stages: audio-language alignment (Stage 1), audio-dependent fine-tuning (Stage 2), and post-training (Stage 3) aimed at strengthening weak skills while retaining learned capabilities. Across five random seeds, Mizar achieves mean accuracies of 52.92% on MMAU, 42.42% on MMAR, and 36.02% on ADQA-clean, surpassing the previous best-performing ALM below 200M parameters on all three benchmarks. It also supports local inference on a single CPU: on questions from the MMAU benchmark, the mean latency from opening the audio file to generating a complete answer is 1.09 seconds. Code and checkpoints are available at https://github.com/KaiyangLi1992/Mizar_159M.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「语音大模型」方向，核心任务由题目《Mizar: A 159M-Parameter Audio-Language Model for Audio Understanding》所界定。 从摘要看，作者主要围绕 audio-language model 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Across five random seeds, Mizar achieves mean accuracies of 52.92% on MMAU, 42.42% on MMAR, and 36.02% on ADQA-clean, surpassing the previous best-performing ALM below 200M parameters on all three benchmarks. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：audio-language model。 |
+
+---
+## 🏷️ ASR
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ TTS
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Enhancement
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ SLU
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Paralinguistics
+
+> 📭 今日该分类暂无新论文。
+
+---
+## 🏷️ Audio
+
+### 1. UNITE-AUDIO: Joint Learning of Continuous Tokenization and Latent Flow Matching for Text-to-Audio Generation
+
+👤 **作者**: Runwu Shi, Kai Li, Yujin Wang, Dong Yang, Jiahui Li, Jiang Wang, Benjamin Yen, Ashizawa Takeshi, Chunxiang Jin, Kazuhiro Nakadai
+🔗 **来源**: [https://arxiv.org/abs/2609.28206v1](https://arxiv.org/abs/2609.28206v1)
+
+**摘要**
+> Text-to-audio (TTA) generation aims to synthesize realistic audio that faithfully reflects natural-language descriptions. Most TTA systems adopt a two-stage latent paradigm: an audio tokenizer is optimized for reconstruction and then frozen, after which a generative model is trained in the resulting latent space. However, reconstruction-oriented representations may be suboptimal for generation, motivating joint representation and generative learning. To this end, we introduce \textbf{Unite-Audio}, to our knowledge, is the \textbf{first} to jointly learn continuous audio representations and latent flow matching for TTA. By coupling reconstruction with self-supervised generative prediction, Unite-Audio allows the generative objective to directly shape the latent space rather than treating it as a fixed intermediate representation. We further employ Flow-GRPO post-training to improve text-conditioned generation. Experiments show competitive TTA performance with a compact latent flow model, while ablation studies confirm the benefit of jointly learning the audio representation and generative model. Audio samples are available at https://runwushi.github.io/Unite-Audio.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《UNITE-AUDIO: Joint Learning of Continuous Tokenization and Latent Flow Matching for Text-to-Audio Generation》所界定。 从摘要看，作者主要围绕 audio generation 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We further employ Flow-GRPO post-training to improve text-conditioned generation. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：audio generation。 |
+
+---
+### 2. A multi-resolution spectrogram approach for estimating the physical parameters of a plate reverb
+
+👤 **作者**: Jared Lipkin, Meiying Chen, Benjamin R. Thompson, Andrea Cogliati, David A. Anderson, Michael C. Heilemann
+🔗 **来源**: [https://arxiv.org/abs/2609.28320v1](https://arxiv.org/abs/2609.28320v1)
+
+**摘要**
+> The ResNet-18 image classification model is employed to determine the physical parameters of a plate reverb from a recording of the impulse response. The model is adapted to derive parameters using normalized and downsampled multi-resolution spectrograms computed from the provided impulse responses (IRs). To refine the prediction of the output location, the spectral phase response is also included as an additional input channel to the network since multiple output locations can give the same magnitude response for high-order resonant modes. On a 5000 IR validation set, our model achieves an average normalized mean squared error (NMSE) of 0.02920 across all parameters, with the lowest average NMSE occurring for parameters yo (0.00228), Ly (0.00347), and xo (0.00574).
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《A multi-resolution spectrogram approach for estimating the physical parameters of a plate reverb》所界定。 从摘要看，作者主要围绕 multi-resolution、spectrogram、approach 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：On a 5000 IR validation set, our model achieves an average normalized mean squared error (NMSE) of 0.02920 across all parameters, with the lowest average NMSE occurring for parameters yo (0.00228), Ly (0.00347), and xo (0.00574). 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性高。摘要结构较直白，问题、方法和结果都比较容易定位。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：multi-resolution, spectrogram, approach。 |
+
+---
+### 3. Neural Field-of-View for Binaural Signal Matching with Wearable Microphone Arrays
+
+👤 **作者**: Matan Yifrach, Boaz Rafaely
+🔗 **来源**: [https://arxiv.org/abs/2609.28343v1](https://arxiv.org/abs/2609.28343v1)
+
+**摘要**
+> The growing use of spatial audio in applications such as augmented and virtual reality has driven the development of binaural reproduction methods for wearable arrays with a limited number of microphones. Binaural signal matching (BSM) is one such method, producing high-quality binaural signals under a diffuse-field assumption, but degrading at high direct-to-reverberant ratios (DRR) where the direct sound dominates. Previous extensions incorporate Field-of-View (FoV) weighting, either with fixed apertures or based on explicit source localization, but these approaches are limited by coarse spatial coverage or reliance on localization estimation accuracy. This paper introduces FoV-BSM-Net, a signal-dependent FoV-BSM formulation that avoids explicit source estimation by learning the FoV parameters end-to-end from the microphone signals using a Convolutional Recurrent Neural Network. The method is evaluated in simulated rooms across varying reverberation conditions, and compared against BSM and a fixed FoV-BSM baseline. Results show that FoV-BSM-Net consistently improves over BSM, with gains that grow with DRR in both binaural NMSE and interaural cue errors, and are further supported by perceptual evaluation showing a substantial advantage over both baselines across low and high DRR conditions.
+
+**综合评价**
+| 项目 | 内容 |
+|:---|:---|
+| 📝 总结 | 这篇工作归入「通用音频」方向，核心任务由题目《Neural Field-of-View for Binaural Signal Matching with Wearable Microphone Arrays》所界定。 从摘要看，作者主要围绕 neural、field-of-view、binaural 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Results show that FoV-BSM-Net consistently improves over BSM, with gains that grow with DRR in both binaural NMSE and interaural cue errors, and are further supported by perceptual evaluation showing a substantial advantage over both baselines across low and high DRR conditions. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。 |
+| 📖 可读性 | 可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：neural, field-of-view, binaural。 |
+
+---
+
+<div align="center">
+
+*Generated by [Paper Claw](https://github.com/yourusername/paper_claw)*
+
+</div>

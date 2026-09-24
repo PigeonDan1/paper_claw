@@ -1,0 +1,95 @@
+{
+  "window": {
+    "start": "2026-09-23T13:18:26.357966+08:00",
+    "end": "2026-09-24T13:33:38.220364+08:00"
+  },
+  "fetched_count": 5,
+  "deduplicated_count": 4,
+  "new_count": 4,
+  "papers": [
+    {
+      "arxiv_id": "2609.28206v1",
+      "title_en": "UNITE-AUDIO: Joint Learning of Continuous Tokenization and Latent Flow Matching for Text-to-Audio Generation",
+      "abstract_en": "Text-to-audio (TTA) generation aims to synthesize realistic audio that faithfully reflects natural-language descriptions. Most TTA systems adopt a two-stage latent paradigm: an audio tokenizer is optimized for reconstruction and then frozen, after which a generative model is trained in the resulting latent space. However, reconstruction-oriented representations may be suboptimal for generation, motivating joint representation and generative learning. To this end, we introduce \\textbf{Unite-Audio}, to our knowledge, is the \\textbf{first} to jointly learn continuous audio representations and latent flow matching for TTA. By coupling reconstruction with self-supervised generative prediction, Unite-Audio allows the generative objective to directly shape the latent space rather than treating it as a fixed intermediate representation. We further employ Flow-GRPO post-training to improve text-conditioned generation. Experiments show competitive TTA performance with a compact latent flow model, while ablation studies confirm the benefit of jointly learning the audio representation and generative model. Audio samples are available at https://runwushi.github.io/Unite-Audio.",
+      "authors": [
+        "Runwu Shi",
+        "Kai Li",
+        "Yujin Wang",
+        "Dong Yang",
+        "Jiahui Li",
+        "Jiang Wang",
+        "Benjamin Yen",
+        "Ashizawa Takeshi",
+        "Chunxiang Jin",
+        "Kazuhiro Nakadai"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.28206v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-09-23T14:42:53Z",
+      "updated": "2026-09-23T14:42:53Z"
+    },
+    {
+      "arxiv_id": "2609.28320v1",
+      "title_en": "A multi-resolution spectrogram approach for estimating the physical parameters of a plate reverb",
+      "abstract_en": "The ResNet-18 image classification model is employed to determine the physical parameters of a plate reverb from a recording of the impulse response. The model is adapted to derive parameters using normalized and downsampled multi-resolution spectrograms computed from the provided impulse responses (IRs). To refine the prediction of the output location, the spectral phase response is also included as an additional input channel to the network since multiple output locations can give the same magnitude response for high-order resonant modes. On a 5000 IR validation set, our model achieves an average normalized mean squared error (NMSE) of 0.02920 across all parameters, with the lowest average NMSE occurring for parameters yo (0.00228), Ly (0.00347), and xo (0.00574).",
+      "authors": [
+        "Jared Lipkin",
+        "Meiying Chen",
+        "Benjamin R. Thompson",
+        "Andrea Cogliati",
+        "David A. Anderson",
+        "Michael C. Heilemann"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.28320v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-09-23T16:01:04Z",
+      "updated": "2026-09-23T16:01:04Z"
+    },
+    {
+      "arxiv_id": "2609.28343v1",
+      "title_en": "Neural Field-of-View for Binaural Signal Matching with Wearable Microphone Arrays",
+      "abstract_en": "The growing use of spatial audio in applications such as augmented and virtual reality has driven the development of binaural reproduction methods for wearable arrays with a limited number of microphones. Binaural signal matching (BSM) is one such method, producing high-quality binaural signals under a diffuse-field assumption, but degrading at high direct-to-reverberant ratios (DRR) where the direct sound dominates. Previous extensions incorporate Field-of-View (FoV) weighting, either with fixed apertures or based on explicit source localization, but these approaches are limited by coarse spatial coverage or reliance on localization estimation accuracy. This paper introduces FoV-BSM-Net, a signal-dependent FoV-BSM formulation that avoids explicit source estimation by learning the FoV parameters end-to-end from the microphone signals using a Convolutional Recurrent Neural Network. The method is evaluated in simulated rooms across varying reverberation conditions, and compared against BSM and a fixed FoV-BSM baseline. Results show that FoV-BSM-Net consistently improves over BSM, with gains that grow with DRR in both binaural NMSE and interaural cue errors, and are further supported by perceptual evaluation showing a substantial advantage over both baselines across low and high DRR conditions.",
+      "authors": [
+        "Matan Yifrach",
+        "Boaz Rafaely"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.28343v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-09-23T16:21:10Z",
+      "updated": "2026-09-23T16:21:10Z"
+    },
+    {
+      "arxiv_id": "2609.28344v1",
+      "title_en": "Mizar: A 159M-Parameter Audio-Language Model for Audio Understanding",
+      "abstract_en": "Audio-language models (ALMs) integrate acoustic perception with the knowledge encoded in language models, enabling contextual understanding of auditory events. Making these capabilities practical on devices with limited memory and computation motivates our focus on small ALMs with fewer than 200M parameters. We introduce a recipe that brings together architecture, data, and three-stage training to build Mizar, a 159.3M-parameter ALM. Its architecture connects a compact CED-Small audio encoder to SmolLM2-135M through a frequency-merging mapper. With supervision drawn from ReasonAQA, AudioMCQ, and AVQA, the model undergoes three training stages: audio-language alignment (Stage 1), audio-dependent fine-tuning (Stage 2), and post-training (Stage 3) aimed at strengthening weak skills while retaining learned capabilities. Across five random seeds, Mizar achieves mean accuracies of 52.92% on MMAU, 42.42% on MMAR, and 36.02% on ADQA-clean, surpassing the previous best-performing ALM below 200M parameters on all three benchmarks. It also supports local inference on a single CPU: on questions from the MMAU benchmark, the mean latency from opening the audio file to generating a complete answer is 1.09 seconds. Code and checkpoints are available at https://github.com/KaiyangLi1992/Mizar_159M.",
+      "authors": [
+        "Kaiyang Li",
+        "Shaobo Han",
+        "Yue Tian",
+        "Shihao Ji"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.28344v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-09-23T16:21:51Z",
+      "updated": "2026-09-23T16:21:51Z"
+    }
+  ]
+}
