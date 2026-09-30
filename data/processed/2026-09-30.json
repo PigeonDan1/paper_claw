@@ -1,0 +1,666 @@
+{
+  "generated_at": "2026-09-30T14:04:01.061177+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-09-29T14:18:45.628256+08:00",
+    "end": "2026-09-30T14:03:50.692628+08:00",
+    "start_display": "2026-09-29 14:18:45 CST",
+    "end_display": "2026-09-30 14:03:50 CST"
+  },
+  "summary": {
+    "total": 9,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 0,
+      "TTS": 1,
+      "Enhancement": 1,
+      "SLU": 1,
+      "Paralinguistics": 0,
+      "Audio": 6
+    },
+    "headline": "今日共收录 9 篇新论文，主要分布在 TTS 1, Enhancement 1, SLU 1, Audio 6。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-09-30-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2609.37691v1",
+      "title_en": "Signal-Independent and Signal-Dependent Neural Ambisonic Matrix Encoding for Arbitrary Arrays with Variable Microphone Counts",
+      "abstract_en": "Recent neural Ambisonic encoders accommodate diverse array geometries, yet many existing neural encoders require a fixed microphone count because the number of microphone channels is embedded in the network architecture. This requirement limits deployment across devices with different microphone configurations and adaptation to changes in available channels. To address this limitation, we investigate Transformer-based matrix encoding for arbitrary microphone arrays with variable microphone counts. This is achieved through shared microphone-wise processing and masked self-attention that models inter-microphone relationships across variable-size arrays. Within this framework, we consider signal-independent (SI) encoding, which predicts encoding matrices from array transfer functions, and introduce a signal-dependent (SD) extension that additionally incorporates the observed microphone signals. Both models are trained on simulated scenes using LibriSpeech sources and extensively evaluated under changes in source type, unseen microphone counts, and increased source counts beyond those used during training. Both SI and SD outperform conventional least-squares (LS) encoding in aggregate reconstruction performance across the evaluated conditions. SD consistently achieves stronger overall performance than SI. These results demonstrate that the proposed framework enables array-agnostic Ambisonic encoding while retaining generalization across microphone counts and acoustic source conditions.",
+      "authors": [
+        "Shichao Hu",
+        "Zhiheng Jin",
+        "Chunyang Xu",
+        "Mengyao Zhu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.37691v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-09-29T14:35:35Z",
+      "updated": "2026-09-29T14:35:35Z",
+      "keywords_en": [
+        "signal-independent",
+        "signal-dependent",
+        "neural",
+        "ambisonic",
+        "matrix",
+        "encoding"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Signal-Independent and Signal-Dependent Neural Ambisonic Matrix Encoding for Arbitrary Arrays with Variable Microphone Counts》所界定。 从摘要看，作者主要围绕 signal-independent、signal-dependent、neural 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：This is achieved through shared microphone-wise processing and masked self-attention that models inter-microphone relationships across variable-size arrays. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：signal-independent, signal-dependent, neural。"
+      }
+    },
+    {
+      "arxiv_id": "2609.37710v1",
+      "title_en": "Do Music Generative Models Understand Musical Qualities? Automatic Music Evaluation with Model-Intrinsic Signals",
+      "abstract_en": "Current music generative models can produce high-quality music, but does this ability imply that they ``understand'' the musical qualities of their outputs, and is that understanding aligned with human evaluation? Previous attempts to use the likelihood of a generative model to evaluate music, an approach commonly used in text, have proven unsuccessful, leading researchers to rely on standalone supervised music evaluation models. In this paper, we answer this question affirmatively: we show that a model's intrinsic signals---derived from its hidden representations and predictions---are strongly correlated with human ratings. In particular, we study MusicGen and consider three types of features: (1) prediction loss, (2) prediction entropy, and (3) concepts extracted from the model using a sparse autoencoder (SAE). Using these features, we train a lightweight prediction model to estimate subjective ratings. We evaluate these features both individually and in combination. We hypothesize that these signals parallel the listening process: the temporal and frequency-domain structure of loss and entropy reflects listeners' expectation and surprise, while gradient directions in SAE latent space predict perceived quality. Experiments on five human-evaluation benchmarks spanning continuous ratings and pairwise preferences confirm this hypothesis, with SAE latents carrying most of the predictive signal.",
+      "authors": [
+        "Xiaosha Li",
+        "Chun Liu",
+        "Ziyu Wang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.37710v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-09-29T14:41:32Z",
+      "updated": "2026-09-29T14:41:32Z",
+      "keywords_en": [
+        "music",
+        "generative",
+        "models",
+        "understand",
+        "musical",
+        "qualities"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Do Music Generative Models Understand Musical Qualities? Automatic Music Evaluation with Model-Intrinsic Signals》所界定。 从摘要看，作者主要围绕 music、generative、models 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：In this paper, we answer this question affirmatively: we show that a model's intrinsic signals---derived from its hidden representations and predictions---are strongly correlated with human ratings. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：music, generative, models。"
+      }
+    },
+    {
+      "arxiv_id": "2609.37711v1",
+      "title_en": "Zephyr: An Efficient Audio Denoising System Using Spiking Neural Networks Enabled With A Sparsity-Aware Flexible FPGA PE Array",
+      "abstract_en": "In this work we look to neuromorphic computing to solve the power consumption problem that audio denoising neural networks face on edge devices like smartphones, wireless headphones and hearing aids. Spiking neural networks (SNNs) have the potential to solve this problem due to their high activation sparsity and low complexity, however many SOTA SNNs require hardware that supports a mixture of operations to be able to fully perform inference. To solve this problem, we convert SOTA audio denoising neural network Spiking-FullSubNet to a hardware friendly version showing that via QAT and activation function simplification we can achieve $\\approx28\\times$ improvement in power consumption to 52.9nJ per 32ms audio frame when calculated for custom digital hardware in a 45nm process node. We then propose a digital circuit which by means of a sparsity-aware flexible PE array can perform inference of the heterogeneous compute load of Spiking-FullSubNet, and validate this circuit on a PYNQ-Z1 FPGA achieving a real-time factor of 0.727 at 100MHz.",
+      "authors": [
+        "Cheng-En Chang",
+        "Chi-Wei Kao",
+        "Chung-Lun Yang",
+        "Yan-Lin Jiang",
+        "Yi-Chen Huang",
+        "Sebastian Fieldhouse",
+        "Kea-Tiong Tang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.37711v1",
+      "primary_category": "cs.AR",
+      "source_categories": [
+        "cs.AR",
+        "eess.AS"
+      ],
+      "published": "2026-09-29T14:41:46Z",
+      "updated": "2026-09-29T14:41:46Z",
+      "keywords_en": [
+        "zephyr",
+        "efficient",
+        "audio",
+        "denoising",
+        "system",
+        "using"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Zephyr: An Efficient Audio Denoising System Using Spiking Neural Networks Enabled With A Sparsity-Aware Flexible FPGA PE Array》所界定。 从摘要看，作者主要围绕 zephyr、efficient、audio 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：To solve this problem, we convert SOTA audio denoising neural network Spiking-FullSubNet to a hardware friendly version showing that via QAT and activation function simplification we can achieve $\\approx28\\times$ improvement in power consumption to 52.9nJ per 32ms audio frame when calculated for custom digital hardware in a 45nm process node. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：zephyr, efficient, audio。"
+      }
+    },
+    {
+      "arxiv_id": "2609.37798v1",
+      "title_en": "GLaS-JEPA: Gaussian-Regularized Speech SSL without Engineered Prediction Targets",
+      "abstract_en": "Speech self-supervised learning aims to learn general-purpose representations for downstream speech tasks. However, current approaches rely on complex, carefully designed prediction targets. We challenge this necessity with GLaS-JEPA, a framework that directly predicts the current encoder's continuous representations at masked positions, without contrastive learning, discrete targets, or separate EMA target encoders. We prevent representation collapse using SIGReg representation-space regularization, eliminating the need for engineered target-generation mechanisms. Pretrained on 960 hours of LibriSpeech, our 57M-parameter model achieves a 6.89% WER on frozen-encoder SUPERB ASR and a 25.87% CER on slot filling, outperforming the best non-distilled sub-90M baselines by 43.1% and 22.0%, respectively. These results demonstrate that highly competitive speech representations can emerge from a radically simplified training recipe.",
+      "authors": [
+        "Gaspard Botté",
+        "Séverin Baroudi",
+        "Samir Sadok",
+        "Francesco Paissan",
+        "Thomas Hueber",
+        "Xavier Alameda-Pineda",
+        "Ricard Marxer",
+        "Mirco Ravanelli"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.37798v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-09-29T15:22:51Z",
+      "updated": "2026-09-29T15:22:51Z",
+      "keywords_en": [
+        "slot filling"
+      ],
+      "digest_category": "SLU",
+      "category_label": "口语理解",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「口语理解」方向，核心任务由题目《GLaS-JEPA: Gaussian-Regularized Speech SSL without Engineered Prediction Targets》所界定。 从摘要看，作者主要围绕 slot filling 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Pretrained on 960 hours of LibriSpeech, our 57M-parameter model achieves a 6.89% WER on frozen-encoder SUPERB ASR and a 25.87% CER on slot filling, outperforming the best non-distilled sub-90M baselines by 43.1% and 22.0%, respectively. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：slot filling。"
+      }
+    },
+    {
+      "arxiv_id": "2609.37845v1",
+      "title_en": "Acoustic Honeybee Queen-State Detection Under Unseen Conditions",
+      "abstract_en": "Honeybee queen loss is a major threat to colony health, yet queen-status assessment remains largely manual and disruptive. Acoustic monitoring offers a non-invasive alternative by enabling continuous analysis of hive sounds. In this paper, we benchmark conventional and learned acoustic representations for automated detection of queen absence, comparing task-specific convolutional neural networks with pretrained audio transformers. Experiments are performed on 5,129 audio recordings from 3,285 hives across 47 apiaries collected between October 2024 and August 2026, evaluated using hive- and apiary-independent splits. Results show that models relying on modulation spectrograms achieve the best performance, reaching an Area Under the Receiver Operating Characteristic (AUROC) of 0.81 and Area Under the Precision-Recall Curve (AUPRC) of 0.37 on unseen hives; performance decreases under unseen-apiary evaluation. Overall, our results highlight the promise of modulation-based audio representations for non-invasive queen-status monitoring and highlight the challenge in cross-apiary model generalization.",
+      "authors": [
+        "Mahsa Abdollahi",
+        "Nico Coallier",
+        "Maxime Fraser Franco",
+        "Tiago H. Falk"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.37845v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-09-29T15:41:25Z",
+      "updated": "2026-09-29T15:41:25Z",
+      "keywords_en": [
+        "acoustic",
+        "honeybee",
+        "queen-state",
+        "detection",
+        "under",
+        "unseen"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Acoustic Honeybee Queen-State Detection Under Unseen Conditions》所界定。 从摘要看，作者主要围绕 acoustic、honeybee、queen-state 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Results show that models relying on modulation spectrograms achieve the best performance, reaching an Area Under the Receiver Operating Characteristic (AUROC) of 0.81 and Area Under the Precision-Recall Curve (AUPRC) of 0.37 on unseen hives; performance decreases under unseen-apiary evaluation. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：acoustic, honeybee, queen-state。"
+      }
+    },
+    {
+      "arxiv_id": "2609.37910v1",
+      "title_en": "2-Dimensional spectral gating for denoising bioacoustics recordings",
+      "abstract_en": "Isolating vocalizations from noise in bioacoustics recordings is a prerequisite to many ecological analyses, including species identification, animal communication understanding, and individual or population-level variability studies. However, when recordings are acquired in open environments, vocalizations, noise, or signal-to-noise ratio can vary widely across individuals, species, environment, and recording conditions, making it hard to develop robust and generalizable methods for ecological analyses. To account for these challenges, noise reduction techniques are used to remove noise before downstream analyses. Popular methods such as Noisereduce rely on spectral gating, which estimates a noise threshold for each frequency channel. We propose a further improvement to Noisereduce, leveraging the fact that most animal sounds have structure across multiple frequencies. We apply our method on bird and marine mammals recordings and show that our extension of Noisereduce leads to improved denoising in both above and under water acoustic recordings, without impacting speed of preprocessing.",
+      "authors": [
+        "Julien Boussard",
+        "Mélisande Teng",
+        "Sulagna Saha",
+        "Mario Gallego-Abenza"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.37910v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD",
+        "q-bio.QM"
+      ],
+      "published": "2026-09-29T16:06:48Z",
+      "updated": "2026-09-29T16:06:48Z",
+      "keywords_en": [
+        "noise reduction"
+      ],
+      "digest_category": "Enhancement",
+      "category_label": "语音增强",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音增强」方向，核心任务由题目《2-Dimensional spectral gating for denoising bioacoustics recordings》所界定。 从摘要看，作者主要围绕 noise reduction 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We propose a further improvement to Noisereduce, leveraging the fact that most animal sounds have structure across multiple frequencies. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：noise reduction。"
+      }
+    },
+    {
+      "arxiv_id": "2609.38000v1",
+      "title_en": "QK-GCC: Learnable Query-Key Spectral Matching for Robust Time Delay Estimation",
+      "abstract_en": "Time delay estimation (TDE) is a fundamental component of microphone-array sound source localization. Generalized cross-correlation (GCC) is widely used because it is efficient and interpretable, but its handcrafted spectral matching and predefined frequency weighting are vulnerable to noise and reverberation. Existing neural GCC variants mainly improve robustness by enhancing input signals or modeling GCC responses, while the cross-channel spectral matching step itself remains handcrafted. We propose QK-GCC, a learnable GCC-like framework that replaces handcrafted weighted spectral matching in GCC with Query-Key matching between two microphone signals. The two microphone signals are encoded as magnitude-phase frequency tokens and mapped to Query and Key representations, respectively, enabling frequency reliability learning and local spectral evidence aggregation for delay estimation. Experiments in simulated reverberant rooms across diverse SNR and reverberation conditions show that QK-GCC improves TDE accuracy over GCC-PHAT and learning-based GCC variants, while remaining lightweight and generalizing to unseen source types. The code is available at https://github.com/zhangjinkai33-ui/QK-GCC.",
+      "authors": [
+        "Jinkai Zhang",
+        "Weiye Chen",
+        "Yue Huang",
+        "Xiaotong Tu",
+        "Xinghao Ding"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.38000v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-09-29T16:54:21Z",
+      "updated": "2026-09-29T16:54:21Z",
+      "keywords_en": [
+        "qk-gcc",
+        "learnable",
+        "query-key",
+        "spectral",
+        "matching",
+        "robust"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《QK-GCC: Learnable Query-Key Spectral Matching for Robust Time Delay Estimation》所界定。 从摘要看，作者主要围绕 qk-gcc、learnable、query-key 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Existing neural GCC variants mainly improve robustness by enhancing input signals or modeling GCC responses, while the cross-channel spectral matching step itself remains handcrafted. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：qk-gcc, learnable, query-key。"
+      }
+    },
+    {
+      "arxiv_id": "2609.38106v1",
+      "title_en": "Pruning for Efficiency, Paying in Fairness: Demographic Disparities in Pruned Speech-LLMs",
+      "abstract_en": "Speech-LLMs are expensive to run, making compression important for real-world deployment. However, compressed models are usually selected using aggregate word error rate (WER), which can hide how pruning affects different demographic groups. In this work, we systematically study the effect of audio encoder pruning on SLAM-ASR for different demographic groups. Using the Fair-Speech and Common Voice datasets, we found that the pruning does not affect all demographic groups equally; the gap between best- and worst-performing groups increases in fold. These disparities appear across all three encoder scales, but only the largest model initially hides them behind aggregate WER. LoRA adaptation improves WER for every group, but benefits groups already performing well more strongly and widens for certain groups. On Common Voice English, Danish, and Dutch, accent gaps persist but do not clearly widen, showing that the fairness effects of pruning vary across datasets and must be measured directly. Our findings suggest that for pruned models, deployment decisions should include per-group WER, with the worst-performing group's error rate as an explicit criterion.",
+      "authors": [
+        "Ganesh Pavan Kartikeya Bharadwaj Kolluri",
+        "Michael Kampouridis",
+        "Ravi Shekhar"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.38106v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-09-29T17:46:50Z",
+      "updated": "2026-09-29T17:46:50Z",
+      "keywords_en": [
+        "pruning",
+        "efficiency",
+        "paying",
+        "fairness",
+        "demographic",
+        "disparities"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Pruning for Efficiency, Paying in Fairness: Demographic Disparities in Pruned Speech-LLMs》所界定。 从摘要看，作者主要围绕 pruning、efficiency、paying 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：LoRA adaptation improves WER for every group, but benefits groups already performing well more strongly and widens for certain groups. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：pruning, efficiency, paying。"
+      }
+    },
+    {
+      "arxiv_id": "2609.38157v1",
+      "title_en": "EmoRES-TTS: Residual-Enhanced Vector Steering for Emotional Speech Generation",
+      "abstract_en": "Emotion-conditioned text-to-speech (TTS) models may fail to express the requested emotion reliably, and improving controllability by additional training is costly in both computation and emotion-labeled speech training data. We therefore study vector steering, a training-free approach that modifies the internal representations of a frozen model. CoCoEmo, a conventional vector steering method for emotion TTS, treats each emotion vector as an indivisible direction controlled by a single global strength, limiting adherence to the requested emotion. In this work, we first discover that an emotion vector can be decomposed into a shared component that moves speech away from neutral expression and a residual component that directs generation toward the requested emotion. Building on this finding, we propose Emotion Residual-Enhanced Steering for TTS (EmoRES), a novel method that controls the two components without retraining the backbone. On IEMOCAP, EmoRES outperforms CoCoEmo across all four objective emotion metrics on the IndexTTS-2 and CosyVoice2 backbones. Rank correlation improves by 26.13 and 12.97 percentage points, corresponding to relative gains of 118.8% and 33.1%, while emotion hit rate improves by 12.95 and 6.92 points, corresponding to relative gains of 20.1% and 9.8%. Human evaluation further shows a relative improvement up to 35.0% in the rate at which listeners correctly identified the dominant requested emotion and up to a 17.3% improvement in fidelity, while listeners prefer EmoRES for naturalness in up to 63.8% of pairwise comparisons. Component ablations further demonstrate that effective control benefits from preserving the shared component while strengthening the residual of the emotion steering vectors.",
+      "authors": [
+        "Kuan-Po Huang",
+        "Haohe Liu",
+        "Puyuan Peng",
+        "Haibin Wu",
+        "Zhaoheng Ni",
+        "Hung-yi Lee",
+        "Jinwon Lee",
+        "Neha Chachra"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.38157v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-09-29T17:59:05Z",
+      "updated": "2026-09-29T17:59:05Z",
+      "keywords_en": [
+        "text-to-speech"
+      ],
+      "digest_category": "TTS",
+      "category_label": "语音合成",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音合成」方向，核心任务由题目《EmoRES-TTS: Residual-Enhanced Vector Steering for Emotional Speech Generation》所界定。 从摘要看，作者主要围绕 text-to-speech 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Emotion-conditioned text-to-speech (TTS) models may fail to express the requested emotion reliably, and improving controllability by additional training is costly in both computation and emotion-labeled speech training data. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：text-to-speech。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [],
+    "TTS": [
+      {
+        "arxiv_id": "2609.38157v1",
+        "title_en": "EmoRES-TTS: Residual-Enhanced Vector Steering for Emotional Speech Generation",
+        "abstract_en": "Emotion-conditioned text-to-speech (TTS) models may fail to express the requested emotion reliably, and improving controllability by additional training is costly in both computation and emotion-labeled speech training data. We therefore study vector steering, a training-free approach that modifies the internal representations of a frozen model. CoCoEmo, a conventional vector steering method for emotion TTS, treats each emotion vector as an indivisible direction controlled by a single global strength, limiting adherence to the requested emotion. In this work, we first discover that an emotion vector can be decomposed into a shared component that moves speech away from neutral expression and a residual component that directs generation toward the requested emotion. Building on this finding, we propose Emotion Residual-Enhanced Steering for TTS (EmoRES), a novel method that controls the two components without retraining the backbone. On IEMOCAP, EmoRES outperforms CoCoEmo across all four objective emotion metrics on the IndexTTS-2 and CosyVoice2 backbones. Rank correlation improves by 26.13 and 12.97 percentage points, corresponding to relative gains of 118.8% and 33.1%, while emotion hit rate improves by 12.95 and 6.92 points, corresponding to relative gains of 20.1% and 9.8%. Human evaluation further shows a relative improvement up to 35.0% in the rate at which listeners correctly identified the dominant requested emotion and up to a 17.3% improvement in fidelity, while listeners prefer EmoRES for naturalness in up to 63.8% of pairwise comparisons. Component ablations further demonstrate that effective control benefits from preserving the shared component while strengthening the residual of the emotion steering vectors.",
+        "authors": [
+          "Kuan-Po Huang",
+          "Haohe Liu",
+          "Puyuan Peng",
+          "Haibin Wu",
+          "Zhaoheng Ni",
+          "Hung-yi Lee",
+          "Jinwon Lee",
+          "Neha Chachra"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2609.38157v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.CL",
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-09-29T17:59:05Z",
+        "updated": "2026-09-29T17:59:05Z",
+        "keywords_en": [
+          "text-to-speech"
+        ],
+        "digest_category": "TTS",
+        "category_label": "语音合成",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音合成」方向，核心任务由题目《EmoRES-TTS: Residual-Enhanced Vector Steering for Emotional Speech Generation》所界定。 从摘要看，作者主要围绕 text-to-speech 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Emotion-conditioned text-to-speech (TTS) models may fail to express the requested emotion reliably, and improving controllability by additional training is costly in both computation and emotion-labeled speech training data. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：text-to-speech。"
+        }
+      }
+    ],
+    "Enhancement": [
+      {
+        "arxiv_id": "2609.37910v1",
+        "title_en": "2-Dimensional spectral gating for denoising bioacoustics recordings",
+        "abstract_en": "Isolating vocalizations from noise in bioacoustics recordings is a prerequisite to many ecological analyses, including species identification, animal communication understanding, and individual or population-level variability studies. However, when recordings are acquired in open environments, vocalizations, noise, or signal-to-noise ratio can vary widely across individuals, species, environment, and recording conditions, making it hard to develop robust and generalizable methods for ecological analyses. To account for these challenges, noise reduction techniques are used to remove noise before downstream analyses. Popular methods such as Noisereduce rely on spectral gating, which estimates a noise threshold for each frequency channel. We propose a further improvement to Noisereduce, leveraging the fact that most animal sounds have structure across multiple frequencies. We apply our method on bird and marine mammals recordings and show that our extension of Noisereduce leads to improved denoising in both above and under water acoustic recordings, without impacting speed of preprocessing.",
+        "authors": [
+          "Julien Boussard",
+          "Mélisande Teng",
+          "Sulagna Saha",
+          "Mario Gallego-Abenza"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2609.37910v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.SD",
+          "q-bio.QM"
+        ],
+        "published": "2026-09-29T16:06:48Z",
+        "updated": "2026-09-29T16:06:48Z",
+        "keywords_en": [
+          "noise reduction"
+        ],
+        "digest_category": "Enhancement",
+        "category_label": "语音增强",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音增强」方向，核心任务由题目《2-Dimensional spectral gating for denoising bioacoustics recordings》所界定。 从摘要看，作者主要围绕 noise reduction 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We propose a further improvement to Noisereduce, leveraging the fact that most animal sounds have structure across multiple frequencies. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：noise reduction。"
+        }
+      }
+    ],
+    "SLU": [
+      {
+        "arxiv_id": "2609.37798v1",
+        "title_en": "GLaS-JEPA: Gaussian-Regularized Speech SSL without Engineered Prediction Targets",
+        "abstract_en": "Speech self-supervised learning aims to learn general-purpose representations for downstream speech tasks. However, current approaches rely on complex, carefully designed prediction targets. We challenge this necessity with GLaS-JEPA, a framework that directly predicts the current encoder's continuous representations at masked positions, without contrastive learning, discrete targets, or separate EMA target encoders. We prevent representation collapse using SIGReg representation-space regularization, eliminating the need for engineered target-generation mechanisms. Pretrained on 960 hours of LibriSpeech, our 57M-parameter model achieves a 6.89% WER on frozen-encoder SUPERB ASR and a 25.87% CER on slot filling, outperforming the best non-distilled sub-90M baselines by 43.1% and 22.0%, respectively. These results demonstrate that highly competitive speech representations can emerge from a radically simplified training recipe.",
+        "authors": [
+          "Gaspard Botté",
+          "Séverin Baroudi",
+          "Samir Sadok",
+          "Francesco Paissan",
+          "Thomas Hueber",
+          "Xavier Alameda-Pineda",
+          "Ricard Marxer",
+          "Mirco Ravanelli"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2609.37798v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "cs.AI",
+          "cs.LG",
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-09-29T15:22:51Z",
+        "updated": "2026-09-29T15:22:51Z",
+        "keywords_en": [
+          "slot filling"
+        ],
+        "digest_category": "SLU",
+        "category_label": "口语理解",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「口语理解」方向，核心任务由题目《GLaS-JEPA: Gaussian-Regularized Speech SSL without Engineered Prediction Targets》所界定。 从摘要看，作者主要围绕 slot filling 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Pretrained on 960 hours of LibriSpeech, our 57M-parameter model achieves a 6.89% WER on frozen-encoder SUPERB ASR and a 25.87% CER on slot filling, outperforming the best non-distilled sub-90M baselines by 43.1% and 22.0%, respectively. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：slot filling。"
+        }
+      }
+    ],
+    "Paralinguistics": [],
+    "Audio": [
+      {
+        "arxiv_id": "2609.37691v1",
+        "title_en": "Signal-Independent and Signal-Dependent Neural Ambisonic Matrix Encoding for Arbitrary Arrays with Variable Microphone Counts",
+        "abstract_en": "Recent neural Ambisonic encoders accommodate diverse array geometries, yet many existing neural encoders require a fixed microphone count because the number of microphone channels is embedded in the network architecture. This requirement limits deployment across devices with different microphone configurations and adaptation to changes in available channels. To address this limitation, we investigate Transformer-based matrix encoding for arbitrary microphone arrays with variable microphone counts. This is achieved through shared microphone-wise processing and masked self-attention that models inter-microphone relationships across variable-size arrays. Within this framework, we consider signal-independent (SI) encoding, which predicts encoding matrices from array transfer functions, and introduce a signal-dependent (SD) extension that additionally incorporates the observed microphone signals. Both models are trained on simulated scenes using LibriSpeech sources and extensively evaluated under changes in source type, unseen microphone counts, and increased source counts beyond those used during training. Both SI and SD outperform conventional least-squares (LS) encoding in aggregate reconstruction performance across the evaluated conditions. SD consistently achieves stronger overall performance than SI. These results demonstrate that the proposed framework enables array-agnostic Ambisonic encoding while retaining generalization across microphone counts and acoustic source conditions.",
+        "authors": [
+          "Shichao Hu",
+          "Zhiheng Jin",
+          "Chunyang Xu",
+          "Mengyao Zhu"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2609.37691v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-09-29T14:35:35Z",
+        "updated": "2026-09-29T14:35:35Z",
+        "keywords_en": [
+          "signal-independent",
+          "signal-dependent",
+          "neural",
+          "ambisonic",
+          "matrix",
+          "encoding"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Signal-Independent and Signal-Dependent Neural Ambisonic Matrix Encoding for Arbitrary Arrays with Variable Microphone Counts》所界定。 从摘要看，作者主要围绕 signal-independent、signal-dependent、neural 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：This is achieved through shared microphone-wise processing and masked self-attention that models inter-microphone relationships across variable-size arrays. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：signal-independent, signal-dependent, neural。"
+        }
+      },
+      {
+        "arxiv_id": "2609.37710v1",
+        "title_en": "Do Music Generative Models Understand Musical Qualities? Automatic Music Evaluation with Model-Intrinsic Signals",
+        "abstract_en": "Current music generative models can produce high-quality music, but does this ability imply that they ``understand'' the musical qualities of their outputs, and is that understanding aligned with human evaluation? Previous attempts to use the likelihood of a generative model to evaluate music, an approach commonly used in text, have proven unsuccessful, leading researchers to rely on standalone supervised music evaluation models. In this paper, we answer this question affirmatively: we show that a model's intrinsic signals---derived from its hidden representations and predictions---are strongly correlated with human ratings. In particular, we study MusicGen and consider three types of features: (1) prediction loss, (2) prediction entropy, and (3) concepts extracted from the model using a sparse autoencoder (SAE). Using these features, we train a lightweight prediction model to estimate subjective ratings. We evaluate these features both individually and in combination. We hypothesize that these signals parallel the listening process: the temporal and frequency-domain structure of loss and entropy reflects listeners' expectation and surprise, while gradient directions in SAE latent space predict perceived quality. Experiments on five human-evaluation benchmarks spanning continuous ratings and pairwise preferences confirm this hypothesis, with SAE latents carrying most of the predictive signal.",
+        "authors": [
+          "Xiaosha Li",
+          "Chun Liu",
+          "Ziyu Wang"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2609.37710v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.SD"
+        ],
+        "published": "2026-09-29T14:41:32Z",
+        "updated": "2026-09-29T14:41:32Z",
+        "keywords_en": [
+          "music",
+          "generative",
+          "models",
+          "understand",
+          "musical",
+          "qualities"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Do Music Generative Models Understand Musical Qualities? Automatic Music Evaluation with Model-Intrinsic Signals》所界定。 从摘要看，作者主要围绕 music、generative、models 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：In this paper, we answer this question affirmatively: we show that a model's intrinsic signals---derived from its hidden representations and predictions---are strongly correlated with human ratings. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：music, generative, models。"
+        }
+      },
+      {
+        "arxiv_id": "2609.37711v1",
+        "title_en": "Zephyr: An Efficient Audio Denoising System Using Spiking Neural Networks Enabled With A Sparsity-Aware Flexible FPGA PE Array",
+        "abstract_en": "In this work we look to neuromorphic computing to solve the power consumption problem that audio denoising neural networks face on edge devices like smartphones, wireless headphones and hearing aids. Spiking neural networks (SNNs) have the potential to solve this problem due to their high activation sparsity and low complexity, however many SOTA SNNs require hardware that supports a mixture of operations to be able to fully perform inference. To solve this problem, we convert SOTA audio denoising neural network Spiking-FullSubNet to a hardware friendly version showing that via QAT and activation function simplification we can achieve $\\approx28\\times$ improvement in power consumption to 52.9nJ per 32ms audio frame when calculated for custom digital hardware in a 45nm process node. We then propose a digital circuit which by means of a sparsity-aware flexible PE array can perform inference of the heterogeneous compute load of Spiking-FullSubNet, and validate this circuit on a PYNQ-Z1 FPGA achieving a real-time factor of 0.727 at 100MHz.",
+        "authors": [
+          "Cheng-En Chang",
+          "Chi-Wei Kao",
+          "Chung-Lun Yang",
+          "Yan-Lin Jiang",
+          "Yi-Chen Huang",
+          "Sebastian Fieldhouse",
+          "Kea-Tiong Tang"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2609.37711v1",
+        "primary_category": "cs.AR",
+        "source_categories": [
+          "cs.AR",
+          "eess.AS"
+        ],
+        "published": "2026-09-29T14:41:46Z",
+        "updated": "2026-09-29T14:41:46Z",
+        "keywords_en": [
+          "zephyr",
+          "efficient",
+          "audio",
+          "denoising",
+          "system",
+          "using"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Zephyr: An Efficient Audio Denoising System Using Spiking Neural Networks Enabled With A Sparsity-Aware Flexible FPGA PE Array》所界定。 从摘要看，作者主要围绕 zephyr、efficient、audio 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：To solve this problem, we convert SOTA audio denoising neural network Spiking-FullSubNet to a hardware friendly version showing that via QAT and activation function simplification we can achieve $\\approx28\\times$ improvement in power consumption to 52.9nJ per 32ms audio frame when calculated for custom digital hardware in a 45nm process node. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：zephyr, efficient, audio。"
+        }
+      },
+      {
+        "arxiv_id": "2609.37845v1",
+        "title_en": "Acoustic Honeybee Queen-State Detection Under Unseen Conditions",
+        "abstract_en": "Honeybee queen loss is a major threat to colony health, yet queen-status assessment remains largely manual and disruptive. Acoustic monitoring offers a non-invasive alternative by enabling continuous analysis of hive sounds. In this paper, we benchmark conventional and learned acoustic representations for automated detection of queen absence, comparing task-specific convolutional neural networks with pretrained audio transformers. Experiments are performed on 5,129 audio recordings from 3,285 hives across 47 apiaries collected between October 2024 and August 2026, evaluated using hive- and apiary-independent splits. Results show that models relying on modulation spectrograms achieve the best performance, reaching an Area Under the Receiver Operating Characteristic (AUROC) of 0.81 and Area Under the Precision-Recall Curve (AUPRC) of 0.37 on unseen hives; performance decreases under unseen-apiary evaluation. Overall, our results highlight the promise of modulation-based audio representations for non-invasive queen-status monitoring and highlight the challenge in cross-apiary model generalization.",
+        "authors": [
+          "Mahsa Abdollahi",
+          "Nico Coallier",
+          "Maxime Fraser Franco",
+          "Tiago H. Falk"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2609.37845v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-09-29T15:41:25Z",
+        "updated": "2026-09-29T15:41:25Z",
+        "keywords_en": [
+          "acoustic",
+          "honeybee",
+          "queen-state",
+          "detection",
+          "under",
+          "unseen"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Acoustic Honeybee Queen-State Detection Under Unseen Conditions》所界定。 从摘要看，作者主要围绕 acoustic、honeybee、queen-state 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Results show that models relying on modulation spectrograms achieve the best performance, reaching an Area Under the Receiver Operating Characteristic (AUROC) of 0.81 and Area Under the Precision-Recall Curve (AUPRC) of 0.37 on unseen hives; performance decreases under unseen-apiary evaluation. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：acoustic, honeybee, queen-state。"
+        }
+      },
+      {
+        "arxiv_id": "2609.38000v1",
+        "title_en": "QK-GCC: Learnable Query-Key Spectral Matching for Robust Time Delay Estimation",
+        "abstract_en": "Time delay estimation (TDE) is a fundamental component of microphone-array sound source localization. Generalized cross-correlation (GCC) is widely used because it is efficient and interpretable, but its handcrafted spectral matching and predefined frequency weighting are vulnerable to noise and reverberation. Existing neural GCC variants mainly improve robustness by enhancing input signals or modeling GCC responses, while the cross-channel spectral matching step itself remains handcrafted. We propose QK-GCC, a learnable GCC-like framework that replaces handcrafted weighted spectral matching in GCC with Query-Key matching between two microphone signals. The two microphone signals are encoded as magnitude-phase frequency tokens and mapped to Query and Key representations, respectively, enabling frequency reliability learning and local spectral evidence aggregation for delay estimation. Experiments in simulated reverberant rooms across diverse SNR and reverberation conditions show that QK-GCC improves TDE accuracy over GCC-PHAT and learning-based GCC variants, while remaining lightweight and generalizing to unseen source types. The code is available at https://github.com/zhangjinkai33-ui/QK-GCC.",
+        "authors": [
+          "Jinkai Zhang",
+          "Weiye Chen",
+          "Yue Huang",
+          "Xiaotong Tu",
+          "Xinghao Ding"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2609.38000v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-09-29T16:54:21Z",
+        "updated": "2026-09-29T16:54:21Z",
+        "keywords_en": [
+          "qk-gcc",
+          "learnable",
+          "query-key",
+          "spectral",
+          "matching",
+          "robust"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《QK-GCC: Learnable Query-Key Spectral Matching for Robust Time Delay Estimation》所界定。 从摘要看，作者主要围绕 qk-gcc、learnable、query-key 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Existing neural GCC variants mainly improve robustness by enhancing input signals or modeling GCC responses, while the cross-channel spectral matching step itself remains handcrafted. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：qk-gcc, learnable, query-key。"
+        }
+      },
+      {
+        "arxiv_id": "2609.38106v1",
+        "title_en": "Pruning for Efficiency, Paying in Fairness: Demographic Disparities in Pruned Speech-LLMs",
+        "abstract_en": "Speech-LLMs are expensive to run, making compression important for real-world deployment. However, compressed models are usually selected using aggregate word error rate (WER), which can hide how pruning affects different demographic groups. In this work, we systematically study the effect of audio encoder pruning on SLAM-ASR for different demographic groups. Using the Fair-Speech and Common Voice datasets, we found that the pruning does not affect all demographic groups equally; the gap between best- and worst-performing groups increases in fold. These disparities appear across all three encoder scales, but only the largest model initially hides them behind aggregate WER. LoRA adaptation improves WER for every group, but benefits groups already performing well more strongly and widens for certain groups. On Common Voice English, Danish, and Dutch, accent gaps persist but do not clearly widen, showing that the fairness effects of pruning vary across datasets and must be measured directly. Our findings suggest that for pruned models, deployment decisions should include per-group WER, with the worst-performing group's error rate as an explicit criterion.",
+        "authors": [
+          "Ganesh Pavan Kartikeya Bharadwaj Kolluri",
+          "Michael Kampouridis",
+          "Ravi Shekhar"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2609.38106v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.CL",
+          "cs.SD"
+        ],
+        "published": "2026-09-29T17:46:50Z",
+        "updated": "2026-09-29T17:46:50Z",
+        "keywords_en": [
+          "pruning",
+          "efficiency",
+          "paying",
+          "fairness",
+          "demographic",
+          "disparities"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Pruning for Efficiency, Paying in Fairness: Demographic Disparities in Pruned Speech-LLMs》所界定。 从摘要看，作者主要围绕 pruning、efficiency、paying 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：LoRA adaptation improves WER for every group, but benefits groups already performing well more strongly and widens for certain groups. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：pruning, efficiency, paying。"
+        }
+      }
+    ]
+  },
+  "model_name": "deepseek-v3"
+}
