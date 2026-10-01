@@ -1,0 +1,96 @@
+{
+  "window": {
+    "start": "2026-09-30T14:03:50.692628+08:00",
+    "end": "2026-10-01T14:37:47.434503+08:00"
+  },
+  "fetched_count": 6,
+  "deduplicated_count": 4,
+  "new_count": 4,
+  "papers": [
+    {
+      "arxiv_id": "2609.39847v1",
+      "title_en": "SEAR: Spoofing Evidence-Grounded Audio Reasoning Benchmark for Audio Language Models",
+      "abstract_en": "Audio language models (ALMs) are increasingly used for audio deepfake detection (ADD), yet existing benchmarks assess their verdicts or rationale plausibility without verifying the underlying acoustic evidence. To address this issue, we first introduce spoofing evidence-grounded audio reasoning (SEAR), a four-task AQA benchmark to evaluate ALM-based ADD through acoustic evidence identification and quantification, deepfake detection, and forensic rationale generation. We further propose a bona-fide-based acoustic evidence agent (BAEA), which equips a frozen ALM with controlled acoustic tools under \\textsc{fixed} or \\textsc{adaptive} evidence-acquisition policies. Experiments with six ALMs reveal a clear gap between plausible rationales and verifiable acoustic evidence reasoning, while BAEA-\\textsc{Fixed} improves final verdicts and forensic rationales on both evaluation partitions. Controlled interventions further show that misleading evidence degrades both detection and grounding performance.",
+      "authors": [
+        "Rong Wan",
+        "Suliu Qin",
+        "Jiaxi Li",
+        "Wei Xie",
+        "Wenwu Wang",
+        "Xiaolong Han",
+        "Lu Yin",
+        "Xilu Wang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.39847v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-09-30T14:39:47Z",
+      "updated": "2026-09-30T14:39:47Z"
+    },
+    {
+      "arxiv_id": "2609.39852v1",
+      "title_en": "Pitch Smoothing Using Relative Interval Networks",
+      "abstract_en": "Pitch tracking systems typically couple a per-frame fundamental frequency ($F_0$) estimator with a temporal smoothing stage to obtain continuous trajectories. Conventional Viterbi smoothers enforce first-order continuity but lack long-term temporal awareness and could lock into octave errors across corrupted frames. We propose Relative Interval Networks (RIN), a trajectory smoothing framework that reconciles per-frame pitch estimates with data-driven multi-hop pitch differences. We extract robust relative pitch intervals across arbitrary frame offsets using Variable-Q Transform cross-correlation. We formulate pitch smoothing as an $L_1$-norm optimization problem and prove its equivalence to a minimum cost circulation problem, solved efficiently via linear programming. Evaluations across speech, singing, and instrumental datasets show that RIN substantially improves weak estimators, matches or outperforms Viterbi decoding at a comparable computational cost, and provides superior robustness under certain acoustic degradation.",
+      "authors": [
+        "Chin-Yun Yu",
+        "Chi-Jen Peng",
+        "Li Su",
+        "György Fazekas"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.39852v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-09-30T14:42:03Z",
+      "updated": "2026-09-30T14:42:03Z"
+    },
+    {
+      "arxiv_id": "2609.40087v1",
+      "title_en": "MeanVoiceFlow2: Joint Optimization of Mean Flow and Content Encoder for Fast One-Step Zero-Shot Voice Conversion",
+      "abstract_en": "Flow-matching approaches to voice conversion (VC) have gained attention owing to their high speech quality and strong speaker similarity. Among them, one-step models such as MeanVoiceFlow are particularly attractive because they enable efficient inference; however, their reliance on a computationally intensive content encoder remains a bottleneck. We therefore propose MeanVoiceFlow2, a framework that jointly optimizes a flow-based conversion module and a computationally efficient content encoder. The model is trained through conversion distillation using MeanVoiceFlow and the reconstruction of real data. We further incorporate diffusion-GAN training with sample mixing and teacher-guided conditioning augmentation to enhance realism and disentanglement. Experiments on zero-shot VC showed that MeanVoiceFlow2 achieved higher perceptual quality and approximately $9\\times$ faster inference than MeanVoiceFlow while maintaining comparable speaker similarity. Audio samples are available at https://www.kecl.ntt.co.jp/people/kaneko.takuhiro/projects/meanvoiceflow2/.",
+      "authors": [
+        "Takuhiro Kaneko",
+        "Hirokazu Kameoka",
+        "Kou Tanaka",
+        "Yuto Kondo"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.40087v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-09-30T16:31:01Z",
+      "updated": "2026-09-30T16:31:01Z"
+    },
+    {
+      "arxiv_id": "2609.40198v1",
+      "title_en": "SCB: SpeechConversationBench for Evaluating Multi-Turn Reasoning in Speech-to-Speech Models",
+      "abstract_en": "Speech-to-speech systems must solve tasks whose requirements emerge across conversational turns. We introduce SpeechConversationBench (SCB), a focused evaluation of spoken mathematical reasoning using 103 sharded GSM8K problems. The framework compares the original problem delivered in one turn (full), its concatenated information shards delivered together (concat), and incremental spoken disclosure across turns (sharded). We report final-answer accuracy for four commercial speech systems and LEGO, a proprietary speech pipeline developed internally by the SCBX Innovation Lab team with explicit conversational context management. Relative to concat, sharded accuracy decreases by 5.0-25.3 percentage points across the four commercial systems. LEGO achieves 77.5 percent accuracy in all three conditions, compared with 76.6 percent sharded accuracy for GPT-4o Realtime. The two single-turn baselines distinguish sensitivity to problem reformulation from the additional challenges introduced by incremental spoken interaction.",
+      "authors": [
+        "Kanpat Vesessook",
+        "Saksorn Ruangtanusak"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2609.40198v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-09-30T17:13:30Z",
+      "updated": "2026-09-30T17:13:30Z"
+    }
+  ]
+}
