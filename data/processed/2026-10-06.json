@@ -1,0 +1,659 @@
+{
+  "generated_at": "2026-10-06T14:56:08.474774+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-10-05T14:20:27.123066+08:00",
+    "end": "2026-10-06T14:55:58.136912+08:00",
+    "start_display": "2026-10-05 14:20:27 CST",
+    "end_display": "2026-10-06 14:55:58 CST"
+  },
+  "summary": {
+    "total": 9,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 2,
+      "TTS": 1,
+      "Enhancement": 1,
+      "SLU": 0,
+      "Paralinguistics": 1,
+      "Audio": 4
+    },
+    "headline": "今日共收录 9 篇新论文，主要分布在 ASR 2, TTS 1, Enhancement 1, Paralinguistics 1, Audio 4。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-10-06-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2610.06430v1",
+      "title_en": "Do Speech Representations Preserve Regional Accent Across Read and Spontaneous Speech?",
+      "abstract_en": "Regional accent cues can be captured under matched conditions, but it remains unclear whether they persist between read and spontaneous speech. We study RVG1, with 500 German speakers from nine regions, comparing ten speech representations on regional classification and continuous geolocation under matched conditions and speaker-independent read--spontaneous transfer. Whisper performs best under matched conditions, reaching 0.489 nine-way UAR and 148 km median geolocation error, but drops to 0.11/0.18 UAR across transfer directions and 363 km geolocation error. Self-supervised models show a similar degradation, whereas speaker embeddings are less discriminative in-domain but more robust under transfer. This contrast is consistent across classification and geolocation. Across representations, robustness is associated with how little a representation shifts between styles (style-invariance), for which crossstyle speaker retrieval is an interpretable proxy. Age, sex, sentence-overlap, and duration controls do not account for the gap, although channel characteristics contribute. These results show that strong matched-condition performance does not indicate robust regional information.",
+      "authors": [
+        "Paula A. Perez-Toro",
+        "Tomas Arias-Vergara",
+        "Annette Schwarz",
+        "Abner Hernandez",
+        "Andreas Horr",
+        "Cornelia Kristen",
+        "Andreas Maier"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.06430v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-10-05T14:40:50Z",
+      "updated": "2026-10-05T14:40:50Z",
+      "keywords_en": [
+        "whisper"
+      ],
+      "digest_category": "ASR",
+      "category_label": "语音识别",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音识别」方向，核心任务由题目《Do Speech Representations Preserve Regional Accent Across Read and Spontaneous Speech?》所界定。 从摘要看，作者主要围绕 whisper 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Self-supervised models show a similar degradation, whereas speaker embeddings are less discriminative in-domain but more robust under transfer. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：whisper。"
+      }
+    },
+    {
+      "arxiv_id": "2610.06433v1",
+      "title_en": "Lyric: Wave-Domain Computing for Efficient Spoken-Digit Recognition",
+      "abstract_en": "Low-power speech recognition requires reducing audio acquisition and feature-processing costs as well as neural inference. We present Lyric, a speech-recognition front end that uses wave-domain computing to extract features before digitization. Our proposed system uses passive acoustic resonators to separate speech by frequency and supplies their slowly varying envelopes to a compact temporal neural network. This moves spectral filtering into the acoustic structure, reducing the data and processing needed for recognition. We build a prototype and evaluate spoken-digit recognition on a speakerdisjoint AudioMNIST split across nine classifier families. The front end acquires 32 times fewer scalar samples than a 16-kHz waveform. In the EdgeSpeechNet-A comparison on a Raspberry Pi 4, we reduce preprocessing-plus-inference latency and estimated processor energy per inference by 98.6%, with a 3.58-percentage-point decrease in accuracy to 95.70%.",
+      "authors": [
+        "Jeeven Balasubramaniam",
+        "Nakul Garg"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.06433v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-10-05T14:43:05Z",
+      "updated": "2026-10-05T14:43:05Z",
+      "keywords_en": [
+        "lyric",
+        "wave-domain",
+        "computing",
+        "efficient",
+        "spoken-digit",
+        "recognition"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Lyric: Wave-Domain Computing for Efficient Spoken-Digit Recognition》所界定。 从摘要看，作者主要围绕 lyric、wave-domain、computing 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We present Lyric, a speech-recognition front end that uses wave-domain computing to extract features before digitization. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：lyric, wave-domain, computing。"
+      }
+    },
+    {
+      "arxiv_id": "2610.06465v1",
+      "title_en": "When Layer Selection Misleads Speech Depression Detection",
+      "abstract_en": "Pretrained speech representations are increasingly used for depression detection, but selecting the best encoder layer on the same data used for evaluation biases reported performance. On DAIC-WOZ, with repeated nested cross-validation across five deep encoder families, naive best-of-25-layer probing inflates AUC by up to $0.09$. On shuffled labels over the \\emph{real} latent representations, naive best-of-25 still reaches AUC $0.59$ versus $0.50$ under nested selection, and this bias grows with the number of probed layers and with smaller samples, isolating selection, not signal, as the cause. The effect replicates on a second clinical corpus and language (Androids, Italian). Under leakage-free selection, a fair comparison across representation families identifies a compact, task-aligned affect--prosody model as competitive with substantially more complex SSL, deep-learning, audio-LLM, and codec-based approaches, while using $\\sim\\!10^{3}\\times$ fewer trainable downstream parameters. Extending the analysis to individual PHQ-8 symptoms shows that the same selection bias persists at this finer-grained level. We argue nested model-selection protocols should be standard when probing encoder layer representations on small clinical speech datasets.",
+      "authors": [
+        "Paula A. Perez-Toro",
+        "David Gimeno-Gómez",
+        "Daniel Rückert",
+        "Andreas Maier"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.06465v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-10-05T14:59:37Z",
+      "updated": "2026-10-05T14:59:37Z",
+      "keywords_en": [
+        "when",
+        "layer",
+        "selection",
+        "misleads",
+        "speech",
+        "depression"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《When Layer Selection Misleads Speech Depression Detection》所界定。 从摘要看，作者主要围绕 when、layer、selection 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Extending the analysis to individual PHQ-8 symptoms shows that the same selection bias persists at this finer-grained level. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：when, layer, selection。"
+      }
+    },
+    {
+      "arxiv_id": "2610.06478v1",
+      "title_en": "Smorph: Playable Sound Morphing with Diffusion Models",
+      "abstract_en": "Sound morphing, generating intermediate sounds that transition from one sonic identity to another, can be a powerful tool for musical sound design. Existing diffusion-based morphing approaches entangle temporal structure and timbral identity, offering no mechanism to hold one fixed while transforming the other. We present smorph, a training-free guidance framework that preserves how a sound behaves over time while transforming what the sound is, allowing users to morph, for instance from brass to strings at a fixed pitch. We demonstrate across three morphing modes: prompt-to-prompt, audio-to-prompt, and audio-to-audio. Evaluations across diverse datasets show that smorph effectively produces smooth morph trajectories while substantially improving temporal-structure and source preservation over baselines, albeit with more conservative target-ward transformation in some settings. In an exploratory case study, musicians found smorph trajectories to be expressive and playable, suggesting structural anchoring can serve as a productive constraint for instrumental interaction.",
+      "authors": [
+        "Annie Chu",
+        "Hugo Flores García",
+        "Johannes Imort",
+        "Oriol Nieto",
+        "Bryan Pardo",
+        "Jordan Rudess",
+        "Prem Seetharaman",
+        "Justin Salamon"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.06478v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-10-05T15:05:29Z",
+      "updated": "2026-10-05T15:05:29Z",
+      "keywords_en": [
+        "smorph",
+        "playable",
+        "sound",
+        "morphing",
+        "with",
+        "diffusion"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Smorph: Playable Sound Morphing with Diffusion Models》所界定。 从摘要看，作者主要围绕 smorph、playable、sound 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We demonstrate across three morphing modes: prompt-to-prompt, audio-to-prompt, and audio-to-audio. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：smorph, playable, sound。"
+      }
+    },
+    {
+      "arxiv_id": "2610.06569v1",
+      "title_en": "Ensemble-Based Perceptual Audio Quality Assessment with Confidence Intervals",
+      "abstract_en": "Objective audio quality metrics typically provide point estimates, whereas listening tests yield score distributions from which mean opinion scores (MOS), confidence intervals (CIs), and significance decisions are derived. We propose a lightweight intrusive metric that combines a PEAQ-style perceptual front-end (ITU-R BS.1387) with a bagging ensemble of regressors. Calibration with subjective data aligns ensemble outputs with listener scores. The resulting item-dependent score distributions enable uncertainty assessment, panel-size-matched CIs, and identification of less conclusive predictions. Calibration improves agreement with subjective distributions and CI coverage across all evaluated datasets while preserving MOS accuracy. Using only 11 fixed PEAQ features, low-capacity regressors, and public training data, the method performs comparably to more data-intensive end-to-end approaches. Its output can support uncertainty-aware assessment and target listening tests towards uncertain conditions. The distributions also enable approximate pairwise comparisons, but not yet reliable significance inference.",
+      "authors": [
+        "Pablo M. Delgado",
+        "Andreas Brendel",
+        "Konstantin Schmidt",
+        "Jürgen Herre"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.06569v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-10-05T15:51:37Z",
+      "updated": "2026-10-05T15:51:37Z",
+      "keywords_en": [
+        "ensemble-based",
+        "perceptual",
+        "audio",
+        "quality",
+        "assessment",
+        "with"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Ensemble-Based Perceptual Audio Quality Assessment with Confidence Intervals》所界定。 从摘要看，作者主要围绕 ensemble-based、perceptual、audio 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Calibration improves agreement with subjective distributions and CI coverage across all evaluated datasets while preserving MOS accuracy. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：ensemble-based, perceptual, audio。"
+      }
+    },
+    {
+      "arxiv_id": "2610.06587v1",
+      "title_en": "Mind the Accent Gap: British Accent Robustness in Speech-Driven Financial Voice Assistants",
+      "abstract_en": "AI voice assistants often use Automatic Speech Recognition (ASR) with LLM-based reasoning, yet existing systems struggle with regional British accents, including Scottish, Irish, and Welsh accents, since most ASR models are trained predominantly on American English voice data. Consequently, errors can carry through to the LLM stage, corrupting tool-call arguments and producing wrong or missing responses, which is especially costly in finance. Deployable ASR must also meet tight latency and memory budgets, making an accent-robust model choice even harder. We introduce CavaBench, the first internally collected benchmark of spoken financial queries, and use it to evaluate a range of ASR models and their end-to-end ASR-LLM pipeline behaviour across self-reported British accents. We find that WER strongly predicts downstream tool-calling accuracy ($r = -0.93$) but can fail to reflect task-level performance, with accent-related failures varying substantially across models and acoustic conditions. These findings guide the design of more inclusive, reliable voice-based financial assistants.",
+      "authors": [
+        "Aadam Haq",
+        "Oggi Rudovic",
+        "Malcolm Chadwick",
+        "Jay Rainey",
+        "Shucong Zhang",
+        "Ricardo Guerrero",
+        "Sourav Bhattacharya",
+        "Maja Pantic"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.06587v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-10-05T16:02:45Z",
+      "updated": "2026-10-05T16:02:45Z",
+      "keywords_en": [
+        "automatic speech recognition",
+        "end-to-end asr"
+      ],
+      "digest_category": "ASR",
+      "category_label": "语音识别",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音识别」方向，核心任务由题目《Mind the Accent Gap: British Accent Robustness in Speech-Driven Financial Voice Assistants》所界定。 从摘要看，作者主要围绕 automatic speech recognition、end-to-end asr 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Consequently, errors can carry through to the LLM stage, corrupting tool-call arguments and producing wrong or missing responses, which is especially costly in finance. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：automatic speech recognition, end-to-end asr。"
+      }
+    },
+    {
+      "arxiv_id": "2610.06632v1",
+      "title_en": "AuraSE: Low-Hallucination Generative Speech Enhancement via Multimodal Flow Matching and Inference Policy Optimization",
+      "abstract_en": "Generative speech enhancement models can produce cleaner and more natural-sounding speech than conventional discriminative approaches, but may hallucinate by changing speech content or speaker identity, even with transcript conditioning. We present AuraSE, a flow-matching framework that addresses hallucination through complementary modality and inference designs. First, a double-stream-to-single-stream multimodal Diffusion Transformer (MMDiT) allows transcript and acoustic representations to interact while preserving a dedicated pathway for the degraded input. Second, we find that the best decoder configuration, governed by guidance scale, sampling temperature, and step count, varies substantially across utterances. This observation motivates Inference Policy Optimization (IPO), an online, on-policy preference optimization method. IPO generates multiple candidates from the current model under different inference configurations, ranks them with a multi-objective reward, and learns from their relative preferences. AuraSE-IPO ranks first on 11 of 12 metrics across the synthetic test sets and obtains the highest DNSMOS and blind-listening scores among the evaluated systems on the real DNS blind test set. At deployment, it uses a fixed $10$-step ODE decoder without classifier-free guidance (CFG) or per-utterance configuration search.",
+      "authors": [
+        "Yingda Shen",
+        "Yao Qian",
+        "Yuxuan Hu",
+        "Junan Zhang",
+        "Yuxiang Wang",
+        "Hardik Hansrajbhai Chauhan",
+        "Yudong Li",
+        "Yufei Xia",
+        "Yufei Liu",
+        "Zhizheng Wu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.06632v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-10-05T16:24:50Z",
+      "updated": "2026-10-05T16:24:50Z",
+      "keywords_en": [
+        "speech enhancement"
+      ],
+      "digest_category": "Enhancement",
+      "category_label": "语音增强",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音增强」方向，核心任务由题目《AuraSE: Low-Hallucination Generative Speech Enhancement via Multimodal Flow Matching and Inference Policy Optimization》所界定。 从摘要看，作者主要围绕 speech enhancement 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We present AuraSE, a flow-matching framework that addresses hallucination through complementary modality and inference designs. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech enhancement。"
+      }
+    },
+    {
+      "arxiv_id": "2610.06691v1",
+      "title_en": "Revisiting Label-Free Speaker Embedding Enhancement with vMF Profile Likelihood",
+      "abstract_en": "Embedding enhancement improves speaker verification under acoustic mismatch without modifying a frozen backbone. Recent work has established a practical label-free setting for this task, but often adopts increasingly structured formulations. Here, the clean target is directly observed during training, making enhancement a matching problem on the unit hypersphere. We model the clean target with a von Mises--Fisher (vMF) likelihood and profile out a sample-wise concentration parameter, yielding a simple closed-form objective with adaptive weighting. Across VoxCeleb1, VoxSRC23, CN-Celeb, VOiCES, and VC-Mix, the proposed method largely preserves the baseline and gives clearer gains on challenging mismatch sets. It also remains stable under a broad single-view recipe, where a recent diffusion baseline becomes less reliable in controlled comparisons. These results suggest that effective label-free embedding enhancement in this setting does not require a highly structured formulation.",
+      "authors": [
+        "Seunghwan Kim",
+        "Jinyong Kim",
+        "Sooyoung Yang",
+        "Youngjin Ko",
+        "Myungjoo Kang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.06691v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-10-05T16:53:39Z",
+      "updated": "2026-10-05T16:53:39Z",
+      "keywords_en": [
+        "speaker verification"
+      ],
+      "digest_category": "Paralinguistics",
+      "category_label": "副语言学",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「副语言学」方向，核心任务由题目《Revisiting Label-Free Speaker Embedding Enhancement with vMF Profile Likelihood》所界定。 从摘要看，作者主要围绕 speaker verification 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Embedding enhancement improves speaker verification under acoustic mismatch without modifying a frozen backbone. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speaker verification。"
+      }
+    },
+    {
+      "arxiv_id": "2610.06817v1",
+      "title_en": "Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice Text-to-Speech Model",
+      "abstract_en": "We distill Kokoro-82M, a widely used open text-to-speech model with 54 voices, into Paradee, an 8.07M-parameter model that speaks one of them. Paradee keeps Kokoro's architecture with much narrower layers, and each of its two halves is trained separately against the frozen teacher. It has 10x fewer parameters and needs 15x less compute. We first synthesize a corpus with the teacher and keep its durations, pitch, energy and phoneme features. We then train a small text side to predict these values, and a small decoder to turn the teacher's saved values into the teacher's audio, first with spectral losses and then adversarially. Finally, we connect the two halves and quantize the weights to int8. It needs no alignment learning and no joint training, and it runs on one laptop. Stored in int8, Paradee is 8.5 MB, runs 25x faster than real time on one CPU thread, and scores 4.41 on UTMOS against the teacher's 4.52. The student initially kept a slight buzz, which we trace to the phase of voiced speech between 2 and 8 kHz. A phase-locking filter applied after synthesis removes most of it, with no training and no extra parameters. Code, model files and audio samples are at https://github.com/sahilmahendrakar/paradee",
+      "authors": [
+        "Sahil Mahendrakar"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.06817v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-10-05T17:56:07Z",
+      "updated": "2026-10-05T17:56:07Z",
+      "keywords_en": [
+        "text-to-speech"
+      ],
+      "digest_category": "TTS",
+      "category_label": "语音合成",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音合成」方向，核心任务由题目《Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice Text-to-Speech Model》所界定。 从摘要看，作者主要围绕 text-to-speech 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Paradee keeps Kokoro's architecture with much narrower layers, and each of its two halves is trained separately against the frozen teacher. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：text-to-speech。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [
+      {
+        "arxiv_id": "2610.06430v1",
+        "title_en": "Do Speech Representations Preserve Regional Accent Across Read and Spontaneous Speech?",
+        "abstract_en": "Regional accent cues can be captured under matched conditions, but it remains unclear whether they persist between read and spontaneous speech. We study RVG1, with 500 German speakers from nine regions, comparing ten speech representations on regional classification and continuous geolocation under matched conditions and speaker-independent read--spontaneous transfer. Whisper performs best under matched conditions, reaching 0.489 nine-way UAR and 148 km median geolocation error, but drops to 0.11/0.18 UAR across transfer directions and 363 km geolocation error. Self-supervised models show a similar degradation, whereas speaker embeddings are less discriminative in-domain but more robust under transfer. This contrast is consistent across classification and geolocation. Across representations, robustness is associated with how little a representation shifts between styles (style-invariance), for which crossstyle speaker retrieval is an interpretable proxy. Age, sex, sentence-overlap, and duration controls do not account for the gap, although channel characteristics contribute. These results show that strong matched-condition performance does not indicate robust regional information.",
+        "authors": [
+          "Paula A. Perez-Toro",
+          "Tomas Arias-Vergara",
+          "Annette Schwarz",
+          "Abner Hernandez",
+          "Andreas Horr",
+          "Cornelia Kristen",
+          "Andreas Maier"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.06430v1",
+        "primary_category": "cs.CL",
+        "source_categories": [
+          "cs.CL",
+          "cs.SD"
+        ],
+        "published": "2026-10-05T14:40:50Z",
+        "updated": "2026-10-05T14:40:50Z",
+        "keywords_en": [
+          "whisper"
+        ],
+        "digest_category": "ASR",
+        "category_label": "语音识别",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音识别」方向，核心任务由题目《Do Speech Representations Preserve Regional Accent Across Read and Spontaneous Speech?》所界定。 从摘要看，作者主要围绕 whisper 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Self-supervised models show a similar degradation, whereas speaker embeddings are less discriminative in-domain but more robust under transfer. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：whisper。"
+        }
+      },
+      {
+        "arxiv_id": "2610.06587v1",
+        "title_en": "Mind the Accent Gap: British Accent Robustness in Speech-Driven Financial Voice Assistants",
+        "abstract_en": "AI voice assistants often use Automatic Speech Recognition (ASR) with LLM-based reasoning, yet existing systems struggle with regional British accents, including Scottish, Irish, and Welsh accents, since most ASR models are trained predominantly on American English voice data. Consequently, errors can carry through to the LLM stage, corrupting tool-call arguments and producing wrong or missing responses, which is especially costly in finance. Deployable ASR must also meet tight latency and memory budgets, making an accent-robust model choice even harder. We introduce CavaBench, the first internally collected benchmark of spoken financial queries, and use it to evaluate a range of ASR models and their end-to-end ASR-LLM pipeline behaviour across self-reported British accents. We find that WER strongly predicts downstream tool-calling accuracy ($r = -0.93$) but can fail to reflect task-level performance, with accent-related failures varying substantially across models and acoustic conditions. These findings guide the design of more inclusive, reliable voice-based financial assistants.",
+        "authors": [
+          "Aadam Haq",
+          "Oggi Rudovic",
+          "Malcolm Chadwick",
+          "Jay Rainey",
+          "Shucong Zhang",
+          "Ricardo Guerrero",
+          "Sourav Bhattacharya",
+          "Maja Pantic"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.06587v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.SD"
+        ],
+        "published": "2026-10-05T16:02:45Z",
+        "updated": "2026-10-05T16:02:45Z",
+        "keywords_en": [
+          "automatic speech recognition",
+          "end-to-end asr"
+        ],
+        "digest_category": "ASR",
+        "category_label": "语音识别",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音识别」方向，核心任务由题目《Mind the Accent Gap: British Accent Robustness in Speech-Driven Financial Voice Assistants》所界定。 从摘要看，作者主要围绕 automatic speech recognition、end-to-end asr 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Consequently, errors can carry through to the LLM stage, corrupting tool-call arguments and producing wrong or missing responses, which is especially costly in finance. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性偏低。缩写、设定或实验细节较多，首次浏览成本偏高。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：automatic speech recognition, end-to-end asr。"
+        }
+      }
+    ],
+    "TTS": [
+      {
+        "arxiv_id": "2610.06817v1",
+        "title_en": "Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice Text-to-Speech Model",
+        "abstract_en": "We distill Kokoro-82M, a widely used open text-to-speech model with 54 voices, into Paradee, an 8.07M-parameter model that speaks one of them. Paradee keeps Kokoro's architecture with much narrower layers, and each of its two halves is trained separately against the frozen teacher. It has 10x fewer parameters and needs 15x less compute. We first synthesize a corpus with the teacher and keep its durations, pitch, energy and phoneme features. We then train a small text side to predict these values, and a small decoder to turn the teacher's saved values into the teacher's audio, first with spectral losses and then adversarially. Finally, we connect the two halves and quantize the weights to int8. It needs no alignment learning and no joint training, and it runs on one laptop. Stored in int8, Paradee is 8.5 MB, runs 25x faster than real time on one CPU thread, and scores 4.41 on UTMOS against the teacher's 4.52. The student initially kept a slight buzz, which we trace to the phase of voiced speech between 2 and 8 kHz. A phase-locking filter applied after synthesis removes most of it, with no training and no extra parameters. Code, model files and audio samples are at https://github.com/sahilmahendrakar/paradee",
+        "authors": [
+          "Sahil Mahendrakar"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.06817v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.LG",
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-10-05T17:56:07Z",
+        "updated": "2026-10-05T17:56:07Z",
+        "keywords_en": [
+          "text-to-speech"
+        ],
+        "digest_category": "TTS",
+        "category_label": "语音合成",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音合成」方向，核心任务由题目《Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice Text-to-Speech Model》所界定。 从摘要看，作者主要围绕 text-to-speech 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Paradee keeps Kokoro's architecture with much narrower layers, and each of its two halves is trained separately against the frozen teacher. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：text-to-speech。"
+        }
+      }
+    ],
+    "Enhancement": [
+      {
+        "arxiv_id": "2610.06632v1",
+        "title_en": "AuraSE: Low-Hallucination Generative Speech Enhancement via Multimodal Flow Matching and Inference Policy Optimization",
+        "abstract_en": "Generative speech enhancement models can produce cleaner and more natural-sounding speech than conventional discriminative approaches, but may hallucinate by changing speech content or speaker identity, even with transcript conditioning. We present AuraSE, a flow-matching framework that addresses hallucination through complementary modality and inference designs. First, a double-stream-to-single-stream multimodal Diffusion Transformer (MMDiT) allows transcript and acoustic representations to interact while preserving a dedicated pathway for the degraded input. Second, we find that the best decoder configuration, governed by guidance scale, sampling temperature, and step count, varies substantially across utterances. This observation motivates Inference Policy Optimization (IPO), an online, on-policy preference optimization method. IPO generates multiple candidates from the current model under different inference configurations, ranks them with a multi-objective reward, and learns from their relative preferences. AuraSE-IPO ranks first on 11 of 12 metrics across the synthetic test sets and obtains the highest DNSMOS and blind-listening scores among the evaluated systems on the real DNS blind test set. At deployment, it uses a fixed $10$-step ODE decoder without classifier-free guidance (CFG) or per-utterance configuration search.",
+        "authors": [
+          "Yingda Shen",
+          "Yao Qian",
+          "Yuxuan Hu",
+          "Junan Zhang",
+          "Yuxiang Wang",
+          "Hardik Hansrajbhai Chauhan",
+          "Yudong Li",
+          "Yufei Xia",
+          "Yufei Liu",
+          "Zhizheng Wu"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.06632v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.SD"
+        ],
+        "published": "2026-10-05T16:24:50Z",
+        "updated": "2026-10-05T16:24:50Z",
+        "keywords_en": [
+          "speech enhancement"
+        ],
+        "digest_category": "Enhancement",
+        "category_label": "语音增强",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音增强」方向，核心任务由题目《AuraSE: Low-Hallucination Generative Speech Enhancement via Multimodal Flow Matching and Inference Policy Optimization》所界定。 从摘要看，作者主要围绕 speech enhancement 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We present AuraSE, a flow-matching framework that addresses hallucination through complementary modality and inference designs. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speech enhancement。"
+        }
+      }
+    ],
+    "SLU": [],
+    "Paralinguistics": [
+      {
+        "arxiv_id": "2610.06691v1",
+        "title_en": "Revisiting Label-Free Speaker Embedding Enhancement with vMF Profile Likelihood",
+        "abstract_en": "Embedding enhancement improves speaker verification under acoustic mismatch without modifying a frozen backbone. Recent work has established a practical label-free setting for this task, but often adopts increasingly structured formulations. Here, the clean target is directly observed during training, making enhancement a matching problem on the unit hypersphere. We model the clean target with a von Mises--Fisher (vMF) likelihood and profile out a sample-wise concentration parameter, yielding a simple closed-form objective with adaptive weighting. Across VoxCeleb1, VoxSRC23, CN-Celeb, VOiCES, and VC-Mix, the proposed method largely preserves the baseline and gives clearer gains on challenging mismatch sets. It also remains stable under a broad single-view recipe, where a recent diffusion baseline becomes less reliable in controlled comparisons. These results suggest that effective label-free embedding enhancement in this setting does not require a highly structured formulation.",
+        "authors": [
+          "Seunghwan Kim",
+          "Jinyong Kim",
+          "Sooyoung Yang",
+          "Youngjin Ko",
+          "Myungjoo Kang"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.06691v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.LG",
+          "cs.SD"
+        ],
+        "published": "2026-10-05T16:53:39Z",
+        "updated": "2026-10-05T16:53:39Z",
+        "keywords_en": [
+          "speaker verification"
+        ],
+        "digest_category": "Paralinguistics",
+        "category_label": "副语言学",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「副语言学」方向，核心任务由题目《Revisiting Label-Free Speaker Embedding Enhancement with vMF Profile Likelihood》所界定。 从摘要看，作者主要围绕 speaker verification 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Embedding enhancement improves speaker verification under acoustic mismatch without modifying a frozen backbone. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：speaker verification。"
+        }
+      }
+    ],
+    "Audio": [
+      {
+        "arxiv_id": "2610.06433v1",
+        "title_en": "Lyric: Wave-Domain Computing for Efficient Spoken-Digit Recognition",
+        "abstract_en": "Low-power speech recognition requires reducing audio acquisition and feature-processing costs as well as neural inference. We present Lyric, a speech-recognition front end that uses wave-domain computing to extract features before digitization. Our proposed system uses passive acoustic resonators to separate speech by frequency and supplies their slowly varying envelopes to a compact temporal neural network. This moves spectral filtering into the acoustic structure, reducing the data and processing needed for recognition. We build a prototype and evaluate spoken-digit recognition on a speakerdisjoint AudioMNIST split across nine classifier families. The front end acquires 32 times fewer scalar samples than a 16-kHz waveform. In the EdgeSpeechNet-A comparison on a Raspberry Pi 4, we reduce preprocessing-plus-inference latency and estimated processor energy per inference by 98.6%, with a 3.58-percentage-point decrease in accuracy to 95.70%.",
+        "authors": [
+          "Jeeven Balasubramaniam",
+          "Nakul Garg"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.06433v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-10-05T14:43:05Z",
+        "updated": "2026-10-05T14:43:05Z",
+        "keywords_en": [
+          "lyric",
+          "wave-domain",
+          "computing",
+          "efficient",
+          "spoken-digit",
+          "recognition"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Lyric: Wave-Domain Computing for Efficient Spoken-Digit Recognition》所界定。 从摘要看，作者主要围绕 lyric、wave-domain、computing 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We present Lyric, a speech-recognition front end that uses wave-domain computing to extract features before digitization. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：lyric, wave-domain, computing。"
+        }
+      },
+      {
+        "arxiv_id": "2610.06465v1",
+        "title_en": "When Layer Selection Misleads Speech Depression Detection",
+        "abstract_en": "Pretrained speech representations are increasingly used for depression detection, but selecting the best encoder layer on the same data used for evaluation biases reported performance. On DAIC-WOZ, with repeated nested cross-validation across five deep encoder families, naive best-of-25-layer probing inflates AUC by up to $0.09$. On shuffled labels over the \\emph{real} latent representations, naive best-of-25 still reaches AUC $0.59$ versus $0.50$ under nested selection, and this bias grows with the number of probed layers and with smaller samples, isolating selection, not signal, as the cause. The effect replicates on a second clinical corpus and language (Androids, Italian). Under leakage-free selection, a fair comparison across representation families identifies a compact, task-aligned affect--prosody model as competitive with substantially more complex SSL, deep-learning, audio-LLM, and codec-based approaches, while using $\\sim\\!10^{3}\\times$ fewer trainable downstream parameters. Extending the analysis to individual PHQ-8 symptoms shows that the same selection bias persists at this finer-grained level. We argue nested model-selection protocols should be standard when probing encoder layer representations on small clinical speech datasets.",
+        "authors": [
+          "Paula A. Perez-Toro",
+          "David Gimeno-Gómez",
+          "Daniel Rückert",
+          "Andreas Maier"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.06465v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "eess.AS"
+        ],
+        "published": "2026-10-05T14:59:37Z",
+        "updated": "2026-10-05T14:59:37Z",
+        "keywords_en": [
+          "when",
+          "layer",
+          "selection",
+          "misleads",
+          "speech",
+          "depression"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《When Layer Selection Misleads Speech Depression Detection》所界定。 从摘要看，作者主要围绕 when、layer、selection 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Extending the analysis to individual PHQ-8 symptoms shows that the same selection bias persists at this finer-grained level. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：when, layer, selection。"
+        }
+      },
+      {
+        "arxiv_id": "2610.06478v1",
+        "title_en": "Smorph: Playable Sound Morphing with Diffusion Models",
+        "abstract_en": "Sound morphing, generating intermediate sounds that transition from one sonic identity to another, can be a powerful tool for musical sound design. Existing diffusion-based morphing approaches entangle temporal structure and timbral identity, offering no mechanism to hold one fixed while transforming the other. We present smorph, a training-free guidance framework that preserves how a sound behaves over time while transforming what the sound is, allowing users to morph, for instance from brass to strings at a fixed pitch. We demonstrate across three morphing modes: prompt-to-prompt, audio-to-prompt, and audio-to-audio. Evaluations across diverse datasets show that smorph effectively produces smooth morph trajectories while substantially improving temporal-structure and source preservation over baselines, albeit with more conservative target-ward transformation in some settings. In an exploratory case study, musicians found smorph trajectories to be expressive and playable, suggesting structural anchoring can serve as a productive constraint for instrumental interaction.",
+        "authors": [
+          "Annie Chu",
+          "Hugo Flores García",
+          "Johannes Imort",
+          "Oriol Nieto",
+          "Bryan Pardo",
+          "Jordan Rudess",
+          "Prem Seetharaman",
+          "Justin Salamon"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.06478v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-10-05T15:05:29Z",
+        "updated": "2026-10-05T15:05:29Z",
+        "keywords_en": [
+          "smorph",
+          "playable",
+          "sound",
+          "morphing",
+          "with",
+          "diffusion"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Smorph: Playable Sound Morphing with Diffusion Models》所界定。 从摘要看，作者主要围绕 smorph、playable、sound 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We demonstrate across three morphing modes: prompt-to-prompt, audio-to-prompt, and audio-to-audio. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：smorph, playable, sound。"
+        }
+      },
+      {
+        "arxiv_id": "2610.06569v1",
+        "title_en": "Ensemble-Based Perceptual Audio Quality Assessment with Confidence Intervals",
+        "abstract_en": "Objective audio quality metrics typically provide point estimates, whereas listening tests yield score distributions from which mean opinion scores (MOS), confidence intervals (CIs), and significance decisions are derived. We propose a lightweight intrusive metric that combines a PEAQ-style perceptual front-end (ITU-R BS.1387) with a bagging ensemble of regressors. Calibration with subjective data aligns ensemble outputs with listener scores. The resulting item-dependent score distributions enable uncertainty assessment, panel-size-matched CIs, and identification of less conclusive predictions. Calibration improves agreement with subjective distributions and CI coverage across all evaluated datasets while preserving MOS accuracy. Using only 11 fixed PEAQ features, low-capacity regressors, and public training data, the method performs comparably to more data-intensive end-to-end approaches. Its output can support uncertainty-aware assessment and target listening tests towards uncertain conditions. The distributions also enable approximate pairwise comparisons, but not yet reliable significance inference.",
+        "authors": [
+          "Pablo M. Delgado",
+          "Andreas Brendel",
+          "Konstantin Schmidt",
+          "Jürgen Herre"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.06569v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "cs.SD",
+          "eess.AS"
+        ],
+        "published": "2026-10-05T15:51:37Z",
+        "updated": "2026-10-05T15:51:37Z",
+        "keywords_en": [
+          "ensemble-based",
+          "perceptual",
+          "audio",
+          "quality",
+          "assessment",
+          "with"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Ensemble-Based Perceptual Audio Quality Assessment with Confidence Intervals》所界定。 从摘要看，作者主要围绕 ensemble-based、perceptual、audio 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Calibration improves agreement with subjective distributions and CI coverage across all evaluated datasets while preserving MOS accuracy. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：ensemble-based, perceptual, audio。"
+        }
+      }
+    ]
+  },
+  "model_name": "deepseek-v3"
+}
