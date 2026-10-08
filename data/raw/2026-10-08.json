@@ -1,0 +1,141 @@
+{
+  "window": {
+    "start": "2026-10-07T14:37:42.271726+08:00",
+    "end": "2026-10-08T14:43:25.391507+08:00"
+  },
+  "fetched_count": 8,
+  "deduplicated_count": 6,
+  "new_count": 6,
+  "papers": [
+    {
+      "arxiv_id": "2610.10208v1",
+      "title_en": "CARES: A Controlled Synthetic Benchmark of Speaker Reactions to Sound",
+      "abstract_en": "Automatic audio scene description turns a recording into a text account of a situation. One difficulty is deciding which elements of the audio should be kept, since a description cannot include them all. Annotators disagree about this, making a ground truth hard to obtain. In this work, we first define the ground truth, then generate the data. We focus on audio events and define sound salience with a simple rule: a sound is salient when a speaker audibly reacts to it. For scale and variety, a controlled set of scenarios fixes the ground truth, and a language model writes the dialogues. The resulting corpus, CARES, contains 10,000 two-speaker scenes. We then benchmark six audio-language models on three tasks: identifying the scene, tagging the sounds present, and classifying reactions. We show that these models hear the sounds but miss how the speakers react to them.",
+      "authors": [
+        "Marcel Gibier",
+        "Thomas Thebaud",
+        "Olivier Boëffard",
+        "Jean-François Bonastre"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.10208v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-10-07T15:05:59Z",
+      "updated": "2026-10-07T15:05:59Z"
+    },
+    {
+      "arxiv_id": "2610.10240v1",
+      "title_en": "Benchmarking Adult Addressee Classification Across Child- and Adult-Directed Speech Datasets",
+      "abstract_en": "In this work, we present a comprehensive analysis of classification performance for distinguishing child-directed speech (CDS) from adult-directed speech (ADS) using speech data from corpora containing natural in-lab and in-the-wild CDS and ADS. We establish classification benchmarks for these datasets using self-supervised learning (SSL) representations, along with a range of time-pooled representations that go beyond first- and second-order statistics by incorporating cross-channel covariances in high-dimensional embeddings. In addition, we probe these representations to examine how different pooling methods capture prosodic information using linear probes. Overall, SSL-based representations prove particularly effective, achieving the best performance, while different pooling methods offer complementary advantages for the task.",
+      "authors": [
+        "Sofoklis Kakouros",
+        "Daniil Kocharov",
+        "Okko Räsänen"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.10240v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-10-07T15:23:36Z",
+      "updated": "2026-10-07T15:23:36Z"
+    },
+    {
+      "arxiv_id": "2610.10264v1",
+      "title_en": "CrossEdit: Cross-Modal Training Enables Rich Audio-Visual Editing",
+      "abstract_en": "Multimedia editing requires generative models to interpret complex, compositional instructions and modify only the desired elements across modalities, a capability largely beyond existing systems. Current approaches are typically limited to simple, single-attribute edits within one modality, since diverse, high-quality editing pairs are hard to obtain, especially for cross-modal tasks where aligned audiovisual (AV) data is scarce. We present CrossEdit, a unified omni-modal editing model for images, audio, and video that performs AV movie scene edits zero-shot through cross-modal transfer. Our key observation is that complex instruction-following, once learned in any modality, generalizes to others. We exploit the additive nature of acoustic signals to procedurally generate large-scale audio editing pairs with compositional instructions, and show that fine-tuning on this synthetic data and self-supervised AV masked reconstruction, alongside a targeted set of curated cross-modal tasks, induces instruction-following that transfers zero-shot to unseen modality and instruction combinations. To evaluate this capability, we release CrossEditBench, a human-annotated benchmark of AV edits on movie scenes, and propose AV-FES, a metric that jointly scores instruction following and consistency. We show that our proposed techniques improve performance on zero-shot AV movie scene editing, while maintaining or improving performance on lip-synced speech editing and standard image, video, and audio editing benchmarks. Demos are available at https://wanchichen.github.io/crossedit/.",
+      "authors": [
+        "William Chen",
+        "Prem Seetharaman",
+        "Ke Chen",
+        "Oriol Nieto",
+        "Kevin Duarte",
+        "Siddharth Srinivasan Iyer",
+        "Mamshad Nayeem Rizve",
+        "Zhiwen Cao",
+        "Shinji Watanabe",
+        "Yuanjun Xiong",
+        "Jianming Zhang",
+        "Zeyu Jin",
+        "Justin Salamon"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.10264v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS",
+        "eess.IV"
+      ],
+      "published": "2026-10-07T15:36:56Z",
+      "updated": "2026-10-07T15:36:56Z"
+    },
+    {
+      "arxiv_id": "2610.10355v1",
+      "title_en": "MIRA: A Musical Intent Refinement Agent for Aligning Text-to-Music Generation with User Intent",
+      "abstract_en": "Text-to-music systems produce increasingly convincing audio, yet evaluation reveals little about whether the result matches user intent. A global text-audio relevance score can overlook the implicit intent in underspecified prompts and mask failures in specific requirements, such as instrumentation, structure, rhythm, or mood progression. To bridge this gap, we formulate text-to-music intent alignment as satisfying a per-request rubric of independently verifiable items covering both a request's explicit requirements and its implied musical intent. Scoring items individually makes evaluation diagnostic by intent source and musical dimension, rather than a single opaque score. We instantiate this as MuRA-Bench, a benchmark of real-world platform requests curated by music experts. We further propose MIRA (Musical Intent Refinement Agent), a test-time agent that first grounds a request's intent into rubrics, then searches over prompt revisions for a black-box generator under a bounded budget, iteratively generating music, verifying it against the rubrics, and using this feedback to guide a trajectory-aware tree search. Experiments across open-source and commercial backends show that MIRA improves intent alignment, enabling an open-source generator to achieve performance comparable to representative commercial systems (e.g. Suno and Mureka). Project page: https://mirareview.github.io/.",
+      "authors": [
+        "Zekai Liu",
+        "Zhilin Wang",
+        "Xuzheng He",
+        "Yu Cheng",
+        "Yang Yang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.10355v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-10-07T16:29:46Z",
+      "updated": "2026-10-07T16:29:46Z"
+    },
+    {
+      "arxiv_id": "2610.10415v1",
+      "title_en": "Steerspeech: Activation Steering For Emotion Control In Generated Speech",
+      "abstract_en": "Pretrained text-to-speech (TTS) models can generate expressive speech, but reliable inference-time emotion control remains challenging: prompts and reference audio offer coarse, inconsistent control, whereas specialized conditioning and model adaptation require costly training. We present SteerSpeech, a lightweight activation-steering framework that controls emotion by injecting steering vectors into hidden activations. For each target emotion we train a lightweight low-rank transform, using a multi-expert objective that encourages monotonic emotion control while preserving speaker identity and linguistic content, constraining steering drift, and keeping the TTS backbone frozen. To optimize through discrete speech tokens, we introduce a two-pass generation-and-replay pipeline using a straight-through estimator to backpropagate expert supervision through sampled tokens. At inference, a target-emotion steering direction is optimized with its respective transform and injected into the base TTS model. Objective and subjective evaluations with Qwen3-TTS across seen, unseen, and accented speakers show stronger continuous emotion control with limited speaker and content degradation. SteerSpeech achieves 1.08x-7.12x baseline target-emotion scores and for a representative emotion subjectively, it receives 78.1%-96.8% intensity preference and 1.43x-1.46x speaker-identity preservation at high steering strengths.",
+      "authors": [
+        "Afsara Benazir",
+        "Darius Pétermann",
+        "Felix Xiaozhu Lin",
+        "Salar Rahili"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.10415v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.LG",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-10-07T16:56:56Z",
+      "updated": "2026-10-07T16:56:56Z"
+    },
+    {
+      "arxiv_id": "2610.10517v1",
+      "title_en": "Unsupervised Maneuver-Aware Acoustic Fault Detection for Autonomous Drones",
+      "abstract_en": "This paper presents a maneuver-aware acoustic fault detection framework for autonomous drones that integrates Noise2Noise-inspired deep learning denoising with maneuver-conditioned reconstruction. A key practical constraint motivating this work is that labeled faulty-flight data are difficult and potentially unsafe to collect; the proposed framework therefore follows an unsupervised learning paradigm in which only nominal flight recordings are required for training. In flight environments, acoustic signals acquired from unmanned aerial vehicles are subject to variability arising both from environmental noise and from structured, maneuver-dependent aerodynamic effects. To address these challenges simultaneously, a two-stage learning architecture is developed. In the first stage, a Noise2Noise-inspired denoising model attenuates stochastic acoustic noise while preserving fault-relevant spectral-temporal structures, without requiring clean reference signals. In the second stage, a maneuver-Conditioned Convolutional AutoEncoder (maneuver-CCAE) is trained using maneuver-related labels including drone type and flight direction to model nominal acoustic behavior under varying operating conditions. Fault detection is subsequently performed using reconstruction error as an anomaly score. Experimental results demonstrate that the proposed maneuver-aware conditioning raises the area under the ROC curve (AUC) from $\\AUCaeOnly$ (unconditioned baseline) to $\\AUCfull$ (full model), validating the critical role of maneuver-dependent modeling. The complete framework is deployed on an NVIDIA Jetson Orin Nano Super embedded platform within a ROS2 pipeline, achieving an end-to-end fault detection latency of approximately $20\\,\\text{ms}$ per audio segment with a TensorRT half-precision (FP16) backend, confirming real-time viability for onboard UAV health monitoring.",
+      "authors": [
+        "Ali M Ali",
+        "Ziyi Tang",
+        "Nurdaulet Nazarbay",
+        "Hashim A. Hashim"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.10517v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD",
+        "eess.SY"
+      ],
+      "published": "2026-10-07T17:55:09Z",
+      "updated": "2026-10-07T17:55:09Z"
+    }
+  ]
+}
