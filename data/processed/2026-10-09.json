@@ -1,0 +1,310 @@
+{
+  "generated_at": "2026-10-09T14:51:00.054432+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-10-08T14:43:25.391507+08:00",
+    "end": "2026-10-09T14:50:53.552710+08:00",
+    "start_display": "2026-10-08 14:43:25 CST",
+    "end_display": "2026-10-09 14:50:53 CST"
+  },
+  "summary": {
+    "total": 4,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 0,
+      "TTS": 0,
+      "Enhancement": 1,
+      "SLU": 0,
+      "Paralinguistics": 0,
+      "Audio": 3
+    },
+    "headline": "今日共收录 4 篇新论文，主要分布在 Enhancement 1, Audio 3。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-10-09-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2610.12201v1",
+      "title_en": "SteerablePlex: Can We Steer Full-Duplex Models?",
+      "abstract_en": "Full-duplex speech models can listen and speak simultaneously, enabling natural interaction, but become increasingly difficult to control as the conversation history grows. When used as user simulators, this lack of control can cause them to deviate from prescribed scenarios and produce unreliable evaluation outcomes. We introduce SimIF-Bench (Simulator Instruction-Following Benchmark), which evaluates whether a conversational model stays within a prescribed scenario and completes multiple goals in the required order. The benchmark reveals that current open-source full-duplex models struggle to follow such constraints. We then introduce a Group Reward-Decoupled Normalization Policy Optimization (GDPO)-based training recipe that enables a full-duplex model to follow textual instructions during an ongoing conversation while maintaining its turn-taking ability. By connecting the resulting SteerablePlex to an asynchronous backend language model that monitors the conversation and provides instructions when needed, we build a more controllable full-duplex user simulator that follows multi-stage constraints more reliably than existing open-source models and GPT-Realtime.",
+      "authors": [
+        "Haolong Zheng",
+        "Maike Züfle",
+        "Dominik Macháček",
+        "Peter Polák",
+        "Xulin Fan",
+        "Xavier Sumba",
+        "Siyin Wang",
+        "Ondřej Klejch",
+        "Mark Hasegawa-Johnson"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.12201v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-10-08T15:56:28Z",
+      "updated": "2026-10-08T15:56:28Z",
+      "keywords_en": [
+        "steerableplex",
+        "steer",
+        "full-duplex",
+        "models",
+        "speech"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《SteerablePlex: Can We Steer Full-Duplex Models?》所界定。 从摘要看，作者主要围绕 steerableplex、steer、full-duplex 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：When used as user simulators, this lack of control can cause them to deviate from prescribed scenarios and produce unreliable evaluation outcomes. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：steerableplex, steer, full-duplex。"
+      }
+    },
+    {
+      "arxiv_id": "2610.12214v1",
+      "title_en": "DiffuPlex: Accelerating Full-Duplex Spoken Dialog Models via Rolling Masked Diffusion",
+      "abstract_en": "Recent full-duplex spoken dialog models enable simultaneous listening and speaking, but fine-grained models still advance their backbone autoregressively at every interaction frame. We introduce DiffuPlex, a rolling masked diffusion framework that reduces this sequential computation by predicting multiple future user and assistant frames in a single backbone wake. DiffuPlex consumes only a confident prefix of each predicted future while interaction continues at the original frame rate. As user speech arrives, it checks the corresponding user predictions and, when the interaction diverges, preserves already played assistant content while revising only the unplayed future. We consider two inference policies over the same predictor: DiffuPlex-LISTEN consumes multiple future frames when they predict assistant silence, whereas DiffuPlex-SPEAK can also consume predicted assistant speech. Across full-duplex interaction and spoken-language evaluations, DiffuPlex substantially reduces sequential backbone computation while largely preserving interaction behavior and general capability. DiffuPlex-LISTEN and DiffuPlex-SPEAK achieve $1.46\\times$ and $1.59\\times$ deployment-path wall-clock speedups and $1.61\\times$ and $1.80\\times$ Core LM speedups, with all measured backbone invocations completing within the 80ms interaction interval. Human evaluation shows that LISTEN preserves speech naturalness and conversational quality, while SPEAK retains conversational quality with some degradation in speech naturalness.",
+      "authors": [
+        "Heeseung Kim"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.12214v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-10-08T16:01:37Z",
+      "updated": "2026-10-08T16:01:37Z",
+      "keywords_en": [
+        "diffuplex",
+        "accelerating",
+        "full-duplex",
+        "spoken",
+        "dialog",
+        "models"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《DiffuPlex: Accelerating Full-Duplex Spoken Dialog Models via Rolling Masked Diffusion》所界定。 从摘要看，作者主要围绕 diffuplex、accelerating、full-duplex 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：DiffuPlex-LISTEN and DiffuPlex-SPEAK achieve $1.46\\times$ and $1.59\\times$ deployment-path wall-clock speedups and $1.61\\times$ and $1.80\\times$ Core LM speedups, with all measured backbone invocations completing within the 80ms interaction interval. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：diffuplex, accelerating, full-duplex。"
+      }
+    },
+    {
+      "arxiv_id": "2610.12248v1",
+      "title_en": "EgoVoice: Proactive Spoken Assistance from Egocentric Multimodal Streams",
+      "abstract_en": "Wearable augmented reality (AR) assistants are moving toward continuous real-world interaction, where they perceive the user's activity through first-person video and audio and provide timely spoken guidance without being explicitly asked. While proactive video assistants, spoken dialog systems, and egocentric task understanding have each advanced rapidly, existing systems do not address the joint problem of deciding when to speak and what to say from continuous first-person streams. We introduce EgoVoice, a framework for training and evaluating proactive egocentric spoken assistants. From HoloAssist video recordings of real human instructors, we construct clean audio streams through source separation and speech resynthesis, and convert each video session into a format where the model must decide at each moment whether to remain silent or provide spoken guidance. We fine-tune an omni-modal LLM with our data, and further improve its proactive intervention behavior with direct preference optimization. Experiments across closed and open-source models show that existing systems rarely produce well-timed, meaningful proactive interventions, while EgoVoice yields clear improvements in intervention timing, content relevance, and human preference over the zero-shot backbone.",
+      "authors": [
+        "Heeseung Kim"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.12248v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.CV",
+        "cs.SD"
+      ],
+      "published": "2026-10-08T16:24:12Z",
+      "updated": "2026-10-08T16:24:12Z",
+      "keywords_en": [
+        "source separation"
+      ],
+      "digest_category": "Enhancement",
+      "category_label": "语音增强",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「语音增强」方向，核心任务由题目《EgoVoice: Proactive Spoken Assistance from Egocentric Multimodal Streams》所界定。 从摘要看，作者主要围绕 source separation 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We fine-tune an omni-modal LLM with our data, and further improve its proactive intervention behavior with direct preference optimization. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：source separation。"
+      }
+    },
+    {
+      "arxiv_id": "2610.12250v1",
+      "title_en": "How Much Audio Is Left In An Embedding? An Inversion Audit Of Audio Encoders",
+      "abstract_en": "Pretrained audio encoders are reused for downstream tasks that are often unknown when the encoder is trained, so their usefulness depends partly on which signal properties survive the pretext objective. We study this retained information through paired source reconstruction. Using a shared Stable Audio Open latent diffusion decoder, we reconstruct five-second, 44.1-kHz stereo music from frozen representations produced by supervised classifiers (VGGish, ConvNeXt), an audio-text contrastive model (CLAP), and a waveform-reconstruction model (EnCodec). These objectives impose different pressures to preserve source detail, while their exposed interfaces vary substantially in temporal and spectral resolution. Evaluating on the Million Song Dataset (MSD), we find clear differences in reconstructability across encoder families, while within encoder comparisons show improved recovery when finer temporal or spectral structure is exposed. Even compressed task oriented embeddings support reconstructions that preserve measurable source specificity and high level musical content.",
+      "authors": [
+        "Marios Glytsos",
+        "Brian McFee"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.12250v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "published": "2026-10-08T16:24:41Z",
+      "updated": "2026-10-08T16:24:41Z",
+      "keywords_en": [
+        "much",
+        "audio",
+        "left",
+        "embedding",
+        "inversion",
+        "audit"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《How Much Audio Is Left In An Embedding? An Inversion Audit Of Audio Encoders》所界定。 从摘要看，作者主要围绕 much、audio、left 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Evaluating on the Million Song Dataset (MSD), we find clear differences in reconstructability across encoder families, while within encoder comparisons show improved recovery when finer temporal or spectral structure is exposed. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：much, audio, left。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [],
+    "TTS": [],
+    "Enhancement": [
+      {
+        "arxiv_id": "2610.12248v1",
+        "title_en": "EgoVoice: Proactive Spoken Assistance from Egocentric Multimodal Streams",
+        "abstract_en": "Wearable augmented reality (AR) assistants are moving toward continuous real-world interaction, where they perceive the user's activity through first-person video and audio and provide timely spoken guidance without being explicitly asked. While proactive video assistants, spoken dialog systems, and egocentric task understanding have each advanced rapidly, existing systems do not address the joint problem of deciding when to speak and what to say from continuous first-person streams. We introduce EgoVoice, a framework for training and evaluating proactive egocentric spoken assistants. From HoloAssist video recordings of real human instructors, we construct clean audio streams through source separation and speech resynthesis, and convert each video session into a format where the model must decide at each moment whether to remain silent or provide spoken guidance. We fine-tune an omni-modal LLM with our data, and further improve its proactive intervention behavior with direct preference optimization. Experiments across closed and open-source models show that existing systems rarely produce well-timed, meaningful proactive interventions, while EgoVoice yields clear improvements in intervention timing, content relevance, and human preference over the zero-shot backbone.",
+        "authors": [
+          "Heeseung Kim"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.12248v1",
+        "primary_category": "cs.CL",
+        "source_categories": [
+          "cs.CL",
+          "cs.CV",
+          "cs.SD"
+        ],
+        "published": "2026-10-08T16:24:12Z",
+        "updated": "2026-10-08T16:24:12Z",
+        "keywords_en": [
+          "source separation"
+        ],
+        "digest_category": "Enhancement",
+        "category_label": "语音增强",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「语音增强」方向，核心任务由题目《EgoVoice: Proactive Spoken Assistance from Egocentric Multimodal Streams》所界定。 从摘要看，作者主要围绕 source separation 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We fine-tune an omni-modal LLM with our data, and further improve its proactive intervention behavior with direct preference optimization. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：source separation。"
+        }
+      }
+    ],
+    "SLU": [],
+    "Paralinguistics": [],
+    "Audio": [
+      {
+        "arxiv_id": "2610.12201v1",
+        "title_en": "SteerablePlex: Can We Steer Full-Duplex Models?",
+        "abstract_en": "Full-duplex speech models can listen and speak simultaneously, enabling natural interaction, but become increasingly difficult to control as the conversation history grows. When used as user simulators, this lack of control can cause them to deviate from prescribed scenarios and produce unreliable evaluation outcomes. We introduce SimIF-Bench (Simulator Instruction-Following Benchmark), which evaluates whether a conversational model stays within a prescribed scenario and completes multiple goals in the required order. The benchmark reveals that current open-source full-duplex models struggle to follow such constraints. We then introduce a Group Reward-Decoupled Normalization Policy Optimization (GDPO)-based training recipe that enables a full-duplex model to follow textual instructions during an ongoing conversation while maintaining its turn-taking ability. By connecting the resulting SteerablePlex to an asynchronous backend language model that monitors the conversation and provides instructions when needed, we build a more controllable full-duplex user simulator that follows multi-stage constraints more reliably than existing open-source models and GPT-Realtime.",
+        "authors": [
+          "Haolong Zheng",
+          "Maike Züfle",
+          "Dominik Macháček",
+          "Peter Polák",
+          "Xulin Fan",
+          "Xavier Sumba",
+          "Siyin Wang",
+          "Ondřej Klejch",
+          "Mark Hasegawa-Johnson"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.12201v1",
+        "primary_category": "eess.AS",
+        "source_categories": [
+          "cs.CL",
+          "eess.AS"
+        ],
+        "published": "2026-10-08T15:56:28Z",
+        "updated": "2026-10-08T15:56:28Z",
+        "keywords_en": [
+          "steerableplex",
+          "steer",
+          "full-duplex",
+          "models",
+          "speech"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《SteerablePlex: Can We Steer Full-Duplex Models?》所界定。 从摘要看，作者主要围绕 steerableplex、steer、full-duplex 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：When used as user simulators, this lack of control can cause them to deviate from prescribed scenarios and produce unreliable evaluation outcomes. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：steerableplex, steer, full-duplex。"
+        }
+      },
+      {
+        "arxiv_id": "2610.12214v1",
+        "title_en": "DiffuPlex: Accelerating Full-Duplex Spoken Dialog Models via Rolling Masked Diffusion",
+        "abstract_en": "Recent full-duplex spoken dialog models enable simultaneous listening and speaking, but fine-grained models still advance their backbone autoregressively at every interaction frame. We introduce DiffuPlex, a rolling masked diffusion framework that reduces this sequential computation by predicting multiple future user and assistant frames in a single backbone wake. DiffuPlex consumes only a confident prefix of each predicted future while interaction continues at the original frame rate. As user speech arrives, it checks the corresponding user predictions and, when the interaction diverges, preserves already played assistant content while revising only the unplayed future. We consider two inference policies over the same predictor: DiffuPlex-LISTEN consumes multiple future frames when they predict assistant silence, whereas DiffuPlex-SPEAK can also consume predicted assistant speech. Across full-duplex interaction and spoken-language evaluations, DiffuPlex substantially reduces sequential backbone computation while largely preserving interaction behavior and general capability. DiffuPlex-LISTEN and DiffuPlex-SPEAK achieve $1.46\\times$ and $1.59\\times$ deployment-path wall-clock speedups and $1.61\\times$ and $1.80\\times$ Core LM speedups, with all measured backbone invocations completing within the 80ms interaction interval. Human evaluation shows that LISTEN preserves speech naturalness and conversational quality, while SPEAK retains conversational quality with some degradation in speech naturalness.",
+        "authors": [
+          "Heeseung Kim"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.12214v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.CL",
+          "cs.SD"
+        ],
+        "published": "2026-10-08T16:01:37Z",
+        "updated": "2026-10-08T16:01:37Z",
+        "keywords_en": [
+          "diffuplex",
+          "accelerating",
+          "full-duplex",
+          "spoken",
+          "dialog",
+          "models"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《DiffuPlex: Accelerating Full-Duplex Spoken Dialog Models via Rolling Masked Diffusion》所界定。 从摘要看，作者主要围绕 diffuplex、accelerating、full-duplex 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：DiffuPlex-LISTEN and DiffuPlex-SPEAK achieve $1.46\\times$ and $1.59\\times$ deployment-path wall-clock speedups and $1.61\\times$ and $1.80\\times$ Core LM speedups, with all measured backbone invocations completing within the 80ms interaction interval. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：diffuplex, accelerating, full-duplex。"
+        }
+      },
+      {
+        "arxiv_id": "2610.12250v1",
+        "title_en": "How Much Audio Is Left In An Embedding? An Inversion Audit Of Audio Encoders",
+        "abstract_en": "Pretrained audio encoders are reused for downstream tasks that are often unknown when the encoder is trained, so their usefulness depends partly on which signal properties survive the pretext objective. We study this retained information through paired source reconstruction. Using a shared Stable Audio Open latent diffusion decoder, we reconstruct five-second, 44.1-kHz stereo music from frozen representations produced by supervised classifiers (VGGish, ConvNeXt), an audio-text contrastive model (CLAP), and a waveform-reconstruction model (EnCodec). These objectives impose different pressures to preserve source detail, while their exposed interfaces vary substantially in temporal and spectral resolution. Evaluating on the Million Song Dataset (MSD), we find clear differences in reconstructability across encoder families, while within encoder comparisons show improved recovery when finer temporal or spectral structure is exposed. Even compressed task oriented embeddings support reconstructions that preserve measurable source specificity and high level musical content.",
+        "authors": [
+          "Marios Glytsos",
+          "Brian McFee"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2610.12250v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.AI",
+          "cs.SD"
+        ],
+        "published": "2026-10-08T16:24:41Z",
+        "updated": "2026-10-08T16:24:41Z",
+        "keywords_en": [
+          "much",
+          "audio",
+          "left",
+          "embedding",
+          "inversion",
+          "audit"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《How Much Audio Is Left In An Embedding? An Inversion Audit Of Audio Encoders》所界定。 从摘要看，作者主要围绕 much、audio、left 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：Evaluating on the Million Song Dataset (MSD), we find clear differences in reconstructability across encoder families, while within encoder comparisons show improved recovery when finer temporal or spectral structure is exposed. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：much, audio, left。"
+        }
+      }
+    ]
+  },
+  "model_name": "deepseek-v3"
+}
