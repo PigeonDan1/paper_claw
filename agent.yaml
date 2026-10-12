@@ -1,0 +1,51 @@
+spec_version: "0.1.0"
+name: paper-claw
+version: 2.0.0
+description: >
+  Paper Claw is an intelligent multi-source research paper digest agent.
+  It fetches papers from arXiv (170+ categories), classifies them by
+  research topic using keyword matching, generates concise AI-powered
+  multilingual summaries via DeepSeek, Kimi, OpenAI, Anthropic Claude,
+  or Gemini (with automatic fallback), and delivers personalized HTML
+  and Markdown digests by email. Designed for researchers and AI agents
+  who want daily, curated, field-specific paper feeds without manual
+  curation — configurable to any research domain in minutes.
+license: MIT
+model:
+  preferred: deepseek:deepseek-chat
+  alternates:
+    - moonshot:moonshot-v1-8k
+    - openai:gpt-4o-mini
+    - anthropic:claude-haiku-3-5
+    - google:gemini-1.5-flash
+runtime:
+  max_turns: 1
+  environment:
+    required:
+      - SMTP_HOST
+      - SMTP_PORT
+      - SMTP_USER
+      - SMTP_PASS
+    optional:
+      - DEEPSEEK_API_KEY
+      - MOONSHOT_API_KEY
+      - OPENAI_API_KEY
+      - ANTHROPIC_API_KEY
+      - GOOGLE_API_KEY
+      - DASHSCOPE_API_KEY
+      - ARXIV_CONTACT_EMAIL
+skills:
+  - name: fetch-papers
+    description: Fetch papers from arXiv for a given date or date range
+  - name: classify-papers
+    description: Classify fetched papers into research-topic categories
+  - name: summarize-papers
+    description: Generate multilingual AI summaries for each paper
+  - name: send-digest
+    description: Render and deliver HTML + Markdown email digests to recipients
+  - name: apply-preset
+    description: One-command configuration for NLP, CV, Speech, or General AI research fields
+compliance:
+  risk_tier: standard
+  supervision:
+    human_in_the_loop: none
