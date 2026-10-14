@@ -1,0 +1,82 @@
+{
+  "window": {
+    "start": "2026-10-13T15:09:53.067989+08:00",
+    "end": "2026-10-14T13:32:15.239070+08:00"
+  },
+  "fetched_count": 4,
+  "deduplicated_count": 3,
+  "new_count": 3,
+  "papers": [
+    {
+      "arxiv_id": "2610.18587v1",
+      "title_en": "GeoMER: A Joint Euclidean-Hyperbolic Geometry Framework for Multimodal Emotion Recognition",
+      "abstract_en": "Multimodal Emotion Recognition (MER) aims to understand human emotions by integrating information from multiple modalities such as speech and text. Psychological studies suggest that emotions exhibit latent hierarchical structured relationships in their semantic representations. However, most MER approaches rely on Euclidean representations, which capture fine-grained cross-modal interactions but do not explicitly provide a geometric prior for organizing hierarchical emotional structures. To mitigate this gap, we propose GeoMER, a joint Euclidean-Hyperbolic modeling framework that introduces hyperbolic emotion-core routing to capture higher-level, abstract emotional representations for MER. The proposed framework jointly models token-level cross-modal semantic interactions and latent emotion representations in two complementary geometric spaces. Specifically, GeoMER consists of a Euclidean Multimodal Fusion Module (EuclFusion) for multimodal representation fusion and a Hyperbolic Geometric Core Routing (HypGeoRoute) module that performs geometry-aware core assignment and aggregation in a hyperbolic manifold to capture more abstract feature representations. The HypGeoRoute module complements the Euclidean token-level modeling. We experiment on the IEMOCAP multimodal MER benchmark and demonstrate that the proposed method achieves the best performance, with 83.54% weighted accuracy and 83.35% unweighted accuracy, outperforming Euclidean baselines, including MemoCMT.",
+      "authors": [
+        "Ting Zhu",
+        "Huizhi Liang",
+        "Boguslaw Obara",
+        "Shufei Duan",
+        "Varun Ojha"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.18587v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-10-13T15:48:40Z",
+      "updated": "2026-10-13T15:48:40Z"
+    },
+    {
+      "arxiv_id": "2610.18597v1",
+      "title_en": "PhysicsSliders: Learning Physical Controls for Audio Foley Generation",
+      "abstract_en": "Physical properties provide intuitive controls for sounds made by interacting objects. The challenge is to make a generative model respond predictably to these controls, both individually and in combination. We present \\method\\ (PXS), trained on simulated contact sounds with 15 material, geometry and contact parameters. Two separately trained variants accept direct parameter inputs or numerical captions. PXS controls hardness, size, speed and damping, supports room descriptions and produces spectrally distinct outputs at fixed targets. When controlling damping and size together, specifying thickness improves frequency accuracy and joint target delivery. Measurements from real recordings define effective-damping targets, which simulator inversion maps to generation inputs without real-audio fine-tuning. Across 18 impact classes from five real-audio datasets, PXS-Physical follows these targets with mean grouped Spearman correlation $ρ=0.976$ and class-median error 0.094 dex (a factor of 1.24).",
+      "authors": [
+        "Peiwei Chang",
+        "Yongqiang Chen",
+        "Yuelan Cheng",
+        "Liting Gao",
+        "Yishun Lu",
+        "Li Zhang",
+        "Mark D. Plumbley",
+        "Philip J. B. Jackson",
+        "Wenwu Wang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.18597v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-10-13T15:53:45Z",
+      "updated": "2026-10-13T15:53:45Z"
+    },
+    {
+      "arxiv_id": "2610.18652v1",
+      "title_en": "AMemOps: Evaluating Memory Updates in Long Audio Streams",
+      "abstract_en": "Audio memory must recognise recurring sources across acoustic changes while keeping their attributes up to date. Overall accuracy does not reveal how these demands interact. We introduce Audio Memory Operations (AMemOps), a benchmark for latest-attribute retrieval, preservation of unchanged attributes and absent-source rejection in long audio streams. Paired controls vary recordings, training identities and earlier events to examine their effects on updating. Training on other recordings of the test instruments increases a reference delta-rule memory's update advantage over matched attention by 13.4 percentage points. At retrieval delays of 120\\,s, matched histories separate benefits of consistent repetition from costs of conflicting earlier values, while additive-memory controls identify benefits of erasure.",
+      "authors": [
+        "Peiwei Chang",
+        "Li Zhang",
+        "Mark D. Plumbley",
+        "Philip J. B. Jackson",
+        "Wenwu Wang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.18652v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "published": "2026-10-13T16:16:19Z",
+      "updated": "2026-10-13T16:16:19Z"
+    }
+  ]
+}
