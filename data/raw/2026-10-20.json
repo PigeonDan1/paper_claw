@@ -1,0 +1,107 @@
+{
+  "window": {
+    "start": "2026-10-19T13:24:50.746258+08:00",
+    "end": "2026-10-20T13:27:00.134561+08:00"
+  },
+  "fetched_count": 7,
+  "deduplicated_count": 4,
+  "new_count": 4,
+  "papers": [
+    {
+      "arxiv_id": "2610.26406v1",
+      "title_en": "Expert L2 English Speech Evaluation on a Gaming PC: Accuracy, Fluency, and Prosody with XLS-R, XEUS, and PhoneticXeus",
+      "abstract_en": "oollim is a locally executable system for evaluating L2 English pronunciation accuracy, fluency, and prosody on a consumer computer. The system combines pretrained XLS-R, XEUS, and PhoneticXeus representations with reference-text features and ridge regressions trained on SpeechOcean762, the Korean Learners' L2 Speech Corpus (English), J-AESOP, and their combinations. On 305 independently held-out recordings assessed by three expert raters, several ridge configurations substantially outperform archived Azure API scores obtained in January 2026 in both Spearman correlation and quadratic weighted kappa across all three constructs. These results support expert speech evaluation on consumer hardware using pretrained representations and construct-specific regressions, without neural-model fine-tuning or calibration on the private evaluation data.",
+      "authors": [
+        "Richard Rose"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.26406v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-10-19T13:44:26Z",
+      "updated": "2026-10-19T13:44:26Z"
+    },
+    {
+      "arxiv_id": "2610.26446v1",
+      "title_en": "Label Authority in Speech Emotion Recognition: Intended and Perceived Ground Truth in Emozionalmente",
+      "abstract_en": "Ground truth in Speech Emotion Recognition (SER) is often presented as a single categorical fact, yet an acted emotion and the emotion heard by listeners describe different aspects of the same recording. We examine this distinction in Emozionalmente, an acted Italian corpus that provides both an elicited production label and five listener judgements for every clip. Using frozen XLS-R, HuBERT, and WavLM representations with matched probes, we compare three label authorities: the expressed condition, the listeners' hard plurality, and their complete vote distribution. The results tell a consistent story. Recovering the expressed condition is easier than predicting a tie-broken listener plurality, but that gap compares two different questions rather than revealing a general loss of SER ability. As listener agreement weakens, the plurality becomes an increasingly brittle hard target. Training on the full vote distribution does not substantially change which class wins the model's hard decision, but it produces probability assignments that more closely follow the alternatives selected by listeners, especially for ambiguous clips. No authority therefore replaces the others. Expressed labels describe how speech was produced, pluralities provide an operational single-class decision, and vote distributions preserve perceptual uncertainty. For human-facing Internet of Sounds applications, evaluations should state which authority is being predicted, retain its aggregation rule and agreement information, and use distributional scores when disagreement is part of the target.",
+      "authors": [
+        "Marco Giordano",
+        "Stefano Giacomelli",
+        "Claudia Rinaldi",
+        "Fabio Graziosi"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.26446v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-10-19T14:06:05Z",
+      "updated": "2026-10-19T14:06:05Z"
+    },
+    {
+      "arxiv_id": "2610.26448v1",
+      "title_en": "TeleASR-Amharic: A Benchmark for Robust Amharic ASR in Realistic Telecommunication Conditions",
+      "abstract_en": "The real-world usability of ASR models remains challenging, particularly for low-resource languages, where existing speech resources are often collected in clean studio environments. In this work, we introduce TeleASR-Amharic, a benchmark for evaluating Amharic ASR under various acoustic and telecommunication conditions. We analyze the major degradations observed in real telecommunications recordings and develop a benchmark that covers multiple channel conditions, environmental disturbances, and telecom-domain variations. Our results show that telecommunication degradation can substantially reduce recognition performance, making even high-performing ASR models impractical under severe conditions. For example, the WER of the best-performing model increases from 0.23 to 0.79 under severe telecommunication degradation, corresponding to a relative increase of 243% in recognition errors. We further investigate the effects of different noise and channel distortions and show that scaling training data and applying carefully designed telecommunication-aware augmentation substantially improve robustness. In particular, our best training configuration achieves a 23.6% relative WER reduction under extreme noise conditions. Together with the release of our telecommunications-domain data, these findings provide a reproducible benchmark for measuring progress in Amharic ASR while highlighting open challenges in developing robust speech technologies for real-world deployment.",
+      "authors": [
+        "Dagnachew Mekonnen Marilign",
+        "Enrique Molero",
+        "Abrham Haile",
+        "Louis Powell",
+        "Israel Abebe Azime"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.26448v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-10-19T14:06:28Z",
+      "updated": "2026-10-19T14:06:28Z"
+    },
+    {
+      "arxiv_id": "2610.26684v1",
+      "title_en": "MuLaCover: Flexible Cover Song Generation via Symbolic Tonal Control",
+      "abstract_en": "A cover song re-renders an existing piece, most commonly by preserving its tonal content -- melody and chord progression -- while reshaping other musical attributes. This suggests a natural formulation for generative cover synthesis with pretrained music language models: explicitly control tonal content, while specifying lyrics and style through text. Existing approaches condition on frame-level features, tightly coupling generation to the reference's timing and structure, and limiting flexibility such as tempo variation, structural rearrangement, or partial conditioning. To this end, we present MuLaCover, a cover generation model that conditions a pretrained text-to-song foundation model on an editable symbolic lead sheet. Our design enables alignment-free control: generated outputs preserve the tonal signature of the source without frame-level alignment, allowing flexible timing, structure, and segment-level generation. We further introduce a training curriculum with partially mismatched audio-symbolic pairs, improving diversity and robustness. We evaluate MuLaCover with objective metrics, standard subjective ratings, and in-depth expert interviews that provide fine-grained diagnostic insights. Experiments show that MuLaCover achieves state-of-the-art performance among open-source systems and is competitive with leading commercial models such as Suno-v5.5. Audio samples and code are available at our project page: https://mulalabs.ai/mulacover/",
+      "authors": [
+        "Lynn Yi",
+        "Zihan Xiong",
+        "Junjie Cao",
+        "Xiaolong Weng",
+        "Yingzhe Ma",
+        "Gus Xia",
+        "Jinliang Liu",
+        "Yuxin Xie",
+        "Xianwei Zhuang",
+        "Yuguo Yin",
+        "Qiao Jin",
+        "Gongxi Zhu",
+        "Jiayu Wang",
+        "Junjie Liang",
+        "Qin Yue",
+        "Ziyu Wang",
+        "Dading Chong",
+        "Meng Cao",
+        "Jiahuan Zhou",
+        "Dongchao Yang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.26684v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-10-19T16:31:09Z",
+      "updated": "2026-10-19T16:31:09Z"
+    }
+  ]
+}
