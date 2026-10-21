@@ -1,0 +1,91 @@
+{
+  "window": {
+    "start": "2026-10-20T13:27:00.134561+08:00",
+    "end": "2026-10-21T13:25:44.727259+08:00"
+  },
+  "fetched_count": 5,
+  "deduplicated_count": 4,
+  "new_count": 4,
+  "papers": [
+    {
+      "arxiv_id": "2610.28189v1",
+      "title_en": "Uncovering Audio-Text Alignment in Large Audio-Language Models through Cross-Modal Concept Neurons",
+      "abstract_en": "While the language model backbone is pretrained on text alone, large audio-language models (LALMs) can, to a great extent, recognize acoustic attributes, such as emotion, speaker gender, and spoken language. However, it is unclear how the audio representation is integrated, if at all, with the other text representation before the model produces text. We hypothesize that there is a shared subspace where the audio and text representations are aligned. To test this hypothesis, we identify cross-modal neurons that are responsible for representing both audio and text. We find alignment between audio and text neurons to various degrees across three LALMs and four acoustic attribute types. Causal interventions, steering and deactivating the neurons, confirm that the cross-modal neurons are not just necessary for prediction but can also be manipulated.",
+      "authors": [
+        "Tzu-Quan Lin",
+        "Chih-Kai Yang",
+        "Yi-Cheng Lin",
+        "Hao Tang",
+        "Hung-yi Lee"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.28189v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-10-20T13:27:40Z",
+      "updated": "2026-10-20T13:27:40Z"
+    },
+    {
+      "arxiv_id": "2610.28245v1",
+      "title_en": "Timing and Reliability Limits of Position-Assisted UWB Multicast Audio",
+      "abstract_en": "One-to-many ultra-wideband (UWB) transport can disseminate shared audio blocks without replicating a downlink stream for every receiver. Yet common reception does not ensure aligned electrical playback, coincident acoustic arrival, or delivery to an entire receiver group. This paper develops a unified feasibility analysis of position-assisted UWB multicast audio that separates clock and actuation error, age-dependent acoustic propagation compensation, correlated block erasures, and reserved communication resources. We derive a conditional bound on one-listener arrival spread, a stationary expression for all-receiver block delivery under common and receiver-local losses, and complementary bounds for reliability-constrained admission. Reproducible Monte Carlo experiments examine 4,590 policy--run records across clock, localization, channel, and slot configurations. For eight receivers, affine clock correction produces a mean run-level 95th-percentile electronic span of $21.19\\us$, while position assistance reduces the corresponding one-listener acoustic arrival span from $21.95\\ms$ to $419.43\\us$. Under the stated $30\\us$ timing criterion, 98.86\\% of compensated events still exceed the threshold. For 64 receivers, three block copies attain an all-receiver delivery probability of approximately 0.97478 under the modeled correlated channel. The analysis exposes the distinct failure mechanisms of position age, shared fades, retransmission limits, and schedule saturation, and establishes joint criteria for interpreting synchronous multicast audio performance.",
+      "authors": [
+        "Fengyun Zhang"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.28245v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.IT",
+        "cs.MM",
+        "eess.AS"
+      ],
+      "published": "2026-10-20T14:07:16Z",
+      "updated": "2026-10-20T14:07:16Z"
+    },
+    {
+      "arxiv_id": "2610.28263v1",
+      "title_en": "Active Noise Control for Augmented Reality Glasses using Virtual Sensing with Directional Robustness",
+      "abstract_en": "Active noise control (ANC) is an established technique for mitigating acoustic noise, successfully implemented in various commercial applications. However, the application of ANC to augmented reality (AR) glasses remains an emerging area, where a key challenge is the lack of a microphone at the user's ear. This paper first validates the necessity of virtual sensing techniques for this specific geometry and investigates the Auxiliary Filter (AF) method as a potential solution. We present a theoretical analysis of the method's directional sensitivity, enabling the prediction of the system's robustness when the noise direction deviates from the calibration angle. Simulation results confirm that while a fixed AF is effective under matched conditions, it suffers significant degradation under mismatch, consistent with the theoretical predictions. To address this limitation, we propose and evaluate a solution using a finite bank of auxiliary filters that are selected based on the noise source direction of arrival. The results demonstrate that this filter bank approach significantly recovers performance compared to a fixed filter, offering a practical alternative to continuous recalibration in dynamic acoustic environments.",
+      "authors": [
+        "Nitay Peled",
+        "Boaz Rafaely"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.28263v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-10-20T14:18:58Z",
+      "updated": "2026-10-20T14:18:58Z"
+    },
+    {
+      "arxiv_id": "2610.28288v1",
+      "title_en": "Improved automatic speech-based cognitive assessment using neuropsychologically calibrated diagnostic labels",
+      "abstract_en": "Although automatic detection of cognitive impairment from conversational speech is a promising way, it becomes less accurate, as large real-world datasets often contain unreliable diagnostic labels due to self-referral and limited clinical verification, and here we investigated whether neuropsychologically calibrated diagnostic relabeling improves it. We analysed 138 hours of conversational speech from 720 participants, recalibrating unreliable diagnostic labels using attention, executive function, and memory performance via external clinical thresholds, Gaussian, and normative z-score calibration. Transformer-based classifiers were trained using both original and recalibrated labels and evaluated internally on 150 clinically verified participants and externally on Pitt, ADReSS and PROCESS-2 datasets. Memory- and MoCA-based z-score calibration produced the greatest improvements. Using our internal dataset, $F_1$ increased from $0.70$ to $0.83$ ($+13\\%$) and from $0.54$ to $0.66$ ($+12\\%$) for binary and multiclass classification, respectively. For external validation, the increases are $+4\\%$, $+5\\%$ and $+9\\%$ on Pitt, ADReSS and PROCESS-2 corpus. Neuropsychologically calibrated relabeling substantially improves speech-based cognitive assessment, highlighting label quality, rather than model architecture, as a critical bottleneck in clinical AI for dementia screening.",
+      "authors": [
+        "Madhurananda Pahar",
+        "Caitlin Illingworth",
+        "Adam Hampshire",
+        "Peter J Hellyer",
+        "Agata J Hampshire",
+        "Daniel Blackburn",
+        "Annalena Venneri",
+        "Heidi Christensen"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2610.28288v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-10-20T14:37:35Z",
+      "updated": "2026-10-20T14:37:35Z"
+    }
+  ]
+}
