@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-11-05T15:28:01.005103+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-11-04T15:01:20.903657+08:00",
+    "end": "2026-11-05T15:27:58.417769+08:00",
+    "start_display": "2026-11-04 15:01:20 CST",
+    "end_display": "2026-11-05 15:27:58 CST"
+  },
+  "summary": {
+    "total": 2,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 0,
+      "TTS": 0,
+      "Enhancement": 0,
+      "SLU": 0,
+      "Paralinguistics": 0,
+      "Audio": 2
+    },
+    "headline": "今日共收录 2 篇新论文，主要分布在 Audio 2。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-11-05-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2611.06725v1",
+      "title_en": "Drowning in Noise: On Signal Saliency in Self-Supervised Learning for Ocean Acoustics",
+      "abstract_en": "Self-supervised learning (SSL) for audio typically benefits from larger pre-training corpora, but this relationship assumes that training data carries meaningful learning signal. In ocean acoustics, this assumption is often violated: passive recordings are dominated by waves, wind, and silence, with biological vocalizations occupying a small fraction of the total duration. We show that this overrepresentation of noise causes SSL models to allocate representational capacity to acoustically trivial structure, degrading downstream performance. Using BEATs as a testbed, we demonstrate that pre-training on 30 hours of salient recordings (segments containing animal vocalizations) outperforms 1,240 hours of unfiltered data on a 31-class marine mammal classification benchmark. Under linear probing, the manually curated salient set achieves markedly better accuracy than the full corpus, despite using 41 times less data. Automatic saliency-based filtering improves over unfiltered pre-training, but still falls well short of the manually curated salient set. Our findings suggest that, in domains where informative content is temporally sparse, data curation matters more than data scale for SSL pre-training.",
+      "authors": [
+        "Shikhar Bharadwaj",
+        "Samuele Cornell",
+        "Shinji Watanabe",
+        "Malcolm Slaney"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.06725v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-11-04T16:14:04Z",
+      "updated": "2026-11-04T16:14:04Z",
+      "keywords_en": [
+        "drowning",
+        "noise",
+        "signal",
+        "saliency",
+        "self-supervised",
+        "learning"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Drowning in Noise: On Signal Saliency in Self-Supervised Learning for Ocean Acoustics》所界定。 从摘要看，作者主要围绕 drowning、noise、signal 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We show that this overrepresentation of noise causes SSL models to allocate representational capacity to acoustically trivial structure, degrading downstream performance. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：drowning, noise, signal。"
+      }
+    },
+    {
+      "arxiv_id": "2611.06812v1",
+      "title_en": "SAUCE: Summary Analysis Using Conversation Entailment",
+      "abstract_en": "With the growing need for evaluating Large Language Models (LLMs) and their applications to speech, challenges persist in summarizing and evaluating conversations that lack a clear end goal. We introduce SAUCE -- a reference-free, fact-based evaluation pipeline for cross-lingual conversational speech summarization. It measures the accuracy and the fact coverage of a summary through the entailment between conversation and text. We compare SAUCE against several popular summarization metrics and demonstrate the effectiveness of capturing information loss due to transcription and translation error and identifying broken summaries. Crucially, unlike black-box LLM evaluators or dense embedding metrics, SAUCE is inherently explainable: it maps summary scores to discrete, verifiable facts, allowing users to pinpoint exact hallucinations or omissions. We illustrate how this interpretability helps developers systematically profile LLM behaviors and gives end-users an actionable tool to verify summary accuracy in noisy, real-world conditions. Preliminary investigations show SAUCE strongly align with human judgment.",
+      "authors": [
+        "Man-Ling Sung",
+        "Hemanth Kandula",
+        "Jeff Ma",
+        "William Hartmann",
+        "Matthew Snover"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.06812v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-11-04T17:25:40Z",
+      "updated": "2026-11-04T17:25:40Z",
+      "keywords_en": [
+        "sauce",
+        "summary",
+        "analysis",
+        "using",
+        "conversation",
+        "entailment"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《SAUCE: Summary Analysis Using Conversation Entailment》所界定。 从摘要看，作者主要围绕 sauce、summary、analysis 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We compare SAUCE against several popular summarization metrics and demonstrate the effectiveness of capturing information loss due to transcription and translation error and identifying broken summaries. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：sauce, summary, analysis。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [],
+    "TTS": [],
+    "Enhancement": [],
+    "SLU": [],
+    "Paralinguistics": [],
+    "Audio": [
+      {
+        "arxiv_id": "2611.06725v1",
+        "title_en": "Drowning in Noise: On Signal Saliency in Self-Supervised Learning for Ocean Acoustics",
+        "abstract_en": "Self-supervised learning (SSL) for audio typically benefits from larger pre-training corpora, but this relationship assumes that training data carries meaningful learning signal. In ocean acoustics, this assumption is often violated: passive recordings are dominated by waves, wind, and silence, with biological vocalizations occupying a small fraction of the total duration. We show that this overrepresentation of noise causes SSL models to allocate representational capacity to acoustically trivial structure, degrading downstream performance. Using BEATs as a testbed, we demonstrate that pre-training on 30 hours of salient recordings (segments containing animal vocalizations) outperforms 1,240 hours of unfiltered data on a 31-class marine mammal classification benchmark. Under linear probing, the manually curated salient set achieves markedly better accuracy than the full corpus, despite using 41 times less data. Automatic saliency-based filtering improves over unfiltered pre-training, but still falls well short of the manually curated salient set. Our findings suggest that, in domains where informative content is temporally sparse, data curation matters more than data scale for SSL pre-training.",
+        "authors": [
+          "Shikhar Bharadwaj",
+          "Samuele Cornell",
+          "Shinji Watanabe",
+          "Malcolm Slaney"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2611.06725v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.SD"
+        ],
+        "published": "2026-11-04T16:14:04Z",
+        "updated": "2026-11-04T16:14:04Z",
+        "keywords_en": [
+          "drowning",
+          "noise",
+          "signal",
+          "saliency",
+          "self-supervised",
+          "learning"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《Drowning in Noise: On Signal Saliency in Self-Supervised Learning for Ocean Acoustics》所界定。 从摘要看，作者主要围绕 drowning、noise、signal 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We show that this overrepresentation of noise causes SSL models to allocate representational capacity to acoustically trivial structure, degrading downstream performance. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：drowning, noise, signal。"
+        }
+      },
+      {
+        "arxiv_id": "2611.06812v1",
+        "title_en": "SAUCE: Summary Analysis Using Conversation Entailment",
+        "abstract_en": "With the growing need for evaluating Large Language Models (LLMs) and their applications to speech, challenges persist in summarizing and evaluating conversations that lack a clear end goal. We introduce SAUCE -- a reference-free, fact-based evaluation pipeline for cross-lingual conversational speech summarization. It measures the accuracy and the fact coverage of a summary through the entailment between conversation and text. We compare SAUCE against several popular summarization metrics and demonstrate the effectiveness of capturing information loss due to transcription and translation error and identifying broken summaries. Crucially, unlike black-box LLM evaluators or dense embedding metrics, SAUCE is inherently explainable: it maps summary scores to discrete, verifiable facts, allowing users to pinpoint exact hallucinations or omissions. We illustrate how this interpretability helps developers systematically profile LLM behaviors and gives end-users an actionable tool to verify summary accuracy in noisy, real-world conditions. Preliminary investigations show SAUCE strongly align with human judgment.",
+        "authors": [
+          "Man-Ling Sung",
+          "Hemanth Kandula",
+          "Jeff Ma",
+          "William Hartmann",
+          "Matthew Snover"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2611.06812v1",
+        "primary_category": "cs.CL",
+        "source_categories": [
+          "cs.CL",
+          "eess.AS"
+        ],
+        "published": "2026-11-04T17:25:40Z",
+        "updated": "2026-11-04T17:25:40Z",
+        "keywords_en": [
+          "sauce",
+          "summary",
+          "analysis",
+          "using",
+          "conversation",
+          "entailment"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《SAUCE: Summary Analysis Using Conversation Entailment》所界定。 从摘要看，作者主要围绕 sauce、summary、analysis 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：We compare SAUCE against several popular summarization metrics and demonstrate the effectiveness of capturing information loss due to transcription and translation error and identifying broken summaries. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：sauce, summary, analysis。"
+        }
+      }
+    ]
+  },
+  "model_name": "deepseek-v3"
+}
