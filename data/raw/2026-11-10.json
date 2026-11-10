@@ -1,0 +1,48 @@
+{
+  "window": {
+    "start": "2026-11-09T15:17:40.260724+08:00",
+    "end": "2026-11-10T15:49:22.230238+08:00"
+  },
+  "fetched_count": 2,
+  "deduplicated_count": 2,
+  "new_count": 2,
+  "papers": [
+    {
+      "arxiv_id": "2611.12603v1",
+      "title_en": "Direct Conditioning of Audio Diffusion Transformers on fMRI Reveals Cortical Contributions to Sound Reconstruction",
+      "abstract_en": "Reconstructing audio from brain activity remains challenging. Existing brain-to-audio pipelines typically map neural responses to predefined stimulus representations before synthesis. While recent work in the visual domain has explored direct conditioning on brain activity, this approach has not yet been extended to audio diffusion models. We introduce MAAS (Multi-Area Auditory Synthesis), an end-to-end framework that conditions a pretrained audio diffusion transformer on ROI-wise fMRI responses without first supervising a decoder to predict an external stimulus representation. MAAS uses region-specific projections and learned brain tokens to condition Stable Audio through a dedicated cross-attention pathway. On a 7T fMRI dataset, we demonstrate consistent improvements over baselines, including two-stage fMRI-to-latent conditioning, across both acoustic and semantic evaluation metrics. In addition, we introduce a fidelity metric grounded in a computational model of auditory neural processing, which allows us to quantify the contribution of individual auditory cortical regions to reconstructed audio representations.",
+      "authors": [
+        "Matteo Ciferri",
+        "Tonio Weidler",
+        "Matteo Ferrante",
+        "Nicola Toschi",
+        "Elia Formisano"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.12603v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CV",
+        "cs.SD"
+      ],
+      "published": "2026-11-09T15:48:02Z",
+      "updated": "2026-11-09T15:48:02Z"
+    },
+    {
+      "arxiv_id": "2611.12742v1",
+      "title_en": "Full-sphere emission and reception directivities of seven echolocating bat species",
+      "abstract_en": "Echolocating bats shape their calls and the returning echoes with their noseleaf or mouth, head and pinnae. Understanding these spectrospatial directivity patterns is central to bat echolocation. We describe a dataset of simulated far-field emission and reception directivities of seven echolocating bat species from three families (Phyllostomidae, Rhinolophidae and Vespertilionidae). For each species, the head of one preserved specimen was scanned with micro-computed tomography and converted into a closed surface mesh, on which the responses of both ears and of the emitter were computed with a boundary element method or, for the two mouth-emitting species, with an analytical piston model. The complex-valued responses cover the full sphere at 2.5 deg resolution from 20 to 160 kHz in 0.5 kHz steps. They come with the meshes, the landmarks of ears, nostrils and mouth, alternative source positions and skeletons for posing the pinnae and noseleaves, all in one frame, and with Python and MATLAB code. The technical validation covers solver verification, mesh convergence, comparisons with earlier simulations and measurements, and sensitivity analyses.",
+      "authors": [
+        "Jan Steckel"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.12742v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-11-09T17:25:31Z",
+      "updated": "2026-11-09T17:25:31Z"
+    }
+  ]
+}
