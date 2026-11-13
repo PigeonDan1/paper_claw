@@ -1,0 +1,48 @@
+{
+  "window": {
+    "start": "2026-11-12T15:48:13.485536+08:00",
+    "end": "2026-11-13T15:25:26.753776+08:00"
+  },
+  "fetched_count": 2,
+  "deduplicated_count": 2,
+  "new_count": 2,
+  "papers": [
+    {
+      "arxiv_id": "2611.17070v1",
+      "title_en": "Evaluation of Music Version Retrieval Methods for Setlist Identification in Live Concerts",
+      "abstract_en": "Automatic setlist identification aims to identify the songs performed in live concert recordings by matching noisy and variable-quality audio against a database of reference tracks. This task presents challenges beyond conventional music version identification, including substantial arrangement differences, background noise, and the need to process continuous recordings efficiently at large scale. In this work, we evaluate modern music version retrieval methods for setlist identification using the ASID benchmark, comparing the established Re-MOVE system with CLEWS and NAVE, an internal neural audio version embedding model. Our results show that NAVE and CLEWS substantially outperform Re-MOVE. Notably, NAVE uses 256-dimensional embeddings, compared with 1024 dimensions for CLEWS, providing a four-fold reduction in embedding storage while achieving better retrieval performance. We further evaluate music/non-music gating and find modest improvements in detection and temporal coverage, while qualitative analysis suggests that such preprocessing can improve recognition boundaries beyond what the standard ASID metrics capture. Overall, the results demonstrate that segment-level audio embeddings provide a strong basis for scalable setlist identification and that compact representations can achieve strong accuracy under realistic live-concert conditions at much lower storage and serving cost.",
+      "authors": [
+        "Andres Ferraro",
+        "Albin Correya"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.17070v1",
+      "primary_category": "cs.IR",
+      "source_categories": [
+        "cs.IR",
+        "cs.SD"
+      ],
+      "published": "2026-11-12T16:42:35Z",
+      "updated": "2026-11-12T16:42:35Z"
+    },
+    {
+      "arxiv_id": "2611.17181v1",
+      "title_en": "Convolutional VocalTrax: Replacing Backpropagation Through Time with Convolution in Differentiable Articulatory Synthesis",
+      "abstract_en": "VocalTrax recovers interpretable articulatory controls from a recording by gradient descent through a differentiable Pink Trombone synthesizer. Its vocal tract is a Kelly-Lochbaum waveguide updated twice per audio sample, so every gradient step backpropagates through a long recurrence, which is slow on GPUs. We propose Convolutional VocalTrax, which computes the exact frequency response of the same waveguide and applies it as a causal convolution. We assume that the tract is stationary within 5.8 ms blocks and that its lossy impulse response can be truncated after 93 ms. Gradients then pass through FFTs and a short recursion along the tract instead of through time. On 600 AudioMNIST recordings, the tract forward and backward pass runs 47 to 63 times faster on an A100 GPU, and a classifier trained only on real speech recognizes our reconstructions more often than those of VocalTrax (14.5% vs. 10.0%), although the log-mel distance to the target is 11% higher. Parameters fitted with our model keep this gain when rendered by the original VocalTrax (13.8%).",
+      "authors": [
+        "Yongyi Zang",
+        "Debasish Ray Mohapatra",
+        "Randal Leistikow",
+        "Perry R. Cook"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.17181v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-11-12T17:49:07Z",
+      "updated": "2026-11-12T17:49:07Z"
+    }
+  ]
+}
