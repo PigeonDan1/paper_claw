@@ -1,0 +1,29 @@
+{
+  "window": {
+    "start": "2026-11-17T16:35:34.321743+08:00",
+    "end": "2026-11-18T15:59:49.320656+08:00"
+  },
+  "fetched_count": 2,
+  "deduplicated_count": 1,
+  "new_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2611.23089v1",
+      "title_en": "Insight into Parametric First-Order Ambisonics Upscaling in Time and Frequency Domains",
+      "abstract_en": "First-Order Ambisonics (FOA) offers a practical representation for spatial audio, but its low-order reproduction introduces distinct perceptual limitations during binaural rendering. While recent methods synthesize Higher-Order Ambisonics (HOA) from FOA to overcome these constraints, the importance and potential of early reflections in the upscaling process have not yet been comprehensively explored. To bridge this knowledge gap and understand the potential of incorporating early reflections in FOA upscaling, this work develops an experimental framework that selectively upscales these reflections. By utilizing an energy-based criterion, the proposed framework identifies and selectively renders the strongest early reflections with high-order resolution. The selection mechanism is evaluated across three domains: long-term temporal, short-time temporal, and the joint time-frequency (TF) domain. Validation through objective metrics, including the Scale-Invariant Signal-to-Distortion Ratio (SI-SDR), the clarity index ($C_{50}$), and Interaural Cross-Correlation (IACC), alongside listening tests, demonstrates that the TF-domain provides superior performance. By exploiting the sparsity of speech, the TF approach maintains robust performance in complex multi-talker scenarios, providing insights into the benefits of early reflections for the design of future parametric and data-driven FOA upscaling methods.",
+      "authors": [
+        "Oded Levi",
+        "Boaz Rafaely"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.23089v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-11-17T17:11:19Z",
+      "updated": "2026-11-17T17:11:19Z"
+    }
+  ]
+}
