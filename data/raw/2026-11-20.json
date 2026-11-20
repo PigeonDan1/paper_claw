@@ -1,0 +1,255 @@
+{
+  "window": {
+    "start": "2026-11-18T15:59:49.320656+08:00",
+    "end": "2026-11-20T15:50:40.343584+08:00"
+  },
+  "fetched_count": 13,
+  "deduplicated_count": 12,
+  "new_count": 12,
+  "papers": [
+    {
+      "arxiv_id": "2611.24741v1",
+      "title_en": "Sex Differences in the Detection of Parkinson's Disease from Speech",
+      "abstract_en": "Parkinson's disease (PD) is the second most common neurodegenerative disease in the world, and 70\\% to 75\\% of PD patients suffer from speech disorders at some stage. Since PD affects men more frequently than women, previous publications tend to rely on unbalanced datasets that potentially introduce sex biases into trained models. This study investigates sex differences in PD detection from speech using deep learning and traditional machine learning approaches. We evaluated speech-based PD detection using embeddings from three pre-trained speech models, combined with handcrafted acoustic features and different classifiers. Sex-specific experiments were conducted on balanced subsets of four sustained phonation datasets, controlling for sex, disease status, and, where possible, age. All recordings were obtained during a sustained phonation task. Results show that female speakers were more accurately classified than male speakers in the larger dataset. Sex-specific results show that when the models are trained on one sex, they fail to generalize to the other one. Our results highlight the importance of including sex as a variable in the development of PD detection systems.",
+      "authors": [
+        "Hiba Akhaddar",
+        "Peter Plantinga",
+        "Mirco Ravanelli",
+        "Tristan Glatard"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.24741v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.CY",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "published": "2026-11-18T16:57:24Z",
+      "updated": "2026-11-18T16:57:24Z"
+    },
+    {
+      "arxiv_id": "2611.24794v1",
+      "title_en": "Exploring Speaker-Aware Engagement Modeling for Children with Autism Spectrum Disorder",
+      "abstract_en": "Prior work on engagement modeling in children with autism spectrum disorder (ASD) has demonstrated substantial individual variability in behavioral features, particularly in visual modalities. In this work, we extend the literature to acoustic features in naturalistic interactions, where multiple speakers and atypical interaction patterns complicate speaker-specific analysis. We investigated whether speaker diarization improved acoustic engagement modeling during month-long, in-home socially assistive robot (SAR) interventions with seven children with ASD. We trained classical machine learning models using acoustic features extracted from diarized child and parent/caregiver audio and compared their performance with models trained on undiarized audio. Diarized audio consistently yielded higher area under the receiver operating characteristic curve (AUROC) values, although these differences were not statistically significant. More importantly, the relative contributions of child and caregiver acoustic features varied across participants, indicating that the acoustic information associated with engagement was not consistent across children. These findings extend evidence of participant-level variability in ASD engagement modeling to the acoustic domain and demonstrate the feasibility of isolating speaker-specific vocalizations for studying engagement in complex, naturalistic interactions.",
+      "authors": [
+        "Kaleen Shrestha",
+        "Austin Joel Dympep",
+        "Young Suh Hong",
+        "Maja Matarić"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.24794v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-11-18T17:39:05Z",
+      "updated": "2026-11-18T17:39:05Z"
+    },
+    {
+      "arxiv_id": "2611.25503v1",
+      "title_en": "Joint Language Modeling for In-the-Wild Speech-Scene Generation with Distinct Token Representations",
+      "abstract_en": "Speech-scene generation aims to synthesize intelligible target speech together with diverse environmental sounds as a coherent acoustic scene. The task is considered challenging in two respects. Speech and environmental audio differ substantially in their semantic and acoustic characteristics, yet existing approaches typically model the complete scene using a single mixed acoustic representation. At the same time, the two sounds are closely related in real-world speech scenes, whereas conventional approaches usually rely on simulated scenes mixed from independently recorded sources. We propose a large language model (LLM)-based framework for joint modeling of distinct speech and environment token streams. A source-aware neural audio codec extracts temporally aligned speech and environment tokens from mixed audio, and a pretrained LLM generates both token streams in an interleaved fashion conditioned on the natural-language scene description and speech content. This formulation preserves source-specific representations while modeling the token streams within a shared generative context. Since both streams are extracted directly from mixed recordings, the model can also be adapted to in-the-wild speech scenes without isolated sources. Our experimental results demonstrate that the proposed framework improves speech intelligibility, scene relevance, and audio quality over existing speech-scene generation techniques, with consistent gains from real-world adaptation. We further investigate the effects of distinct token representations and interleaved generation, and analyze whether the environmental sound remains stable while speech is active and how the two streams interact.",
+      "authors": [
+        "Semin Kim",
+        "Ju Yeon Kang",
+        "Sunghwan Ahn",
+        "Seonuk Kim",
+        "Nam Soo Kim"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.25503v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.AI",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "published": "2026-11-19T04:48:15Z",
+      "updated": "2026-11-19T04:48:15Z"
+    },
+    {
+      "arxiv_id": "2611.25569v1",
+      "title_en": "UMelCodec: An Ultra-Low-Bitrate and Lightweight Mel-Domain Neural Speech Codec",
+      "abstract_en": "Ultra-low-bitrate speech coding is crucial for bandwidth-constrained communication and compact storage, but preserving intelligibility, naturalness, and fine-grained acoustic details at bitrates of only a few hundred bps remains challenging. Existing purely acoustic codecs generally operate at relatively high bitrates, whereas incorporating semantic representations can reduce the bitrate, but at the cost of increased complexity. Therefore, we propose UMelCodec, a purely acoustic neural speech codec operating in the mel domain at an ultra-low bitrate of 325 bps with a lightweight architecture. UMelCodec consists of two stages. In the first mel-domain coding stage, alias-free Snake-ConvNeXt (AF-SC) encoder-decoder backbones model temporal and harmonic structures, a factorized single-codebook vector quantizer (VQ) enables ultra-low-bitrate quantization, and a multi-scale mel-spectrogram discriminator (MSMD) improves mel-spectrogram reconstruction. In the second waveform synthesis stage, a lightweight modified discrete cosine transform (MDCT)-based neural vocoder predicts the MDCT spectrum from the reconstructed mel spectrogram and recovers the waveform through inverse MDCT. Experiments on LibriTTS dataset demonstrate that UMelCodec outperforms strong baselines across most objective reconstruction metrics while maintaining competitive subjective naturalness. In terms of model complexity and inference efficiency, UMelCodec has only 19.67 M parameters, requires 1.93 G MACs, and supports real-time inference on both GPU and CPU platforms.",
+      "authors": [
+        "Hui-Peng Du",
+        "Yang Ai",
+        "Zhen-Hua Ling"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.25569v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "eess.AS"
+      ],
+      "published": "2026-11-19T06:09:41Z",
+      "updated": "2026-11-19T06:09:41Z"
+    },
+    {
+      "arxiv_id": "2611.25781v1",
+      "title_en": "Sonic Palette: Predicting Dynamic Color Themes from Music",
+      "abstract_en": "We present Sonic Palette, a music-driven framework for predicting time-varying color themes from audio. Rather than treating music-to-palette generation as a static problem, our method formulates music--color correspondence as a cross-modal sequence prediction task that models how palette-level visual attributes evolve over time in response to music. Specifically, Sonic Palette uses a music-conditioned autoregressive Transformer to predict frame-wise color themes, each represented by five dominant colors, from input audio features. To support this task, we curate a dataset of paired audio--color sequences derived from 265 full-length official music videos. We further visualize the predicted color themes through a palette-guided recoloring process that preserves image structure while revealing temporally varying color appearance associated with the music. Quantitative results show that Sonic Palette predicts color themes that more closely match the ground truth, while subjective results indicate more natural temporal color transitions and stronger perceived music--color atmosphere alignment, highlighting its potential for music-driven visual design, computational art, and creative visual authoring.",
+      "authors": [
+        "Wen-Li Wei",
+        "Kenneth Yang",
+        "Jen-Chun Lin"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.25781v1",
+      "primary_category": "cs.MM",
+      "source_categories": [
+        "cs.MM",
+        "cs.SD"
+      ],
+      "published": "2026-11-19T09:12:45Z",
+      "updated": "2026-11-19T09:12:45Z"
+    },
+    {
+      "arxiv_id": "2611.25789v1",
+      "title_en": "From Attention to Semantics: Detecting and Mitigating Sound Event Hallucinations in Large Audio-Language Models",
+      "abstract_en": "Large Audio-Language Models (LALMs) excel at diverse audio tasks, yet remain prone to hallucinating sound events absent from the input. Prior work links such hallucinations to insufficient audio attention. However, we find that real and hallucinated events can receive comparable audio attention mass while attending to different audio positions. To examine whether the attended representations support the generated events, we adapt LatentLens to retrieve neighboring contextualized text representations. The retrieved contexts reveal semantic support for real events, but a semantic mismatch between hallucinated events and their attended audio representations. Directly masking the corresponding audio regions can suppress hallucinated events at the cost of real content. We are motivated by these findings to introduce an explainable and training-free detect-then-mitigate framework for effectively hallucination detection and mitigation that aggregates semantic support and applies differential audio masking to protect regions associated with events predicted to be supported. Extensive experiments on three LALMs and two datasets demonstrate that our method significantly improves hallucination detection and hallucination mitigation performance.",
+      "authors": [
+        "Tianyi Sun",
+        "Minghao Lv",
+        "Chunyang Yu",
+        "Shenyue Wang",
+        "Mengyue Wu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.25789v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-11-19T09:18:48Z",
+      "updated": "2026-11-19T09:18:48Z"
+    },
+    {
+      "arxiv_id": "2611.25808v1",
+      "title_en": "Language models represent more about emphasis than they can tell you",
+      "abstract_en": "Prosodic prominence can largely be predicted from the words of a sentence, but part of it depends on how the speaker reads it. We study how much of prominence language models recover from text, whether they can report it when asked, and what the speech signal adds. On read English speech labelled for word-level prominence, we compare frozen and fine-tuned text models, prompted large language models (LLMs) and speech models on the same words. All text models end within about one point of each other, at best 68.8% on the 3-way task, and largely make the same errors. With the prompts we tested, LLMs do no better than a word-majority baseline, even with 500 examples. Linear probes find more in their representations. Speech models reach 84.7%. We argue that text determines only part of prominence, and that the rest has to be heard. LLMs encode what the text determines, but prompting does not bring it out: they represent more about where the emphasis falls than they tell you.",
+      "authors": [
+        "Aarne Talman",
+        "Stergios Chatzikyriakidis"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.25808v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-11-19T09:30:53Z",
+      "updated": "2026-11-19T09:30:53Z"
+    },
+    {
+      "arxiv_id": "2611.25960v1",
+      "title_en": "When Sounds Turn Heads: Recovering Event Timing That Audio LLMs Fail to Say",
+      "abstract_en": "Audio LLMs can know when a queried sound occurs but fail to say it. We find a few attention heads that track the queried sound: they shift when the query changes, follow the sound when it moves, and removing or blocking them often hurts the model's timestamps. Yet the answer does not express what they track. Intervals read directly from these heads outperform the model's original answer and recover events that its timestamps miss. To bring this timing into the answer, we introduce head-guided decoding, which needs no training. It keeps the model's decision on whether the sound is present and rescores its candidate timestamps with a prior from these heads. Heads selected on development data transfer unchanged to new recordings and free-text queries, where head-guided decoding improves the timestamps of three audio LLMs, scores above their head readout on every benchmark, and, in most settings, outperforms random-head guidance. On recordings released after the models were trained, head-guided decoding raises mIoU from 0.07-0.36 to 0.48-0.56. These results suggest that poor temporal answers in audio LLMs partly reflect a failure to say rather than to hear, and that the model's own attention can close part of this gap.",
+      "authors": [
+        "Jongbhin Woo",
+        "Jaewook Jeong",
+        "Joon Son Chung"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.25960v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-11-19T11:48:01Z",
+      "updated": "2026-11-19T11:48:01Z"
+    },
+    {
+      "arxiv_id": "2611.25977v1",
+      "title_en": "Blind tests of a simple-body model of submarine target strength on open benchmarks",
+      "abstract_en": "Finite-element and boundary-element models of a submarine's sonar echo need a mesh and a solver, and their cost grows quickly with frequency. SSR-Sim takes an analytical route. The hull is cut into a few simple bodies, the echo of each is a closed-form result of geometrical acoustics or of the Kirchhoff approximation, the surface enters through a plane-wave reflection coefficient, and the echoes add in energy. This paper describes the method, including the reduction of a hull and its sail to simple bodies, and tests it on three open cases. (1) The reflection coefficient of a 50 mm rubber tile on steel plating, computed with finite elements by Yang et al., is reproduced to 0.02 rms or better at incidence angles from 0° to 75° once the layer is allowed to refract. (2) For the rigid full-scale BeTSSi submarine at 1 kHz, a prediction fixed before the reference was opened agrees with the boundary-element results of Venås and Kvamsdal to within 0.7 dB in every aspect sector from the bow to 150°; in the stern sector it is 5 dB high. (3) For a 1:15 BeTSSi model with 10 mm tiles measured in a lake, a second blind prediction is within -3.1, +1.4 and -0.5 dB of the measured level over aspects 0-120° at 5, 15 and 20 kHz, against -3.1, +3.1 and +3.5 dB for the Kirchhoff-finite-element computation published with the measurement. At 10 kHz, on a resonance of the tile, the prediction is 6.9 dB low, and in the bow sector it is 7 dB or more low at every frequency. The tests cover the specular component and the coating model only. The failures show what such a model lacks: edge diffraction and the returns that set the off-beam floor of a real model.",
+      "authors": [
+        "Sunil Tyagi"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.25977v1",
+      "primary_category": "eess.AS",
+      "source_categories": [
+        "cs.SD",
+        "eess.AS",
+        "eess.SP"
+      ],
+      "published": "2026-11-19T12:01:33Z",
+      "updated": "2026-11-19T12:01:33Z"
+    },
+    {
+      "arxiv_id": "2611.26112v1",
+      "title_en": "ZoionNET: Low-Power Animal Intrusion Detection Using an Acoustic Deep-Learning Classifier for a Cellular Remote-Sensing System",
+      "abstract_en": "Crop raiding and village intrusion by elephants and large felids impose a recurring cost on communities along forest boundaries in southern India, and existing camera-based monitoring has proven difficult to sustain on the power budgets available at such sites. We present ZoionNET, a battery-powered sensing node that detects animal intrusion acoustically rather than visually. Audio from an onboard PDM microphone is sampled at 8 kHz, converted to mel-spectrograms on-device, and classified on an Arm Ethos-U55 microNPU by two int8-quantised YOLOv8 models arranged as a two-state machine: a lightweight always-on model runs in a dormant state and gates a four-class species classifier through exponential-moving-average thresholds, so the heavier model runs only when an intrusion is likely. A digital vibration sensor supplies a complementary seismic channel. Inferences leave the node as JSON over a cellular Notecard, reaching a web dashboard and SMS alerts to forest rangers without any local gateway. The two models reach reported accuracies of 0.974 and 0.946 on held-out audio, and a complete node costs USD 133.57 in parts. We report the system as built and deployed, and identify explicitly what has not yet been measured, most notably the energy behaviour that motivates the two-state design.",
+      "authors": [
+        "Prasanna Vijay",
+        "Adarsh Gupta",
+        "Vansh Panwar",
+        "Vatsalya Singh",
+        "Shubham Singhal",
+        "Anubhav Saha",
+        "Teena Sharma"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.26112v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-11-19T13:40:38Z",
+      "updated": "2026-11-19T13:40:38Z"
+    },
+    {
+      "arxiv_id": "2611.26317v1",
+      "title_en": "Language-Oriented Semantic Modeling for Target Language Extraction",
+      "abstract_en": "Target Language Extraction (TLE) aims to isolate speech in a target language from multilingual mixtures. Existing approaches primarily rely on acoustic modeling with language identity labels, which provide only coarse categorical guidance. In this work, we propose a language-oriented semantic modeling framework that augments acoustic extraction with language-specific semantic representations. A pre-trained speech semantic model is adapted via language-aware prompt conditioning and parameter-efficient fine-tuning to generate target-language-focused semantic representations from the mixture. {These capture high-level semantic structure of the acoustics and they} are integrated into the extraction model to provide structured semantic guidance beyond identity labels. Experiments on the CommonVoiceMix dataset show that incorporating semantic representations consistently improves over acoustic-only baselines, achieving up to 1.16 dB SI-SDR gain.",
+      "authors": [
+        "Mehmet Sinan Yıldırım",
+        "Ke Zhang",
+        "Shuai Wang",
+        "Haizhou Li"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.26317v1",
+      "primary_category": "cs.CL",
+      "source_categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "published": "2026-11-19T16:04:04Z",
+      "updated": "2026-11-19T16:04:04Z"
+    },
+    {
+      "arxiv_id": "2611.26409v1",
+      "title_en": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+      "abstract_en": "Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce \\textbf{WeMM-Video}, a family of Chinese-English bilingual omni-modal foundation models spanning 2B, 4B, 9B, and 35B-A3B variants. Centering on joint audio-visual perception and reasoning, WeMM-Video unifies text, image, audio, and video processing within a hybrid-thinking paradigm, seamlessly supporting both a non-thinking instruct mode for fast, direct responses and a thinking mode for explicit step-by-step reasoning. The models are trained on a large-scale multimodal corpus of approximately 1.2 trillion tokens through progressive pre-training and a multi-stage post-training pipeline incorporating multi-teacher OPD, anti-repetition MrDPO, and specialist RL. Evaluated across more than 120 benchmarks, WeMM-Video demonstrates superior performance in omni-modal video understanding and reasoning, while maintaining highly competitive capabilities across general audio, silent video, image, and text tasks. Specifically, in omni-modal video evaluations, our flagship WeMM-Video-35B-A3B establishes a new open-source state of the art, substantially outperforming proprietary models such as Qwen3.5-Omni-Flash and Seed2.0-Mini-0428 while narrowing the gap with the strong Gemini-3.0-Flash, and our compact WeMM-Video-9B surpasses the larger open-source Qwen3-Omni-30B-A3B-Instruct. We publicly release the WeMM-Video family along with our evaluation and reproduction pipeline to foster further research and development in the open-source community.",
+      "authors": [
+        "Changli Tang",
+        "Jie Yang",
+        "Tianyi Wang",
+        "Lei Li",
+        "Daoze Zhang",
+        "Zijie Xin",
+        "Zhan Liu",
+        "Li Li",
+        "Jinchang Xu",
+        "Fengyun Rao",
+        "Chao Zhang",
+        "Jing Lyu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.26409v1",
+      "primary_category": "cs.CV",
+      "source_categories": [
+        "cs.CV",
+        "eess.AS"
+      ],
+      "published": "2026-11-19T16:58:15Z",
+      "updated": "2026-11-19T16:58:15Z"
+    }
+  ]
+}
