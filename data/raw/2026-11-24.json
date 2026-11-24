@@ -1,0 +1,50 @@
+{
+  "window": {
+    "start": "2026-11-23T16:20:45.051363+08:00",
+    "end": "2026-11-24T18:29:45.305818+08:00"
+  },
+  "fetched_count": 2,
+  "deduplicated_count": 2,
+  "new_count": 2,
+  "papers": [
+    {
+      "arxiv_id": "2611.31043v1",
+      "title_en": "What Do Sound Event Embeddings Reveal? Auditing Speaker Leakage in Audio Representations",
+      "abstract_en": "Pretrained audio embeddings are increasingly used as intermediate representations for sound event detection (SED) and other always-on acoustic sensing tasks. While these representations are selected for their utility on downstream tasks, they may also retain sensitive information unrelated to their intended purpose, creating privacy risks even when raw audio is not exposed. In this work, we present an empirical framework for auditing privacy leakage from pretrained audio embeddings using two complementary approaches. First, we quantify representation-level leakage by measuring statistical dependence between an audio embedding and a representation specialized for encoding sensitive information. Second, we measure attack-level leakage by training lightweight adversarial probes to recover sensitive attributes directly from the embedding. We apply this framework to four widely used audio representations (CLAP, PANNs, AST, and YAMNet) and evaluate leakage of speaker identity and gender. We found that speaker identification balanced accuracy ranges from $0.43$ to $0.72$, while gender information is also strongly recoverable. Moreover, representation-level and attack-based measurements exhibit consistent trends, with CLAP leaking the most and YAMNet leaking the lest speaker identity. These results demonstrate that intermediate audio representations are not inherently privacy-preserving interfaces and motivate privacy leakage as an explicit criterion, alongside downstream utility, when selecting representations for acoustic sensing systems.",
+      "authors": [
+        "Bhawana Chhaglani"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.31043v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-11-23T17:13:27Z",
+      "updated": "2026-11-23T17:13:27Z"
+    },
+    {
+      "arxiv_id": "2611.31055v1",
+      "title_en": "CAST: A Deployed Speech-to-Text Cascade for Closed Captioning of Entertainment Television",
+      "abstract_en": "Despite rapid progress in automatic speech recognition (ASR), caption generation for long-form entertainment video remains challenging for content dense in music and effects, rich in accents, crosstalk, and noise. The transcript quality depends on segmentation and surrounding modules as much as the acoustic model. A single pass voice activity detection (VAD) can miss faint, low-energy voice while forwarding near-silent segments that induce hallucination and repetition in an autoregressive decoder. These competing errors motivate a hierarchical VAD that revisits rejected segments under semantic and acoustic retention checks. We present Captioning ASR Stack for Television (CAST), an integrated speech-to-text pipeline for closed captioning (CC) combining frozen Whisper large-v3 with segmentation, language identification, lyrics routing, and targeted hallucination detection and repair on a single NVIDIA L4 GPU. On 100 in-house assets spanning 60.46 hours, CAST reduces normalized WER from 6.99% to 5.36% and subtitle edit rate from 254.2 to 221.9 min/hour against the WhisperX pipeline, and improves deletion rate by 11% on public datasets. We also present the behavior of each stage in the pipeline. CAST entered the production speech-to-text (STT) stage of our CC pipeline in late August 2026; we report the evaluation evidence and path to full-scale operation.",
+      "authors": [
+        "Aditya Mishra",
+        "Thanish Bolla",
+        "Bidisha Sharma",
+        "Balaji Pitchaikannu",
+        "Surbhi Sinha",
+        "Anup Kotalwar"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.31055v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-11-23T17:18:16Z",
+      "updated": "2026-11-23T17:18:16Z"
+    }
+  ]
+}
