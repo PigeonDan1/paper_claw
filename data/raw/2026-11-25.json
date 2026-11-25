@@ -1,0 +1,37 @@
+{
+  "window": {
+    "start": "2026-11-24T18:29:45.305818+08:00",
+    "end": "2026-11-25T17:17:51.509024+08:00"
+  },
+  "fetched_count": 1,
+  "deduplicated_count": 1,
+  "new_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2611.33153v1",
+      "title_en": "DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning",
+      "abstract_en": "We present DiaCap, an audiovisual LLM for comprehensive dialogue captioning, which produces the transcript, timestamps, and a visual description of the speaker for every utterance in a video. Considering that utterance timing and audiovisual diarization are tightly coupled, DiaCap unifies the tasks in a single model, trained in two complementary stages. First, we train DiaCap on 225K curated clips, using synthetic captions that densely label every utterance in detail. Second, we further refine the model via reinforcement learning on 2.9K human-corrected clips, using fine-grained feedback that directly evaluates utterance timing, speaker grouping, and speaker binding. On DiaDemBench, which we extend with utterance-level timestamps and subtitle redaction, both DiaCap with off-the-shelf transcripts and its end-to-end variant DiaCap-E2E achieve strong results. Specifically, DiaCap performs on par with Gemini 4 Argon in audiovisual diarization while clearly outperforming it in timestamp accuracy (76.59 vs. 42.76 TIME). It also maintains strong diarization on multilingual and minute-long videos, and transfers to audiovisual question answering.",
+      "authors": [
+        "Binfei Ji",
+        "Zhiwen Cao",
+        "Anqi Yang",
+        "Prem Seetharaman",
+        "Shuo Yang",
+        "Ratheesh Kalarot",
+        "Yingyan Celine Lin",
+        "Mingze Xu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.33153v1",
+      "primary_category": "cs.CV",
+      "source_categories": [
+        "cs.CL",
+        "cs.CV",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "published": "2026-11-24T18:59:08Z",
+      "updated": "2026-11-24T18:59:08Z"
+    }
+  ]
+}

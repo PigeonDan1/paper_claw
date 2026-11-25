@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-11-25T17:17:53.874567+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-11-24T18:29:45.305818+08:00",
+    "end": "2026-11-25T17:17:51.509024+08:00",
+    "start_display": "2026-11-24 18:29:45 CST",
+    "end_display": "2026-11-25 17:17:51 CST"
+  },
+  "summary": {
+    "total": 1,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 0,
+      "TTS": 0,
+      "Enhancement": 0,
+      "SLU": 0,
+      "Paralinguistics": 0,
+      "Audio": 1
+    },
+    "headline": "今日共收录 1 篇新论文，主要分布在 Audio 1。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-11-25-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2611.33153v1",
+      "title_en": "DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning",
+      "abstract_en": "We present DiaCap, an audiovisual LLM for comprehensive dialogue captioning, which produces the transcript, timestamps, and a visual description of the speaker for every utterance in a video. Considering that utterance timing and audiovisual diarization are tightly coupled, DiaCap unifies the tasks in a single model, trained in two complementary stages. First, we train DiaCap on 225K curated clips, using synthetic captions that densely label every utterance in detail. Second, we further refine the model via reinforcement learning on 2.9K human-corrected clips, using fine-grained feedback that directly evaluates utterance timing, speaker grouping, and speaker binding. On DiaDemBench, which we extend with utterance-level timestamps and subtitle redaction, both DiaCap with off-the-shelf transcripts and its end-to-end variant DiaCap-E2E achieve strong results. Specifically, DiaCap performs on par with Gemini 4 Argon in audiovisual diarization while clearly outperforming it in timestamp accuracy (76.59 vs. 42.76 TIME). It also maintains strong diarization on multilingual and minute-long videos, and transfers to audiovisual question answering.",
+      "authors": [
+        "Binfei Ji",
+        "Zhiwen Cao",
+        "Anqi Yang",
+        "Prem Seetharaman",
+        "Shuo Yang",
+        "Ratheesh Kalarot",
+        "Yingyan Celine Lin",
+        "Mingze Xu"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.33153v1",
+      "primary_category": "cs.CV",
+      "source_categories": [
+        "cs.CL",
+        "cs.CV",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "published": "2026-11-24T18:59:08Z",
+      "updated": "2026-11-24T18:59:08Z",
+      "keywords_en": [
+        "diacap",
+        "jointly",
+        "learning",
+        "speaks",
+        "when",
+        "audiovisual"
+      ],
+      "digest_category": "Audio",
+      "category_label": "通用音频",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「通用音频」方向，核心任务由题目《DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning》所界定。 从摘要看，作者主要围绕 diacap、jointly、learning 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：On DiaDemBench, which we extend with utterance-level timestamps and subtitle redaction, both DiaCap with off-the-shelf transcripts and its end-to-end variant DiaCap-E2E achieve strong results. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：diacap, jointly, learning。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [],
+    "TTS": [],
+    "Enhancement": [],
+    "SLU": [],
+    "Paralinguistics": [],
+    "Audio": [
+      {
+        "arxiv_id": "2611.33153v1",
+        "title_en": "DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning",
+        "abstract_en": "We present DiaCap, an audiovisual LLM for comprehensive dialogue captioning, which produces the transcript, timestamps, and a visual description of the speaker for every utterance in a video. Considering that utterance timing and audiovisual diarization are tightly coupled, DiaCap unifies the tasks in a single model, trained in two complementary stages. First, we train DiaCap on 225K curated clips, using synthetic captions that densely label every utterance in detail. Second, we further refine the model via reinforcement learning on 2.9K human-corrected clips, using fine-grained feedback that directly evaluates utterance timing, speaker grouping, and speaker binding. On DiaDemBench, which we extend with utterance-level timestamps and subtitle redaction, both DiaCap with off-the-shelf transcripts and its end-to-end variant DiaCap-E2E achieve strong results. Specifically, DiaCap performs on par with Gemini 4 Argon in audiovisual diarization while clearly outperforming it in timestamp accuracy (76.59 vs. 42.76 TIME). It also maintains strong diarization on multilingual and minute-long videos, and transfers to audiovisual question answering.",
+        "authors": [
+          "Binfei Ji",
+          "Zhiwen Cao",
+          "Anqi Yang",
+          "Prem Seetharaman",
+          "Shuo Yang",
+          "Ratheesh Kalarot",
+          "Yingyan Celine Lin",
+          "Mingze Xu"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2611.33153v1",
+        "primary_category": "cs.CV",
+        "source_categories": [
+          "cs.CL",
+          "cs.CV",
+          "cs.MM",
+          "cs.SD"
+        ],
+        "published": "2026-11-24T18:59:08Z",
+        "updated": "2026-11-24T18:59:08Z",
+        "keywords_en": [
+          "diacap",
+          "jointly",
+          "learning",
+          "speaks",
+          "when",
+          "audiovisual"
+        ],
+        "digest_category": "Audio",
+        "category_label": "通用音频",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「通用音频」方向，核心任务由题目《DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning》所界定。 从摘要看，作者主要围绕 diacap、jointly、learning 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：On DiaDemBench, which we extend with utterance-level timestamps and subtitle redaction, both DiaCap with off-the-shelf transcripts and its end-to-end variant DiaCap-E2E achieve strong results. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要更偏方法描述，建议点开原文确认实验细节。 优先看这些信号词：diacap, jointly, learning。"
+        }
+      }
+    ]
+  },
+  "model_name": "deepseek-v3"
+}
