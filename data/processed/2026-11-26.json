@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-11-26T16:57:47.684156+08:00",
+  "project": {
+    "name": "paper_claw",
+    "title": "Paper Claw",
+    "description": "Multi-source paper digest generator with AI-powered summaries",
+    "timezone": "Asia/Shanghai",
+    "version": "2.0.0"
+  },
+  "window": {
+    "start": "2026-11-25T17:17:51.509024+08:00",
+    "end": "2026-11-26T16:57:45.192078+08:00",
+    "start_display": "2026-11-25 17:17:51 CST",
+    "end_display": "2026-11-26 16:57:45 CST"
+  },
+  "summary": {
+    "total": 1,
+    "counts": {
+      "Speech LLM": 0,
+      "ASR": 0,
+      "TTS": 0,
+      "Enhancement": 0,
+      "SLU": 0,
+      "Paralinguistics": 1,
+      "Audio": 0
+    },
+    "headline": "今日共收录 1 篇新论文，主要分布在 Paralinguistics 1。",
+    "trend": "整体上以方法改进、跨模态建模和系统化评测为主，适合按分类快速筛选当天值得细读的论文。",
+    "language": "zh"
+  },
+  "markdown_path": "content/posts/2026-11-26-arxiv-audio-digest.md",
+  "papers": [
+    {
+      "arxiv_id": "2611.34857v1",
+      "title_en": "An offset--drift Kalman filter for continuous emotion recognition and annotation from sparse human reviews",
+      "abstract_en": "Continuous emotion recognition tracks how emotion changes over time, but its predictions often deviate from human ratings, and the traces it is trained on are rated in real time by several annotators, which is slow and costly. A few human reviews could help with both, but rejection only decides which predictions to hand over and adaptation adjusts the model or its outputs; neither uses reviews to correct unreviewed windows directly. We propose a Kalman-filter correction that models the predictor's error as a per-part offset plus a slow drift, estimates it from the reviewed windows and corrects every unreviewed window online, leaving the predictor unchanged. On MSP-Conversation, it beats four simpler corrections in all 48 paired comparisons, keeps correcting each part after reviewing stops and, for uncorrected predictions, tells a person which windows to take over. The same correction serves annotation: with 20% of windows reviewed, the completed trace comes closer to the raters.",
+      "authors": [
+        "Jie Dong",
+        "Mahdi Zareei"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.34857v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-11-25T18:27:22Z",
+      "updated": "2026-11-25T18:27:22Z",
+      "keywords_en": [
+        "emotion recognition"
+      ],
+      "digest_category": "Paralinguistics",
+      "category_label": "副语言学",
+      "language": "zh",
+      "review": {
+        "summary": "这篇工作归入「副语言学」方向，核心任务由题目《An offset--drift Kalman filter for continuous emotion recognition and annotation from sparse human reviews》所界定。 从摘要看，作者主要围绕 emotion recognition 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：A few human reviews could help with both, but rejection only decides which predictions to hand over and adaptation adjusts the model or its outputs; neither uses reviews to correct unreviewed windows directly. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+        "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：emotion recognition。"
+      }
+    }
+  ],
+  "grouped": {
+    "Speech LLM": [],
+    "ASR": [],
+    "TTS": [],
+    "Enhancement": [],
+    "SLU": [],
+    "Paralinguistics": [
+      {
+        "arxiv_id": "2611.34857v1",
+        "title_en": "An offset--drift Kalman filter for continuous emotion recognition and annotation from sparse human reviews",
+        "abstract_en": "Continuous emotion recognition tracks how emotion changes over time, but its predictions often deviate from human ratings, and the traces it is trained on are rated in real time by several annotators, which is slow and costly. A few human reviews could help with both, but rejection only decides which predictions to hand over and adaptation adjusts the model or its outputs; neither uses reviews to correct unreviewed windows directly. We propose a Kalman-filter correction that models the predictor's error as a per-part offset plus a slow drift, estimates it from the reviewed windows and corrects every unreviewed window online, leaving the predictor unchanged. On MSP-Conversation, it beats four simpler corrections in all 48 paired comparisons, keeps correcting each part after reviewing stops and, for uncorrected predictions, tells a person which windows to take over. The same correction serves annotation: with 20% of windows reviewed, the completed trace comes closer to the raters.",
+        "authors": [
+          "Jie Dong",
+          "Mahdi Zareei"
+        ],
+        "affiliations": [],
+        "arxiv_url": "https://arxiv.org/abs/2611.34857v1",
+        "primary_category": "cs.SD",
+        "source_categories": [
+          "cs.SD"
+        ],
+        "published": "2026-11-25T18:27:22Z",
+        "updated": "2026-11-25T18:27:22Z",
+        "keywords_en": [
+          "emotion recognition"
+        ],
+        "digest_category": "Paralinguistics",
+        "category_label": "副语言学",
+        "language": "zh",
+        "review": {
+          "summary": "这篇工作归入「副语言学」方向，核心任务由题目《An offset--drift Kalman filter for continuous emotion recognition and annotation from sparse human reviews》所界定。 从摘要看，作者主要围绕 emotion recognition 展开方法设计、训练策略或系统建模。 结果部分最值得注意的是：A few human reviews could help with both, but rejection only decides which predictions to hand over and adaptation adjusts the model or its outputs; neither uses reviews to correct unreviewed windows directly. 如果你想快速判断这篇论文是否值得细读，这份摘要已经能帮助你抓住问题、方法和结果主线。",
+          "readability": "可读性中。需要一定领域背景，但主线仍然清楚。 摘要中给出了明确指标，适合快速判断效果。 优先看这些信号词：emotion recognition。"
+        }
+      }
+    ],
+    "Audio": []
+  },
+  "model_name": "deepseek-v3"
+}

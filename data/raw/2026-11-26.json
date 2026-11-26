@@ -1,0 +1,28 @@
+{
+  "window": {
+    "start": "2026-11-25T17:17:51.509024+08:00",
+    "end": "2026-11-26T16:57:45.192078+08:00"
+  },
+  "fetched_count": 1,
+  "deduplicated_count": 1,
+  "new_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2611.34857v1",
+      "title_en": "An offset--drift Kalman filter for continuous emotion recognition and annotation from sparse human reviews",
+      "abstract_en": "Continuous emotion recognition tracks how emotion changes over time, but its predictions often deviate from human ratings, and the traces it is trained on are rated in real time by several annotators, which is slow and costly. A few human reviews could help with both, but rejection only decides which predictions to hand over and adaptation adjusts the model or its outputs; neither uses reviews to correct unreviewed windows directly. We propose a Kalman-filter correction that models the predictor's error as a per-part offset plus a slow drift, estimates it from the reviewed windows and corrects every unreviewed window online, leaving the predictor unchanged. On MSP-Conversation, it beats four simpler corrections in all 48 paired comparisons, keeps correcting each part after reviewing stops and, for uncorrected predictions, tells a person which windows to take over. The same correction serves annotation: with 20% of windows reviewed, the completed trace comes closer to the raters.",
+      "authors": [
+        "Jie Dong",
+        "Mahdi Zareei"
+      ],
+      "affiliations": [],
+      "arxiv_url": "https://arxiv.org/abs/2611.34857v1",
+      "primary_category": "cs.SD",
+      "source_categories": [
+        "cs.SD"
+      ],
+      "published": "2026-11-25T18:27:22Z",
+      "updated": "2026-11-25T18:27:22Z"
+    }
+  ]
+}
